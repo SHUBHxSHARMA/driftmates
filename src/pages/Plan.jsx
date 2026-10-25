@@ -1,13 +1,14 @@
 import EnquiryForm from "../components/EnquiryForm";
-import { address, email, phone, phoneHref, steps, whatsapp } from "../data";
+import Reveal from "../components/Reveal";
+import { address, email, phone, phoneHref, photos, steps, whatsapp } from "../data";
 
 export default function Plan() {
   return (
     <>
       <header className="page-hero">
         <img
-          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=2000&q=80"
-          alt="An open road toward distant mountains"
+          src={photos.route}
+          alt="A Driftmates route through the mountains"
         />
         <div className="shade" />
         <div className="wrap">
@@ -26,14 +27,14 @@ export default function Plan() {
           </div>
           <aside>
             <div className="step-list">
-              {steps.map((s) => (
-                <article className="step" key={s.n}>
+              {steps.map((s, i) => (
+                <Reveal as="article" className="step" delay={i * 70} key={s.n}>
                   <div className="num">{s.n}</div>
                   <div>
                     <h3>{s.title}</h3>
                     <p>{s.text}</p>
                   </div>
-                </article>
+                </Reveal>
               ))}
             </div>
             <div className="info-card" style={{ marginTop: 18 }}>

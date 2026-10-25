@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import EnquiryForm from "../components/EnquiryForm";
+import Reveal from "../components/Reveal";
 import { getJourney, inr, journeys } from "../data";
 
 export default function Journey() {
@@ -50,13 +51,13 @@ export default function Journey() {
               your pace still get a vote. Nothing here is a locked script.
             </p>
             {journey.days.map((day, i) => (
-              <div className="day" key={day.t}>
+              <Reveal className="day" delay={i * 50} key={day.t}>
                 <b>0{i + 1}</b>
                 <div>
                   <strong>{day.t}</strong>
                   <span>{day.d}</span>
                 </div>
-              </div>
+              </Reveal>
             ))}
 
             <div className="two" style={{ marginTop: 28 }}>
@@ -113,10 +114,12 @@ export default function Journey() {
 
       <section>
         <div className="wrap">
-          <h2 className="serif" style={{ fontWeight: 400, fontSize: 40 }}>Other roads</h2>
+          <Reveal>
+            <h2 className="serif" style={{ fontWeight: 400, fontSize: 40 }}>Other roads</h2>
+          </Reveal>
           <div className="journey-grid">
-            {more.map((j) => (
-              <article className="j-card" key={j.slug}>
+            {more.map((j, i) => (
+              <Reveal as="article" className="j-card" delay={i * 100} key={j.slug}>
                 <Link to={`/journeys/${j.slug}`} className="j-photo">
                   <img src={j.image} alt="" />
                 </Link>
@@ -125,7 +128,7 @@ export default function Journey() {
                   <h3>{j.title}</h3>
                   <Link className="btn line" to={`/journeys/${j.slug}`}>View</Link>
                 </div>
-              </article>
+              </Reveal>
             ))}
           </div>
         </div>

@@ -1,9 +1,35 @@
-const img = (id, w = 1800) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+const dm = (path) => `https://driftmates.com/wp-content/uploads/${path}`;
+
+export const photos = {
+  hero: dm("2026/06/IMG_8112.JPG-scaled.jpeg"),
+  leh: dm("2024/08/IMG_8386-scaled.jpg"),
+  shey: dm("2026/02/shey-palace.webp"),
+  og: dm("2026/02/IMG_7060-2048x1152.jpg"),
+  moto: dm("2026/09/IMG_0659-scaled.jpg"),
+  adi: dm("2024/08/IMG_0736-scaled.jpg"),
+  darma: dm("2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg"),
+  munsiyari: dm("2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg"),
+  johar: dm("2026/09/IMG_8840-scaled.jpg"),
+  tungnath: dm("2026/02/1747812183272-chopta-tungnath.webp"),
+  kainchi: dm("2026/04/IMG_5763-scaled.jpg"),
+  bir: dm("2026/02/bir-billing.webp"),
+  himachal: dm("2016/11/9403133.jpg"),
+  bhutan: dm("2026/03/IMG_4682.jpg"),
+  chelela: dm("2026/04/IMG_5566.jpg"),
+  annapurna: dm("2026/04/IMG_5663-scaled.jpg"),
+  about: dm("2026/02/IMG_0773-scaled.jpg"),
+  route: dm("2026/09/IMG_6219-scaled.jpg"),
+  routePortrait: dm("2026/09/IMG_5970-scaled.jpg"),
+  trips: dm("2026/09/d9cbd1d5-0e2a-46d4-82ce-ad740feeb6d1-scaled.jpg"),
+  wide: dm("2026/09/IMG_9844-scaled.jpg"),
+  wide2: dm("2026/09/b2a386f3-82d5-4c6c-8824-76f22570eff7-scaled.jpg"),
+  camp: dm("2024/08/IMG_5529-scaled.jpg"),
+};
 
 export const phone = "+91 82737 22456";
 export const phoneHref = "tel:+918273722456";
-export const whatsapp = "https://wa.me/918273722456";
+export const whatsappNumber = "+91 86790 33487";
+export const whatsapp = "https://wa.me/918679033487";
 export const email = "info@driftmates.com";
 export const address =
   "Krishna Colony, Dahariya Road, near Government ITI, Haldwani, Uttarakhand 263139";
@@ -21,8 +47,8 @@ export const destinations = [
     name: "Ladakh",
     region: "High Himalaya",
     ideal: "6–8 days",
-    image: img("photo-1464822759023-fed622ff2c3b"),
-    portrait: img("photo-1483728642387-6c3bdd6c93e5", 1200),
+    image: photos.leh,
+    portrait: photos.shey,
     blurb:
       "Barren ridgelines, monastery light, and roads that climb past the last village. Ladakh is where most of our riders come to feel how big the map really is.",
     highlights: [
@@ -36,8 +62,8 @@ export const destinations = [
     name: "Uttarakhand",
     region: "Kumaon & Garhwal",
     ideal: "4–8 days",
-    image: img("photo-1506905925346-21bda4d32df4"),
-    portrait: img("photo-1469474968028-56623f02e42e", 1200),
+    image: photos.tungnath,
+    portrait: photos.munsiyari,
     blurb:
       "Home ground. Munsiyari, Darma, Tungnath, Adi Kailash — valleys we have walked, driven, and recce’d until the pacing feels right.",
     highlights: [
@@ -51,8 +77,8 @@ export const destinations = [
     name: "Himachal Pradesh",
     region: "Kullu, Parvati & beyond",
     ideal: "6–7 days",
-    image: img("photo-1441974231531-c6227db76b6e"),
-    portrait: img("photo-1501785888041-af3ef285b470", 1200),
+    image: photos.himachal,
+    portrait: photos.bir,
     blurb:
       "Cedar air, river towns, and a backpacking pace that leaves room for the unplanned evening. Manali, Kasol, Jibhi — held loosely.",
     highlights: [
@@ -66,8 +92,8 @@ export const destinations = [
     name: "Bhutan",
     region: "Eastern Himalaya",
     ideal: "8 days",
-    image: img("photo-1544735716-392fe2489ffa"),
-    portrait: img("photo-1526772662000-3f88f10405ff", 1200),
+    image: photos.bhutan,
+    portrait: photos.chelela,
     blurb:
       "A quieter kingdom. Dzongs, valley light, and days that are allowed to breathe. We cross in from Bagdogra and keep the group small.",
     highlights: [
@@ -81,29 +107,14 @@ export const destinations = [
     name: "Nepal",
     region: "Annapurna",
     ideal: "8 days",
-    image: img("photo-1486870591958-9b9d0d1dda99"),
-    portrait: img("photo-1551632811-561732d1e306", 1200),
+    image: photos.annapurna,
+    portrait: photos.routePortrait,
     blurb:
       "The Annapurna sanctuary, walked properly. Stone steps, rhododendron, and a base camp that earns its weather.",
     highlights: [
       "Annapurna Base Camp",
       "Teahouse trails, real altitude",
       "Guided by people who know the mountain",
-    ],
-  },
-  {
-    slug: "africa",
-    name: "Africa",
-    region: "When the map widens",
-    ideal: "Custom",
-    image: img("photo-1516426122078-c23e76319801"),
-    portrait: img("photo-1547471080-7cc2caa01a7e", 1200),
-    blurb:
-      "The same instinct — small groups, ground knowledge, no rushed itinerary — carried beyond the Himalaya when a journey asks for it.",
-    highlights: [
-      "Wildlife and wide country",
-      "Built around your pace",
-      "Planned as a private journey",
     ],
   },
 ];
@@ -120,11 +131,11 @@ export const journeys = [
     was: 40000,
     pickup: "Leh Kushok Bakula Rimpochee Airport",
     season: "June – September",
-    image: img("photo-1469474968028-56623f02e42e"),
+    image: photos.leh,
     gallery: [
-      img("photo-1464822759023-fed622ff2c3b"),
-      img("photo-1483728642387-6c3bdd6c93e5"),
-      img("photo-1470770841072-f978cf4d019e"),
+      photos.shey,
+      photos.og,
+      photos.camp,
     ],
     summary:
       "A high, unhurried circuit out of Leh. Umling La, the great lakes, and enough silence between the passes that the group actually talks.",
@@ -162,11 +173,11 @@ export const journeys = [
     was: 70000,
     pickup: "Bagdogra Airport, Siliguri",
     season: "March – May · September – November",
-    image: img("photo-1544735716-392fe2489ffa"),
+    image: photos.bhutan,
     gallery: [
-      img("photo-1526772662000-3f88f10405ff"),
-      img("photo-1464822759023-fed622ff2c3b"),
-      img("photo-1506905925346-21bda4d32df4"),
+      photos.chelela,
+      photos.route,
+      photos.trips,
     ],
     summary:
       "Eight days in a country that still knows how to be quiet. Valleys, dzongs, and a pace set by the road, not a checklist.",
@@ -199,11 +210,11 @@ export const journeys = [
     was: 45000,
     pickup: "Kathgodam Railway Station",
     season: "May – June · September – October",
-    image: img("photo-1519904981063-b0cf448d479e"),
+    image: photos.adi,
     gallery: [
-      img("photo-1454496522488-7a8e488e8606"),
-      img("photo-1483728642387-6c3bdd6c93e5"),
-      img("photo-1478131143081-80f7f84ca84d"),
+      photos.darma,
+      photos.munsiyari,
+      photos.johar,
     ],
     summary:
       "The quieter Kailash. A high, careful journey from Kathgodam into the Darma country, held by people who treat the mountain as more than a tick.",
@@ -236,11 +247,11 @@ export const journeys = [
     was: 40000,
     pickup: "Leh Kushok Bakula Rimpochee Airport",
     season: "June – September",
-    image: img("photo-1558981806-ec527fa84c39"),
+    image: photos.moto,
     gallery: [
-      img("photo-1501785888041-af3ef285b470"),
-      img("photo-1469854523086-cc02fe5d8800"),
-      img("photo-1470770841072-f978cf4d019e"),
+      photos.leh,
+      photos.shey,
+      photos.og,
     ],
     summary:
       "A riding trip that goes past the postcard lakes and into Turtuk — apricot trees, Balti kitchens, and a village that still feels like a discovery.",
@@ -272,11 +283,11 @@ export const journeys = [
     was: 41999,
     pickup: "Kathgodam Railway Station",
     season: "May – June · September – October",
-    image: img("photo-1454496522488-7a8e488e8606"),
+    image: photos.darma,
     gallery: [
-      img("photo-1486870591958-9b9d0d1dda99"),
-      img("photo-1478131143081-80f7f84ca84d"),
-      img("photo-1464822759023-fed622ff2c3b"),
+      photos.johar,
+      photos.munsiyari,
+      photos.adi,
     ],
     summary:
       "Munsiyari’s famous wall of peaks, approached from the valley rather than the viewpoint. A trek for people who want the mountain, not the railing.",
@@ -308,11 +319,11 @@ export const journeys = [
     was: 30000,
     pickup: "Kashmere Gate, Delhi",
     season: "March – June · September – November",
-    image: img("photo-1441974231531-c6227db76b6e"),
+    image: photos.himachal,
     gallery: [
-      img("photo-1501785888041-af3ef285b470"),
-      img("photo-1506905925346-21bda4d32df4"),
-      img("photo-1470770841072-f978cf4d019e"),
+      photos.bir,
+      photos.route,
+      photos.trips,
     ],
     summary:
       "A week that starts at Kashmere Gate and ends somewhere quieter than you expected. Manali for the scale, Kasol for the river, Jibhi for the exhale.",
@@ -344,11 +355,11 @@ export const journeys = [
     was: 55000,
     pickup: "Pokhara trailhead, as planned",
     season: "March – May · October – November",
-    image: img("photo-1486870591958-9b9d0d1dda99"),
+    image: photos.annapurna,
     gallery: [
-      img("photo-1551632811-561732d1e306"),
-      img("photo-1544735716-392fe2489ffa"),
-      img("photo-1519904981063-b0cf448d479e"),
+      photos.routePortrait,
+      photos.wide,
+      photos.camp,
     ],
     summary:
       "The sanctuary, walked with a group small enough that the guide still knows your name on day six. Stone steps, weather, and a base camp morning.",
@@ -381,11 +392,11 @@ export const journeys = [
     was: 15000,
     pickup: "Dehradun ISBT",
     season: "April – June · September – November",
-    image: img("photo-1464822759023-fed622ff2c3b"),
+    image: photos.tungnath,
     gallery: [
-      img("photo-1506905925346-21bda4d32df4"),
-      img("photo-1454496522488-7a8e488e8606"),
-      img("photo-1483728642387-6c3bdd6c93e5"),
+      photos.kainchi,
+      photos.johar,
+      photos.munsiyari,
     ],
     summary:
       "The highest Shiva temple in the world, and the ridge above it. A short, sharp introduction to how Driftmates likes to walk — unhurried, looked after, and high.",

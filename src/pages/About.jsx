@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import { address, beliefs, email, phone, phoneHref } from "../data";
+import Reveal from "../components/Reveal";
+import { address, beliefs, email, phone, phoneHref, photos, whatsapp, whatsappNumber } from "../data";
 
 export default function About() {
   return (
     <>
       <header className="page-hero">
         <img
-          src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=2000&q=80"
-          alt="A tent pitched with mountains behind it"
+          src={photos.johar}
+          alt="Munsiyari and the Johar Valley"
         />
         <div className="shade" />
         <div className="wrap">
@@ -21,11 +22,11 @@ export default function About() {
       </header>
 
       <section>
-        <div className="wrap story">
+        <Reveal className="wrap story">
           <div className="story-photo">
             <img
-              src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1400&q=80"
-              alt="People on a mountain trail"
+              src={photos.about}
+              alt="Driftmates on a journey"
             />
           </div>
           <div>
@@ -48,12 +49,12 @@ export default function About() {
               it shows.
             </p>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       <section className="band">
         <div className="wrap duo">
-          <article>
+          <Reveal as="article">
             <p className="kicker">Vision</p>
             <h2 className="serif" style={{ fontWeight: 400, fontSize: 40, marginTop: 0 }}>
               Journeys that stay alive after the photos.
@@ -62,8 +63,8 @@ export default function About() {
               Travel should be more than a list. Feel the mountains, meet a culture without rushing
               it, push a limit that is yours, and come home with a story you can actually tell.
             </p>
-          </article>
-          <article>
+          </Reveal>
+          <Reveal as="article" delay={90}>
             <p className="kicker">Mission</p>
             <h2 className="serif" style={{ fontWeight: 400, fontSize: 40, marginTop: 0 }}>
               Meaningful, safe, and specific.
@@ -72,54 +73,57 @@ export default function About() {
               Lead journeys people trust. The goal is simple: every traveller returns with more
               confidence, a few real connections, and a reason to come back for a different valley.
             </p>
-          </article>
+          </Reveal>
         </div>
       </section>
 
       <section>
         <div className="wrap belief-grid">
-          {beliefs.map((b) => (
-            <article className="belief" key={b.title}>
+          {beliefs.map((b, i) => (
+            <Reveal as="article" className="belief" delay={(i % 4) * 80} key={b.title}>
               <h3>{b.title}</h3>
               <p>{b.text}</p>
-            </article>
+            </Reveal>
           ))}
         </div>
         <div className="wrap" style={{ marginTop: 18 }}>
           <div className="two">
-            <article className="info-card">
+            <Reveal as="article" className="info-card">
               <h3>Responsible travel</h3>
               <p>
                 Explore with care. Smaller groups, local knowledge, and a bias toward leaving the
                 mountains, villages, and cultures able to host the next person.
               </p>
-            </article>
-            <article className="info-card">
+            </Reveal>
+            <Reveal as="article" className="info-card" delay={90}>
               <h3>A community, not a counter</h3>
               <p>
                 Thousands of travellers have come through. Plenty return. Shared weather, long
                 drives, and a camp conversation do what a brochure can’t.
               </p>
-            </article>
+            </Reveal>
           </div>
         </div>
       </section>
 
       <section className="band">
         <div className="wrap info-grid">
-          <article className="info-card">
+          <Reveal as="article" className="info-card">
             <h3>Write</h3>
             <a href={`mailto:${email}`}>{email}</a>
-          </article>
-          <article className="info-card">
+          </Reveal>
+          <Reveal as="article" className="info-card" delay={80}>
             <h3>Call</h3>
             <a href={phoneHref}>{phone}</a>
-            <p>A second line the team uses: +91 86790 33487</p>
-          </article>
-          <article className="info-card">
+            <p>
+              WhatsApp:{" "}
+              <a href={whatsapp} target="_blank" rel="noreferrer">{whatsappNumber}</a>
+            </p>
+          </Reveal>
+          <Reveal as="article" className="info-card" delay={160}>
             <h3>Find the desk</h3>
             <p>{address}</p>
-          </article>
+          </Reveal>
         </div>
         <div className="wrap center" style={{ marginTop: 28 }}>
           <Link className="btn" to="/plan">Talk about a journey</Link>

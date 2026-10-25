@@ -6,7 +6,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="wrap footer-grid">
         <div className="foot-brand">
-          <strong>DRIFTMATES</strong>
+          <Link to="/" className="foot-logo">
+            Driftmates
+          </Link>
           <p>
             Small-group motorcycle expeditions, backpacking trips, and treks across the Himalaya.
             Every route is planned and recce’d on the ground.

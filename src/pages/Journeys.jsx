@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import { inr, journeys } from "../data";
+import Reveal from "../components/Reveal";
+import { inr, journeys, photos } from "../data";
 
 export default function Journeys() {
   return (
     <>
       <header className="page-hero">
         <img
-          src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=2000&q=80"
-          alt="Two people walking a high trail"
+          src={photos.og}
+          alt="Driftmates on the road"
         />
         <div className="shade" />
         <div className="wrap">
@@ -21,8 +22,8 @@ export default function Journeys() {
       </header>
       <section>
         <div className="wrap journey-grid">
-          {journeys.map((j) => (
-            <article className="j-card" key={j.slug}>
+          {journeys.map((j, i) => (
+            <Reveal as="article" className="j-card" delay={(i % 2) * 100} key={j.slug}>
               <Link to={`/journeys/${j.slug}`} className="j-photo">
                 <img src={j.image} alt="" />
                 <div className="price-flag">
@@ -42,7 +43,7 @@ export default function Journeys() {
                   <Link className="btn" to={`/journeys/${j.slug}`}>Open the journey</Link>
                 </div>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
       </section>

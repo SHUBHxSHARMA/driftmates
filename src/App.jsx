@@ -1,8 +1,10 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import WhatsApp from "./components/WhatsApp";
+import Intro from "./components/Intro";
+import { PageTransition, ScrollProgress } from "./components/Motion";
 import Home from "./pages/Home";
 import Journeys from "./pages/Journeys";
 import Journey from "./pages/Journey";
@@ -12,15 +14,19 @@ import Plan from "./pages/Plan";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
-  useEffect(() => {
-    if (hash) {
-      const id = hash.replace("#", "");
-      setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 60);
+  useLayoutEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!hash) {
+      window.scrollTo(0, 0);
       return;
     }
-    window.scrollTo(0, 0);
+    const id = hash.replace("#", "");
+    const el = document.getElementById(id);
+    if (!el) {
+      window.scrollTo(0, 0);
+      return;
+    }
+    el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
   }, [pathname, hash]);
   return null;
 }
@@ -28,18 +34,22 @@ function ScrollToTop() {
 export default function App() {
   return (
     <div className="app">
+      <ScrollProgress />
+      <Intro />
       <a className="skip" href="#main">Skip to content</a>
       <ScrollToTop />
       <Nav />
       <main id="main">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/journeys" element={<Journeys />} />
-          <Route path="/journeys/:slug" element={<Journey />} />
-          <Route path="/destinations" element={<Destinations />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/plan" element={<Plan />} />
-        </Routes>
+        <PageTransition>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/journeys" element={<Journeys />} />
+            <Route path="/journeys/:slug" element={<Journey />} />
+            <Route path="/destinations" element={<Destinations />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/plan" element={<Plan />} />
+          </Routes>
+        </PageTransition>
       </main>
       <Footer />
       <WhatsApp />

@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import { destinations, journeys } from "../data";
+import Reveal from "../components/Reveal";
+import { destinations, journeys, photos } from "../data";
 
 export default function Destinations() {
   return (
     <>
       <header className="page-hero">
         <img
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80"
-          alt="A mountain lake under steep peaks"
+          src={photos.leh}
+          alt="Leh Ladakh"
         />
         <div className="shade" />
         <div className="wrap">
@@ -24,7 +25,7 @@ export default function Destinations() {
         const reverse = i % 2 === 1;
         return (
           <section key={d.slug} id={d.slug} className={i % 2 ? "band" : ""}>
-            <div className={`wrap story ${reverse ? "reverse" : ""}`}>
+            <Reveal className={`wrap story ${reverse ? "reverse" : ""}`}>
               <div className="story-photo">
                 <img src={d.portrait || d.image} alt={d.name} />
               </div>
@@ -45,7 +46,7 @@ export default function Destinations() {
                   )}
                 </div>
               </div>
-            </div>
+            </Reveal>
           </section>
         );
       })}
