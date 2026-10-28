@@ -1,5 +1,7 @@
 # Driftmates — concept site
 
+**Live site:** https://driftmates.vercel.app
+
 A front-end prototype for Driftmates Adventure. Content is drawn from driftmates.com. The visual language follows the editorial luxury of marvelsofafrica.com: full-bleed photography, Playfair Display, cream pages, forest-green actions.
 
 ```bash
