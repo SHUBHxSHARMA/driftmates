@@ -53,7 +53,7 @@ function doPost(e) {
 
 function appendQuery_(data) {
   const sheet = tab_(QUERIES_TAB, QUERIES_HEADERS, GREEN);
-  sheet.appendRow([
+  writeNewest_(sheet, [
     stamp_(),
     cell_(data.name),
     cell_(data.phone),
@@ -69,7 +69,7 @@ function appendQuery_(data) {
 
 function appendCareer_(data) {
   const sheet = tab_(CAREERS_TAB, CAREERS_HEADERS, GOLD);
-  sheet.appendRow([
+  writeNewest_(sheet, [
     stamp_(),
     cell_(data.name),
     cell_(data.phone),
@@ -82,6 +82,22 @@ function appendCareer_(data) {
     cell_(data.page),
   ]);
   paint_(sheet, CAREERS_HEADERS);
+}
+
+function writeNewest_(sheet, values) {
+  if (sheet.getLastRow() < 1) {
+    sheet.appendRow(values);
+    return;
+  }
+  sheet.insertRowAfter(1);
+  sheet.getRange(2, 1, 1, values.length).setValues([values]);
+  newestFirst_(sheet);
+}
+
+function newestFirst_(sheet) {
+  const last = sheet.getLastRow();
+  if (last < 3) return;
+  sheet.getRange(2, 1, last - 1, sheet.getLastColumn()).sort({ column: 1, ascending: false });
 }
 
 function stamp_() {
@@ -146,11 +162,13 @@ function refresh_() {
   if (queries) {
     if (queries.getName() !== QUERIES_TAB) queries.setName(QUERIES_TAB);
     queries.setTabColor(GREEN);
+    newestFirst_(queries);
     paint_(queries, QUERIES_HEADERS);
   }
   const careers = file.getSheetByName(CAREERS_TAB);
   if (careers) {
     careers.setTabColor(GOLD);
+    newestFirst_(careers);
     paint_(careers, CAREERS_HEADERS);
   }
 }

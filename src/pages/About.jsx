@@ -101,26 +101,86 @@ export default function About() {
       </header>
 
       <section>
-        <Reveal className="wrap story">
+        <Reveal className="wrap story story-beside">
           <div className="story-photo">
             <img src={photos.about} alt="Driftmates gathered over a map on the trail" />
           </div>
-          <div>
-            <p className="kicker">Haldwani · a decade on these trails</p>
-            <h2>A decade on the ground</h2>
+          <div className="story-copy">
+            <p className="kicker">About Driftmates</p>
+            <h2>Built on Experience. Driven by Exploration.</h2>
+            <p>Driftmates started with a simple thought: travel deserves more than a good itinerary.</p>
             <p>
-              Route-tested by us. Stays chosen by us. Ten years on these trails, not behind a desk.
-              We take you where the road actually leads — with people who know the mountains, the
-              villages, and what to do when the weather turns.
+              After spending years exploring the outdoors and leading travellers across different
+              landscapes, our founder had seen both sides of adventure travel — the incredible
+              experiences that bring people to new places, and the ground-level challenges that can
+              make or break a trip.
             </p>
             <p>
-              Riding a high pass. Walking a quiet village. Sitting by a river because the itinerary
-              had the sense to leave an hour empty. The journeys are written from being there.
+              From high-altitude treks and remote Himalayan valleys to motorcycle expeditions,
+              mountain road trips and journeys across Nepal and Bhutan, those years taught us what
+              it actually takes to organise and lead an adventure.
             </p>
             <p>
-              Travellers often mention Pankaj on the mountain and Ritvik while the plan is still
-              forming. The work is shared, and it shows.
+              Our team brings together different backgrounds and experiences in travel, outdoor
+              exploration and ground operations. Together, we understand that every kind of journey
+              comes with its own demands, and that knowing a destination goes far beyond what is
+              written in a brochure.
             </p>
+            <p>
+              We also saw what was often missing in the travel industry — proper preparation,
+              realistic planning, experienced leadership and people who understand what happens on
+              the ground.
+            </p>
+            <p>That is why we started Driftmates.</p>
+            <h3>Our Approach to Travel</h3>
+            <p>
+              We don’t see travel as simply taking people from one place to another. We believe the
+              real experience lies in discovering the places, meeting their people, understanding
+              different cultures and exploring beyond the usual routes.
+            </p>
+            <p>
+              A well-planned trip should leave room for discovery without leaving important things
+              to chance. We pay attention to routes, local coordination, accommodation, group
+              management and safety because these details matter just as much as the destination
+              itself.
+            </p>
+            <p>
+              We believe in honest communication, practical planning and responsible decisions,
+              especially when things don’t go according to plan.
+            </p>
+            <h3>What Makes Driftmates Different</h3>
+            <p>Our approach comes from actual experience, not just research or attractive itineraries.</p>
+            <p><strong>First-hand knowledge:</strong> Experience across different regions, terrains and styles of travel.</p>
+            <p><strong>Practical planning:</strong> Trips built around real conditions, realistic schedules and proper ground coordination.</p>
+            <p><strong>Experienced leadership:</strong> People who understand outdoor challenges, group management and responsible decision-making.</p>
+            <p><strong>Local connections:</strong> Working with people who know their regions, cultures and communities.</p>
+            <p><strong>Honest communication:</strong> Clear expectations, transparent planning and no unnecessary promises.</p>
+            <p>
+              From trekking and backpacking to motorcycle expeditions, road trips, 4x4 adventures
+              and wildlife exploration, we bring together different ways of discovering the world.
+            </p>
+            <p>
+              Our experiences extend across India, Nepal, Bhutan and beyond. Each destination and
+              style of travel brings something different, and we approach it with the knowledge and
+              preparation it deserves.
+            </p>
+            <h3>Why We Do It</h3>
+            <p>
+              For us, the best part of this work is seeing people experience something they might
+              have only imagined before — their first Himalayan trek, a long-awaited motorcycle
+              expedition, a road through an unfamiliar country or a place that stays with them long
+              after they return.
+            </p>
+            <p>
+              Driftmates brings together years of individual experience, different perspectives and
+              a shared interest in exploring the world responsibly.
+            </p>
+            <p>
+              We are explorers ourselves. There are more roads to take, more places to discover and
+              plenty more stories to be part of.
+            </p>
+            <p>And that is exactly how we want to keep it.</p>
+            <p className="story-sign">Driftmates</p>
           </div>
         </Reveal>
       </section>
@@ -169,7 +229,7 @@ export default function About() {
               the phone.
             </p>
             <div className="face-row" aria-hidden="true">
-              {[1, 2, 3, 4, 5, 6].map((n) => <Face key={n} n={n} label="" />)}
+              {[1, 4, 3, 5, 7, 6].map((n) => <Face key={n} n={n} label="" />)}
             </div>
           </Reveal>
           <div className="know-grid">
@@ -207,7 +267,7 @@ export default function About() {
               </div>
               <article className="chat-card">
                 <div className="polaroids">
-                  <img src={photos.wide} alt="" />
+                  <img src="/sunset-thatch.jpg?v=1" alt="Sunset under a thatched roof" />
                   <img src={photos.munsiyari} alt="Munsiyari" />
                   <img src={photos.johar} alt="" />
                 </div>

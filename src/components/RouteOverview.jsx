@@ -110,10 +110,10 @@ function RouteMap({ stops }) {
   return <div className="route-map" ref={node} />;
 }
 
-export function RouteBox({ title, lede, chain, days, lines, stops }) {
+export function RouteBox({ id, title, lede, chain, days, lines, stops }) {
   if (!stops || stops.length < 2) return null;
   return (
-    <section className="route-brief">
+    <section className="route-brief" id={id}>
       <div className="wrap route-brief-grid">
         <RouteMap stops={stops} />
         <div className="route-panel">
@@ -152,6 +152,7 @@ export default function RouteOverview({ journey }) {
 
   return (
     <RouteBox
+      id="short-itinerary"
       title={`${journey.destination} route`}
       days={journey.days}
       stops={stops}

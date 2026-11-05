@@ -7,6 +7,7 @@ import SeasonBox from "../components/SeasonBox";
 import Seo from "../components/Seo";
 import TripCard from "../components/TripCard";
 import { getJourney, journeys } from "../data";
+import { routeFor } from "../routeStops";
 import { breadcrumb, journeyDescription, organization } from "../seo";
 
 function Lines({ text }) {
@@ -15,6 +16,272 @@ function Lines({ text }) {
     <div className="day-copy">
       {lines.map((line, i) => (
         <p key={i}>{line.replace(/^[-–]\s*/, "")}</p>
+      ))}
+    </div>
+  );
+}
+
+function cleanLine(raw) {
+  return raw.trim().replace(/^[*#]\s*/, "").replace(/^[-–]\s*/, "").trim();
+}
+
+function bareTitle(text) {
+  return text.length > 0 && text.length <= 46 && !text.includes(":") && !text.endsWith(".");
+}
+
+function labelSplit(text) {
+  const cut = text.indexOf(":");
+  if (cut < 2 || cut > 72) return null;
+  return {
+    label: text.slice(0, cut).trim(),
+    value: text.slice(cut + 1).trim().replace(/^[-–]\s*/, ""),
+  };
+}
+
+function policyBlocks(items) {
+  const lines = items.map(cleanLine).filter(Boolean);
+  const isPair = (text) => Boolean(labelSplit(text)?.value);
+  const isLabel = (text) => Boolean(text) && text.endsWith(":") && text.length <= 72;
+  const isWindowTitle = (index) => {
+    const text = lines[index];
+    if (!bareTitle(text) || text.includes("(")) return false;
+    if (/^\d/.test(text) && !/before|days/i.test(text)) return false;
+    const next = lines[index + 1] || "";
+    if (isPair(next)) return true;
+    const words = text.split(/\s+/).length;
+    if (words > 4) return false;
+    const after = lines[index + 2] || "";
+    if (bareTitle(next) && isPair(after)) return true;
+    return words <= 3 && isLabel(next);
+  };
+
+  const blocks = [];
+  let bullets = [];
+  let windowGroup = null;
+  let notes = null;
+  const flushBullets = () => {
+    if (!bullets.length) return;
+    blocks.push({ type: "bullets", items: bullets });
+    bullets = [];
+  };
+  const flushWindow = () => {
+    if (!windowGroup) return;
+    if (windowGroup.rows.length) blocks.push(windowGroup);
+    else blocks.push({ type: "title", label: windowGroup.label });
+    windowGroup = null;
+  };
+  const flushNotes = () => {
+    if (!notes) return;
+    blocks.push(notes);
+    notes = null;
+  };
+
+  lines.forEach((text, index) => {
+    if (isLabel(text)) {
+      flushBullets();
+      flushWindow();
+      flushNotes();
+      notes = { type: "notes", label: text.slice(0, -1).trim(), items: [], open: true };
+      return;
+    }
+    const pair = labelSplit(text);
+    if (pair?.value) {
+      flushBullets();
+      if (notes && !notes.items.length) {
+        windowGroup = { type: "window", label: notes.label, rows: [pair] };
+        notes = null;
+        return;
+      }
+      flushNotes();
+      if (windowGroup) windowGroup.rows.push(pair);
+      else blocks.push({ type: "row", ...pair });
+      return;
+    }
+    if (isWindowTitle(index)) {
+      flushBullets();
+      flushNotes();
+      flushWindow();
+      windowGroup = { type: "window", label: text, rows: [] };
+      return;
+    }
+    if (windowGroup && !windowGroup.rows.length) {
+      notes = { type: "notes", label: windowGroup.label, items: [text] };
+      windowGroup = null;
+      return;
+    }
+    if (windowGroup && !text.endsWith(".") && text.length <= 90) {
+      windowGroup.rows.push({ label: "", value: text });
+      return;
+    }
+    flushWindow();
+    const words = text.split(/\s+/).length;
+    const next = lines[index + 1] || "";
+    const sectionTitle = bareTitle(text) && words <= 6 && (next.endsWith(".") || next.length > 80);
+    if (notes?.open && sectionTitle) {
+      flushNotes();
+      notes = { type: "notes", label: text, items: [], open: true };
+      return;
+    }
+    const continues = !text.endsWith(".") && text.length <= 90;
+    if (notes && (notes.open || continues)) {
+      notes.items.push(text);
+      return;
+    }
+    if (notes) flushNotes();
+    if (sectionTitle) {
+      flushBullets();
+      notes = { type: "notes", label: text, items: [], open: true };
+      return;
+    }
+    const last = blocks[blocks.length - 1];
+    if (last?.type === "row" && continues) {
+      blocks.pop();
+      notes = { type: "notes", label: last.label, items: [last.value, text].filter(Boolean) };
+      return;
+    }
+    bullets.push(text);
+  });
+  flushBullets();
+  flushWindow();
+  flushNotes();
+  return blocks;
+}
+
+function PolicyList({ items }) {
+  const blocks = policyBlocks(items);
+  const nodes = [];
+  let windows = [];
+  const flushWindows = () => {
+    if (!windows.length) return;
+    nodes.push(
+      <div className="policy-windows inclusion-block is-wide" key={`windows-${nodes.length}`}>
+        {windows.map((group) => (
+          <div className="policy-window" key={group.label}>
+            <h3>{group.label}</h3>
+            {group.rows.map((row, i) => (
+              <p key={`${row.label}-${i}`}>
+                {row.label ? <b>{row.label}</b> : null}
+                <span>{row.value}</span>
+              </p>
+            ))}
+          </div>
+        ))}
+      </div>
+    );
+    windows = [];
+  };
+
+  blocks.forEach((block, index) => {
+    if (block.type === "window") {
+      const card = /before departure/i.test(block.label);
+      if (card) {
+        windows.push(block);
+        return;
+      }
+      flushWindows();
+      const longRows = block.rows.length > 4 || block.rows.some((row) => row.value.length > 80);
+      nodes.push(
+        <div className={longRows ? "inclusion-block is-wide" : "inclusion-block"} key={`window-${index}`}>
+          <h3>{block.label}</h3>
+          {block.rows.map((row, i) => (
+            <p className="policy-row" key={`${row.label}-${i}`}>
+              {row.label ? <b>{row.label}</b> : null}
+              <span>{row.value}</span>
+            </p>
+          ))}
+        </div>
+      );
+      return;
+    }
+    flushWindows();
+    if (block.type === "title") {
+      nodes.push(<h3 className="inclusion-block" key={`title-${index}`}>{block.label}</h3>);
+      return;
+    }
+    if (block.type === "row") {
+      nodes.push(
+        <p className={block.value.length > 90 ? "policy-row inclusion-block is-wide" : "policy-row inclusion-block"} key={`row-${index}`}>
+          <b>{block.label}</b>
+          <span>{block.value}</span>
+        </p>
+      );
+      return;
+    }
+    const list = block.items || [];
+    const columns = list.length > 4;
+    nodes.push(
+      <div className={columns ? "inclusion-block is-wide" : "inclusion-block"} key={`list-${index}`}>
+        {block.label && <h3>{block.label}</h3>}
+        {list.length > 0 && (
+          <ul className={columns ? "check check-cols" : "check"}>
+            {list.map((item, i) => <li key={`${item}-${i}`}>{item}</li>)}
+          </ul>
+        )}
+      </div>
+    );
+  });
+  flushWindows();
+  return nodes;
+}
+
+function policyRows(journey) {
+  const rows = [];
+  const facts = [];
+  if (journey.included?.length) facts.push({ title: "Included", items: journey.included });
+  if (journey.notIncluded?.length) facts.push({ title: "Not included", items: journey.notIncluded });
+  if (facts.length) rows.push(facts);
+
+  const payment = journey.payment?.length ? { title: "Payment", items: journey.payment } : null;
+  const cancellation = journey.cancellation?.length ? { title: "Cancellation", items: journey.cancellation } : null;
+  if (payment && cancellation && journey.cancellation.length <= 8) rows.push([payment, cancellation]);
+  else {
+    if (payment) rows.push([payment]);
+    if (cancellation) rows.push([cancellation]);
+  }
+  if (journey.terms?.length) rows.push([{ title: "Terms", items: journey.terms }]);
+  return rows;
+}
+
+function PolicyBoard({ rows }) {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const root = ref.current;
+    if (!root) return;
+    const fit = () => {
+      root.querySelectorAll(".policy-boxes").forEach((row) => {
+        const scrolls = [...row.querySelectorAll(".policy-scroll")];
+        if (!scrolls.length) return;
+        scrolls.forEach((el) => { el.style.height = "auto"; });
+        const stacked = getComputedStyle(row).gridTemplateColumns.split(" ").length < 2;
+        if (stacked) {
+          scrolls.forEach((el) => { el.style.height = `${Math.min(340, el.scrollHeight)}px`; });
+          return;
+        }
+        const height = Math.min(340, Math.max(...scrolls.map((el) => el.scrollHeight)));
+        scrolls.forEach((el) => { el.style.height = `${height}px`; });
+      });
+    };
+    fit();
+    window.addEventListener("resize", fit);
+    return () => window.removeEventListener("resize", fit);
+  }, [rows]);
+
+  if (!rows.length) return null;
+
+  return (
+    <div ref={ref}>
+      {rows.map((row) => (
+        <div className={`policy-boxes${row.length === 1 ? " is-single" : ""}`} key={row.map((box) => box.title).join("-")}>
+          {row.map((box) => (
+            <article className="policy-box" key={box.title}>
+              <h2>{box.title}</h2>
+              <div className="policy-scroll">
+                <PolicyList items={box.items} />
+              </div>
+            </article>
+          ))}
+        </div>
       ))}
     </div>
   );
@@ -147,7 +414,7 @@ export default function Journey() {
     );
   }
 
-  const photos = [journey.image, ...(journey.gallery || [])];
+  const photos = [journey.image, ...(journey.gallery || [])].filter(Boolean);
   const more = journeys.filter((j) => j.place === journey.place && j.slug !== journey.slug);
 
   return (
@@ -176,6 +443,7 @@ export default function Journey() {
       <nav className="section-nav" aria-label="On this journey">
         <div className="wrap section-nav-inner">
           <a href="#overview">Overview</a>
+          {routeFor(journey.slug).length >= 2 && <a href="#short-itinerary">Short itinerary</a>}
           <a href="#itinerary">Itinerary</a>
           <a href="#included">Included</a>
           <a href="#questions">Questions</a>
@@ -211,9 +479,9 @@ export default function Journey() {
                   <h3>{day.t}</h3>
                   <Lines text={day.d} />
                 </div>
-                {photos[i] && (
+                {photos.length > 0 && (
                   <div className="day-photo">
-                    <img src={photos[i]} alt={`${day.t}, ${journey.destination}`} />
+                    <img src={photos[i % photos.length]} alt={`${day.t}, ${journey.destination}`} />
                   </div>
                 )}
               </article>
@@ -223,51 +491,30 @@ export default function Journey() {
       </section>
 
       <section id="included">
-        <div className="wrap split">
-          <div>
-            {journey.included?.length > 0 && (
-              <div className="policy">
-                <h2>Included</h2>
-                <ul className="check">
-                  {journey.included.map((item, i) => <li key={`in-${i}`}>{item}</li>)}
-                </ul>
+        <div className="wrap">
+          <PolicyBoard rows={policyRows(journey)} />
+          {journey.altitude?.length > 0 && (
+            <div className="altitude policy-box">
+              <h2>Altitude</h2>
+              <div className="altitude-table">
+                {journey.altitude.map((row) => {
+                  const match = row.match(/^Day\s+(\d+)\s+(.+?)\s+([\d,]+)\s*m\s+(.+)$/);
+                  const day = match ? `Day ${match[1]}` : "";
+                  const place = match ? match[2] : row;
+                  const height = match ? `${match[3]} m` : "";
+                  const change = match ? match[4] : "";
+                  return (
+                    <p className="altitude-row" key={row}>
+                      <b>{day}</b>
+                      <span>{place}</span>
+                      <span>{height}</span>
+                      <span>{change}</span>
+                    </p>
+                  );
+                })}
               </div>
-            )}
-            {journey.notIncluded?.length > 0 && (
-              <div className="policy">
-                <h2>Not included</h2>
-                <ul className="check">
-                  {journey.notIncluded.map((item, i) => <li key={`out-${i}`}>{item}</li>)}
-                </ul>
-              </div>
-            )}
-          </div>
-          <div>
-            {journey.payment?.length > 0 && (
-              <div className="policy">
-                <h2>Payment</h2>
-                <ul className="check">
-                  {journey.payment.map((item, i) => <li key={`pay-${i}`}>{item}</li>)}
-                </ul>
-              </div>
-            )}
-            {journey.cancellation?.length > 0 && (
-              <div className="policy">
-                <h2>Cancellation</h2>
-                <ul className="check">
-                  {journey.cancellation.map((item, i) => <li key={`can-${i}`}>{item}</li>)}
-                </ul>
-              </div>
-            )}
-            {journey.terms?.length > 0 && (
-              <div className="policy">
-                <h2>Terms</h2>
-                <ul className="check">
-                  {journey.terms.map((item, i) => <li key={`term-${i}`}>{item}</li>)}
-                </ul>
-              </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -289,17 +536,6 @@ export default function Journey() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-      )}
-
-      {journey.altitude?.length > 0 && (
-        <section>
-          <div className="wrap narrow">
-            <h2>Altitude</h2>
-            <ul className="check">
-              {journey.altitude.map((row) => <li key={row}>{row}</li>)}
-            </ul>
           </div>
         </section>
       )}
