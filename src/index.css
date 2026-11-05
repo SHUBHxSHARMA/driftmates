@@ -1019,6 +1019,9 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   padding: 32px;
 }
 .route-map {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
   height: 440px;
   background: #e7e4de;
   border: 1px solid #ddd8d0;
