@@ -1,0 +1,23 @@
+{
+  "redirects": [
+    { "source": "/tours/leh-ladakh-trip-with-umling-la-tour-package", "destination": "/journeys/leh-ladakh-umling-la", "permanent": true },
+    { "source": "/tours/bhutan-tour-package", "destination": "/journeys/bhutan", "permanent": true },
+    { "source": "/tours/himachal-backpacking-manali-kasol-jibhi-trip-package", "destination": "/journeys/himachal-backpacking", "permanent": true },
+    { "source": "/tours/adi-kailash-tour-package", "destination": "/journeys/adi-kailash", "permanent": true },
+    { "source": "/tours/leh-ladakh-with-turtuk-bike-trip-package", "destination": "/journeys/turtuk-bike", "permanent": true },
+    { "source": "/tours/darma-valley-panchachuli-base-camp-tour-package", "destination": "/journeys/darma-panchachuli", "permanent": true },
+    { "source": "/tours/annapurna-base-camp-trek-package", "destination": "/journeys/annapurna-base-camp", "permanent": true },
+    { "source": "/tours/tungnath-chandrashila-trek-package", "destination": "/journeys/tungnath-chandrashila", "permanent": true },
+    { "source": "/tours/munsiyari-johar-valley-tour-package", "destination": "/journeys/munsiyari-johar", "permanent": true },
+    { "source": "/tours/winter-spiti-trip-package", "destination": "/journeys/winter-spiti", "permanent": true },
+    { "source": "/tours/delhi-to-kumaon-escape-5-nights-6-days-tour-package", "destination": "/journeys/kumaon-escape", "permanent": true },
+    { "source": "/tours/delhi-to-kainchi-dham-1-night-2-days-spiritual-escape-tour-package", "destination": "/journeys/kainchi-dham", "permanent": true },
+    { "source": "/tour-indian-destination/ladakh", "destination": "/destinations/ladakh", "permanent": true },
+    { "source": "/tour-indian-destination/himanchal-pradesh", "destination": "/destinations/himachal", "permanent": true },
+    { "source": "/tour-indian-destination/uttarakhand", "destination": "/destinations/uttarakhand", "permanent": true },
+    { "source": "/tour-indian-destination/bhutan", "destination": "/destinations/bhutan", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

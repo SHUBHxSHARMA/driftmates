@@ -1,10 +1,16 @@
 import EnquiryForm from "../components/EnquiryForm";
-import Reveal from "../components/Reveal";
-import { address, email, phone, phoneHref, photos, steps, whatsapp } from "../data";
+import Seo from "../components/Seo";
+import { photos } from "../data";
 
 export default function Plan() {
   return (
     <>
+      <Seo
+        title="Plan a Himalayan trip | Driftmates, Haldwani"
+        description="Tell Driftmates who is coming. Ladakh, Spiti, Kumaon, Manali, Bhutan, or Annapurna. The desk in Haldwani answers on WhatsApp."
+        path="/plan"
+        image={photos.route}
+      />
       <header className="page-hero">
         <img
           src={photos.route}
@@ -20,31 +26,9 @@ export default function Plan() {
           </p>
         </div>
       </header>
-      <section>
-        <div className="wrap split">
-          <div>
-            <EnquiryForm />
-          </div>
-          <aside>
-            <div className="step-list">
-              {steps.map((s, i) => (
-                <Reveal as="article" className="step" delay={i * 70} key={s.n}>
-                  <div className="num">{s.n}</div>
-                  <div>
-                    <h3>{s.title}</h3>
-                    <p>{s.text}</p>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-            <div className="info-card" style={{ marginTop: 18 }}>
-              <h3>Or reach us directly</h3>
-              <p><a href={phoneHref}>{phone}</a></p>
-              <p><a href={`mailto:${email}`}>{email}</a></p>
-              <p><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp the desk</a></p>
-              <p>{address}</p>
-            </div>
-          </aside>
+      <section className="plan-desk">
+        <div className="wrap plan-desk-grid">
+          <EnquiryForm />
         </div>
       </section>
     </>

@@ -9,8 +9,14 @@ import Home from "./pages/Home";
 import Journeys from "./pages/Journeys";
 import Journey from "./pages/Journey";
 import Destinations from "./pages/Destinations";
+import Destination from "./pages/Destination";
 import About from "./pages/About";
 import Plan from "./pages/Plan";
+import Careers from "./pages/Careers";
+import Policies from "./pages/Policies";
+import Inspiration from "./pages/Inspiration";
+import Article from "./pages/Article";
+import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -46,8 +52,14 @@ export default function App() {
             <Route path="/journeys" element={<Journeys />} />
             <Route path="/journeys/:slug" element={<Journey />} />
             <Route path="/destinations" element={<Destinations />} />
+            <Route path="/destinations/:slug" element={<Destination />} />
             <Route path="/about" element={<About />} />
+            <Route path="/inspiration" element={<Inspiration />} />
+            <Route path="/inspiration/:slug" element={<Article />} />
             <Route path="/plan" element={<Plan />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/policies" element={<Policies />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </PageTransition>
       </main>

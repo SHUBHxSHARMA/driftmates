@@ -1,17 +1,39 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import EnquiryForm from "../components/EnquiryForm";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
+import EnquiryForm from "../components/EnquiryForm";
+import OfficeMap from "../components/OfficeMap";
+import GoogleReviews from "../components/GoogleReviews";
+import Credentials from "../components/Credentials";
+import JoinStrip from "../components/JoinStrip";
+import { organization } from "../seo";
 import {
+  address,
   beliefs,
   destinations,
-  faqs,
-  inr,
+  email,
   journeys,
+  phone,
+  phoneHref,
   photos,
   reviews,
   steps,
+  whatsapp,
+  whatsappNumber,
 } from "../data";
+
+const leadSlugs = ["leh-ladakh-umling-la", "munsiyari-johar", "bhutan", "turtuk-bike"];
+const joining = [
+  ...leadSlugs.map((slug) => journeys.find((item) => item.slug === slug)),
+  ...journeys.filter((item) => !leadSlugs.includes(item.slug)),
+].filter(Boolean);
+
+const thoughts = [
+  { title: "Small groups. Bigger connections.", text: beliefs[0].text },
+  { title: "Challenge, nature, growth.", text: beliefs[1].text },
+  { title: "Thoughtfully curated.", text: beliefs[2].text },
+  { title: "Certified adventure leaders.", text: beliefs[3].text },
+];
 
 const places = [
   "Ladakh",
@@ -26,14 +48,21 @@ const places = [
   "Bhutan",
   "Annapurna",
   "Kumaon",
+  "Masai Mara",
+  "Serengeti",
+  "Kilimanjaro",
 ];
 
 export default function Home() {
-  const [open, setOpen] = useState(0);
-  const featured = journeys.slice(0, 4);
-
   return (
-    <>
+    <div className="home">
+      <Seo
+        title="Driftmates Adventure | Ladakh, Spiti, Kumaon, Bhutan and Annapurna"
+        description="Motorcycle, backpacking, and trek departures in Ladakh, Spiti, Kumaon, Manali, Bhutan, and Annapurna. Driftmates, Haldwani."
+        path="/"
+        image={photos.hero}
+        jsonLd={{ "@context": "https://schema.org", "@graph": [organization] }}
+      />
       <section className="hero">
         <img
           className="hero-img"
@@ -49,12 +78,12 @@ export default function Home() {
           </h1>
           <p className="lede">
             Motorcycle expeditions, backpacking trips, and treks through Ladakh, Uttarakhand,
-            Himachal, Nepal, and Bhutan. Planned on the ground by a team that has spent a decade
-            on these trails.
+            Himachal, Nepal, and Bhutan — and safari weeks in Kenya and Tanzania. Planned on
+            the ground by a team that has spent a decade on these trails.
           </p>
           <div className="hero-actions">
-            <Link className="btn" to="/plan">Plan my journey</Link>
-            <Link className="btn ghost" to="/journeys">See the routes</Link>
+            <Link className="btn" to="/#states">Choose a state</Link>
+            <Link className="btn ghost" to="/plan">Plan my journey</Link>
           </div>
         </div>
       </section>
@@ -68,23 +97,44 @@ export default function Home() {
       </div>
 
       <section className="statement">
-        <Reveal className="wrap narrow center">
-          <h2>Small groups. Deeper trails. Real connection.</h2>
-          <p>
-            We don’t believe in rushed itineraries or checklist tourism. Every Driftmates
-            adventure is paced for thrill, culture, and the quiet in between — so the journey
-            feels considered, not commercial.
-          </p>
-          <div style={{ marginTop: 28 }}>
-            <Link className="btn" to="/about">How we travel</Link>
+        <div className="wrap hold">
+          <Reveal className="hold-photo">
+            <img src="/route-briefing.jpg?v=3" alt="A Driftmates lead going over the route map with the group" />
+          </Reveal>
+          <div className="hold-copy">
+            <div className="hold-grid">
+              {thoughts.map((idea, i) => (
+                <Reveal as="article" delay={i * 70} key={idea.title}>
+                  <span>0{i + 1}</span>
+                  <h3>{idea.title}</h3>
+                  <p>{idea.text}</p>
+                </Reveal>
+              ))}
+            </div>
+            <Reveal className="hold-action">
+              <Link className="btn" to="/about">How we travel</Link>
+            </Reveal>
           </div>
-        </Reveal>
+        </div>
       </section>
 
-      <section className="band">
+      <section className="departures">
+        <div className="wrap">
+          <div className="join-head">
+            <Reveal>
+              <p className="kicker">Departures</p>
+              <h2>Trips people are joining</h2>
+              <p>The length and the price, as printed on the trip.</p>
+            </Reveal>
+          </div>
+          <JoinStrip items={joining} />
+        </div>
+      </section>
+
+      <section className="band" id="states">
         <div className="wrap">
           <Reveal className="section-head center">
-            <div className="dots">Ladakh · Uttarakhand · Himachal · Bhutan · Nepal</div>
+            <div className="dots">Ladakh · Uttarakhand · Himachal · Bhutan · Nepal · Africa</div>
             <h2>Places we actually know</h2>
             <p>
               Discover what sits past the usual trail. Local guides and expedition leads who
@@ -94,7 +144,7 @@ export default function Home() {
           <div className="dest-grid">
             {destinations.map((d, i) => (
               <Reveal as="article" className="dest-card" delay={(i % 3) * 90} key={d.slug} id={d.slug}>
-                <Link to={`/destinations#${d.slug}`} className="dest-photo">
+                <Link to={`/destinations/${d.slug}`} className="dest-photo">
                   <img src={d.image} alt={d.name} />
                 </Link>
                 <div className="dest-body">
@@ -107,7 +157,7 @@ export default function Home() {
                     <span>Ideal · {d.ideal}</span>
                     <span>Routes shaped around you</span>
                   </div>
-                  <Link className="btn" to={`/plan?journey=${d.slug}`}>Plan {d.name}</Link>
+                  <Link className="btn" to={`/destinations/${d.slug}`}>See the trips</Link>
                 </div>
               </Reveal>
             ))}
@@ -115,162 +165,68 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="guest-notes" id="reviews">
         <div className="wrap">
-          <Reveal className="section-head">
-            <p className="kicker">Departures</p>
-            <h2>Journeys with a name and a price</h2>
-            <p>
-              These are routes already walked and ridden. Dates flex. The feeling of the trip does not.
-            </p>
-          </Reveal>
-          <div className="journey-grid">
-            {featured.map((j, i) => (
-              <Reveal as="article" className="j-card" delay={(i % 2) * 100} key={j.slug}>
-                <Link to={`/journeys/${j.slug}`} className="j-photo">
-                  <img src={j.image} alt="" />
-                  <div className="price-flag">
-                    <s>{inr(j.was)}</s>
-                    <b>From {inr(j.price)}</b>
-                  </div>
-                </Link>
-                <div className="j-body">
-                  <div className="j-top">
-                    <span className="kind">{j.kind}</span>
-                    <span>{j.nights}</span>
-                  </div>
-                  <h3>{j.title}</h3>
-                  <p>{j.summary}</p>
-                  <div className="j-actions">
-                    <Link className="btn" to={`/journeys/${j.slug}`}>View journey</Link>
-                    <Link className="btn line" to={`/plan?journey=${j.slug}`}>Ask for dates</Link>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <div className="center" style={{ marginTop: 28 }}>
-            <Link className="btn line" to="/journeys">All eight journeys</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="band" style={{ paddingBottom: 40 }}>
-        <div className="wrap belief-grid">
-          {beliefs.map((b, i) => (
-            <Reveal as="article" className="belief" delay={(i % 4) * 80} key={b.title}>
-              <h3>{b.title}</h3>
-              <p>{b.text}</p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section>
-        <div className="wrap steps-wrap">
-          <Reveal>
-            <p className="kicker">From first call to the last pass</p>
-            <h2 className="serif" style={{ fontSize: "clamp(36px, 4vw, 56px)", fontWeight: 400, margin: "0 0 12px" }}>
-              How a Driftmates journey comes together
-            </h2>
-            <p style={{ color: "var(--ink-soft)" }}>
-              From your first hello to the morning you actually leave, planning should feel as
-              unforced as the trip.
-            </p>
-          </Reveal>
-          <div className="step-list">
-            {steps.map((s, i) => (
-              <Reveal as="article" className="step" delay={i * 70} key={s.n}>
-                <div className="num">{s.n}</div>
-                <div>
-                  <h3>{s.title}</h3>
-                  <p>{s.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <figure className="quote-band">
-        <img
-          src={photos.darma}
-          alt="Darma Valley"
-        />
-        <div className="shade" />
-        <Reveal className="quote-copy">
-          <blockquote>
-            “We don’t take people to places. We help them feel the spirit of the place.”
-          </blockquote>
-          <figcaption>Driftmates · Haldwani</figcaption>
-        </Reveal>
-      </figure>
-
-      <section className="band">
-        <div className="wrap">
-          <Reveal className="section-head center">
+          <div className="section-head center">
             <p className="kicker">Guest notes</p>
             <h2>Stories from the trail</h2>
-            <p>Firsthand words from people who rode, walked, and came back.</p>
+          </div>
+        </div>
+        <GoogleReviews items={reviews} />
+      </section>
+
+      <Credentials />
+
+      <section className="plan-how">
+        <div className="wrap plan-split">
+          <Reveal>
+            <p className="kicker">From first call to the last pass</p>
+            <h2>How we plan your journey</h2>
+            <p>
+              From your first hello to the last evening on the trail, we make planning feel as
+              effortless as the journey itself.
+            </p>
+            <Link className="btn" to="/plan">Let’s begin</Link>
           </Reveal>
-          <div className="review-grid">
-            {reviews.map((r, i) => (
-              <Reveal as="article" className="review" delay={(i % 3) * 90} key={r.name}>
-                <div className="avatar" aria-hidden="true">{r.name[0]}</div>
-                <p>“{r.text}”</p>
-                <div className="who">
-                  <strong>{r.name}</strong>
-                  <span>{r.place}</span>
+          <ol className="plan-steps">
+            {steps.map((step, i) => (
+              <Reveal as="li" delay={i * 80} key={step.n}>
+                <span>{step.n}</span>
+                <div>
+                  <h3>{step.title}</h3>
+                  <p>{step.text}</p>
                 </div>
               </Reveal>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section>
-        <div className="wrap duo">
-          <Reveal className="faq-col">
-            <p className="kicker">Questions</p>
-            <h2 className="serif" style={{ fontSize: "clamp(34px, 4vw, 48px)", fontWeight: 400, marginTop: 0 }}>
-              Before you pack
-            </h2>
-            <p style={{ color: "var(--ink-soft)" }}>The practical things people ask before a Himalayan week.</p>
-            <div className="faq-list">
-              {faqs.map((f, i) => (
-                <div className={`faq-item${open === i ? " open" : ""}`} key={f.q}>
-                  <button onClick={() => setOpen(open === i ? -1 : i)} aria-expanded={open === i}>
-                    {f.q}
-                    <span className="plus">{open === i ? "–" : "+"}</span>
-                  </button>
-                  <div className="a" aria-hidden={open !== i}>
-                    <div className="a-inner">{f.a}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+      <section id="contact">
+        <div className="wrap contact-grid">
+          <Reveal>
+            <p className="kicker">Contact</p>
+            <h2>Tell us who’s coming.</h2>
+            <p>
+              A departure from the list, or a private week at your own pace. The desk in Haldwani
+              answers with a route.
+            </p>
+            <EnquiryForm />
           </Reveal>
           <Reveal delay={80}>
-            <p className="kicker">Write to the desk</p>
-            <h2 className="serif" style={{ fontSize: 36, fontWeight: 400, marginTop: 0 }}>
-              Tell us the season. We’ll tell you the road.
-            </h2>
-            <EnquiryForm compact />
-          </Reveal>
-        </div>
-      </section>
-
-      <section style={{ paddingTop: 0 }}>
-        <div className="wrap">
-          <Reveal className="cta-band">
-            <div>
-              <h2>Top of the map for 2027 is already being walked.</h2>
-              <p>If a departure speaks to you, claim a conversation before the group fills.</p>
+            <div className="desk-card">
+              <h3>Or reach the desk directly</h3>
+              <p><a href={phoneHref}>{phone}</a></p>
+              <p><a href={`mailto:${email}`}>{email}</a></p>
+              <p>
+                <a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp {whatsappNumber}</a>
+              </p>
+              <p>{address}</p>
             </div>
-            <Link className="btn light" to="/plan">Begin with a call</Link>
+            <OfficeMap />
           </Reveal>
         </div>
       </section>
-    </>
+    </div>
   );
 }

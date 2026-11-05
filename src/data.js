@@ -1,3 +1,7 @@
+import { journeys } from "./officialJourneys.js";
+
+export { journeys };
+
 const dm = (path) => `https://driftmates.com/wp-content/uploads/${path}`;
 
 export const photos = {
@@ -24,6 +28,9 @@ export const photos = {
   wide: dm("2026/09/IMG_9844-scaled.jpg"),
   wide2: dm("2026/09/b2a386f3-82d5-4c6c-8824-76f22570eff7-scaled.jpg"),
   camp: dm("2024/08/IMG_5529-scaled.jpg"),
+  kenya: dm("2026/03/premium_photo-1661809249946-8a6b00e29ea4.avif"),
+  tanzania: dm("2026/03/lion-7866017_1280.jpg"),
+  kilimanjaro: dm("2026/03/photo-1531242450852-175ae27d351c.avif"),
 };
 
 export const phone = "+91 82737 22456";
@@ -41,6 +48,14 @@ export const inr = (n) =>
     maximumFractionDigits: 0,
   }).format(n);
 
+export function stayLabel(value) {
+  return String(value).replace(/(\d+)\s*(nights|night|days|day)/gi, (_, num, word) => {
+    const n = Number(num);
+    const kind = word.toLowerCase().startsWith("d") ? "Day" : "Night";
+    return `${n} ${kind}${n === 1 ? "" : "s"}`;
+  });
+}
+
 export const destinations = [
   {
     slug: "ladakh",
@@ -49,6 +64,9 @@ export const destinations = [
     ideal: "6–8 days",
     image: photos.leh,
     portrait: photos.shey,
+    seoTitle: "Ladakh bike trips | Umling La, Nubra and Turtuk",
+    seoDescription:
+      "Ladakh motorcycle and backpacking trips from Leh airport. Umling La, Nubra, Turtuk, and Pangong Tso with Driftmates.",
     blurb:
       "Barren ridgelines, monastery light, and roads that climb past the last village. Ladakh is where most of our riders come to feel how big the map really is.",
     highlights: [
@@ -64,6 +82,9 @@ export const destinations = [
     ideal: "4–8 days",
     image: photos.tungnath,
     portrait: photos.munsiyari,
+    seoTitle: "Uttarakhand trips | Munsiyari, Darma, Adi Kailash, Tungnath",
+    seoDescription:
+      "Kumaon and Garhwal departures from Haldwani, Kathgodam, and Dehradun. Munsiyari, Darma Valley, Adi Kailash, Kainchi Dham, and Tungnath.",
     blurb:
       "Home ground. Munsiyari, Darma, Tungnath, Adi Kailash — valleys we have walked, driven, and recce’d until the pacing feels right.",
     highlights: [
@@ -79,6 +100,9 @@ export const destinations = [
     ideal: "6–7 days",
     image: photos.himachal,
     portrait: photos.bir,
+    seoTitle: "Himachal trips | Manali, Kasol, Jibhi and Winter Spiti",
+    seoDescription:
+      "Himachal backpacking from Kashmere Gate, plus a winter road into Spiti. Manali, Solang, Kasol, Jibhi, Jalori, and Kaza.",
     blurb:
       "Cedar air, river towns, and a backpacking pace that leaves room for the unplanned evening. Manali, Kasol, Jibhi — held loosely.",
     highlights: [
@@ -94,6 +118,9 @@ export const destinations = [
     ideal: "8 days",
     image: photos.bhutan,
     portrait: photos.chelela,
+    seoTitle: "Bhutan tour from Bagdogra | Paro, Thimphu, Punakha",
+    seoDescription:
+      "An 8-day Bhutan tour from Bagdogra. Phuentsholing, Thimphu, Dochula, Phobjikha, Punakha, Paro, and the Tiger’s Nest.",
     blurb:
       "A quieter kingdom. Dzongs, valley light, and days that are allowed to breathe. We cross in from Bagdogra and keep the group small.",
     highlights: [
@@ -109,6 +136,9 @@ export const destinations = [
     ideal: "8 days",
     image: photos.annapurna,
     portrait: photos.routePortrait,
+    seoTitle: "Annapurna Base Camp trek from Pokhara",
+    seoDescription:
+      "Annapurna Base Camp trek with Driftmates, starting at Pokhara. Teahouses, a paced climb to 4,130 m, and a group of 15 to 20.",
     blurb:
       "The Annapurna sanctuary, walked properly. Stone steps, rhododendron, and a base camp that earns its weather.",
     highlights: [
@@ -117,302 +147,120 @@ export const destinations = [
       "Guided by people who know the mountain",
     ],
   },
-];
-
-export const journeys = [
   {
-    slug: "leh-ladakh-umling-la",
-    title: "Leh Ladakh with Umling La",
-    destination: "Ladakh",
-    place: "ladakh",
-    kind: "Backpacking · Biking",
-    nights: "7 nights · 8 days",
-    price: 35500,
-    was: 40000,
-    pickup: "Leh Kushok Bakula Rimpochee Airport",
-    season: "June – September",
-    image: photos.leh,
-    gallery: [
-      photos.shey,
-      photos.og,
-      photos.camp,
-    ],
-    summary:
-      "A high, unhurried circuit out of Leh. Umling La, the great lakes, and enough silence between the passes that the group actually talks.",
+    slug: "africa",
+    name: "Africa",
+    region: "Kenya & Tanzania",
+    ideal: "3–8 days",
+    image: photos.kenya,
+    portrait: photos.kilimanjaro,
+    seoTitle: "Africa safaris | Masai Mara, Serengeti, Ngorongoro, Kilimanjaro",
+    seoDescription:
+      "Driftmates safaris in Kenya and Tanzania: Masai Mara, Amboseli, Serengeti, Ngorongoro, and Kilimanjaro climbs from Moshi.",
+    blurb:
+      "Savannah, crater, and the highest freestanding mountain on earth. Kenya and Tanzania, planned with the same care as the Himalayan weeks.",
     highlights: [
-      "Umling La, one of the world’s highest motorable passes",
-      "Small group, bikes and a support rhythm that isn’t a convoy",
-      "Monasteries, lakes, and nights that aren’t overscheduled",
+      "Masai Mara and the Great Migration",
+      "Serengeti, Ndutu, and Ngorongoro",
+      "Kilimanjaro, the roof of Africa",
     ],
-    included: [
-      "Stay on the circuit",
-      "Local transport as per the riding plan",
-      "Expedition lead and on-ground support",
-      "Permits coordination for the route",
-    ],
-    notIncluded: ["Flights to Leh", "Personal riding gear", "Meals unless noted in your final plan"],
-    days: [
-      { t: "Arrive in Leh", d: "Land, meet the group, and let the altitude settle. No heroics on day one." },
-      { t: "Leh & the Indus", d: "A short acclimatisation day. Palaces, markets, and a first look at how the light works here." },
-      { t: "Toward the high road", d: "The ride opens up. Villages thin out. The mountains stop pretending to be gentle." },
-      { t: "Umling La", d: "The pass itself — slow, cold, and worth every metre. We don’t rush the photographs or the breathing." },
-      { t: "Lakes and long horizons", d: "Water the colour of tin and sky. Time to ride, stop, and not fill the afternoon." },
-      { t: "A quieter valley", d: "Monastery, tea, and a route chosen because it still feels local." },
-      { t: "Back toward Leh", d: "The return is part of the journey. Different light on the same ridges." },
-      { t: "Departure", d: "Airport drop. The group is usually quieter than when it arrived." },
-    ],
-  },
-  {
-    slug: "bhutan",
-    title: "Bhutan",
-    destination: "Bhutan",
-    place: "bhutan",
-    kind: "Small-group journey",
-    nights: "7 nights · 8 days",
-    price: 60000,
-    was: 70000,
-    pickup: "Bagdogra Airport, Siliguri",
-    season: "March – May · September – November",
-    image: photos.bhutan,
-    gallery: [
-      photos.chelela,
-      photos.route,
-      photos.trips,
-    ],
-    summary:
-      "Eight days in a country that still knows how to be quiet. Valleys, dzongs, and a pace set by the road, not a checklist.",
-    highlights: [
-      "Cross-border start from Bagdogra",
-      "Culture, walking, and high valley roads",
-      "Room in the day to actually be there",
-    ],
-    included: ["Stay", "Ground transport in Bhutan", "Trip lead", "Monument and route coordination"],
-    notIncluded: ["Flights into Bagdogra", "Sustainable development fee as applicable", "Personal expenses"],
-    days: [
-      { t: "Bagdogra to the border", d: "Meet, cross, and let the first valley do the introducing." },
-      { t: "A western valley", d: "Dzong, town, and a walk that isn’t a march." },
-      { t: "Higher country", d: "The road climbs. Prayer flags, switchbacks, weather that changes its mind." },
-      { t: "A day with room in it", d: "This is the day most itineraries delete. We keep it." },
-      { t: "Central valleys", d: "Farms, rivers, and a stay chosen for the morning, not the brochure." },
-      { t: "Ridge and return", d: "One last high view before the road bends back west." },
-      { t: "Slow exit", d: "Markets, a last meal, stories already forming." },
-      { t: "Back to Bagdogra", d: "Border and airport. You’ll want a longer trip. That’s the point." },
-    ],
-  },
-  {
-    slug: "adi-kailash",
-    title: "Adi Kailash",
-    destination: "Uttarakhand",
-    place: "uttarakhand",
-    kind: "Pilgrimage · Trek",
-    nights: "7 nights · 8 days",
-    price: 29999,
-    was: 45000,
-    pickup: "Kathgodam Railway Station",
-    season: "May – June · September – October",
-    image: photos.adi,
-    gallery: [
-      photos.darma,
-      photos.munsiyari,
-      photos.johar,
-    ],
-    summary:
-      "The quieter Kailash. A high, careful journey from Kathgodam into the Darma country, held by people who treat the mountain as more than a tick.",
-    highlights: [
-      "Kathgodam start, no scramble at the railhead",
-      "High villages and the Om Parvat landscape",
-      "Pacing for altitude, not for Instagram",
-    ],
-    included: ["Stay and camps as per route", "Transport from Kathgodam", "Trek support and lead", "Permits coordination"],
-    notIncluded: ["Rail or flight to Kathgodam", "Personal gear", "Pony or porter upgrades unless added"],
-    days: [
-      { t: "Kathgodam", d: "Pickup and the long, beautiful drive into the hills. The journey starts in the car." },
-      { t: "Toward the inner valleys", d: "Rivers, hairpins, and a night that already feels far from the plains." },
-      { t: "The road ends", d: "Where vehicles stop being the point. We walk." },
-      { t: "High villages", d: "Stone, barley, and the particular quiet of Kumaon above the tree line’s argument." },
-      { t: "Adi Kailash country", d: "The approach. Weather permitting, the view that people come all this way to stand in front of." },
-      { t: "A second look", d: "Mountains reward people who don’t leave the morning they arrive." },
-      { t: "Descent", d: "Back through the villages, slower than the way up." },
-      { t: "Return to Kathgodam", d: "Plains again. The group is usually already planning the next one." },
-    ],
-  },
-  {
-    slug: "turtuk-bike",
-    title: "Leh Ladakh with Turtuk",
-    destination: "Ladakh",
-    place: "ladakh",
-    kind: "Bike trip",
-    nights: "6 nights · 7 days",
-    price: 35500,
-    was: 40000,
-    pickup: "Leh Kushok Bakula Rimpochee Airport",
-    season: "June – September",
-    image: photos.moto,
-    gallery: [
-      photos.leh,
-      photos.shey,
-      photos.og,
-    ],
-    summary:
-      "A riding trip that goes past the postcard lakes and into Turtuk — apricot trees, Balti kitchens, and a village that still feels like a discovery.",
-    highlights: [
-      "Khardung La and the Nubra approach",
-      "Turtuk, the last village",
-      "A bike trip that isn’t a race",
-    ],
-    included: ["Stay", "Support vehicle rhythm", "Expedition lead", "Inner line permit coordination"],
-    notIncluded: ["Flights", "Motorcycle hire if you are not riding with our fleet", "Riding gear"],
-    days: [
-      { t: "Leh", d: "Arrive, breathe, meet the bikes and the people you’ll trust with a week." },
-      { t: "Acclimatise", d: "A gentle day. Thiksey or the palace road. Sleep matters more than sightseeing." },
-      { t: "Khardung La", d: "Over the pass and down into Nubra. The landscape changes its entire vocabulary." },
-      { t: "Nubra", d: "Sand, monasteries, and a valley wide enough to get lost in on purpose." },
-      { t: "Turtuk", d: "The border village. Apricots, stories, and a night that doesn’t feel like a tour stop." },
-      { t: "Return toward Leh", d: "A long, good riding day. Stops where the view insists." },
-      { t: "Fly out", d: "Airport. Dust on your boots. That’s the souvenir." },
-    ],
-  },
-  {
-    slug: "darma-panchachuli",
-    title: "Darma Valley & Panchachuli Base Camp",
-    destination: "Uttarakhand",
-    place: "uttarakhand",
-    kind: "Trek",
-    nights: "6 nights · 7 days",
-    price: 37999,
-    was: 41999,
-    pickup: "Kathgodam Railway Station",
-    season: "May – June · September – October",
-    image: photos.darma,
-    gallery: [
-      photos.johar,
-      photos.munsiyari,
-      photos.adi,
-    ],
-    summary:
-      "Munsiyari’s famous wall of peaks, approached from the valley rather than the viewpoint. A trek for people who want the mountain, not the railing.",
-    highlights: [
-      "Panchachuli from the Darma side",
-      "Villages most itineraries skip",
-      "Kathgodam pickup, fully held logistics",
-    ],
-    included: ["Stay and camp", "Transport from Kathgodam", "Trek lead and support", "Meals on the trail as planned"],
-    notIncluded: ["Train to Kathgodam", "Personal equipment", "Insurance"],
-    days: [
-      { t: "Kathgodam to the hills", d: "The drive is long and it is the right way to arrive." },
-      { t: "Munsiyari", d: "First sight of the Panchachuli. Tea, layers, and an early night." },
-      { t: "Into Darma", d: "The valley narrows. Villages get smaller and more specific." },
-      { t: "Trail day", d: "A proper walking day. Forest, then the open." },
-      { t: "Base camp", d: "The wall of peaks, close enough to change how you stand." },
-      { t: "Walk out", d: "Descent through the same villages, which look different on the way down." },
-      { t: "Back to Kathgodam", d: "Road, railhead, and a group that now has a private language." },
-    ],
-  },
-  {
-    slug: "himachal-backpacking",
-    title: "Himachal Backpacking — Manali, Kasol & Jibhi",
-    destination: "Himachal",
-    place: "himachal",
-    kind: "Backpacking",
-    nights: "6 nights · 7 days",
-    price: 23999,
-    was: 30000,
-    pickup: "Kashmere Gate, Delhi",
-    season: "March – June · September – November",
-    image: photos.himachal,
-    gallery: [
-      photos.bir,
-      photos.route,
-      photos.trips,
-    ],
-    summary:
-      "A week that starts at Kashmere Gate and ends somewhere quieter than you expected. Manali for the scale, Kasol for the river, Jibhi for the exhale.",
-    highlights: [
-      "Delhi departure, no hill-station scramble",
-      "Three places, one unhurried line",
-      "Small group, real evenings",
-    ],
-    included: ["Transport from Kashmere Gate", "Stay", "Trip host", "Local transfers on the circuit"],
-    notIncluded: ["Meals unless noted", "Personal shopping and cafes", "Adventure add-ons"],
-    days: [
-      { t: "Delhi overnight", d: "Kashmere Gate. The city falls away somewhere after midnight." },
-      { t: "Manali", d: "Arrive into pine and river noise. A walk, not a schedule." },
-      { t: "Old Manali & the valley", d: "The parts of Manali that aren’t the mall road." },
-      { t: "Kasol", d: "Parvati Valley. The river is the itinerary." },
-      { t: "A free day", d: "Walk to a village, sit in a cafe, do less than you planned. We protect this." },
-      { t: "Jibhi", d: "Smaller, greener, and the reason people message us a month later." },
-      { t: "Return", d: "Back toward Delhi with a playlist nobody will admit they made." },
-    ],
-  },
-  {
-    slug: "annapurna-base-camp",
-    title: "Annapurna Base Camp",
-    destination: "Nepal",
-    place: "nepal",
-    kind: "Trek",
-    nights: "7 nights · 8 days",
-    price: 42000,
-    was: 55000,
-    pickup: "Pokhara trailhead, as planned",
-    season: "March – May · October – November",
-    image: photos.annapurna,
-    gallery: [
-      photos.routePortrait,
-      photos.wide,
-      photos.camp,
-    ],
-    summary:
-      "The sanctuary, walked with a group small enough that the guide still knows your name on day six. Stone steps, weather, and a base camp morning.",
-    highlights: [
-      "Classic ABC trail, properly paced",
-      "Teahouses, not a forced march",
-      "Certified lead, altitude taken seriously",
-    ],
-    included: ["Teahouse stay", "Trek lead", "Permits", "Ground transfers as per the final plan"],
-    notIncluded: ["Flights to Nepal", "Meals and hot drinks", "Travel insurance"],
-    days: [
-      { t: "Into the hills", d: "The trail starts gently. That is a kindness, not a flaw." },
-      { t: "Villages", d: "Stone houses, terraces, and the first real climb." },
-      { t: "Forest", d: "Rhododendron or moss, depending on the month. The mountain is still a rumour." },
-      { t: "Higher camps", d: "The air thins. We watch the group more than the view." },
-      { t: "Base camp", d: "The amphitheatre. Annapurna, Machhapuchhre, and a morning you will describe badly and often." },
-      { t: "A second sunrise", d: "If the weather gives it. If it doesn’t, the cloud is also the mountain." },
-      { t: "Descent", d: "Knees, tea, and the trail running downhill for once." },
-      { t: "Pokhara", d: "Lake light and a very long shower." },
-    ],
-  },
-  {
-    slug: "tungnath-chandrashila",
-    title: "Tungnath & Chandrashila",
-    destination: "Uttarakhand",
-    place: "uttarakhand",
-    kind: "Trek",
-    nights: "4 nights · 5 days",
-    price: 12000,
-    was: 15000,
-    pickup: "Dehradun ISBT",
-    season: "April – June · September – November",
-    image: photos.tungnath,
-    gallery: [
-      photos.kainchi,
-      photos.johar,
-      photos.munsiyari,
-    ],
-    summary:
-      "The highest Shiva temple in the world, and the ridge above it. A short, sharp introduction to how Driftmates likes to walk — unhurried, looked after, and high.",
-    highlights: [
-      "Dehradun ISBT pickup",
-      "Tungnath and the Chandrashila summit ridge",
-      "The right first Himalayan trek",
-    ],
-    included: ["Stay", "Transport from Dehradun", "Trek lead", "Trail support"],
-    notIncluded: ["Bus or train to Dehradun", "Personal meals in town", "Gear hire"],
-    days: [
-      { t: "Dehradun", d: "ISBT pickup and the drive toward Chopta. The hills begin properly after dusk." },
-      { t: "Chopta", d: "Meadows, a short walk, and sleep at a sensible altitude." },
-      { t: "Tungnath", d: "The stone path to the temple. Bells, wind, and a climb that earns its tea." },
-      { t: "Chandrashila", d: "Above the temple. On a clear morning the whole Garhwal range stands up." },
-      { t: "Return", d: "Down to the road and back toward Dehradun, already talking about a longer one." },
+    safaris: [
+      {
+        country: "Kenya",
+        title: "3-day Masai Mara luxury safari",
+        nights: "2 nights",
+        route: "Nairobi → Masai Mara → Nairobi",
+        note: "Private 4×4, Big Five tracking, and a luxury tented camp or lodge.",
+        image: photos.kenya,
+      },
+      {
+        country: "Kenya",
+        title: "Masai Mara — 4-day signature safari",
+        nights: "3 nights",
+        route: "Nairobi → Masai Mara → Nairobi",
+        note: "Sunrise and sunset drives, with a seasonal hot-air balloon if you want it.",
+        image: photos.kenya,
+      },
+      {
+        country: "Kenya",
+        title: "Kenya grand circuit — 5 days",
+        nights: "4 nights",
+        route: "Nairobi → Lake Naivasha → Lake Nakuru → Masai Mara → Nairobi",
+        note: "A boat safari on Naivasha, rhinos at Nakuru, then longer drives in the Mara.",
+        image: photos.kenya,
+      },
+      {
+        country: "Kenya",
+        title: "Kenya ultimate wilderness — 6 days",
+        nights: "5 nights",
+        route: "Nairobi → Amboseli → Lake Naivasha → Masai Mara → Nairobi",
+        note: "Amboseli’s elephants with Kilimanjaro behind them, then the Mara.",
+        image: photos.kenya,
+      },
+      {
+        country: "Tanzania",
+        title: "3-day Serengeti safari",
+        nights: "2 nights",
+        route: "Arusha → Serengeti → Arusha",
+        note: "Game drives on the plains, with a chance of the migration in season.",
+        image: photos.tanzania,
+      },
+      {
+        country: "Tanzania",
+        title: "4-day Serengeti and Ngorongoro",
+        nights: "3 nights",
+        route: "Arusha → Serengeti → Ngorongoro Crater → Arusha",
+        note: "Two nights on the Serengeti, then the crater, with a private guide.",
+        image: photos.tanzania,
+      },
+      {
+        country: "Tanzania",
+        title: "5-day Serengeti and Ngorongoro",
+        nights: "4 nights",
+        route: "Arusha → Ndutu → Central Serengeti → Ngorongoro → Arusha",
+        note: "Ndutu for the migration season, then central Serengeti and the crater.",
+        image: photos.tanzania,
+      },
+      {
+        country: "Tanzania",
+        title: "6-day Serengeti and Ngorongoro",
+        nights: "5 nights",
+        route: "Arusha → Ndutu → Central Serengeti → Ngorongoro → Arusha",
+        note: "Two nights in Ndutu, two in central Serengeti, then the crater.",
+        image: photos.tanzania,
+      },
+      {
+        country: "Tanzania",
+        title: "8-day northern circuit",
+        nights: "7 nights",
+        route: "Arusha → Lake Manyara → Serengeti → Ngorongoro → Tarangire → Arusha",
+        note: "Manyara, three nights in the Serengeti, the crater, and Tarangire’s elephants.",
+        image: photos.tanzania,
+      },
+      {
+        country: "Kilimanjaro",
+        title: "5-day Kilimanjaro, Marangu route",
+        nights: "On the mountain",
+        route: "Moshi → Marangu Gate → Uhuru Peak → Moshi",
+        note: "Hut accommodation, a gradual ascent, and a sunrise attempt at 5,895 m.",
+        image: photos.kilimanjaro,
+      },
+      {
+        country: "Kilimanjaro",
+        title: "6-day Kilimanjaro, Machame route",
+        nights: "On the mountain",
+        route: "Moshi → Machame Gate → Uhuru Peak → Moshi",
+        note: "Tented camps and a longer acclimatisation than the five-day route.",
+        image: photos.kilimanjaro,
+      },
+      {
+        country: "Kilimanjaro",
+        title: "7-day Kilimanjaro, Lemosho route",
+        nights: "On the mountain",
+        route: "Moshi → Londorossi Gate → Uhuru Peak → Moshi",
+        note: "The scenic west-to-east traverse, with more time to acclimatise.",
+        image: photos.kilimanjaro,
+      },
     ],
   },
 ];
@@ -456,38 +304,108 @@ export const steps = [
 
 export const reviews = [
   {
+    name: "Yogesh Giri",
+    place: "Munsyari",
+    text: "Went to Munsyari solo with Driftmates and honestly had a great time. I joined the group alone but everyone was really nice and the vibe was amazing. Everything was well planned and I got to enjoy the mountains, meet new people and make some good memories. Didn’t feel like I was travelling alone at all. Would definitely love to travel with Driftmates again!",
+  },
+  {
     name: "Phoebe Lim",
-    place: "Munsiyari",
-    text: "Went to Munsiyari solo and honestly had a great time. I joined the group alone but everyone was really nice and the vibe was amazing. Everything was well planned. Didn’t feel like I was travelling alone at all.",
+    place: "Kashmir",
+    text: "Pankaj and his crew mates were very organised and protective guides. We did a 9 days hike at Kashmir, they took care of us well. Making sure we are comfortable, making sure our documents were all ready to transit to the next base camp, it was smooth sailing. There were weather problems, but they were quick to react and make sure we’re ready to weather it before continuing our hike. It was a great experience with Pankaj! I would look forward to another hiking trial with his team.",
   },
   {
     name: "Disha Lahoti",
-    place: "Kashmir · 9-day hike",
-    text: "Pankaj and his crew were very organised and protective guides. They made sure we were comfortable and our documents were ready between camps. There was weather, and they were quick. I would look forward to another trail with his team.",
+    place: "Munsiyari",
+    text: "Sometimes you need a trip where you don’t have to think too much and can simply enjoy being somewhere new. That’s what Munsiyari was for me. The long mountain drives, little stops along the way, fresh air, and those beautiful Himalayan views made the journey worth it. I was a little particular about the stay and travel arrangements, but everything went smoothly. The food was good, and I never felt like the trip was just about rushing through tourist spots. There was enough time to sit back and enjoy the place. Pankaj helped coordinate the arrangements and made things easier throughout the trip. I appreciate that kind of support because it lets you enjoy your holiday without constantly figuring things out yourself. Came back feeling refreshed, with a camera full of pictures and a mind full of memories. Thanks to Driftmates for a lovely Munsiyari experience!",
+  },
+  {
+    name: "Rakesh",
+    place: "Munsiyari",
+    text: "We didn’t want a trip where every day was packed with activities and we had to keep checking the clock. We wanted to explore Munsiyari in our own way, enjoy the drive, spend time around the mountains, and have some flexibility in our plans. Driftmates helped us put together an itinerary that suited what we had in mind. The best part was having the freedom to enjoy the destination instead of treating it like a checklist. The travel arrangements, stay, and meals were managed well, and the overall coordination was smooth. Ritvik helped with organising the trip around our preferences, which made the planning process easier. We appreciated being able to discuss what we wanted rather than simply being given a fixed plan. Munsiyari is beautiful, but having the right pace made the experience even better for us. Thanks to Ritvik and Drift mates for helping us enjoy the mountains our way. We’d happily plan another customised trip with the team.",
+  },
+  {
+    name: "Vipin Upadhyay",
+    place: "Munsiyari",
+    text: "We planned this Munsiyari trip as a getaway with friends, but honestly, the journey became just as memorable as the destination. The mountain roads, random conversations, stopping to admire the views, and spending time together away from our usual routine made it such a fun experience. Of course, travelling with a group means everyone has their own preferences, but the arrangements were handled well. The stay was comfortable, the food was satisfying, and we had enough time to explore without feeling like someone was constantly rushing us. Ritvik was helpful with the coordination, which made things easier for all of us. We could focus on enjoying the trip instead of worrying about the logistics. Munsiyari gave us the kind of break we didn’t know we needed. Thanks, Driftmates, for putting this together. We’re already talking about where to go next!",
+  },
+  {
+    name: "Manvi Agarwal",
+    place: "Munsiyari",
+    text: "We wanted to take a break from our busy routine and spend some quality time together, and Munsiyari turned out to be a lovely choice. The mountains were beautiful, the surroundings were peaceful, and the journey gave us plenty of moments to enjoy as a family. When travelling with family, small things matter a lot — a comfortable room after a long drive, timely meals, and knowing that the travel arrangements are taken care of. We were happy with the overall arrangements, accommodation, and food during the trip. Pankaj was helpful in coordinating everything and addressing our queries. That made us feel more relaxed, especially while travelling with the family. We returned with some lovely photographs and memories that we will cherish for a long time. Thank you, Driftmates, for helping us experience Munsiyari in such a comfortable and enjoyable way.",
+  },
+  {
+    name: "Akshay Poriya",
+    place: "Trek",
+    text: "Highly recommended for anyone looking for a well-organized, memorable trek. Their guides are knowledgeable, caring, and have expertise in keeping the group safe and motivated throughout.",
   },
   {
     name: "Pushpak Bakshi",
-    place: "Ladakh · bike",
-    text: "My wife and I rode Ladakh with Driftmates, led by Pankaj. From the early starts to the way the days were held together, it felt like a community rather than a planner. Memories we will keep.",
+    place: "Ladakh",
+    text: "An Unforgettable Ladakh Adventure with The Driftmates! Last year, my wife and I had the incredible opportunity to explore the breathtaking landscapes of Ladakh on a bike trip organized by The Driftmates, led by Pankaj Sir. The overall experience was absolutely fantastic and truly memorable. From the well-planned itinerary and early morning starts to the thrilling rides and unforgettable experiences, everything was organized exceptionally well. A special mention goes to Pankaj Sir, whose constant support, guidance, and dedication made the entire journey smooth, comfortable, and enjoyable. His inspiring journey and passion for adventure make The Driftmates more than just a travel planner — it’s a community that turns travel dreams into lifelong memories. Highly recommended for anyone looking for an adventurous, well-organized, and truly memorable travel experience! If you’re planning to explore Ladakh or embark on your next adventure, The Driftmates is definitely worth considering. Thank you, Pankaj Sir and The Driftmates, for giving us memories that we will cherish forever!",
+  },
+  {
+    name: "Rekha Lohani",
+    place: "Spiti",
+    text: "This was my first time visiting Spiti, and I had quite a few questions before the trip, especially about what to pack, how to prepare for the altitude and what to expect during the journey. The Driftmates team helped us understand these things beforehand, which made me feel much more prepared and confident. Once we were there, I could actually enjoy the experience instead of worrying about every little detail. Seeing the villages, monasteries and those incredible mountains in person was something special. Would definitely recommend preparing properly before visiting Spiti.",
+  },
+  {
+    name: "AnkiT Upadhyay",
+    place: "Munsyari",
+    text: "An Unforgettable Munsyari Experience. My trip to Munsyari with Driftmates was an amazing experience. The breathtaking views of the Panchachuli peaks, peaceful mountain roads, and beautiful local villages made the journey truly special. What I loved most was the vibe of the group. Travelling with strangers and ending up sharing laughs, good food, and unforgettable memories made the trip even better. The arrangements were smooth, and the team was helpful throughout. Overall, it was a perfect mix of mountains, adventure, and great company. I’d definitely recommend Driftmates to anyone looking to explore Munsyari and experience the beauty of Uttarakhand!",
+  },
+  {
+    name: "Manisha Pai",
+    place: "Sela Pass · Bum La",
+    text: "Everything was so well organized — from the bikes, accommodation, permits, and meals to the constant support from the crew throughout the journey. Pankaj made sure everyone felt safe and comfortable, even on the toughest routes through Sela Pass and Bum La. The trip itself was beyond beautiful. Special mention to the backup team — they were always around to help with any bike issues or weather challenges.",
+  },
+  {
+    name: "Achal Tiwari",
+    place: "With Pankaj",
+    text: "From the very beginning to the last mile of our journey, our travel instructor and trip captain Pankaj Singh proved to be nothing short of exceptional. Their leadership, energy, and knowledge added immense value to the entire experience. Always approachable and full of enthusiasm, they managed every detail with precision — from route planning and safety to group coordination and local insights. Whether it was navigating challenging terrain, offering motivational support, or simply cracking a well-timed joke, they made sure every traveler felt comfortable, confident, and included. Their passion for travel was infectious, turning each moment into a memory — not just a trip, but an experience we’ll always carry with us. Highly recommended for anyone seeking an adventure that’s as smooth as it is unforgettable. Kudos and a big thank you Pankaj Bhai for making this journey so special!",
+  },
+  {
+    name: "Mayuresh Yadav",
+    place: "Manali to Srinagar",
+    text: "Manali to Srinagar Bike Trip – An Unforgettable Journey. We recently completed the incredible bike trip from Manali to Srinagar, and it was truly the adventure of a lifetime. From snow-capped peaks to winding mountain roads and breathtaking landscapes, every moment was unforgettable. A huge shout-out to our trip captain, Pankaj, whose leadership, guidance, and calm presence made all the difference. Whether it was navigating tough terrains, ensuring everyone’s safety, or just keeping the spirits high with his positivity, Pankaj was truly the backbone of this journey. He was always approachable, professional, and went the extra mile to make sure each rider was comfortable and confident. Thanks to Pankaj and the entire team, we didn’t just complete a trip — we created lifelong memories. Highly recommend this experience to anyone looking for a real adventure!",
+  },
+  {
+    name: "Milind Patil",
+    place: "Leh Ladakh",
+    text: "I recently went on a mountain ride to leh-ladakh and it was nothing short of breathtaking! From the moment we began the ascent, the views were absolutely stunning — rolling hills, lush greenery, and crisp, fresh air that instantly lifted my mood. Our guide Pankaj was skilled and made us feel safe throughout, even on the steeper curves. We made several scenic stops along the way which were perfect for photos and a bit of exploration. Overall, the mountain ride was a perfect blend of adventure, natural beauty, and peace. Highly recommended for anyone looking to escape the city noise and reconnect with nature!",
+  },
+  {
+    name: "Prathmesh Yadav",
+    place: "With Pankaj",
+    text: "The trip was an amazing experience from start to finish. The journey was smooth and enjoyable, with beautiful scenery along the way. Everything was well-organized, and the moments spent exploring new places made it truly memorable. It was a perfect mix of relaxation, adventure, and discovery. A special thanks to Captain Pankaj Singh for his excellent leadership and calm presence — he made the journey feel safe and enjoyable throughout. His professionalism and friendly nature truly stood out.",
+  },
+  {
+    name: "Shubhankar Gogate",
+    place: "Manali to Srinagar",
+    text: "An unforgettable ride from Manali to Srinagar via Ladakh! Stunning landscapes and challenging high passes like Baralacha La and Khardung La — every mile was worth it. Special thanks to Captain Pankaj for guiding us safely and making it fun. If you love adventure, epic views, and testing your limits, this trip is a must!",
+  },
+  {
+    name: "Meghana Gowda",
+    place: "With the crew",
+    text: "Memorable experience. Such a wholesome and knowledgeable team! Captain Pankaj was such a considerate and Kind person, Namgyal, Zulfi and Manish (might’ve butchered their names, sorry)are a vibe! They were always available — helped, guided and kept us informed throughout our journey. Food, accommodation, itinerary, breaks during our rides, time given to explore the place were perfectly followed. No compromise, no complaints. Delivered what was promised!",
   },
 ];
 
 export const faqs = [
   {
     q: "How much does a Driftmates journey cost?",
-    a: "Published departures currently run from about ₹12,000 for Tungnath & Chandrashila to ₹60,000 for Bhutan, per person. Private trips are quoted around your dates, group size, and how you like to stay.",
+    a: "Published departures run from ₹10,000 for the Kainchi Dham escape to ₹60,000 for Bhutan, per person. Private trips are quoted around your dates, group size, and how you like to stay.",
   },
   {
     q: "Do I need previous riding or trekking experience?",
     a: "Not for every departure. Tungnath and the Himachal backpacking week are gentle entries. Umling La, Turtuk, Adi Kailash, and Annapurna Base Camp ask for fitness and, on the bike trips, real riding comfort. We’ll tell you honestly before you pay.",
   },
   {
-    q: "How small are the groups?",
-    a: "Small on purpose. The point of Driftmates is more guidance, more flexibility, and a group you can actually know by the third day — not a coach full of strangers.",
+    q: "How large is a group?",
+    a: "Published departures are set for a group of 15 to 20, with a Driftmates lead on the ground. The day is briefed with you. It is not a coach you disappear into.",
   },
   {
     q: "Where do the trips start?",
-    a: "It depends on the route: Leh airport for Ladakh, Kathgodam for Kumaon, Dehradun ISBT for Tungnath, Kashmere Gate for Himachal, and Bagdogra for Bhutan. The pickup is on the journey page.",
+    a: "It is printed on each journey: Leh airport, Kathgodam, Dehradun, Kashmere Gate, Kashmiri Gate, Bagdogra, or Pokhara. The page for the trip is the one to trust.",
   },
   {
     q: "Can you plan something that isn’t on the list?",

@@ -1,0 +1,302 @@
+/** Published windows only. One printed fare per journey. Closed windows have no price. */
+const seasons = {
+  bhutan: [
+    {
+      id: "spring",
+      label: "Mar–May",
+      when: "March to May",
+      note: "Clear skies, stable weather, and the best road conditions.",
+      open: true,
+    },
+    {
+      id: "autumn",
+      label: "Sep–Nov",
+      when: "September to November",
+      note: "Clear skies, stable weather, and the best road conditions.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "June to August",
+      note: "Usually avoided. Landslides and slippery sections.",
+      open: false,
+    },
+  ],
+  "himachal-backpacking": [
+    {
+      id: "summer",
+      label: "Mar–June",
+      when: "March to June",
+      note: "Pleasant weather and green valleys. A good time for sightseeing and café hopping.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Jul–Sep",
+      when: "July to September",
+      note: "Lush after the monsoon. Occasional rain is expected.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Oct–Feb",
+      when: "October to February",
+      note: "Snow, especially in Manali and Solang Valley. Warm clothing is essential.",
+      open: true,
+    },
+  ],
+  "adi-kailash": [
+    {
+      id: "early",
+      label: "May–June",
+      when: "May to June",
+      note: "An ideal window for this expedition.",
+      open: true,
+    },
+    {
+      id: "late",
+      label: "Sep–Oct",
+      when: "September to October",
+      note: "An ideal window for this expedition.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "Monsoon",
+      note: "Monsoon months may bring landslides.",
+      open: false,
+    },
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Winter",
+      note: "Winter routes are generally closed due to snowfall.",
+      open: false,
+    },
+  ],
+  "annapurna-base-camp": [
+    {
+      id: "spring",
+      label: "Spring",
+      when: "March to May",
+      note: "Blooming rhododendrons, with slight snow higher up.",
+      details: [
+        ["Day", "15–20°C"],
+        ["Night", "0°C"],
+      ],
+      open: true,
+    },
+    {
+      id: "autumn",
+      label: "Autumn",
+      when: "September to November",
+      note: "Clear skies and the best mountain views. Cold nights.",
+      details: [
+        ["Day", "10–15°C"],
+        ["Night", "0°C to −2°C"],
+      ],
+      open: true,
+    },
+  ],
+  "tungnath-chandrashila": [
+    {
+      id: "summer",
+      label: "Mar–June",
+      when: "March to June",
+      note: "Pleasant weather and rhododendron bloom. The temple is open from about May.",
+      open: true,
+    },
+    {
+      id: "autumn",
+      label: "Sep–Nov",
+      when: "September to November",
+      note: "Clear skies and the best Himalayan views. The temple is open.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Dec–Feb",
+      when: "December to February",
+      note: "A snow trek, and winter gear is needed. Heavy snowfall closes the temple, and the deity is moved to a lower village.",
+      open: true,
+    },
+  ],
+  "munsiyari-johar": [
+    {
+      id: "spring",
+      label: "Spring",
+      when: "Spring",
+      note: "Particularly good for clear mountain views. Check the road and the trail before you travel.",
+      open: true,
+    },
+    {
+      id: "summer",
+      label: "Summer",
+      when: "Summer",
+      note: "Summer offers a different experience. Check the road and the trail before you travel.",
+      open: true,
+    },
+    {
+      id: "autumn",
+      label: "Autumn",
+      when: "Autumn",
+      note: "Particularly good for clear mountain views. Check the road and the trail before you travel.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Winter",
+      note: "Colder, with the possibility of snow. Check the road and the trail before you travel.",
+      open: true,
+    },
+  ],
+  "winter-spiti": [
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Peak winter",
+      note: "Access is the Shimla–Kinnaur road. The Manali–Kunzum route stays closed.",
+      details: [
+        ["Night", "−15°C to −25°C"],
+        ["Day", "−5°C to 5°C"],
+      ],
+      open: true,
+    },
+    {
+      id: "summer",
+      label: "Summer",
+      when: "Summer",
+      note: "This package is the winter road. No printed fare for a summer departure.",
+      open: false,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "Monsoon",
+      note: "This package is the winter road. No printed fare for a monsoon departure.",
+      open: false,
+    },
+  ],
+  "leh-ladakh-umling-la": [
+    {
+      id: "summer",
+      label: "Summer",
+      when: "Summer",
+      note: "Snow, landslides, and sudden storms can close the road. Umling La access is weather- and security-dependent.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "Monsoon",
+      note: "Snow, landslides, and sudden storms can close the road. Check the permit and the road before you leave.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Winter",
+      note: "Snow can close the route unexpectedly.",
+      open: false,
+    },
+  ],
+  "turtuk-bike": [
+    {
+      id: "summer",
+      label: "Summer",
+      when: "Summer",
+      note: "Weather can change quickly. Off-road and gravel sections show up after Nubra and toward Turtuk.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "Monsoon",
+      note: "Landslides, snow, or a local advisory can close the road for a time.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Winter",
+      note: "Snow or a local advisory can close the road.",
+      open: false,
+    },
+  ],
+  "darma-panchachuli": [
+    {
+      id: "summer",
+      label: "Summer",
+      when: "Summer",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "Monsoon",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Winter",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+  ],
+  "kumaon-escape": [
+    {
+      id: "summer",
+      label: "Summer",
+      when: "Summer",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "Monsoon",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Winter",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+  ],
+  "kainchi-dham": [
+    {
+      id: "summer",
+      label: "Summer",
+      when: "Summer",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+    {
+      id: "monsoon",
+      label: "Monsoon",
+      when: "Monsoon",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+    {
+      id: "winter",
+      label: "Winter",
+      when: "Winter",
+      note: "Printed fare for this departure.",
+      open: true,
+    },
+  ],
+};
+
+export function seasonsFor(slug) {
+  return seasons[slug] || null;
+}

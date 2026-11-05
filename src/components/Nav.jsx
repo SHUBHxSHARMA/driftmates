@@ -24,19 +24,19 @@ export default function Nav() {
           <Brand light={onHero} />
         </Link>
         <nav className="nav-links" aria-label="Primary">
-          <NavLink to="/journeys">Journeys</NavLink>
+          <NavLink to="/inspiration">Inspiration & planning</NavLink>
           <div className="drop">
             <NavLink to="/destinations">Destinations</NavLink>
             <div className="drop-panel">
               {destinations.map((d) => (
-                <Link key={d.slug} to={`/destinations#${d.slug}`}>
+                <Link key={d.slug} to={`/destinations/${d.slug}`}>
                   {d.name}
                   <span>{d.region}</span>
                 </Link>
               ))}
             </div>
           </div>
-          <NavLink to="/about">The idea</NavLink>
+          <NavLink to="/about">How we work</NavLink>
         </nav>
         <Link className="btn nav-cta" to="/plan">
           Plan my journey
@@ -46,9 +46,9 @@ export default function Nav() {
         </button>
       </div>
       <div className={`mobile-panel ${open ? "open" : ""}`}>
-        <Link to="/journeys" onClick={() => setOpen(false)}>Journeys</Link>
+        <Link to="/inspiration" onClick={() => setOpen(false)}>Inspiration & planning</Link>
         <Link to="/destinations" onClick={() => setOpen(false)}>Destinations</Link>
-        <Link to="/about" onClick={() => setOpen(false)}>The idea</Link>
+        <Link to="/about" onClick={() => setOpen(false)}>How we work</Link>
         <Link to="/plan" onClick={() => setOpen(false)}>Plan my journey</Link>
       </div>
     </header>
