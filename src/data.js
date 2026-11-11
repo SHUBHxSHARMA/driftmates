@@ -70,9 +70,9 @@ export const destinations = [
     blurb:
       "Barren ridgelines, monastery light, and roads that climb past the last village. Ladakh is where most of our riders come to feel how big the map really is.",
     highlights: [
-      "Umling La and the high passes",
-      "Nubra, Turtuk, and the border villages",
-      "Small-group bike and backpack journeys",
+      "Leh, Sham Valley, Nubra, and Khardung La",
+      "Turtuk, Pangong Tso, and Chang La",
+      "Hanle, Chumathang, and Umling La",
     ],
   },
   {
@@ -88,9 +88,12 @@ export const destinations = [
     blurb:
       "Home ground. Munsiyari, Darma, Tungnath, Adi Kailash — valleys we have walked, driven, and recce’d until the pacing feels right.",
     highlights: [
-      "Panchachuli and Darma Valley",
-      "Tungnath & Chandrashila",
-      "Slow mountain roads, not checklist stops",
+      "Munsiyari, Khaliya Top, and Birthi",
+      "Darma Valley, Panchachuli, Dantu, Chaukori, and Bageshwar",
+      "Adi Kailash, Om Parvat, Gunji, Dharchula, and Pithoragarh",
+      "Tungnath, Chandrashila, Chopta, and Deoriatal",
+      "Nainital, Bhimtal, Kainchi Dham, and Kasar Devi",
+      "Binsar, Mukteshwar, Patal Bhuvaneshwar, Lohaghat, and Almora",
     ],
   },
   {
@@ -106,9 +109,10 @@ export const destinations = [
     blurb:
       "Cedar air, river towns, and a backpacking pace that leaves room for the unplanned evening. Manali, Kasol, Jibhi — held loosely.",
     highlights: [
-      "Manali, Kasol, and Jibhi",
-      "Forest walks and river towns",
-      "Departures from Kashmere Gate",
+      "Manali, Solang, and Sissu",
+      "Kasol, Jibhi, and Jalori Pass",
+      "Shimla, Sarahan, and Chitkul",
+      "Tabo, Kaza, and Kalpa",
     ],
   },
   {
@@ -124,9 +128,9 @@ export const destinations = [
     blurb:
       "A quieter kingdom. Dzongs, valley light, and days that are allowed to breathe. We cross in from Bagdogra and keep the group small.",
     highlights: [
-      "Valleys, dzongs, and high roads",
-      "Culture without the rush",
-      "Pickup from Bagdogra",
+      "Phuentsholing, Thimphu, and Dochula",
+      "Punakha, Phobjikha, and Paro",
+      "Tiger’s Nest and Chele La",
     ],
   },
   {
@@ -142,9 +146,9 @@ export const destinations = [
     blurb:
       "The Annapurna sanctuary, walked properly. Stone steps, rhododendron, and a base camp that earns its weather.",
     highlights: [
-      "Annapurna Base Camp",
-      "Teahouse trails, real altitude",
-      "Guided by people who know the mountain",
+      "Pokhara and Ghandruk",
+      "Lower Sinuwa, Bamboo, and Jhinu Danda",
+      "Deurali and Annapurna Base Camp",
     ],
   },
   {
@@ -160,9 +164,9 @@ export const destinations = [
     blurb:
       "Savannah, crater, and the highest freestanding mountain on earth. Kenya and Tanzania, planned with the same care as the Himalayan weeks.",
     highlights: [
-      "Masai Mara and the Great Migration",
-      "Serengeti, Ndutu, and Ngorongoro",
-      "Kilimanjaro, the roof of Africa",
+      "Nairobi, Masai Mara, Amboseli, Lake Naivasha, and Lake Nakuru",
+      "Arusha, Serengeti, Ndutu, Ngorongoro, Lake Manyara, and Tarangire",
+      "Kilimanjaro, from Moshi",
     ],
     safaris: [
       {
@@ -267,38 +271,43 @@ export const destinations = [
 
 export const beliefs = [
   {
-    title: "Small groups. Bigger connections.",
-    text: "We keep groups intentionally small. You get flexibility, more one-to-one guidance, and a group that starts as strangers and rarely ends that way.",
+    title: "Help is never far.",
+    text: "Your leaders are certified by leading mountaineering institutes and trained in first response, with years of experience on these roads. Oxygen, first-aid, a backup vehicle and a mechanic travel with you. We climb slowly. If someone struggles, we go down. No ego, no heroics.",
   },
   {
-    title: "Challenge, nature, growth.",
-    text: "The trips are built to nudge you past the familiar — a pass, a first trek, a road you’ve only seen in photographs — without turning the journey into a test.",
+    title: "What’s in. What’s out. In writing.",
+    text: "Stays, meals, permits, fuel: it’s all listed before you pay, and so is what isn’t covered. No surprise charges, no vague promises. If weather or a landslide forces a change, we tell you straight and we tell you why.",
   },
   {
-    title: "Curated, not commercial.",
-    text: "No rushed itineraries and no checklist tourism. Every route is balanced between thrill, culture, and the downtime that makes a place stick.",
+    title: "Tell us your fear. We’ll tell you the truth.",
+    text: "Not fit enough? First time at altitude? Never ridden a road like this? Ask us. We’ll say whether the trip is right for you, and if it isn’t, we’ll say that too.",
   },
   {
-    title: "Leaders who know the ground.",
-    text: "Certified adventure leaders, a decade on these trails, and safety treated as a craft. The people out front have already walked the risky parts.",
+    title: "The India most visitors never see.",
+    text: "Adi Kailash. Darma Valley. Johar Valley. Roads that never make the usual list. Stays, food, sightseeing, permits: we take care of it all, so you can just focus on the trip.",
   },
 ];
 
 export const steps = [
   {
     n: "01",
-    title: "Tell us who’s coming along",
-    text: "Two of you, a family, or a handful of friends. Share dates, group size, and whether you want to ride, walk, or simply be taken somewhere high.",
+    title: "Who’s coming? What’s on your mind?",
+    text: "Just you, a couple, a family, or a few friends. Tell us your dates, what you want to do, and what worries you.",
   },
   {
     n: "02",
-    title: "We craft. You tweak.",
-    text: "You get a route shaped around pace and budget — one of our departures, or a private plan. Then we adjust it until it sounds like your trip.",
+    title: "We listen. Then we plan it.",
+    text: "Someone who’s been there tells you honestly if the trip suits you. Then we shape a route around your pace and budget, from one of our departures or as a private plan, and adjust it until it sounds like your trip.",
   },
   {
     n: "03",
-    title: "Confirm. Pack. Go high.",
-    text: "We lock stays, permits, and the people on the ground. Your job is to show up. The mountains take it from there.",
+    title: "We get you ready.",
+    text: "Before you go, we tell you what to pack, what to bring for permits, and what to expect on the road. On Day 1, you meet your leader and your group.",
+  },
+  {
+    n: "04",
+    title: "Pack light. Go high.",
+    text: "Stays, permits and the people on the ground are sorted. Your job is to show up. The mountains take it from there.",
   },
 ];
 
@@ -392,24 +401,44 @@ export const reviews = [
 
 export const faqs = [
   {
-    q: "How much does a Driftmates journey cost?",
-    a: "Published departures run from ₹10,000 for the Kainchi Dham escape to ₹60,000 for Bhutan, per person. Private trips are quoted around your dates, group size, and how you like to stay.",
+    q: "Who is behind Driftmates?",
+    a: "Driftmates is a team that helps people travel across the Himalayas. We bring years of ground experience, mountaineering-certified members, and a real passion for travel.",
   },
   {
-    q: "Do I need previous riding or trekking experience?",
-    a: "Not for every departure. Tungnath and the Himachal backpacking week are gentle entries. Umling La, Turtuk, Adi Kailash, and Annapurna Base Camp ask for fitness and, on the bike trips, real riding comfort. We’ll tell you honestly before you pay.",
+    q: "What makes Driftmates different?",
+    a: "We work directly with the people who live in these mountains. Our team visits each place, checks every route, and spends time there to understand it properly. Then we craft each itinerary together with locals, so you experience the Himalayas the way they are truly lived.",
   },
   {
-    q: "How large is a group?",
-    a: "Published departures are set for a group of 15 to 20, with a Driftmates lead on the ground. The day is briefed with you. It is not a coach you disappear into.",
+    q: "Who will I be travelling with?",
+    a: "Our groups are limited to 15 travelers, so every guest is looked after personally. Many of our guests travel solo, including women, and our team makes sure you feel at ease from the first day. An experienced person from our team is with you on the ground throughout.",
   },
   {
-    q: "Where do the trips start?",
-    a: "It is printed on each journey: Leh airport, Kathgodam, Dehradun, Kashmere Gate, Kashmiri Gate, Bagdogra, or Pokhara. The page for the trip is the one to trust.",
+    q: "Is Driftmates a registered company?",
+    a: "Yes. Driftmates is a registered travel company based in Uttarakhand, operating as Driftmates Adventure, UDYAM-UK-07-0052704. Our team leads are certified by a mountaineering institute. If you have any questions, you are always welcome to reach out.",
   },
   {
-    q: "Can you plan something that isn’t on the list?",
-    a: "Yes. The fixed departures are routes we already trust. If you want a private Munsiyari week, a family pace, or a line we haven’t published, write to us and we’ll shape it.",
+    q: "What about food and dietary needs?",
+    a: "Tell us when you book if you are vegetarian, Jain, or have any allergy, and we will arrange your meals with our stays. In remote areas the menu is simple and local, but it will always suit your needs.",
+  },
+  {
+    q: "Can I plan a private or custom trip?",
+    a: "Yes. Families, couples and friend groups can travel on their own dates and plan. Tell us what you have in mind and we will craft it with our local team.",
+  },
+  {
+    q: "When is the best time to travel?",
+    a: "It depends on the destination, as each part of the Himalayas has its own season. Every trip page shows the best months, and we will happily advise you if you are unsure.",
+  },
+  {
+    q: "How do you support the places you visit?",
+    a: "We work directly with local people, from homestays to drivers and guides, so the money from your trip stays in the mountain communities. We ask every traveler to take their waste back with them and to respect local life.",
+  },
+  {
+    q: "Where will we stay?",
+    a: "Our stays follow the itinerary and the places we explore. In cities we stay in good hotels, in remote villages in homestays, and on treks in tents, so you experience the mountains the way they really are.",
+  },
+  {
+    q: "How do I book?",
+    a: "You can reach us by message, call or email, whichever is easiest for you, and we will take you through it step by step. Payment and cancellation terms are shared clearly before you confirm.",
   },
 ];
 

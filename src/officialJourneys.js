@@ -1218,7 +1218,7 @@ export const journeys = [
   {
     "slug": "munsiyari-johar",
     "source": "munsiyari-johar-valley-tour-package",
-    "title": "Munsiyari - Johar Valley Tour Package",
+    "title": "Munsyari - Johar Valley Tour Package",
     "destination": "Uttarakhand",
     "place": "uttarakhand",
     "kind": "Backpacking",
@@ -1227,7 +1227,7 @@ export const journeys = [
     "price": 21999,
     "was": 28999,
     "pickup": "Delhi Kashmiri Gate",
-    "season": "Munsiyari can be visited in different seasons, but the experience changes throughout the year.",
+    "season": "Munsyari can be visited in different seasons, but the experience changes throughout the year.",
     "terms": [],
     "image": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
     "gallery": [
@@ -1235,8 +1235,8 @@ export const journeys = [
       "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
       "https://driftmates.com/wp-content/uploads/2026/04/IMG_5763-scaled.jpg"
     ],
-    "summary": "The Munsiyari Johar Valley Expedition is a journey through the breathtaking landscapes and rich culture of the Kumaon Himalaya. Beginning in Delhi, we travel through Haldwani, Kainchi Dham, and Kasar Devi, before exploring the ancient Patal Bhuvaneshwar Cave Temple and the scenic…",
-    "overview": "The Munsiyari Johar Valley Expedition is a journey through the breathtaking landscapes and rich culture of the Kumaon Himalaya. Beginning in Delhi, we travel through Haldwani, Kainchi Dham, and Kasar Devi, before exploring the ancient Patal Bhuvaneshwar Cave Temple and the scenic Birthi Waterfall.\nReaching Munsiyari, the gateway to the remote Johar Valley, we experience stunning Himalayan views, local culture, and peaceful mountain life. The expedition's highlight is the trek to Khaliya Top and Zero Point, offering panoramic views of the majestic Panchachuli peaks.\nOur return journey takes us through Matkot Hot Spring, Pithoragarh, and Lohaghat, before reaching Rudrapur and boarding our overnight journey back to Delhi.\nMore than a destination, this expedition is an unforgettable journey through the heart of Kumaon and the Himalaya.",
+    "summary": "The Munsyari Johar Valley Expedition is a journey through the breathtaking landscapes and rich culture of the Kumaon Himalaya. Beginning in Delhi, we travel through Haldwani, Kainchi Dham, and Kasar Devi, before exploring the ancient Patal Bhuvaneshwar Cave Temple and the scenic…",
+    "overview": "The Munsyari Johar Valley Expedition is a journey through the breathtaking landscapes and rich culture of the Kumaon Himalaya. Beginning in Delhi, we travel through Haldwani, Kainchi Dham, and Kasar Devi, before exploring the ancient Patal Bhuvaneshwar Cave Temple and the scenic Birthi Waterfall.\nReaching Munsyari, the gateway to the remote Johar Valley, we experience stunning Himalayan views, local culture, and peaceful mountain life. The expedition's highlight is the trek to Khaliya Top and Zero Point, offering panoramic views of the majestic Panchachuli peaks.\nOur return journey takes us through Matkot Hot Spring, Pithoragarh, and Lohaghat, before reaching Rudrapur and boarding our overnight journey back to Delhi.\nMore than a destination, this expedition is an unforgettable journey through the heart of Kumaon and the Himalaya.",
     "highlights": [
       "Accommodation for 6 nights (Hotels / Guesthouses / Camps as per location) on a triple-sharing basis; double sharing f…",
       "Scheduled pick-up and drop-off from Kathgodam Bus and Railway Station.",
@@ -1302,44 +1302,44 @@ export const journeys = [
     "altitude": [],
     "faqs": [
       {
-        "q": "What is included in the Munsiyari Johar Valley Expedition?",
-        "a": "This is a 6 Nights / 7 Days Munsiyari and Johar Valley expedition starting from Delhi. The route covers Haldwani, Kainchi Dham, Kasar Devi, Patal Bhuvaneshwar, Birthi Waterfall, Munsiyari and Khaliya Top before returning through Lohaghat and Rudrapur to Delhi."
+        "q": "What is included in the Munsyari Johar Valley Expedition?",
+        "a": "This is a 6 Nights / 7 Days Munsyari and Johar Valley expedition starting from Delhi. The route covers Haldwani, Kainchi Dham, Kasar Devi, Patal Bhuvaneshwar, Birthi Waterfall, Munsyari and Khaliya Top before returning through Lohaghat and Rudrapur to Delhi."
       },
       {
-        "q": "Is Khaliya Top Trek included in the Munsiyari trip?",
-        "a": "Yes. Khaliya Top Trek is included in the itinerary and is not an optional add-on. We trek from Munsiyari towards Khaliya Top and continue to Zero Point for views of the surrounding Himalayan peaks and Panchachuli range."
+        "q": "Is Khaliya Top Trek included in the Munsyari trip?",
+        "a": "Yes. Khaliya Top Trek is included in the itinerary and is not an optional add-on. We trek from Munsyari towards Khaliya Top and continue to Zero Point for views of the surrounding Himalayan peaks and Panchachuli range."
       },
       {
         "q": "How difficult is the Khaliya Top Trek?",
         "a": "The Khaliya Top Trek involves a steady uphill walk and requires a reasonable level of fitness. You don't need to be an experienced trekker, but you should be comfortable walking for several hours on uneven mountain trails."
       },
       {
-        "q": "How many days are enough for a Munsiyari trip?",
-        "a": "There is no single answer, but if you want to experience more than just Munsiyari town, a longer route makes much more sense. Our 6 Nights / 7 Days Munsiyari itinerary combines Munsiyari with Johar Valley, Khaliya Top, Birthi Waterfall, Patal Bhuvaneshwar and other parts of Kumaon."
+        "q": "How many days are enough for a Munsyari trip?",
+        "a": "There is no single answer, but if you want to experience more than just Munsyari town, a longer route makes much more sense. Our 6 Nights / 7 Days Munsyari itinerary combines Munsyari with Johar Valley, Khaliya Top, Birthi Waterfall, Patal Bhuvaneshwar and other parts of Kumaon."
       },
       {
-        "q": "What places will we visit on the Munsiyari Johar Valley trip?",
-        "a": "The expedition includes Kainchi Dham, Kasar Devi, Patal Bhuvaneshwar, Birthi Waterfall, Kalamuni Top, Munsiyari, Johar Valley, Khaliya Top and Zero Point, followed by Matkot Hot Spring and Lohaghat on the return route."
+        "q": "What places will we visit on the Munsyari Johar Valley trip?",
+        "a": "The expedition includes Kainchi Dham, Kasar Devi, Patal Bhuvaneshwar, Birthi Waterfall, Kalamuni Top, Munsyari, Johar Valley, Khaliya Top and Zero Point, followed by Matkot Hot Spring and Lohaghat on the return route."
       },
       {
-        "q": "Is Munsiyari suitable for a first-time Himalayan traveller?",
+        "q": "Is Munsyari suitable for a first-time Himalayan traveller?",
         "a": "Yes, if you are comfortable with long mountain drives and the Khaliya Top Trek. You don't need previous experience of travelling in the Himalayas, but this is an expedition through a remote mountain region rather than a short weekend getaway."
       },
       {
-        "q": "What is the best time to visit Munsiyari and Johar Valley?",
-        "a": "Munsiyari can be visited in different seasons, but the experience changes throughout the year. Spring and autumn are particularly good for clear mountain views, while summer offers a different experience and winter brings colder conditions and the possibility of snow. Road and trekking conditions should always be considered before travelling."
+        "q": "What is the best time to visit Munsyari and Johar Valley?",
+        "a": "Munsyari can be visited in different seasons, but the experience changes throughout the year. Spring and autumn are particularly good for clear mountain views, while summer offers a different experience and winter brings colder conditions and the possibility of snow. Road and trekking conditions should always be considered before travelling."
       },
       {
-        "q": "How do we reach Munsiyari from Delhi?",
-        "a": "This expedition starts from Delhi and travels by road through Kumaon, rather than taking the shortest route directly to Munsiyari. The journey passes through Haldwani and several mountain regions before entering the Johar Valley and reaching Munsiyari."
+        "q": "How do we reach Munsyari from Delhi?",
+        "a": "This expedition starts from Delhi and travels by road through Kumaon, rather than taking the shortest route directly to Munsyari. The journey passes through Haldwani and several mountain regions before entering the Johar Valley and reaching Munsyari."
       },
       {
-        "q": "Is this Munsiyari trip suitable for solo travellers?",
+        "q": "Is this Munsyari trip suitable for solo travellers?",
         "a": "Yes. Solo travellers can join the fixed group expedition. You don't need to arrange a private group to experience the route you can join the Driftmates group and travel with fellow travellers."
       },
       {
-        "q": "Why choose a Munsiyari Johar Valley Expedition instead of a regular Munsiyari trip?",
-        "a": "Because the journey goes beyond Munsiyari town. Driftmates takes you through Kumaon and into the Johar Valley, combining remote mountain roads, local places, Himalayan landscapes and the Khaliya Top Trek into one route. The destination is important, but here the journey is a major part of the experience. From Rs 28,999.00 Original price was: Rs 28,999.00. Rs 21,999.00 Current price is: Rs 21,999.00."
+        "q": "Why choose a Munsyari Johar Valley Expedition instead of a regular Munsyari trip?",
+        "a": "Because the journey goes beyond Munsyari town. Driftmates takes you through Kumaon and into the Johar Valley, combining remote mountain roads, local places, Himalayan landscapes and the Khaliya Top Trek into one route. The destination is important, but here the journey is a major part of the experience. From Rs 28,999.00 Original price was: Rs 28,999.00. Rs 21,999.00 Current price is: Rs 21,999.00."
       }
     ],
     "days": [
@@ -1360,17 +1360,17 @@ export const journeys = [
       },
       {
         "n": "Day 3",
-        "t": "Birthi → Munsiyari",
-        "d": "We continue towards Munsiyari, travelling deeper into the remote Johar Valley. En route, we pass through Kalamuni Top and experience the changing Himalayan landscapes. On reaching Munsiyari, we explore the local market and experience the unique culture and atmosphere of this Himalayan town.\nHighlights: Kalamuni Top • Himalayan View Point • Munsiyari Market • Johar Valley\nOvernight: Munsiyari\nApprox 66km 4-5 hours\nMaximum altitude: 7,550ft"
+        "t": "Birthi → Munsyari",
+        "d": "We continue towards Munsyari, travelling deeper into the remote Johar Valley. En route, we pass through Kalamuni Top and experience the changing Himalayan landscapes. On reaching Munsyari, we explore the local market and experience the unique culture and atmosphere of this Himalayan town.\nHighlights: Kalamuni Top • Himalayan View Point • Munsyari Market • Johar Valley\nOvernight: Munsyari\nApprox 66km 4-5 hours\nMaximum altitude: 7,550ft"
       },
       {
         "n": "Day 4",
-        "t": "Munsiyari → Khaliya Top → Munsiyari",
-        "d": "Today we leave the road behind and trek to Khaliya Top. The trail takes us into the high Himalayan landscape, leading towards Zero Point, where we experience spectacular views of the surrounding mountains and the mighty Panchachuli range.\nThe Khaliya Top Trek is a fixed and included part of the expedition.\nHighlights: Khaliya Top Trek • Zero Point • Panchachuli Views\nOvernight: Munsiyari\nApprox. 12km trek 6-8 hours\nMaximum altitude: 11,500ft"
+        "t": "Munsyari → Khaliya Top → Munsyari",
+        "d": "Today we leave the road behind and trek to Khaliya Top. The trail takes us into the high Himalayan landscape, leading towards Zero Point, where we experience spectacular views of the surrounding mountains and the mighty Panchachuli range.\nThe Khaliya Top Trek is a fixed and included part of the expedition.\nHighlights: Khaliya Top Trek • Zero Point • Panchachuli Views\nOvernight: Munsyari\nApprox. 12km trek 6-8 hours\nMaximum altitude: 11,500ft"
       },
       {
         "n": "Day 5",
-        "t": "Munsiyari → Lohaghat",
+        "t": "Munsyari → Lohaghat",
         "d": "We leave the Johar Valley behind and travel through the changing landscapes of Kumaon towards Lohaghat. Along the way, we visit the Matkot Hot Spring and continue through the Pithoragarh region, enjoying the forests, rivers and mountain landscapes.\nHighlights: Matkot Hot Spring • Pithoragarh Region • Lohaghat Lake\nOvernight: Lohaghat\nApprox. 180km 7-8 hours\nMaximum altitude: 7,500ft"
       },
       {

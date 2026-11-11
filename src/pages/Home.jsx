@@ -28,12 +28,7 @@ const joining = [
   ...journeys.filter((item) => !leadSlugs.includes(item.slug)),
 ].filter(Boolean);
 
-const thoughts = [
-  { title: "Small groups. Bigger connections.", text: beliefs[0].text },
-  { title: "Challenge, nature, growth.", text: beliefs[1].text },
-  { title: "Thoughtfully curated.", text: beliefs[2].text },
-  { title: "Certified adventure leaders.", text: beliefs[3].text },
-];
+const thoughts = beliefs;
 
 const places = [
   "Ladakh",
@@ -73,13 +68,12 @@ export default function Home() {
         <div className="hero-copy">
           <div className="pill">✦ This isn’t just a trip</div>
           <h1>
-            Small-group adventures
-            <br /> across the Himalaya
+            Slow roads to
+            <br /> <em>high</em> places.
           </h1>
           <p className="lede">
-            Motorcycle expeditions, backpacking trips, and treks through Ladakh, Uttarakhand,
-            Himachal, Nepal, and Bhutan — and safari weeks in Kenya and Tanzania. Planned on
-            the ground by a team that has spent a decade on these trails.
+            Small-group motorcycle expeditions, treks and backpacking journeys across Ladakh,
+            Himachal, Uttarakhand, Nepal and Bhutan — every route recced by the people who lead it.
           </p>
           <div className="hero-actions">
             <Link className="btn" to="/#states">Choose a state</Link>
@@ -104,9 +98,9 @@ export default function Home() {
           <div className="hold-copy">
             <div className="hold-grid">
               {thoughts.map((idea, i) => (
-                <Reveal as="article" delay={i * 70} key={idea.title}>
+                <Reveal as="article" delay={i * 70} key={idea.text}>
                   <span>0{i + 1}</span>
-                  <h3>{idea.title}</h3>
+                  {idea.title ? <h3>{idea.title}</h3> : null}
                   <p>{idea.text}</p>
                 </Reveal>
               ))}
@@ -188,17 +182,20 @@ export default function Home() {
             </p>
             <Link className="btn" to="/plan">Let’s begin</Link>
           </Reveal>
-          <ol className="plan-steps">
-            {steps.map((step, i) => (
-              <Reveal as="li" delay={i * 80} key={step.n}>
-                <span>{step.n}</span>
-                <div>
-                  <h3>{step.title}</h3>
-                  <p>{step.text}</p>
-                </div>
-              </Reveal>
-            ))}
-          </ol>
+          <div>
+            <ol className="plan-steps">
+              {steps.map((step, i) => (
+                <Reveal as="li" delay={i * 80} key={step.n}>
+                  <span>{step.n}</span>
+                  <div>
+                    <h3>{step.title}</h3>
+                    <p>{step.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
+            <p className="plan-pay">Pay 30% to confirm. The rest is due 30 days before you go.</p>
+          </div>
         </div>
       </section>
 
@@ -206,11 +203,8 @@ export default function Home() {
         <div className="wrap contact-grid">
           <Reveal>
             <p className="kicker">Contact</p>
-            <h2>Tell us who’s coming.</h2>
-            <p>
-              A departure from the list, or a private week at your own pace. The desk in Haldwani
-              answers with a route.
-            </p>
+            <h2>Tell us a little about you.</h2>
+            <p>We reply within a day. A real person, not a bot.</p>
             <EnquiryForm />
           </Reveal>
           <Reveal delay={80}>

@@ -8,7 +8,7 @@ export default function Journeys() {
     <>
       <Seo
         title="Himalayan trips | Ladakh, Spiti, Kumaon, Bhutan, Annapurna | Driftmates"
-        description="Twelve Driftmates departures with published prices and pickups. Ladakh, Winter Spiti, Munsiyari, Manali, Bhutan, and Annapurna Base Camp."
+        description="Twelve Driftmates departures with published prices and pickups. Ladakh, Winter Spiti, Munsyari, Manali, Bhutan, and Annapurna Base Camp."
         path="/journeys"
         image={photos.og}
         jsonLd={{

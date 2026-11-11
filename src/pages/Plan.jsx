@@ -19,11 +19,8 @@ export default function Plan() {
         <div className="shade" />
         <div className="wrap">
           <div className="crumbs">Plan</div>
-          <h1>Tell us who’s coming.</h1>
-          <p>
-            A departure from the list, or a private week with your own pace. The desk in Haldwani
-            answers with a route, not a brochure.
-          </p>
+          <h1>Tell us a little about you.</h1>
+          <p>We reply within a day. A real person, not a bot.</p>
         </div>
       </header>
       <section className="plan-desk">

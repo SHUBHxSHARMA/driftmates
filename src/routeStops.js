@@ -51,7 +51,7 @@ const P = {
   deoriatal: ["Deoriatal", 30.523, 79.127],
   kainchi: ["Kainchi Dham", 29.425, 79.511],
   birthi: ["Birthi", 30.111, 80.176],
-  munsiyari: ["Munsiyari", 30.067, 80.238],
+  munsiyari: ["Munsyari", 30.067, 80.238],
   khaliya: ["Khaliya Top", 30.118, 80.167],
   lohaghat: ["Lohaghat", 29.404, 80.089],
   rudrapur: ["Rudrapur", 28.987, 79.4],

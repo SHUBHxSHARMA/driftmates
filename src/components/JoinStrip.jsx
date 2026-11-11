@@ -3,8 +3,14 @@ import { Link } from "react-router-dom";
 import { inr, stayLabel } from "../data";
 
 function kindPill(kind) {
-  const first = String(kind || "").split("·")[0].trim();
-  return first || "Journey";
+  const parts = String(kind || "")
+    .split("·")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const hasBike = parts.some((part) => /bik/i.test(part));
+  const hasPack = parts.some((part) => /backpack/i.test(part));
+  if (hasBike && hasPack) return "Bike / Backpacking";
+  return parts[0] || "Journey";
 }
 
 function Card({ journey, clone }) {

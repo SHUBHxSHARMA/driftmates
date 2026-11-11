@@ -64,8 +64,8 @@ export default function Inspiration() {
           <div className="crumbs">Inspiration & planning</div>
           <h1>Choose the state first. The route follows.</h1>
           <p>
-            The useful way to plan is not a long list of trips. Pick the region, read what we
-            actually run there, then tell the desk the season and the pace.
+            Whether you’re already planning your trip or looking for some inspiration to get
+            started, our articles are packed with expert advice and recommendations.
           </p>
         </div>
       </header>
@@ -75,6 +75,11 @@ export default function Inspiration() {
           <div className="section-head center">
             <p className="kicker">Handpicked trip ideas</p>
             <h2>For 2027</h2>
+            <p>
+              2027 belongs to the places most people haven’t found yet. Adi Kailash. Darma Valley.
+              Johar Valley. Border roads and high villages that never make the usual list. Pick one,
+              and we’ll shape it around you.
+            </p>
           </div>
           <div className="collect-grid">
             {collections.map((item) => (

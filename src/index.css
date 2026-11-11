@@ -257,6 +257,10 @@ h1, h2, h3, .serif { font-family: var(--serif); font-weight: 500; letter-spacing
   margin: 22px 0 18px;
   color: #fff;
 }
+.hero h1 em {
+  font-style: italic;
+  color: #e0b15a;
+}
 .hero p.lede {
   font-size: clamp(16px, 1.5vw, 19px);
   line-height: 1.7;
@@ -790,6 +794,31 @@ select { max-width: 100%; }
 .story h2 a { color: inherit; text-decoration: none; }
 .story h2 a:hover { text-decoration: underline; text-underline-offset: 6px; }
 .story p { color: var(--ink-soft); }
+.dest-row { align-items: stretch; }
+.dest-row .story-photo,
+.dest-row .dest-copy {
+  height: 540px;
+  min-height: 0;
+  max-height: 540px;
+}
+.dest-row .story-photo img { min-height: 0; height: 100%; object-fit: cover; }
+.dest-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.dest-points {
+  flex: 1;
+  min-height: 0;
+  margin: 4px 0 12px;
+  overflow-y: auto;
+  padding-right: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #c4b8a4 transparent;
+}
+.dest-points::-webkit-scrollbar { width: 8px; }
+.dest-points::-webkit-scrollbar-thumb { background: #c4b8a4; border-radius: 8px; }
+.dest-copy .j-actions { margin-top: auto; }
 .story-beside { align-items: stretch; }
 .story-beside .story-photo,
 .story-beside .story-copy {
@@ -1391,6 +1420,10 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   .nav-cta { min-height: 40px; padding: 0 16px; font-size: 14px; white-space: nowrap; }
   .dest-grid, .belief-grid, .review-grid, .journey-grid, .footer-grid, .info-grid { grid-template-columns: 1fr 1fr; }
   .steps-wrap, .split, .story, .story.reverse, .cta-band, .form-grid, .duo, .policy-grid, .policy-row { grid-template-columns: 1fr; }
+  .dest-row .story-photo,
+  .dest-row .dest-copy { height: auto; max-height: none; }
+  .dest-row .story-photo { height: 320px; max-height: 320px; }
+  .dest-points { overflow: visible; }
   .check-cols, .policy-flow, .policy-boxes { columns: 1; }
   .policy-boxes { display: grid; grid-template-columns: 1fr; }
   .story.reverse .story-photo { order: 0; }
@@ -1560,7 +1593,7 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 22px;
 }
-.move-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.move-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
 .idea, .move-grid article {
   padding: 8px 8px 8px 0;
   border-top: 1px solid var(--line);
@@ -1587,6 +1620,14 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   display: block;
 }
 .face-row .face + .face { margin-left: -12px; }
+.face-shot { position: relative; overflow: hidden; }
+.face-shot img {
+  position: absolute;
+  max-width: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
 
 .know-grid, .host-grid, .contact-grid {
   display: grid;
@@ -1874,6 +1915,13 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   line-height: 1.15;
 }
 .plan-steps p { margin: 0; color: var(--ink-soft); max-width: 52ch; }
+.plan-pay {
+  margin: 28px 0 0 64px;
+  max-width: 42ch;
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .guest-notes { background: var(--cream); }
 

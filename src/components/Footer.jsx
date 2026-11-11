@@ -10,7 +10,7 @@ const shortJourney = {
   "darma-panchachuli": "Darma Valley",
   "annapurna-base-camp": "Annapurna Base Camp",
   "tungnath-chandrashila": "Tungnath & Chandrashila",
-  "munsiyari-johar": "Munsiyari",
+  "munsiyari-johar": "Munsyari",
   "winter-spiti": "Winter Spiti",
   "kumaon-escape": "Kumaon Escape",
   "kainchi-dham": "Kainchi Dham",

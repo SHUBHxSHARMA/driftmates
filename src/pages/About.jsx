@@ -20,16 +20,26 @@ import {
 } from "../data";
 import { organization } from "../seo";
 
-function Face({ n, label }) {
-  return <img className="face" src={`/faces/${n}.jpg?v=5`} alt={label} />;
+function Face({ n, label, focus }) {
+  if (!focus) return <img className="face" src={`/faces/${n}.jpg?v=5`} alt={label} />;
+  const [x, y, scale] = focus;
+  return (
+    <span className="face face-shot">
+      <img
+        src={`/faces/${n}.jpg?v=6`}
+        alt={label}
+        style={{
+          width: `${scale * 100}%`,
+          height: `${scale * 100}%`,
+          left: `${(0.5 - x * scale) * 100}%`,
+          top: `${(0.5 - y * scale) * 100}%`,
+        }}
+      />
+    </span>
+  );
 }
 
-const ideas = [
-  { title: "Small groups. Bigger connections.", text: beliefs[0].text },
-  { title: "Challenge, nature, growth.", text: beliefs[1].text },
-  { title: "Thoughtfully curated.", text: beliefs[2].text },
-  { title: "Certified adventure leaders.", text: beliefs[3].text },
-];
+const ideas = beliefs;
 
 const knowledge = [
   "Experienced local guides who know the destinations inside-out",
@@ -88,14 +98,16 @@ export default function About() {
       />
 
       <header className="page-hero">
-        <img src={photos.johar} alt="Munsiyari and the Johar Valley" />
+        <img src={photos.johar} alt="Munsyari and the Johar Valley" />
         <div className="shade" />
         <div className="wrap">
           <div className="crumbs">How we work</div>
-          <h1>Not the biggest company. The one you remember.</h1>
+          <h1>
+            A small team.
+            <br /> Roads we have already walked.
+          </h1>
           <p>
-            In a world that treats destinations like checklists, Driftmates slows the journey down
-            until a place can actually be felt.
+            Years on these roads, mountaineering-certified leaders, and a real passion for the Himalaya.
           </p>
         </div>
       </header>
@@ -193,9 +205,9 @@ export default function About() {
           </Reveal>
           <div className="idea-grid">
             {ideas.map((idea, i) => (
-              <Reveal as="article" className="idea" delay={i * 70} key={idea.title}>
+              <Reveal as="article" className="idea" delay={i * 70} key={idea.text}>
                 <span>0{i + 1}</span>
-                <h3>{idea.title}</h3>
+                {idea.title ? <h3>{idea.title}</h3> : null}
                 <p>{idea.text}</p>
               </Reveal>
             ))}
@@ -206,7 +218,7 @@ export default function About() {
       <section>
         <div className="wrap">
           <Reveal className="section-head">
-            <p className="kicker">A week, in three moves</p>
+            <p className="kicker">From first call to the last pass</p>
             <h2>How a journey actually starts</h2>
           </Reveal>
           <div className="move-grid">
@@ -229,7 +241,14 @@ export default function About() {
               the phone.
             </p>
             <div className="face-row" aria-hidden="true">
-              {[1, 4, 3, 5, 7, 6].map((n) => <Face key={n} n={n} label="" />)}
+              {[
+                [1, [0.5, 0.48, 1.12]],
+                [4, [0.5, 0.58, 1.22]],
+                [3, [0.5, 0.48, 1.12]],
+                [5, [0.5, 0.5, 1.08]],
+                [7, [0.5, 0.28, 1.85]],
+                [6, [0.48, 0.4, 1.32]],
+              ].map(([n, focus]) => <Face key={n} n={n} label="" focus={focus} />)}
             </div>
           </Reveal>
           <div className="know-grid">
@@ -268,20 +287,20 @@ export default function About() {
               <article className="chat-card">
                 <div className="polaroids">
                   <img src="/sunset-thatch.jpg?v=1" alt="Sunset under a thatched roof" />
-                  <img src={photos.munsiyari} alt="Munsiyari" />
+                  <img src={photos.munsiyari} alt="Munsyari" />
                   <img src={photos.johar} alt="" />
                 </div>
                 <p className="kicker">Next batch</p>
-                <h3>Munsiyari</h3>
+                <h3>Munsyari</h3>
                 <p className="chat-meta">Uttarakhand · 7 days / 6 nights</p>
                 <p>
-                  A good match. Munsiyari for the nature, the air, and the Panchachuli sitting there
+                  A good match. Munsyari for the nature, the air, and the Panchachuli sitting there
                   at the end of the valley.
                 </p>
                 <Link to="/journeys/munsiyari-johar">See the journey</Link>
               </article>
               <div className="bubble-row them-row">
-                <p className="bubble them">Sounds good. Let’s go with Munsiyari.</p>
+                <p className="bubble them">Sounds good. Let’s go with Munsyari.</p>
                 <span className="who">
                   <Face n={2} label="Shubh" />
                   <b>Shubh</b>
@@ -384,11 +403,8 @@ export default function About() {
         <div className="wrap contact-grid">
           <Reveal>
             <p className="kicker">Contact</p>
-            <h2>Tell us who’s coming.</h2>
-            <p>
-              A departure from the list, or a private week at your own pace. The desk in Haldwani
-              answers with a route.
-            </p>
+            <h2>Tell us a little about you.</h2>
+            <p>We reply within a day. A real person, not a bot.</p>
             <EnquiryForm />
           </Reveal>
           <Reveal delay={80}>

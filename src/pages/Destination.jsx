@@ -97,7 +97,7 @@ export default function Destination() {
                 ? "Camps and park fees change with the month. Ask the desk for a quote — nothing here is a fixed fare."
                 : "Each departure below has its own price, pickup, and day-by-day plan."}
             </p>
-            <Link className="btn block" to={`/plan?journey=${destination.slug}`}>Plan {destination.name}</Link>
+            <Link className="btn block" to={`/plan?journey=${destination.slug}`}>Talk to team</Link>
           </aside>
         </div>
       </section>
