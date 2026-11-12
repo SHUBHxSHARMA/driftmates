@@ -51,7 +51,11 @@ export default function SeasonBox({ journey }) {
       <div className="season-body">
         {named && <p className="kicker">{active.label}</p>}
         {active.when && <p className="season-when">{active.when}</p>}
-        {active.note && <p>{active.note}</p>}
+        {active.note &&
+          active.note
+            .split("\n")
+            .filter((line) => line.trim())
+            .map((line) => <p key={line}>{line}</p>)}
         <ul className="facts">
           {(active.details || []).map(([label, value]) => (
             <li key={label}>

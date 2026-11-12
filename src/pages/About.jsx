@@ -103,8 +103,8 @@ export default function About() {
         <div className="wrap">
           <div className="crumbs">How we work</div>
           <h1>
-            A small team.
-            <br /> Roads we have already walked.
+            How we plan it,
+            <br /> and how we run it.
           </h1>
           <p>
             Years on these roads, mountaineering-certified leaders, and a real passion for the Himalaya.

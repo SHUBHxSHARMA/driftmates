@@ -117,44 +117,44 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
-        "t": "Arrival in Leh",
-        "d": "- You arrive at Leh airport, check in and take the day easy. At this altitude, rest is not optional, it is the plan.\n- Drink plenty of water, avoid doing too much, and let your body settle in.\n- In the evening, take a slow walk through Leh Market , visit Leh Palace and head up to Shanti Stupa for sunset over the mountains.\nFirst night in Leh. Get a good sleep because tomorrow the riding starts and these roads deserve your full attention."
-      },
-      {
         "n": "Day 1",
-        "t": "Leh to Sham Valley",
-        "d": "- After breakfast we ride out to Sham Valley , a great first day on the road with a mix of history and scenery.\n- We stop at the Zanskar and Indus confluence , where two rivers meet in a striking clash of colours.\n- We visit the Hall of Fame , a museum honouring the Indian Army's operations in Ladakh. Worth the stop.\n- We check out Magnetic Hill , where your bike appears to roll uphill on its own. Good story for later.\n- We visit Gurudwara Pathar Sahib , a peaceful gurudwara sitting quietly in the mountains.\n- We ride back to Leh for dinner and rest.\nTomorrow we cross Khardung La and ride into Nubra Valley. It is a big one."
+        "t": "Arrival in Leh",
+        "d": "You arrive at Leh airport, check in and take the day easy. At this altitude, rest is not optional, it is the plan.\nDrink plenty of water, avoid doing too much, and let your body settle in.\nIn the evening, take a slow walk through Leh Market, visit Leh Palace and head up to Shanti Stupa for sunset over the mountains.\nFirst night in Leh. Get a good sleep because tomorrow the riding starts and these roads deserve your full attention."
       },
       {
         "n": "Day 2",
-        "t": "Leh to Nubra Valley via Khardung La",
-        "d": "- After breakfast we head up to Khardung La , one of the most famous high-altitude passes in the world. The ride up is tough and the view from the top makes every bit of it worth it.\n- We come down into Nubra Valley , where the landscape shifts from rocky mountain to wide open valley with actual sand dunes..\n- Check into your camp / guesthouse, walk around the dunes, and take the evening easy.\nNubra is the kind of place that surprises you. Step outside tonight and look at the sky, you’ll be amazed!"
+        "t": "Leh to Sham Valley",
+        "d": "After breakfast we ride out to Sham Valley, a great first day on the road with a mix of history and scenery.\nWe stop at the Zanskar and Indus confluence, where two rivers meet in a striking clash of colours.\nWe visit the Hall of Fame, a museum honouring the Indian Army's operations in Ladakh. Worth the stop.\nWe check out Magnetic Hill, where your bike appears to roll uphill on its own. Good story for later.\nWe visit Gurudwara Pathar Sahib, a peaceful gurudwara sitting quietly in the mountains.\nWe ride back to Leh for dinner and rest.\nTomorrow we cross Khardung La and ride into Nubra Valley. It is a big one."
       },
       {
         "n": "Day 3",
-        "t": "Nubra Valley to Pangong Tso",
-        "d": "- We leave early and ride to Pangong Tso along the Shyok River route , winding through small villages and mountain views the whole way.\n- Pangong is a saltwater lake at 4,350M that changes colour through the day, deep blue, turquoise, and almost silver depending on the light. Keep your camera out.\n- Check into your camp by the lake and spend the evening however you like.\nSunset at Pangong is something you will not forget easily. Rest well tonight because tomorrow we ride deeper into the east."
+        "t": "Leh to Nubra Valley via Khardung La",
+        "d": "After breakfast we head up to Khardung La, one of the most famous high-altitude passes in the world. The ride up is tough and the view from the top makes every bit of it worth it.\nWe come down into Nubra Valley, where the landscape shifts from rocky mountain to wide open valley with actual sand dunes..\nCheck into your camp / guesthouse, walk around the dunes, and take the evening easy.\nNubra is the kind of place that surprises you. Step outside tonight and look at the sky, you’ll be amazed!"
       },
       {
         "n": "Day 4",
-        "t": "Pangong Tso to Hanle via Rezang La",
-        "d": "- Wake up early and catch the morning light on Pangong Tso. It looks different at sunrise and you will not want to miss it.\n- We ride to Hanle , one of the most remote villages in Ladakh, known for its clear night skies and almost no light pollution.\n- On the way we stop at Rezang La War Memorial , a tribute to the soldiers who fought here in 1962. A quiet and powerful place.\n- Check into your guesthouse in Hanle and take the evening slow.\nHanle at night is something else. Tonight might be the first time you see the Milky Way clearly."
+        "t": "Nubra Valley to Pangong Tso",
+        "d": "We leave early and ride to Pangong Tso along the Shyok River route, winding through small villages and mountain views the whole way.\nPangong is a saltwater lake at 4,350M that changes colour through the day, deep blue, turquoise, and almost silver depending on the light. Keep your camera out.\nCheck into your camp by the lake and spend the evening however you like.\nSunset at Pangong is something you will not forget easily. Rest well tonight because tomorrow we ride deeper into the east."
       },
       {
         "n": "Day 5",
-        "t": "Umling La Excursion",
-        "d": "- Today we ride to Umling La at about 5,800M, one of the highest motorable roads in the world . The air is thin, the road gets technical near the top, and getting there feels like a proper achievement.\n- Take it all in at the top. Sit for a bit, take photos, and let the moment settle.\n- We ride back to Hanle for dinner and rest.\nNot many people get to say they rode to Umling La. You just did."
+        "t": "Pangong Tso to Hanle via Rezang La",
+        "d": "Wake up early and catch the morning light on Pangong Tso. It looks different at sunrise and you will not want to miss it.\nWe ride to Hanle, one of the most remote villages in Ladakh, known for its clear night skies and almost no light pollution.\nOn the way we stop at Rezang La War Memorial, a tribute to the soldiers who fought here in 1962. A quiet and powerful place.\nCheck into your guesthouse in Hanle and take the evening slow.\nHanle at night is something else. Tonight might be the first time you see the Milky Way clearly."
       },
       {
         "n": "Day 6",
-        "t": "Hanle to Leh via Chumathang",
-        "d": "- We start the ride back to Leh and stop at Chumathang Hot Springs on the way. Soak your legs in naturally heated water in the middle of open wilderness. It is as good as it sounds.\n- We also stop at Thiksey Monastery , one of Ladakh's most beautiful monasteries sitting on a hilltop with views of the whole valley.\n- We arrive back in Leh by evening for a farewell dinner with the group.\nLast night in Leh. The whole trip is fresh in your head and there is a lot to talk about over dinner."
+        "t": "Umling La Excursion",
+        "d": "Today we ride to Umling La at about 5,800M, one of the highest motorable roads in the world. The air is thin, the road gets technical near the top, and getting there feels like a proper achievement.\nTake it all in at the top. Sit for a bit, take photos, and let the moment settle.\nWe ride back to Hanle for dinner and rest.\nNot many people get to say they rode to Umling La. You just did."
       },
       {
         "n": "Day 7",
+        "t": "Hanle to Leh via Chumathang",
+        "d": "We start the ride back to Leh and stop at Chumathang Hot Springs on the way. Soak your legs in naturally heated water in the middle of open wilderness. It is as good as it sounds.\nWe also stop at Thiksey Monastery, one of Ladakh's most beautiful monasteries sitting on a hilltop with views of the whole valley.\nWe arrive back in Leh by evening for a farewell dinner with the group.\nLast night in Leh. The whole trip is fresh in your head and there is a lot to talk about over dinner."
+      },
+      {
+        "n": "Day 8",
         "t": "Departure from Leh",
-        "d": "- One last breakfast in Leh before you check out and head to the airport.\n- The trip ends here, but the passes, the lakes, the empty roads and the stars above Hanle, that part stays with you.\nHigh passes. Empty roads. Skies full of stars. And the kind of riding that reminds you why you started."
+        "d": "One last breakfast in Leh before you check out and head to the airport.\nThe trip ends here, but the passes, the lakes, the empty roads and the stars above Hanle, that part stays with you.\nHigh passes. Empty roads. Skies full of stars. And the kind of riding that reminds you why you started."
       }
     ]
   },
@@ -329,42 +329,42 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
+        "n": "Day 1",
         "t": "Arrival | Bagdogra to Phuentsholing (155 km)",
         "d": "Your journey begins as you arrive at Bagdogra Airport, where the team will receive you. From here, we drive toward Phuentsholing through the Dooars belt, slowly leaving the plains behind.\nAs you enter Bhutan, you’ll immediately notice the shift—cleaner roads, calmer surroundings, and a different pace of life. After completing permit formalities, check in and rest.\nTomorrow, the ride begins.\nOvernight: Phuentsholing\nHighlight: First entry into Bhutan\nNote: Pickup at 12:00 PM from Bagdogra Airport"
       },
       {
-        "n": "Day 1",
+        "n": "Day 2",
         "t": "Ride Begins | Phuentsholing to Thimphu (145 km)",
         "d": "This is where it actually starts.\nAfter breakfast, collect your bikes, meet your crew, and complete the permit process. Once done, you roll out for your first ride into the mountains.\nThe road builds up gradually—curves, forest patches, waterfalls cutting across the route. It’s a perfect warm-up day to get comfortable with the machine and the terrain.\nReach Thimphu by evening. You can step out, explore, or just take it easy.\nOvernight: Thimphu\nHighlight: First mountain ride, Chhukha stretch\nNote: ₹5,000 refundable security deposit (cash)\nNote: Permit process may take time—be prepared for a short wait"
       },
       {
-        "n": "Day 2",
+        "n": "Day 3",
         "t": "Thimphu to Phobjikha (130 km)",
         "d": "Start the morning with a ride up to Buddha Dordenma for a clear view of the valley. A quick stop at Simply Bhutan gives you a glimpse into the local way of life.\nFrom here, head toward Dochula Pass—one of those places where you naturally slow down and take it in.\nPost lunch, the ride changes character as you descend into Phobjikha Valley—wide, open, and silent.\nOvernight: Phobjikha\nHighlight: Dochula Pass, entry into Phobjikha"
       },
       {
-        "n": "Day 3",
+        "n": "Day 4",
         "t": "Phobjikha to Punakha (80 km)",
         "d": "The day starts slow with Gangtey Monastery overlooking the valley.\nAs you ride toward Punakha, you’ll feel the shift—less cold, more greenery, and smoother roads.\nVisit Punakha Dzong and later walk across the suspension bridge, with the river flowing below and prayer flags all around.\nOvernight: Punakha\nHighlight: Punakha Dzong, suspension bridge walk"
       },
       {
-        "n": "Day 4",
+        "n": "Day 5",
         "t": "Punakha to Paro (128 km)",
         "d": "Begin with a visit to Chimi Lhakhang, known for its unique stories and local beliefs.\nRide toward Paro, crossing familiar routes but with a different perspective this time. Stop at Chuzom, where two rivers meet—one of the key points on this route.\nBy evening, reach Paro. It’s a good place to slow down, walk around, and soak in the vibe.\nOvernight: Paro\nHighlight: Chuzom, Paro town\nNote: Temple artwork at Chimi Lhakhang may be sensitive for some"
       },
       {
-        "n": "Day 5",
+        "n": "Day 6",
         "t": "Tiger’s Nest Trek (7 km)",
         "d": "Today is about the climb.\nThe trail to Tiger’s Nest is steady and takes time, but it’s worth every step. As you get closer, the scale of the monastery really hits you.\nSpend some time at the top, then descend at your own pace.\nEvening is free—you can go for a hot stone bath or just rest.\nOvernight: Paro\nHighlight: Tiger’s Nest experience\nNote: Moderate trek—carry water and essentials"
       },
       {
-        "n": "Day 6",
+        "n": "Day 7",
         "t": "Paro to Phuentsholing via Chele La Pass (145 km)",
         "d": "One last ride, and probably the most memorable one.\nHead toward Chele La Pass—the highest point of the trip. Expect cold winds and wide-open views.\nAfter spending some time there, begin your descent and continue the long ride back to Phuentsholing.\nSubmit your bikes and relax for the night.\nOvernight: Phuentsholing\nHighlight: Chele La Pass"
       },
       {
-        "n": "Day 7",
+        "n": "Day 8",
         "t": "Phuentsholing to Bagdogra (155 km)",
         "d": "After breakfast, drive back to Bagdogra.\nThe ride may be over, but the experience usually stays longer than expected.\nHighlight: End of expedition\nNote: Plan return flights as per group transfer timing"
       }
@@ -481,39 +481,39 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
-        "t": "Delhi to Manali",
-        "d": "- We all gather at Kashmere Gate around 7:00 PM and that is where you meet your fellow travellers and your Driftmates trip captain for the first time.\n- Your captain will walk you through the route, what to expect on the road, and anything else you need to know. Bring all your questions.\n- We board the overnight bus to Manali and say bye-bye to Delhi for the next seven days.\nThe city disappears behind you pretty quickly. Sleep well because tomorrow Manali receives you and there is a lot to explore."
-      },
-      {
         "n": "Day 1",
-        "t": "Arrival in Manali",
-        "d": "- We arrive in Manali by morning, check in, and take a little time to rest and freshen up after the overnight journey.\n- First stop is the Hadimba Temple , a 16th-century wooden temple dedicated to Hidimbi Devi, sitting quietly inside tall cedar forests. The pagoda-style architecture and the forest around it make no it feel genuinely peaceful.\n- We walk through Mall Road, pick up whatever you need, try the local street food, and soak in the energy of the town.\n- The evening belongs to Old Manali, the laid-back part of town with wooden houses, riverside cafes, and music playing somewhere in the background. Cafe hop, eat well, and enjoy the mountain atmosphere.\nFirst night in the mountains. Tomorrow is an adventure day in Solang Valley and it is going to be a good one."
+        "t": "Delhi to Manali",
+        "d": "We all gather at Kashmere Gate around 7:00 PM and that is where you meet your fellow travellers and your Driftmates trip captain for the first time.\nYour captain will walk you through the route, what to expect on the road, and anything else you need to know. Bring all your questions.\nWe board the overnight bus to Manali and say bye-bye to Delhi for the next seven days.\nThe city disappears behind you pretty quickly. Sleep well because tomorrow Manali receives you and there is a lot to explore."
       },
       {
         "n": "Day 2",
-        "t": "Solang Valley and Sissu",
-        "d": "- After breakfast we drive to Solang Valley, about 13 km from Manali, surrounded by high peaks and alpine meadows.\n- We go ziplining and do the Rocket Bungee, which gives you views of the valley you will not get any other way. Other activities like ATV rides, zorbing, and skiing in season are available if you want more. (Activities are leisure)\n- We then drive through the Atal Tunnel , one of the longest high-altitude tunnels in the world, and come out into Lahaul Valley on the other side. The landscape change is immediate and dramatic.\n- We spend some time in Sissu , a quiet village with wide open valley views and a waterfall you can hear before you see it.\n- We drive back to Manali for dinner and an overnight stay.\nGood day today. Tomorrow we leave Manali and head into the Parvati Valley. Pack tonight so the morning is easy."
+        "t": "Arrival in Manali",
+        "d": "We arrive in Manali by morning, check in, and take a little time to rest and freshen up after the overnight journey.\nFirst stop is the Hadimba Temple, a 16th-century wooden temple dedicated to Hidimbi Devi, sitting quietly inside tall cedar forests. The pagoda-style architecture and the forest around it make no it feel genuinely peaceful.\nWe walk through Mall Road, pick up whatever you need, try the local street food, and soak in the energy of the town.\nThe evening belongs to Old Manali, the laid-back part of town with wooden houses, riverside cafes, and music playing somewhere in the background. Cafe hop, eat well, and enjoy the mountain atmosphere.\nFirst night in the mountains. Tomorrow is an adventure day in Solang Valley and it is going to be a good one."
       },
       {
         "n": "Day 3",
-        "t": "Manali to Kasol",
-        "d": "- After breakfast we check out and drive toward Kasol , a small village in the Parvati Valley known for its pine forests, the Parvati River running beside it, and a vibe that makes everyone want to stay longer than planned.\n- In the evening we visit Manikaran Sahib, one of the most sacred sites in the region. It has both a temple and a gurudwara, and natural hot springs bubbling up right from the ground. The langar here is cooked using the heat from those springs. Worth every minute.\n- After Manikaran we come back to Kasol , walk through the market, find a riverside cafe, and take the evening at your own pace.\nKasol has a way of slowing you down and that is exactly the point. Tomorrow morning starts with a walk to Chalal before we move on."
+        "t": "Solang Valley and Sissu",
+        "d": "After breakfast we drive to Solang Valley, about 13 km from Manali, surrounded by high peaks and alpine meadows.\nWe go ziplining and do the Rocket Bungee, which gives you views of the valley you will not get any other way. Other activities like ATV rides, zorbing, and skiing in season are available if you want more. (Activities are leisure)\nWe then drive through the Atal Tunnel, one of the longest high-altitude tunnels in the world, and come out into Lahaul Valley on the other side. The landscape change is immediate and dramatic.\nWe spend some time in Sissu, a quiet village with wide open valley views and a waterfall you can hear before you see it.\nWe drive back to Manali for dinner and an overnight stay.\nGood day today. Tomorrow we leave Manali and head into the Parvati Valley. Pack tonight so the morning is easy."
       },
       {
         "n": "Day 4",
-        "t": "Kasol to Jibhi",
-        "d": "- The morning starts with a short hike to Chalal , a peaceful village just across the Parvati River from Kasol. The trail passes through forests and traditional houses and the views of the valley are really good.\n- After the hike we drive toward Jibhi , a quiet village in the Tirthan Valley that most people have not heard of yet. Wooden cottages, dense forests, and a pace of life that is the complete opposite of the city.\n- On the way we stop near Jhiri village for river rafting, where the fast mountain water makes for a really fun afternoon.\n- We reach Jibhi by evening and visit the Jibhi Waterfall, a small cascade tucked into the forest. After that the evening is yours, find a cafe, sit by the water, do nothing if that is what you feel like.\nJibhi is the kind of village that people come to for a night and end up extending by two days. Tomorrow we do Jalori Pass and Serolsar Lake, one of the highlights of the whole trip."
+        "t": "Manali to Kasol",
+        "d": "After breakfast we check out and drive toward Kasol, a small village in the Parvati Valley known for its pine forests, the Parvati River running beside it, and a vibe that makes everyone want to stay longer than planned.\nIn the evening we visit Manikaran Sahib, one of the most sacred sites in the region. It has both a temple and a gurudwara, and natural hot springs bubbling up right from the ground. The langar here is cooked using the heat from those springs. Worth every minute.\nAfter Manikaran we come back to Kasol, walk through the market, find a riverside cafe, and take the evening at your own pace. Kasol has a way of slowing you down and that is exactly the point. Tomorrow morning starts with a walk to Chalal before we move on."
       },
       {
         "n": "Day 5",
-        "t": "Jalori Pass and Serolsar Lake Trek",
-        "d": "- After breakfast we drive up to Jalori Pass at around 3,000M, which gives you sweeping views of the Himalayan ranges spread out in every direction.\n- From the pass we trek through dense oak and pine forests to Serolsar Lake, a beautiful high-altitude lake that sits quietly in a clearing in the woods. Beside it is the ancient Budhi Nagin Temple , which locals have been visiting for generations.\n- The trail is gradual and the lake feels like a reward. Spend some time here before we trek back to the pass.\n- We drive toward Aut , where we board the overnight bus back to Delhi.\nLast night on the road. Seven days of mountains, rivers, forests, and good company. The bus ride back gives you a lot of time to think about when you are coming back."
+        "t": "Kasol to Jibhi",
+        "d": "The morning starts with a short hike to Chalal, a peaceful village just across the Parvati River from Kasol. The trail passes through forests and traditional houses and the views of the valley are really good.\nAfter the hike we drive toward Jibhi, a quiet village in the Tirthan Valley that most people have not heard of yet. Wooden cottages, dense forests, and a pace of life that is the complete opposite of the city.\nOn the way we stop near Jhiri village for river rafting, where the fast mountain water makes for a really fun afternoon.\nWe reach Jibhi by evening and visit the Jibhi Waterfall, a small cascade tucked into the forest. After that the evening is yours, find a cafe, sit by the water, do nothing if that is what you feel like.\nJibhi is the kind of village that people come to for a night and end up extending by two days. Tomorrow we do Jalori Pass and Serolsar Lake, one of the highlights of the whole trip."
       },
       {
         "n": "Day 6",
+        "t": "Jalori Pass and Serolsar Lake Trek",
+        "d": "After breakfast we drive up to Jalori Pass at around 3,000M, which gives you sweeping views of the Himalayan ranges spread out in every direction.\nFrom the pass we trek through dense oak and pine forests to Serolsar Lake, a beautiful high-altitude lake that sits quietly in a clearing in the woods. Beside it is the ancient Budhi Nagin Temple, which locals have been visiting for generations.\nThe trail is gradual and the lake feels like a reward. Spend some time here before we trek back to the pass.\nWe drive toward Aut, where we board the overnight bus back to Delhi.\nLast night on the road. Seven days of mountains, rivers, forests, and good company. The bus ride back gives you a lot of time to think about when you are coming back."
+      },
+      {
+        "n": "Day 7",
         "t": "Delhi Arrival",
-        "d": "- We arrive in Delhi around 9:00 AM. The city is already moving at full speed and you step back into it carrying a week of mountains.\n- The trip officially ends here, but the cedar forests, the riverside cafes, the rafting, the lake, and those slow Jibhi mornings, all of that stays.\nMountain cafes.  River walks.  Hidden villages. And exactly the kind of trip you needed."
+        "d": "We arrive in Delhi around 9:00 AM. The city is already moving at full speed and you step back into it carrying a week of mountains.\nThe trip officially ends here, but the cedar forests, the riverside cafes, the rafting, the lake, and those slow Jibhi mornings, all of that stays.\nMountain cafes.  River walks.  Hidden villages.And exactly the kind of trip you needed."
       }
     ]
   },
@@ -650,42 +650,42 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
+        "n": "Day 01",
         "t": "Arrival in Haldwani",
         "d": "Arrive in Haldwani, the gateway to Kumaon and the starting point of our Adi Kailash Expedition. Nestled at the foothills of the Himalayas, Haldwani serves as the perfect transition from the plains to the mountains. Meet the Driftmates team, complete the check-in formalities, and attend a short expedition briefing. Spend the evening relaxing, meeting fellow travellers, and preparing for the incredible journey ahead.\nOvernight Stay: Haldwani\nAltitude: 1,650 ft (Approx.)"
       },
       {
-        "n": "Day 1",
+        "n": "Day 2",
         "t": "Haldwani → Pithoragarh",
         "d": "Approx. 200 km | 7–8 hrs\nMaximum Altitude: 1,650M\nWe begin from Haldwani, near Kathgodam, historically the last railway head during the British era for goods entering Kumaon. As we ride upward, the terrain transitions from plains to winding mountain roads.\nWe pass Nanakmatta Sahib, a revered Sikh pilgrimage site, before entering deeper Himalayan terrain. The Kali River begins accompanying us as we approach Pithoragarh district; this river forms the natural boundary between India and Nepal. From Gurna Temple, we get sweeping views of the Soar Valley, offering our first real sense of Himalayan scale.\nOvernight in Pithoragarh."
       },
       {
-        "n": "Day 2",
+        "n": "Day 3",
         "t": "Pithoragarh → Dharchula → Gunji",
         "d": "Approx. 170 km | 8–9 hrs\nMaximum Altitude: 3,200M\nWe ride toward Dharchula, a historic border town that has long served as a trade point between India and Nepal. From here, Inner Line territory begins.\nAfter crossing Dharchula, the road narrows and off-road stretches begin. The Kali River runs alongside us through deep valleys, and seasonal waterfalls cut across the cliffs. The terrain becomes raw and remote this is where the expedition truly begins.\nBy evening, we reach Gunji, a high-altitude village near the confluence of the Kali and Kuti rivers. Acclimatization is important from this point onward."
       },
       {
-        "n": "Day 3",
+        "n": "Day 4",
         "t": "Gunji → Adi Kailash → Gunji",
         "d": "Approx. 70 km Round Trip | 4–5 hrs\nMaximum Altitude: 4,572M (Adi Kailash Region)\nToday we ride toward Adi Kailash, often called “Chhota Kailash.” This sacred Himalayan peak resembles Mount Kailash in Tibet and holds strong spiritual significance.\nAt its base lies Parvati Kund (Gauri Kund), a glacial lake surrounded by stark mountain terrain. A small temple dedicated to Lord Shiva stands nearby. The region sits above 4,500 meters, making this the highest point of the expedition.\nAfter spending time here, we descend back to Gunji for the night to maintain safe acclimatization."
       },
       {
-        "n": "Day 4",
+        "n": "Day 5",
         "t": "Gunji → Om Parvat → Dharchula",
         "d": "Approx. 160 km | 8–9 hrs\nMaximum Altitude: 4,300M (Om Parvat region)\nWe ride toward Om Parvat, known for the naturally formed snow pattern resembling the sacred “ॐ” symbol (visible in clear weather). The route passes through Vyas Valley, traditionally associated with Sage Vyas.\nThe terrain remains rugged with dramatic valley views and border landscapes. As we descend toward Dharchula, altitude drops significantly, giving the body a comfortable recovery window after two high-altitude days."
       },
       {
-        "n": "Day 5",
+        "n": "Day 6",
         "t": "Dharchula → Almora",
         "d": "Approx. 230 km | 7–8hrs drive\nLeaving behind the sacred valleys of Adi Kailash and the Indo-Nepal borderlands, we begin our return journey through the heart of Kumaon. As the roads wind through forests, rivers and mountain towns, the memories of Parvati Kund, Om Parvat and the Himalayas travel with us.\nBy evening, we arrive in Almora, a charming hill town known for its rich Kumaoni culture, beautiful ridge-top views and peaceful mountain atmosphere. A perfect place to slow down, share stories and relive the moments of an unforgettable expedition."
       },
       {
-        "n": "Day 6",
+        "n": "Day 07",
         "t": "Almora → Haldwani",
         "d": "Approx. 90 km | 3–4 hrs drive\nBefore heading home, we explore two of Kumaon’s most loved spiritual landmarks. Begin the morning at Kasar Devi, known for its powerful energy field and breathtaking Himalayan views, followed by a visit to the serene Kainchi Dham, the revered ashram of Neem Karoli Baba.\nWith hearts full of memories and cameras full of moments, we descend towards Haldwani, marking the end of a remarkable 7-day journey through the sacred landscapes of Kumaon.\nUntil the next mountain calls…"
       },
       {
-        "n": "Day 7",
+        "n": "Day 8",
         "t": "Departure Day",
         "d": "After breakfast, it’s time to say goodbye to the mountains that have been our home over the past few days.\nAs the journey comes to an end, we leave with memories of Adi Kailash, Om Parvat, hidden Himalayan valleys, and moments that will stay with us for a lifetime.\nGuests depart from Haldwani for their onward journey, carrying the spirit of the Himalayas with them.\nJourney ends, memories remain."
       }
@@ -820,39 +820,39 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
-        "t": "Arrival in Leh",
-        "d": "- You land at Leh airport and the altitude hits you immediately. 3,500M is not a joke and your first job today is to do very little.\n- Check in, drink water, and rest. Your body needs time to adjust before you ride higher passes.\n- In the evening, walk up to Shanti Stupa for sunset over the Zanskar range and spend some time in Leh Market getting a feel for the town.\nGood first night's sleep matters more than it sounds here. Day 3 is Khardung La and you want to be ready for it."
-      },
-      {
         "n": "Day 1",
-        "t": "Leh Local Sightseeing and Ride Briefing",
-        "d": "- Today is for light sightseeing and getting everything ready before the riding begins.\n- We visit Magnetic Hill, check out Gurudwara Pathar Sahib, and spend time at the Hall of Fame museum covering Ladakh's military history.\n- The Zanskar and Indus confluence is worth a stop too, two rivers meeting in a striking clash of colours.\n- Evening is for bike allotment and the safety briefing. Ask everything you need to, this is the time for it.\nTomorrow is the big one. Khardung La and Nubra Valley. Sleep well."
+        "t": "Arrival in Leh",
+        "d": "You land at Leh airport and the altitude hits you immediately. 3,500M is not a joke and your first job today is to do very little.\nCheck in, drink water, and rest. Your body needs time to adjust before you ride higher passes.\nIn the evening, walk up to Shanti Stupa for sunset over the Zanskar range and spend some time in Leh Market getting a feel for the town.\nGood first night's sleep matters more than it sounds here. Day 3 is Khardung La and you want to be ready for it."
       },
       {
         "n": "Day 2",
-        "t": "Leh to Nubra Valley via Khardung La",
-        "d": "- After breakfast we ride toward Khardung La at 5,359M. The climb is long, the air gets thin, and when you get to the top you will understand why this pass has a reputation.\n- Coming down into Nubra Valley is one of the more surprising moments of the trip. The landscape shifts from rocky high-altitude terrain to a wide river valley with sand dunes sitting right between the mountains.\n- In Hunder, you will spot the rare Bactrian camels, double-humped and quiet, left over from the days when this was a Silk Route trading corridor.\n- Check into your camp or guesthouse and take the evening slow.\nNubra has a way of surprising people. It does not look like it should exist here and that is exactly what makes it worth it."
+        "t": "Leh Local Sightseeing and Ride Briefing",
+        "d": "Today is for light sightseeing and getting everything ready before the riding begins.\nWe visit Magnetic Hill, check out Gurudwara Pathar Sahib, and spend time at the Hall of Fame museum covering Ladakh's military history.\nThe Zanskar and Indus confluence is worth a stop too, two rivers meeting in a striking clash of colours.\nEvening is for bike allotment and the safety briefing. Ask everything you need to, this is the time for it.\nTomorrow is the big one. Khardung La and Nubra Valley. Sleep well."
       },
       {
         "n": "Day 3",
-        "t": "Nubra to Turtuk and Back",
-        "d": "- Today is the ride most people on this trip come for. We head north along the Shyok River toward Turtuk, one of India's northernmost villages.\n- Turtuk only opened to tourists in 2010. It has a Balti culture with roots in Baltistan, stone houses, apricot orchards, narrow lanes, and a way of life that feels like it belongs in a different century.\n- Visit the Balti Heritage House and the wooden mosque. Spend time walking around. Talk to people if you can. Turtuk is the kind of place that gives back the more time you give it.\n- We ride back to Nubra for the night.\nYou just rode to one of the most remote and least visited villages in India. Not many riders can say that."
+        "t": "Leh to Nubra Valley via Khardung La",
+        "d": "After breakfast we ride toward Khardung La at 5,359M. The climb is long, the air gets thin, and when you get to the top you will understand why this pass has a reputation.\nComing down into Nubra Valley is one of the more surprising moments of the trip. The landscape shifts from rocky high-altitude terrain to a wide river valley with sand dunes sitting right between the mountains.\nIn Hunder, you will spot the rare Bactrian camels, double-humped and quiet, left over from the days when this was a Silk Route trading corridor.\nCheck into your camp or guesthouse and take the evening slow.\nNubra has a way of surprising people. It does not look like it should exist here and that is exactly what makes it worth it."
       },
       {
         "n": "Day 4",
-        "t": "Nubra to Pangong Tso via Shyok Route",
-        "d": "- Today is a longer day on the road. We ride from Nubra to Pangong Tso along the Shyok River route, a quieter path with mountain views stretching the whole way.\n- Pangong sits at 4,350M and stretches from India into Tibet. The lake shifts colour through the day depending on the light, deep blue in the morning, turquoise by afternoon, and almost silver as the sun drops.\n- Check into your camp by the water. The rest of the day is yours.\nAfter Turtuk yesterday, Pangong feels like the other side of Ladakh completely. Both are worth it. Sunset here is something you will not forget."
+        "t": "Nubra to Turtuk and Back",
+        "d": "Today is the ride most people on this trip come for. We head north along the Shyok River toward Turtuk, one of India's northernmost villages.\nTurtuk only opened to tourists in 2010. It has a Balti culture with roots in Baltistan, stone houses, apricot orchards, narrow lanes, and a way of life that feels like it belongs in a different century.\nVisit the Balti Heritage House and the wooden mosque. Spend time walking around. Talk to people if you can. Turtuk is the kind of place that gives back the more time you give it.\nWe ride back to Nubra for the night.\nYou just rode to one of the most remote and least visited villages in India. Not many riders can say that."
       },
       {
         "n": "Day 5",
-        "t": "Pangong to Leh via Chang La",
-        "d": "- Wake up early for sunrise over Pangong Tso. The colours on the water in the morning are different from any other time of day. Worth the early alarm.\n- We ride back to Leh over Chang La at 5,360M, the last high pass of the trip and a proper one.\n- On the way we stop at Thiksey Monastery, a beautiful 12-storey monastery on a hill with views of the full valley, and Shey Palace, the former summer capital of Ladakh.\n- We arrive back in Leh by evening for a farewell dinner together.\nFull loop done. Khardung La, Turtuk, Pangong, Chang La. That is a proper week in Ladakh."
+        "t": "Nubra to Pangong Tso via Shyok Route",
+        "d": "Today is a longer day on the road. We ride from Nubra to Pangong Tso along the Shyok River route, a quieter path with mountain views stretching the whole way.\nPangong sits at 4,350M and stretches from India into Tibet. The lake shifts colour through the day depending on the light, deep blue in the morning, turquoise by afternoon, and almost silver as the sun drops.\nCheck into your camp by the water. The rest of the day is yours.\nAfter Turtuk yesterday, Pangong feels like the other side of Ladakh completely. Both are worth it. Sunset here is something you will not forget."
       },
       {
         "n": "Day 6",
+        "t": "Pangong to Leh via Chang La",
+        "d": "Wake up early for sunrise over Pangong Tso. The colours on the water in the morning are different from any other time of day. Worth the early alarm.\nWe ride back to Leh over Chang La at 5,360M, the last high pass of the trip and a proper one.\nOn the way we stop at Thiksey Monastery, a beautiful 12-storey monastery on a hill with views of the full valley, and Shey Palace, the former summer capital of Ladakh.\nWe arrive back in Leh by evening for a farewell dinner together.\nFull loop done. Khardung La, Turtuk, Pangong, Chang La. That is a proper week in Ladakh."
+      },
+      {
+        "n": "Day 7",
         "t": "Departure from Leh",
-        "d": "- Last breakfast in Leh before you check out and head to the airport.\n- The trip ends here, but Turtuk, Pangong, the Bactrian camels in Hunder, the quiet of the Shyok route, all of that travels back with you.\nA famous pass.  A border village most miss.  A lake that shifts colour.  Ladakh the way it should be seen."
+        "d": "Last breakfast in Leh before you check out and head to the airport.\nThe trip ends here, but Turtuk, Pangong, the Bactrian camels in Hunder, the quiet of the Shyok route, all of that travels back with you.\nA famous pass.  A border village most miss.  A lake that shifts colour.  Ladakh the way it should be seen."
       }
     ]
   },
@@ -914,37 +914,37 @@ export const journeys = [
     "faqs": [],
     "days": [
       {
-        "n": "Day 0",
+        "n": "Day 1",
         "t": "Kathgodam to Bageshwar (160 Km)",
         "d": "The journey begins as the roads leave the plains behind and enter the Kumaon hills. Ride through pine forests, mountain valleys, and traditional villages while gradually settling into the Himalayan pace.\nVisit Kainchi Dham and later explore Baghnath Temple beside the Saryu River before reaching Bageshwar by evening.\nOvernight: Bageshwar\nHighlight: Kainchi Dham, scenic Kumaon drive"
       },
       {
-        "n": "Day 1",
+        "n": "Day 2",
         "t": "Bageshwar to Dharchula (160 Km)",
         "d": "Today’s route moves deeper into eastern Kumaon through Didihat, Askot, and Jauljibi.\nAs the roads follow the Kali River valley, the mountains begin feeling wilder and more remote. Reach Dharchula by evening — a unique Indo-Nepal border town where mountain culture and local life blend naturally together.\nOvernight: Dharchula\nHighlight: Kali River valley, border town atmosphere"
       },
       {
-        "n": "Day 2",
+        "n": "Day 3",
         "t": "Dharchula to Dantu (80 Km)",
         "d": "After permit formalities, continue toward the remote Darma Valley.\nThe roads narrow into dramatic Himalayan terrain surrounded by waterfalls, hanging valleys, and traditional mountain villages. Reach Dantu by evening with breathtaking views of the Panchachuli Peaks glowing during sunset.\nOvernight: Dantu Homestay\nHighlight: Darma Valley entry, Panchachuli sunset views"
       },
       {
-        "n": "Day 3",
+        "n": "Day 4",
         "t": "Panchachuli Base Camp / Zero Point (10 Km Trek)",
         "d": "The highlight of the expedition.\nTrek toward Panchachuli Base Camp through glacier streams, alpine terrain, and wide Himalayan landscapes. Local stories connect these peaks with the Pandavas from the Mahabharata, adding a deeper feeling to the experience.\nSpend time near Zero Point before returning back to Dantu.\nOvernight: Dantu Homestay\nHighlight: Panchachuli Base Camp experience"
       },
       {
-        "n": "Day 4",
+        "n": "Day 5",
         "t": "Dantu to Chaukori (180 Km)",
         "d": "Ride back through Dharchula, Jauljibi, and Didihat as the landscapes slowly transition from rugged Himalayan terrain to peaceful Kumaon hills.\nReach Chaukori by evening, known for its panoramic Himalayan views and calm mountain atmosphere.\nOvernight: Chaukori\nHighlight: Scenic Himalayan roads, sunset views"
       },
       {
-        "n": "Day 5",
+        "n": "Day 6",
         "t": "Chaukori – Patal Bhuvaneshwar – Kasardevi (180 Km)",
         "d": "Visit the ancient Patal Bhuvaneshwar Cave Temple before continuing toward Jageshwar Temples and Chitai Golu Devta Temple.\nBy evening, reach Kasar Devi Temple known for its peaceful atmosphere, unique geomagnetic zone, and one of the most beautiful sunset views in Kumaon.\nOvernight: Kasardevi\nHighlight: Kasardevi sunset & spiritual atmosphere"
       },
       {
-        "n": "Day 6",
+        "n": "Day 7",
         "t": "Kasardevi to Kathgodam (100 Km)",
         "d": "Wake up to peaceful Himalayan views before beginning the final drive back toward Kathgodam.\nAs the roads slowly descend toward the plains, the journey comes to an end — leaving behind memories of remote valleys, mountain roads, and the raw beauty of Kumaon.\nHighlight: Slow mountain morning\nTrip Ends: Kathgodam"
       }
@@ -1008,49 +1008,49 @@ export const journeys = [
     "faqs": [],
     "days": [
       {
-        "n": "Day 0",
-        "t": "Arrival in Pokhara",
-        "d": "- You arrive in Pokhara, the beautiful gateway to the Annapurna region.\n- Meet your Driftmates group and your trek leader for the first time.\n- We’ll have a quick briefing where everything will be explained — the route, weather, safety, and what to expect in the coming days.\n- Take this time to sort your gear and relax after your journey.\nSleep well tonight — tomorrow, the mountains begin."
-      },
-      {
         "n": "Day 1",
-        "t": "Pokhara to Ghandruk",
-        "d": "- After breakfast, we begin our scenic drive towards Ghandruk.\n- En route, we stop at Nayapul for permit formalities before continuing uphill.\n- As we reach Ghandruk, you’ll notice traditional stone houses and a peaceful mountain vibe.\n- In the evening, if the weather is clear, enjoy stunning views of Machapuchare and surrounding peaks.\nA relaxed day to ease into the mountains."
+        "t": "Arrival in Pokhara",
+        "d": "You arrive in Pokhara, the beautiful gateway to the Annapurna region.\nMeet your Driftmates group and your trek leader for the first time.\nWe’ll have a quick briefing where everything will be explained — the route, weather, safety, and what to expect in the coming days.\nTake this time to sort your gear and relax after your journey.\nSleep well tonight — tomorrow, the mountains begin."
       },
       {
         "n": "Day 2",
-        "t": "Ghandruk to Lower Sinuwa",
-        "d": "- Today is your first real trekking day — and it’s a mix of ups and downs.\n- We start by walking through the village and gradually climb towards Kimrong Danda.\n- After that, a steep descent takes us to the river, followed by a long climb to Chhomrong.\n- Post lunch, we descend again and then climb stone steps to reach Lower Sinuwa.\nIt’s a tiring day, but this is where your trekking rhythm begins."
+        "t": "Pokhara to Ghandruk",
+        "d": "After breakfast, we begin our scenic drive towards Ghandruk.\nEn route, we stop at Nayapul for permit formalities before continuing uphill.\nAs we reach Ghandruk, you’ll notice traditional stone houses and a peaceful mountain vibe.\nIn the evening, if the weather is clear, enjoy stunning views of Machapuchare and surrounding peaks.\nA relaxed day to ease into the mountains."
       },
       {
         "n": "Day 3",
-        "t": "Lower Sinuwa to Deurali",
-        "d": "- We start with a short climb and then enter dense forest trails filled with bamboo and rhododendron.\n- The trail is peaceful, shaded, and one of the most beautiful sections of the trek.\n- We pass through Bamboo, Dovan, and Himalaya villages along the way.\n- As we move higher, the landscape starts changing — more open, more rugged.\n- By evening, we reach Deurali.\nYou’ll start feeling the altitude slightly from here."
+        "t": "Ghandruk to Lower Sinuwa",
+        "d": "Today is your first real trekking day — and it’s a mix of ups and downs.\nWe start by walking through the village and gradually climb towards Kimrong Danda.\nAfter that, a steep descent takes us to the river, followed by a long climb to Chhomrong.\nPost lunch, we descend again and then climb stone steps to reach Lower Sinuwa.\nIt’s a tiring day, but this is where your trekking rhythm begins."
       },
       {
         "n": "Day 4",
-        "t": "Deurali to Annapurna Base Camp",
-        "d": "- Today is the most important day of the trek.\n- We start early and slowly make our way towards Machapuchare Base Camp.\n- The valley opens up, and suddenly you’re surrounded by massive snow-covered peaks.\n- From MBC, we continue towards Annapurna Base Camp.\n- Standing at base camp, you are surrounded 360° by giants like Annapurna I — it’s an unreal feeling.\nThis is the moment you came for."
+        "t": "Lower Sinuwa to Deurali",
+        "d": "We start with a short climb and then enter dense forest trails filled with bamboo and rhododendron.\nThe trail is peaceful, shaded, and one of the most beautiful sections of the trek.\nWe pass through Bamboo, Dovan, and Himalaya villages along the way.\nAs we move higher, the landscape starts changing — more open, more rugged.\nBy evening, we reach Deurali.\nYou’ll start feeling the altitude slightly from here."
       },
       {
         "n": "Day 5",
-        "t": "ABC to Bamboo",
-        "d": "- Wake up early for a magical sunrise over the Annapurna range\n- After breakfast, we begin our descent.\n- We follow the same trail back through MBC, Deurali, and Dovan.\n- It’s a long walk, but going downhill feels easier on the lungs.\nBy evening, we reach Bamboo and rest."
+        "t": "Deurali to Annapurna Base Camp",
+        "d": "Today is the most important day of the trek.\nWe start early and slowly make our way towards Machapuchare Base Camp.\nThe valley opens up, and suddenly you’re surrounded by massive snow-covered peaks.\nFrom MBC, we continue towards Annapurna Base Camp.\nStanding at base camp, you are surrounded 360° by giants like Annapurna I — it’s an unreal feeling.\nThis is the moment you came for."
       },
       {
         "n": "Day 6",
-        "t": "Bamboo to Jhinu Danda",
-        "d": "- We retrace our steps towards Chhomrong once again.\n- From here, a long descent takes us to Jhinu Danda.\n- If you’re up for it, head down to the natural hot springs nearby.\nWarm water, tired legs, and mountains around — perfect end to the trek."
+        "t": "ABC to Bamboo",
+        "d": "Wake up early for a magical sunrise over the Annapurna range\nAfter breakfast, we begin our descent.\nWe follow the same trail back through MBC, Deurali, and Dovan.\nIt’s a long walk, but going downhill feels easier on the lungs. By evening, we reach Bamboo and rest."
       },
       {
         "n": "Day 7",
-        "t": "Jhinu to Pokhara",
-        "d": "- We start with a gentle walk along the river and pass through small villages and farms.\n- Reach Nayapul and complete exit formalities.\n- Drive back to Pokhara.\n- Evening is free — relax at Phewa Lake, explore cafés, or just unwind.\nBack to comfort after days in the mountains."
+        "t": "Bamboo to Jhinu Danda",
+        "d": "We retrace our steps towards Chhomrong once again.\nFrom here, a long descent takes us to Jhinu Danda.\nIf you’re up for it, head down to the natural hot springs nearby.\nWarm water, tired legs, and mountains around — perfect end to the trek."
       },
       {
         "n": "Day 8",
+        "t": "Jhinu to Pokhara",
+        "d": "We start with a gentle walk along the river and pass through small villages and farms.\nReach Nayapul and complete exit formalities.\nDrive back to Pokhara.\nEvening is free — relax at Phewa Lake, explore cafés, or just unwind.\nBack to comfort after days in the mountains."
+      },
+      {
+        "n": "Day 9",
         "t": "Departure",
-        "d": "- Breakfast and check-out.\n- Trip ends, but the memories of Annapurna stay with you for a long time."
+        "d": "Breakfast and check-out.\nTrip ends, but the memories of Annapurna stay with you for a long time."
       }
     ]
   },
@@ -1199,19 +1199,19 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
-        "t": "Dehradun to Chopta",
-        "d": "- We pick you up from Prince Chowk, Dehradun at 7:00 AM and the drive to Chopta begins. It is about 9 to 10 hours but the road earns its time.\n- We pass through Devprayag , where the Bhagirathi and Alaknanda rivers meet to form the Ganga. If you have never seen a river confluence like this, stop and take it in.\n- Further ahead is Rudraprayag , where the Alaknanda and Mandakini meet. These are not just rivers, they carry the whole spiritual weight of Garhwal with them.\n- As we climb higher, the roads get narrower, the air gets cooler, and the mountains start filling up the windshield.\n- We arrive in Chopta by evening and check into our deluxe camps inside the Kedarnath Wildlife Sanctuary. Dinner is followed by a briefing from your trek leader covering the trail, altitude, and what tomorrow looks like.\nFirst night in the forest at Chopta. Tomorrow we walk up to the highest Shiva temple in the world, so get a good sleep."
-      },
-      {
         "n": "Day 1",
-        "t": "Chopta to Tungnath to Chandrashila Summit",
-        "d": "- After breakfast we start the ascent toward Tungnath Temple at 3,680M, the highest Shiva temple in the world and one of the five sacred Panch Kedar shrines.\n- The trail is 3.5 km of stone-paved path winding through alpine meadows and rhododendron forests. It is steady and moderate, taking about 3 to 4 hours at a comfortable pace.\n- Spend some time at the temple. It is a quiet, powerful place and the effort of getting here makes it feel completely different from any temple you have visited by road.\n- From Tungnath, we climb a steeper 1.5 km to Chandrashila Summit at 4,000M. At the top, Chaukhamba, Nanda Devi, Trishul, Kedarnath Dome, and Bandarpunch are all right there in front of you.\n- Packed lunch at the summit, then we descend back to Chopta. On clear evenings, watch the Chaukhamba massif turn golden at sunset from camp.\nSummit done. Views ticked. Tonight dinner at camp and a lot of stories to tell. Day 3 starts early so rest well."
+        "t": "Dehradun to Chopta",
+        "d": "We pick you up from Prince Chowk, Dehradun at 7:00 AM and the drive to Chopta begins. It is about 9 to 10 hours but the road earns its time.\nWe pass through Devprayag, where the Bhagirathi and Alaknanda rivers meet to form the Ganga. If you have never seen a river confluence like this, stop and take it in.\nFurther ahead is Rudraprayag, where the Alaknanda and Mandakini meet. These are not just rivers, they carry the whole spiritual weight of Garhwal with them.\nAs we climb higher, the roads get narrower, the air gets cooler, and the mountains start filling up the windshield.\nWe arrive in Chopta by evening and check into our deluxe camps inside the Kedarnath Wildlife Sanctuary. Dinner is followed by a briefing from your trek leader covering the trail, altitude, and what tomorrow looks like.\nFirst night in the forest at Chopta. Tomorrow we walk up to the highest Shiva temple in the world, so get a good sleep."
       },
       {
         "n": "Day 2",
+        "t": "Chopta to Tungnath to Chandrashila Summit",
+        "d": "After breakfast we start the ascent toward Tungnath Temple at 3,680M, the highest Shiva temple in the world and one of the five sacred Panch Kedar shrines.\nThe trail is 3.5 km of stone-paved path winding through alpine meadows and rhododendron forests. It is steady and moderate, taking about 3 to 4 hours at a comfortable pace.\nSpend some time at the temple. It is a quiet, powerful place and the effort of getting here makes it feel completely different from any temple you have visited by road.\nFrom Tungnath, we climb a steeper 1.5 km to Chandrashila Summit at 4,000M. At the top, Chaukhamba, Nanda Devi, Trishul, Kedarnath Dome, and Bandarpunch are all right there in front of you.\nPacked lunch at the summit, then we descend back to Chopta. On clear evenings, watch the Chaukhamba massif turn golden at sunset from camp.\nSummit done. Views ticked. Tonight dinner at camp and a lot of stories to tell. Day 3 starts early so rest well."
+      },
+      {
+        "n": "Day 3",
         "t": "Chopta to Deoriatal to Dehradun",
-        "d": "- Early morning we drive about an hour to Sari Village , the starting point for the Deoriatal hike.\n- The hike is a short 2.5 km walk up to Deoriatal Lake at 2,400M , a beautiful alpine lake that on clear mornings mirrors the Chaukhamba peaks on its surface. It looks like a photograph but it is real.\n- Spend some time at the lake before heading back down to Sari. It is an easy, quiet walk and a good way to end the trek.\n- Post lunch we start the long drive back to Dehradun , arriving around 11:00 PM.\nThree days, a 4,000M summit, the highest Shiva temple on Earth, and a lake that reflects the Himalayas. Not bad for a long weekend."
+        "d": "Early morning we drive about an hour to Sari Village, the starting point for the Deoriatal hike.\nThe hike is a short 2.5 km walk up to Deoriatal Lake at 2,400M, a beautiful alpine lake that on clear mornings mirrors the Chaukhamba peaks on its surface. It looks like a photograph but it is real.\nSpend some time at the lake before heading back down to Sari. It is an easy, quiet walk and a good way to end the trek.\nPost lunch we start the long drive back to Dehradun, arriving around 11:00 PM.\nThree days, a 4,000M summit, the highest Shiva temple on Earth, and a lake that reflects the Himalayas. Not bad for a long weekend."
       }
     ]
   },
@@ -1344,37 +1344,37 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
+        "n": "Day 01",
         "t": "Arrival in Haldwani",
         "d": "Our journey begins from Delhi as we leave the plains behind and travel towards the Kumaon Himalaya. We continue towards Haldwani, the gateway to the mountains, preparing for the Himalayan journey ahead.\nOvernight Stay: Travel / Journey\nApprox 280km 6-7 hours\nMaximum altitude 1,395ft"
       },
       {
-        "n": "Day 1",
+        "n": "Day 2",
         "t": "Haldwani → Kainchi Dham → Kasar Devi",
         "d": "We enter the Kumaon hills and visit Kainchi Dham, surrounded by the peaceful Himalayan landscape. We then continue towards Kasar Devi, where we explore the surroundings and enjoy the mountain views and evening sunset.\nHighlights: Kainchi Dham • Sunset Point • Kasar Devi Temple\nOvernight in Kasar Devi / Almora.\nApprox 90km 4-5hours\nMaximum attitude: 6,900ft"
       },
       {
-        "n": "Day 2",
+        "n": "Day 3",
         "t": "Kasar Devi → Patal Bhuvaneshwar → Birthi",
         "d": "Today we travel deeper into Kumaon and explore the fascinating Patal Bhuvaneshwar Cave Temple. Continuing through the mountain landscapes and the Tejam region, we reach Birthi, home to the spectacular Birthi Waterfall\nHighlights: Patal Bhuvaneshwar • Tejam Village • Birthi Waterfall\nOvernight: Birthi\nApprox. 220km 6-7 hours\nMaximum altitude: 6,560ft"
       },
       {
-        "n": "Day 3",
+        "n": "Day 4",
         "t": "Birthi → Munsyari",
         "d": "We continue towards Munsyari, travelling deeper into the remote Johar Valley. En route, we pass through Kalamuni Top and experience the changing Himalayan landscapes. On reaching Munsyari, we explore the local market and experience the unique culture and atmosphere of this Himalayan town.\nHighlights: Kalamuni Top • Himalayan View Point • Munsyari Market • Johar Valley\nOvernight: Munsyari\nApprox 66km 4-5 hours\nMaximum altitude: 7,550ft"
       },
       {
-        "n": "Day 4",
+        "n": "Day 5",
         "t": "Munsyari → Khaliya Top → Munsyari",
         "d": "Today we leave the road behind and trek to Khaliya Top. The trail takes us into the high Himalayan landscape, leading towards Zero Point, where we experience spectacular views of the surrounding mountains and the mighty Panchachuli range.\nThe Khaliya Top Trek is a fixed and included part of the expedition.\nHighlights: Khaliya Top Trek • Zero Point • Panchachuli Views\nOvernight: Munsyari\nApprox. 12km trek 6-8 hours\nMaximum altitude: 11,500ft"
       },
       {
-        "n": "Day 5",
+        "n": "Day 6",
         "t": "Munsyari → Lohaghat",
         "d": "We leave the Johar Valley behind and travel through the changing landscapes of Kumaon towards Lohaghat. Along the way, we visit the Matkot Hot Spring and continue through the Pithoragarh region, enjoying the forests, rivers and mountain landscapes.\nHighlights: Matkot Hot Spring • Pithoragarh Region • Lohaghat Lake\nOvernight: Lohaghat\nApprox. 180km 7-8 hours\nMaximum altitude: 7,500ft"
       },
       {
-        "n": "Day 6",
+        "n": "Day 07",
         "t": "Lohaghat → Rudrapur → Delhi",
         "d": "Our final journey takes us from Lohaghat towards Rudrapur, passing through the forests and foothills of Kumaon.\nWe reach Rudrapur by approximately 6:00 PM. After a short break, we begin our return journey towards Delhi\nDeparture for Delhi: 9:00 PM\nApprox. 190km 5-6hours\nMaximum altitude 780ft"
       }
@@ -1508,49 +1508,49 @@ export const journeys = [
     ],
     "days": [
       {
-        "n": "Day 0",
-        "t": "Delhi to Shimla",
-        "d": "- We'll all gather at Kashmere Gate around 10:00 PM , and that's where you'll meet your fellow travellers and your Driftmates trip captain for the very first time.\n- Your captain will walk you through everything, the route, the weather, and what to expect on the road ahead. So bring all your questions.\n- We all board the overnight bus to Shimla and say bye-bye to Delhi for the next nine days.\nSleep if you can. Tomorrow morning, you'll wake up to mountains outside your window, and everything begins."
-      },
-      {
         "n": "Day 1",
-        "t": "Shimla to Sarahan",
-        "d": "- You'll step out in Shimla early in the morning with cool air blowing on your face to check if your excitement is on point or not!\n- Enroute we stop at Naharkanda for a quick break. Step out, stretch, and take in your first real Himalayan view.\n- We arrive in Sarahan and check in , a small quiet town sitting in the Sutlej Valley with mountains watching from every side.\n- We visit the famous Bhimakali Temple , an 800-year-old temple that is as beautiful as it is sacred.\n- After the temple, explore the local market , grab something warm to eat, relax, and get to know each other a little more.\nDay 2 done and Sarahan already feels like a different world. Rest well tonight because tomorrow the real drive begins."
+        "t": "Delhi to Shimla",
+        "d": "We’ll all gather at Kashmere Gate around 10:00 PM, and that’s where you’ll meet your fellow travellers and your Driftmates trip captain for the very first time.\nYour captain will walk you through everything, the route, the weather, and what to expect on the road ahead. So bring all your questions.\nWe all board the overnight bus to Shimla and say bye-bye to Delhi for the next nine days.\nSleep if you can. Tomorrow morning, you’ll wake up to mountains outside your window, and everything begins."
       },
       {
         "n": "Day 2",
-        "t": "Sarahan to Sangla / Chitkul",
-        "d": "- After having breakfast, pack your bags. Today's drive is one for the books, so don't forget to check if your excitement is still on point.\n- We drive the famous Hindustan-Tibet Highway , one of the most thrilling mountain roads in the world, cut straight into the cliffs with the valley falling away below.\n- You'll pass through Kinnaur Gate , a dramatic cliffhanger route that makes you realise this is unlike any road you've driven before.\n- We drive alongside the roaring Baspa River the whole way, loud, fast, and absolutely wild next to us all through the valley.\n- We reach Chitkul , the last village before the India-Tibet border. Old wooden houses, a frozen river, and a silence you've genuinely never heard before.\n- If heavy snow blocks the road, we will be staying in Sangla Valley instead.\nStep outside after dinner and look up at the sky. Stars in the mountains hit differently. Trust us on this one."
+        "t": "Shimla to Sarahan",
+        "d": "You’ll step out in Shimla early in the morning with cool air blowing on your face to check if your excitement is on point or not!\nEnroute we stop at Naharkanda for a quick break. Step out, stretch, and take in your first real Himalayan view.\nWe arrive in Sarahan and check in, a small quiet town sitting in the Sutlej Valley with mountains watching from every side.\nWe visit the famous Bhimakali Temple, an 800-year-old temple that is as beautiful as it is sacred.\nAfter the temple, explore the local market, grab something warm to eat, relax, and get to know each other a little more.\nDay 2 done and Sarahan already feels like a different world. Rest well tonight because tomorrow the real drive begins."
       },
       {
         "n": "Day 3",
-        "t": "Chitkul to Tabo",
-        "d": "- We have breakfast in the valley before we head out. It's going to be a long and beautiful drive, so start the day well.\n- As we move through Kinnaur, watch the scenery quietly change around you, less green, more rock, and a whole lot more open sky.\n- We stop at Khab Sangam , where the Sutlej and Spiti rivers crash into each other right between massive cliffs.\n- We make a stop at Nako Lake sitting at 3,660M, often half frozen in winter and surrounded by complete stillness.\n- We arrive at Tabo Monastery (996 AD), one of the oldest monasteries in the world still in use today. The paintings on these walls have been there for over a thousand years.\n- Night stay in Tabo village, small, peaceful, and genuinely one of the quietest nights of the entire trip.\nDinner, some chai, and a sky full of stars above Tabo. Tomorrow gets even more interesting, so rest up."
+        "t": "Sarahan to Sangla / Chitkul",
+        "d": "After having breakfast, pack your bags. Today’s drive is one for the books, so don’t forget to check if your excitement is still on point.\nWe drive the famous Hindustan-Tibet Highway, one of the most thrilling mountain roads in the world, cut straight into the cliffs with the valley falling away below.\nYou’ll pass through Kinnaur Gate, a dramatic cliffhanger route that makes you realise this is unlike any road you’ve driven before.\nWe drive alongside the roaring Baspa River the whole way, loud, fast, and absolutely wild next to us all through the valley.\nWe reach Chitkul, the last village before the India-Tibet border. Old wooden houses, a frozen river, and a silence you’ve genuinely never heard before.\nIf heavy snow blocks the road, we will be staying in Sangla Valley instead.\nStep outside after dinner and look up at the sky. Stars in the mountains hit differently. Trust us on this one."
       },
       {
         "n": "Day 4",
-        "t": "Tabo to Kaza",
-        "d": "- After a tummyful breakfast, we leave for our next stop at Dhankar Monastery , perched right on the edge of a cliff above the Spiti River with the ruins of Dhankar Fort beside it. This used to be the capital of Spiti, and one look tells you why.\n- We stop at Lingti Falls , frozen completely solid in winter into a towering wall of ice.\n- By evening we reach Kaza at 3,800M , the main town in Spiti and our home for the next two nights. Check in, get warm, and eat something really good.\nYou're in the heart of Spiti now. Tomorrow is the day everyone actually comes here for, so get a good night's rest."
+        "t": "Chitkul to Tabo",
+        "d": "We have breakfast in the valley before we head out. It’s going to be a long and beautiful drive, so start the day well.\nAs we move through Kinnaur, watch the scenery quietly change around you, less green, more rock, and a whole lot more open sky.\nWe stop at Khab Sangam, where the Sutlej and Spiti rivers crash into each other right between massive cliffs.\nWe make a stop at Nako Lake sitting at 3,660M, often half frozen in winter and surrounded by complete stillness.\nWe arrive at Tabo Monastery (996 AD), one of the oldest monasteries in the world still in use today. The paintings on these walls have been there for over a thousand years.\nNight stay in Tabo village, small, peaceful, and genuinely one of the quietest nights of the entire trip.\nDinner, some chai, and a sky full of stars above Tabo. Tomorrow gets even more interesting, so rest up."
       },
       {
         "n": "Day 5",
-        "t": "Kaza Sightseeing",
-        "d": "Big breakfast, bigger day. Today we head to some of the highest places on Earth.\n- We visit Key Monastery , the biggest in Spiti, sitting on a hill with colourful prayer flags and a view of the whole valley stretching out below.\n- We walk across Chicham Bridge , the highest suspension bridge in Asia . Walk to the middle, look down, and take a slow breath. Yes, it is worth it.\n- We stop at Hikkim Post Office at 4,440M , one of the highest post offices in the world. Write a postcard to someone back home, they will love getting it.\n- We drive up to Komic Village at 4,587M , one of the highest villages on Earth where people actually live. A few homes, some horses, and sky as far as you can see.\n- Lastly, we visit Langza Village , where real sea fossils sit right in the rocks and a giant Buddha watches quietly over the valley below.\nSome days you just know this is the one you will talk about for years. Tonight let it all sink in over a warm meal in Kaza."
+        "t": "Tabo to Kaza",
+        "d": "After a tummyful breakfast, we leave for our next stop at Dhankar Monastery, perched right on the edge of a cliff above the Spiti River with the ruins of Dhankar Fort beside it. This used to be the capital of Spiti, and one look tells you why.\nWe stop at Lingti Falls, frozen completely solid in winter into a towering wall of ice.\nBy evening we reach Kaza at 3,800M, the main town in Spiti and our home for the next two nights. Check in, get warm, and eat something really good.\nYou’re in the heart of Spiti now. Tomorrow is the day everyone actually comes here for, so get a good night’s rest."
       },
       {
         "n": "Day 6",
-        "t": "Kaza to Kalpa",
-        "d": "- After breakfast we start the long drive back. Trees slowly return, the air gets a little warmer, and Spiti quietly fades behind us.\n- We visit Gue Monastery , home to a 500-year-old naturally mummified monk, one of the most unique and unexpected sights of the entire trip.\n- We drive back through Kinnaur Valley, the same roads we came on, but you will notice very different things on the way out.\n- We reach Kalpa by evening, and Kinnaur Kailash is right there catching the last light of the day, looking like an old friend now."
+        "t": "Kaza Sightseeing",
+        "d": "Big breakfast, bigger day. Today we head to some of the highest places on Earth.\nWe visit Key Monastery, the biggest in Spiti, sitting on a hill with colourful prayer flags and a view of the whole valley stretching out below.\nWe walk across Chicham Bridge, the highest suspension bridge in Asia. Walk to the middle, look down, and take a slow breath. Yes, it is worth it.\nWe stop at Hikkim Post Office at 4,440M, one of the highest post offices in the world. Write a postcard to someone back home, they will love getting it.\nWe drive up to Komic Village at 4,587M, one of the highest villages on Earth where people actually live. A few homes, some horses, and sky as far as you can see.\nLastly, we visit Langza Village, where real sea fossils sit right in the rocks and a giant Buddha watches quietly over the valley below.\nSome days you just know this is the one you will talk about for years. Tonight let it all sink in over a warm meal in Kaza."
       },
       {
         "n": "Day 7",
-        "t": "Kalpa to Shimla",
-        "d": "- Pack your bags slowly this morning. Take one last proper look at Kinnaur Kailash, same mountain, but today it hits just a little differently.\n- We stop at Suicide Point , where the valley drops away into what looks like infinite mountains. • We drive back on the Hindustan-Tibet Highway, and this time you will catch all the things you were too excited to notice on Day 2.\n- We reach Shimla by evening . Hot meal, warm room, and a whole head full of memories from the last seven days.\n- We board the overnight bus back to Delhi. The mountains slowly disappear in the rearview mirror and you realise you are not quite ready to leave.\nEight days of mountains, cold air, and good people."
+        "t": "Kaza to Kalpa",
+        "d": "After breakfast we start the long drive back. Trees slowly return, the air gets a little warmer, and Spiti quietly fades behind us.\nWe visit Gue Monastery, home to a 500-year-old naturally mummified monk, one of the most unique and unexpected sights of the entire trip.\nWe drive back through Kinnaur Valley, the same roads we came on, but you will notice very different things on the way out.\nWe reach Kalpa by evening, and Kinnaur Kailash is right there catching the last light of the day, looking like an old friend now."
       },
       {
         "n": "Day 8",
+        "t": "Kalpa to Shimla",
+        "d": "Pack your bags slowly this morning. Take one last proper look at Kinnaur Kailash, same mountain, but today it hits just a little differently.\nWe stop at Suicide Point, where the valley drops away into what looks like infinite mountains. \u2022 We drive back on the Hindustan-Tibet Highway, and this time you will catch all the things you were too excited to notice on Day 2.\nWe reach Shimla by evening. Hot meal, warm room, and a whole head full of memories from the last seven days.\nWe board the overnight bus back to Delhi. The mountains slowly disappear in the rearview mirror and you realise you are not quite ready to leave.\nEight days of mountains, cold air, and good people."
+      },
+      {
+        "n": "Day 9",
         "t": "Delhi Arrival",
-        "d": "- We reach Delhi in the early morning.\nThe trip ends here but what you saw and felt stays with you."
+        "d": "We reach Delhi in the early morning.\nThe trip ends here but what you saw and felt stays with you."
       }
     ]
   },

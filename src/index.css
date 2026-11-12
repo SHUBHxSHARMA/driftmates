@@ -1086,12 +1086,16 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
 .season-card {
   position: sticky;
   top: 156px;
-  max-height: calc(100svh - 188px);
-  overflow: auto;
   background: white;
   border: 1px solid var(--line);
   border-radius: 18px;
   overflow: hidden;
+}
+@media (max-height: 1040px) {
+  .season-card,
+  .book-card {
+    position: static;
+  }
 }
 .season-tabs {
   display: flex;
@@ -2168,7 +2172,7 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   .note-card { width: 280px; flex-basis: 280px; }
 }
 
-.departures { overflow: visible; }
+.departures { overflow-x: clip; }
 .join-head h2 {
   margin: 0;
   font-size: clamp(34px, 4vw, 52px);
@@ -2181,6 +2185,8 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   margin-top: 0;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50svw);
+  margin-right: calc(50% - 50svw);
   padding: 0 24px 8px;
   overflow-x: auto;
   overflow-y: hidden;
