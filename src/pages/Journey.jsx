@@ -435,7 +435,6 @@ export default function Journey() {
             <span> · {journey.kind}</span>
           </div>
           <h1>{journey.title}</h1>
-          <p>{journey.summary}</p>
           <Link className="btn" to={`/plan?journey=${journey.slug}`}>Plan this journey</Link>
         </div>
       </header>
