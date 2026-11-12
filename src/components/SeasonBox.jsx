@@ -28,6 +28,13 @@ export default function SeasonBox({ journey }) {
   const query = new URLSearchParams({ journey: journey.slug });
   if (active.when) query.set("when", active.when);
   const named = seasons.length > 1 || active.id !== "departure";
+  const frames = [journey.image, ...(journey.gallery || [])].filter(Boolean);
+  const seasonIndex = Math.max(0, seasons.findIndex((season) => season.id === active.id));
+  const photo = frames[seasonIndex % Math.max(frames.length, 1)];
+  const lines = (active.note || "").split("\n").filter((line) => line.trim());
+  const titled = lines.length > 1 && !/^(The Experience|What to Expect)\b/.test(lines[0]);
+  const title = titled ? lines[0] : "";
+  const body = titled ? lines.slice(1) : lines;
 
   return (
     <aside className="season-card">
@@ -47,15 +54,21 @@ export default function SeasonBox({ journey }) {
           ))}
         </div>
       )}
-      <img className="season-photo" src={journey.image} alt={journey.title} />
+      <div className="season-panel">
+      {photo && <img key={photo} className="season-photo" src={photo} alt={journey.title} />}
       <div className="season-body">
-        {named && <p className="kicker">{active.label}</p>}
-        {active.when && <p className="season-when">{active.when}</p>}
-        {active.note &&
-          active.note
-            .split("\n")
-            .filter((line) => line.trim())
-            .map((line) => <p key={line}>{line}</p>)}
+        <div className="season-head">
+          {named && <p className="kicker">{active.label}</p>}
+          {active.when && <p className="season-when">{active.when}</p>}
+        </div>
+        {title && <p className="season-title">{title}</p>}
+        {body.length > 0 && (
+          <div className="season-note">
+            {body.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
+        )}
         <ul className="facts">
           {(active.details || []).map(([label, value]) => (
             <li key={label}>
@@ -95,9 +108,10 @@ export default function SeasonBox({ journey }) {
         ) : (
           <p className="season-closed">No printed fare for this window.</p>
         )}
-        <Link className="btn block" to={`/plan?${query}`}>
+        <Link className="btn block season-book" to={`/plan?${query}`}>
           {active.open ? "Plan this journey" : "Ask the desk"}
         </Link>
+      </div>
       </div>
     </aside>
   );
