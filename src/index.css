@@ -1179,9 +1179,24 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
 .season-note p:last-child { margin-bottom: 0; }
 .season-note::-webkit-scrollbar { width: 8px; }
 .season-note::-webkit-scrollbar-thumb { background: #f4ead2; border-radius: 8px; }
-.season-body .facts { margin: 4px 0 16px; }
-.season-body .facts li { border-top-color: rgba(255, 252, 248, 0.22); color: var(--paper); }
-.season-body .facts b { color: #f4ead2; }
+.season-body .facts { margin: 2px 0 12px; }
+.season-body .facts li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  border-top-color: rgba(255, 252, 248, 0.22);
+  color: var(--paper);
+  font-size: 14px;
+  line-height: 1.3;
+}
+.season-body .facts b {
+  display: inline;
+  flex: 0 0 auto;
+  color: #f4ead2;
+}
+.season-body .facts span { text-align: right; }
 .season-fare .kicker { margin-bottom: 4px; color: #f4ead2; }
 .season-fare .price { font-family: var(--serif); font-size: 46px; margin: 0; color: var(--paper); }
 .season-fare .sub, .season-fare s { color: rgba(255, 252, 248, 0.7); margin: 4px 0 0; }

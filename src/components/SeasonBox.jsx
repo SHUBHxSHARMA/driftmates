@@ -73,26 +73,22 @@ export default function SeasonBox({ journey }) {
           {(active.details || []).map(([label, value]) => (
             <li key={label}>
               <b>{label}</b>
-              {value}
+              <span>{value}</span>
             </li>
           ))}
           <li>
             <b>Duration</b>
-            {stayLabel(journey.nights)}
-          </li>
-          <li>
-            <b>Pickup</b>
-            {journey.pickup}
+            <span>{stayLabel(journey.nights)}</span>
           </li>
           {journey.group && (
             <li>
               <b>Group</b>
-              {journey.group}
+              <span>{journey.group}</span>
             </li>
           )}
           <li>
             <b>Style</b>
-            {journey.kind}
+            <span>{journey.kind}</span>
           </li>
         </ul>
         {active.open ? (
