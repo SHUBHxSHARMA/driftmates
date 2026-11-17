@@ -4,16 +4,13 @@ import { address, destinations, email, journeys, phone, phoneHref } from "../dat
 const shortJourney = {
   "leh-ladakh-umling-la": "Umling La",
   bhutan: "Bhutan",
-  "himachal-backpacking": "Manali, Kasol, Jibhi",
-  "adi-kailash": "Adi Kailash",
+  "adi-kailash": "Adi Kailash by bike",
+  "adi-kailash-car": "Adi Kailash & Om Parvat",
   "turtuk-bike": "Turtuk",
   "darma-panchachuli": "Darma Valley",
   "annapurna-base-camp": "Annapurna Base Camp",
-  "tungnath-chandrashila": "Tungnath & Chandrashila",
   "munsiyari-johar": "Munsyari",
   "winter-spiti": "Winter Spiti",
-  "kumaon-escape": "Kumaon Escape",
-  "kainchi-dham": "Kainchi Dham",
 };
 
 export default function Footer() {

@@ -47,8 +47,8 @@ export const articles = [
     alt: "The Panchachuli range above Munsyari",
     journey: "munsiyari-johar",
     paragraphs: [
-      "Munsyari works because it does not ask you to collect sights. You leave Delhi from Kashmiri Gate, come down through Haldwani, and the week is already a change of pace before the mountains properly start. Kainchi Dham and Kasar Devi are on the way. So is Patal Bhuvaneshwar. None of them are the point. They are how the road teaches you to stop rushing.",
-      "The point is the Johar Valley, and the way the Panchachuli sits over the town. On a clear morning the massif is close enough to feel impolite. On a cloudy one you wait, and the waiting is part of the trip. Driftmates runs this as six nights and seven days because a shorter cut turns it back into a checklist.",
+      "Munsyari works because it does not ask you to collect sights. You leave Delhi on an overnight Volvo, meet the group in Haldwani, and the Tempo Traveller climbs toward Chaukori before the week has properly started. Birthi Falls is on the way. None of that is the point. It is how the road teaches you to stop rushing.",
+      "The point is Munsyari, and the way the Panchachuli sits over the town. On a clear morning the massif is close enough to feel impolite. On a cloudy one you wait, and the waiting is part of the trip. Three of the five hotel nights are here, with a full day for the walk to Khuliya Top, because a shorter cut turns it back into a checklist.",
       "What makes the week good is the mix of a real road journey and a valley that still has a village rhythm. You are not hopping viewpoints between breakfast and a flight. The group stays small, the nights are in the hills, and the last look at the range is usually better than the first.",
       "It is also the most forgiving of the three 2027 journeys. Munsyari can be walked in more than one season. The light, the snow line, and the clarity of the peaks change. The shape of the week does not.",
     ],
@@ -178,7 +178,7 @@ export const articles = [
     paragraphs: [
       "Winter Spiti is not a softened version of the summer circuit. The valley is snowed in, the road from Kashmere Gate is long, and the cold is the subject of the week rather than a detail. That is why it is one of the journeys people remember, and why it is the wrong week for someone who wanted Himachal in the gentle months.",
       "The trip runs when the rest of the mountains are shut for riding. Nine days, a small group, and villages that are living through winter rather than performing it. You will be cold. The landscape pays that back without trying.",
-      "If the dates are January or February and the group is up for a hard, quiet week, this is the one. If anyone in the group wants cafes and a mild evening, the Manali, Kasol, and Jibhi backpacking week is the honest alternative.",
+      "If the dates are January or February and the group is up for a hard, quiet week, this is the one.",
     ],
   },
   {

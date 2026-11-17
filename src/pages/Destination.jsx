@@ -95,7 +95,9 @@ export default function Destination() {
             <p>
               {safaris.length
                 ? "Camps and park fees change with the month. Ask the desk for a quote — nothing here is a fixed fare."
-                : "Each departure below has its own price, pickup, and day-by-day plan."}
+                : related.some((journey) => !Number.isFinite(journey.price))
+                  ? "Printed fares sit on the cards that have them. A card without a fare is quoted by the desk."
+                  : "Each departure below has its own price, pickup, and day-by-day plan."}
             </p>
             <Link className="btn block" to={`/plan?journey=${destination.slug}`}>Talk to team</Link>
           </aside>

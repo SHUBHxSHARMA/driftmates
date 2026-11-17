@@ -1,6 +1,20 @@
-import { journeys } from "./officialJourneys.js";
+import { journeys as publishedJourneys } from "./officialJourneys.js";
 
-export { journeys };
+const keptOrder = [
+  "munsiyari-johar",
+  "darma-panchachuli",
+  "adi-kailash",
+  "adi-kailash-car",
+  "winter-spiti",
+  "leh-ladakh-umling-la",
+  "turtuk-bike",
+  "bhutan",
+  "annapurna-base-camp",
+];
+
+export const journeys = keptOrder
+  .map((slug) => publishedJourneys.find((journey) => journey.slug === slug))
+  .filter(Boolean);
 
 const dm = (path) => `https://driftmates.com/wp-content/uploads/${path}`;
 
@@ -79,38 +93,33 @@ export const destinations = [
     slug: "uttarakhand",
     name: "Uttarakhand",
     region: "Kumaon & Garhwal",
-    ideal: "4–8 days",
-    image: photos.tungnath,
+    ideal: "7–8 days",
+    image: photos.munsiyari,
     portrait: photos.munsiyari,
-    seoTitle: "Uttarakhand trips | Munsiyari, Darma, Adi Kailash, Tungnath",
+    seoTitle: "Uttarakhand trips | Munsyari, Darma Valley, Adi Kailash",
     seoDescription:
-      "Kumaon and Garhwal departures from Haldwani, Kathgodam, and Dehradun. Munsiyari, Darma Valley, Adi Kailash, Kainchi Dham, and Tungnath.",
+      "Kumaon departures from Haldwani and Kathgodam. Munsyari, Darma Valley, Adi Kailash by bike, and Adi Kailash & Om Parvat.",
     blurb:
-      "Home ground. Munsiyari, Darma, Tungnath, Adi Kailash — valleys we have walked, driven, and recce’d until the pacing feels right.",
+      "Home ground. Munsyari, Darma Valley, Adi Kailash by bike, and Adi Kailash & Om Parvat — valleys we have walked, driven, and recce’d until the pacing feels right.",
     highlights: [
-      "Munsiyari, Khaliya Top, and Birthi",
+      "Munsyari, Khuliya Top, and Birthi",
       "Darma Valley, Panchachuli, Dantu, Chaukori, and Bageshwar",
       "Adi Kailash, Om Parvat, Gunji, Dharchula, and Pithoragarh",
-      "Tungnath, Chandrashila, Chopta, and Deoriatal",
-      "Nainital, Bhimtal, Kainchi Dham, and Kasar Devi",
-      "Binsar, Mukteshwar, Patal Bhuvaneshwar, Lohaghat, and Almora",
     ],
   },
   {
     slug: "himachal",
     name: "Himachal Pradesh",
-    region: "Kullu, Parvati & beyond",
-    ideal: "6–7 days",
+    region: "Spiti",
+    ideal: "9 days",
     image: photos.himachal,
     portrait: photos.bir,
-    seoTitle: "Himachal trips | Manali, Kasol, Jibhi and Winter Spiti",
+    seoTitle: "Himachal trips | Winter Spiti",
     seoDescription:
-      "Himachal backpacking from Kashmere Gate, plus a winter road into Spiti. Manali, Solang, Kasol, Jibhi, Jalori, and Kaza.",
+      "A winter road into Spiti from Kashmere Gate. Shimla, Sarahan, Chitkul, Tabo, Kaza, and Kalpa.",
     blurb:
-      "Cedar air, river towns, and a backpacking pace that leaves room for the unplanned evening. Manali, Kasol, Jibhi — held loosely.",
+      "Winter Spiti by road. A long drive from Delhi into a valley that is living through the cold, not performing it.",
     highlights: [
-      "Manali, Solang, and Sissu",
-      "Kasol, Jibhi, and Jalori Pass",
       "Shimla, Sarahan, and Chitkul",
       "Tabo, Kaza, and Kalpa",
     ],

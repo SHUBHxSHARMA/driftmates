@@ -37,9 +37,7 @@ const places = [
   "Munsiyari",
   "Darma Valley",
   "Adi Kailash",
-  "Tungnath",
-  "Manali",
-  "Jibhi",
+  "Winter Spiti",
   "Bhutan",
   "Annapurna",
   "Kumaon",
@@ -53,7 +51,7 @@ export default function Home() {
     <div className="home">
       <Seo
         title="Driftmates Adventure | Ladakh, Spiti, Kumaon, Bhutan and Annapurna"
-        description="Motorcycle, backpacking, and trek departures in Ladakh, Spiti, Kumaon, Manali, Bhutan, and Annapurna. Driftmates, Haldwani."
+        description="Motorcycle, backpacking, and trek departures in Ladakh, Spiti, Kumaon, Bhutan, and Annapurna. Driftmates, Haldwani."
         path="/"
         image={photos.hero}
         jsonLd={{ "@context": "https://schema.org", "@graph": [organization] }}

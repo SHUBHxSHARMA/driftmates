@@ -29,10 +29,12 @@ function Card({ journey, clone }) {
           <p className="join-place">{journey.destination}</p>
           <h3>{journey.title}</h3>
           <p className="join-meta">
-            <span>{stayLabel(journey.nights)}</span>
+            {journey.nights && <span>{stayLabel(journey.nights)}</span>}
             <span>{journey.kind}</span>
           </p>
-          <p className="join-price">From {inr(journey.price)}</p>
+          <p className="join-price">
+            {Number.isFinite(journey.price) ? `From ${inr(journey.price)}` : "Ask the desk"}
+          </p>
         </div>
       </Link>
     </article>

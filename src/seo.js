@@ -50,7 +50,13 @@ export function breadcrumb(items) {
 }
 
 export function journeyDescription(journey) {
-  return clip(
-    `${journey.summary} ${journey.nights}. Pickup at ${journey.pickup}. From ₹${Number(journey.price).toLocaleString("en-IN")} per person.`
-  );
+  const parts = [journey.summary];
+  if (journey.nights) parts.push(`${journey.nights}.`);
+  if (journey.pickup) parts.push(`Pickup at ${journey.pickup}.`);
+  if (Number.isFinite(journey.price)) {
+    parts.push(`From ₹${Number(journey.price).toLocaleString("en-IN")} per person.`);
+  } else {
+    parts.push("Fare quoted by the desk.");
+  }
+  return clip(parts.filter(Boolean).join(" "));
 }

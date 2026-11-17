@@ -76,10 +76,12 @@ export default function SeasonBox({ journey }) {
               <span>{value}</span>
             </li>
           ))}
-          <li>
-            <b>Duration</b>
-            <span>{stayLabel(journey.nights)}</span>
-          </li>
+          {journey.nights && (
+            <li>
+              <b>Duration</b>
+              <span>{stayLabel(journey.nights)}</span>
+            </li>
+          )}
           {journey.group && (
             <li>
               <b>Group</b>
@@ -91,7 +93,7 @@ export default function SeasonBox({ journey }) {
             <span>{journey.kind}</span>
           </li>
         </ul>
-        {active.open ? (
+        {active.open && Number.isFinite(journey.price) ? (
           <div className="season-fare">
             <p className="kicker">From</p>
             <p className="price">{inr(journey.price)}</p>
@@ -105,7 +107,7 @@ export default function SeasonBox({ journey }) {
           <p className="season-closed">No printed fare for this window.</p>
         )}
         <Link className="btn block season-book" to={`/plan?${query}`}>
-          {active.open ? "Plan this journey" : "Ask the desk"}
+          {active.open && Number.isFinite(journey.price) ? "Plan this journey" : "Ask the desk"}
         </Link>
       </div>
       </div>

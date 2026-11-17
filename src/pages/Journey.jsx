@@ -21,6 +21,161 @@ function Lines({ text }) {
   );
 }
 
+function isCopyHeading(line) {
+  const text = line.trim();
+  return text.length > 0 && text.length <= 52 && !/[.!?]$/.test(text);
+}
+
+function isStackedTitle(line) {
+  const text = line.trim();
+  if (text.length > 72 || text.includes(",")) return false;
+  const sentences = text.split(/(?<=[.!?])\s+/).filter(Boolean);
+  return sentences.length >= 2 && sentences.length <= 4 && sentences.every((part) => part.length <= 40 && /[.!?]$/.test(part));
+}
+
+function isClosingSignOff(line) {
+  const text = line.trim();
+  return text === "Travel the Himalayas. Know them beyond the map."
+    || text === "Driftmates – Himalayan Expeditions & Journeys";
+}
+
+function isClosingHeading(line) {
+  const text = line.trim();
+  if (isClosingSignOff(text)) return false;
+  if (isCopyHeading(text)) return true;
+  return text.length > 0 && text.length <= 52 && text.endsWith(".") && !text.includes(",") && text.split(/\s+/).length <= 10;
+}
+
+function ChapterColumn({ heading, list }) {
+  return (
+    <div className="chapter-col">
+      {heading && <h3>{heading}</h3>}
+      <ul>
+        {list.map((item) => <li key={item}>{item}</li>)}
+      </ul>
+    </div>
+  );
+}
+
+function ChapterBody({ parts }) {
+  const nodes = [];
+  let i = 0;
+  while (i < parts.length) {
+    const part = parts[i];
+    if (part.h && parts[i + 1]?.list) {
+      const columns = [];
+      while (parts[i]?.h && parts[i + 1]?.list) {
+        columns.push(<ChapterColumn key={`col-${i}`} heading={parts[i].h} list={parts[i + 1].list} />);
+        i += 2;
+      }
+      nodes.push(columns.length > 1
+        ? <div className="chapter-split" key={`split-${i}`}>{columns}</div>
+        : columns[0]);
+      continue;
+    }
+    if (part.strong) {
+      nodes.push(<p key={i}><strong>{part.strong}</strong>{part.p ? ` ${part.p}` : ""}</p>);
+    } else if (part.h) {
+      nodes.push(<h3 key={i}>{part.h}</h3>);
+    } else if (part.list) {
+      nodes.push(<ChapterColumn key={i} list={part.list} />);
+    } else {
+      nodes.push(<p key={i}>{part.p}</p>);
+    }
+    i += 1;
+  }
+  return <div className="prose chapter-copy">{nodes}</div>;
+}
+
+function Chapters({ journey, after }) {
+  const items = (journey.chapters || []).filter((chapter) => (chapter.after || "days") === after);
+  if (!items.length) return null;
+  return items.map((chapter) => (
+    <section key={chapter.title}>
+      <div className="wrap">
+        <div className="section-head">
+          <h2>{chapter.title}</h2>
+        </div>
+        <ChapterBody parts={chapter.parts} />
+      </div>
+    </section>
+  ));
+}
+
+function DayCopy({ text }) {
+  const lines = text.split("\n").map((line) => line.trim()).filter(Boolean);
+  const nodes = [];
+  let list = [];
+  let points = [];
+  let highlights = false;
+  const flush = () => {
+    if (!list.length) return;
+    const items = list;
+    list = [];
+    nodes.push(
+      <ul key={`list-${nodes.length}`}>
+        {items.map((item) => <li key={item}>{item}</li>)}
+      </ul>
+    );
+  };
+  const flushPoints = () => {
+    if (!points.length) return;
+    const items = points;
+    points = [];
+    nodes.push(
+      <ul className="day-points" key={`points-${nodes.length}`}>
+        {items.map((item) => <li key={item}>{item}</li>)}
+      </ul>
+    );
+  };
+  lines.forEach((line, i) => {
+    if (/^day highlights$/i.test(line)) {
+      flush();
+      flushPoints();
+      highlights = true;
+      nodes.push(<h4 key={`h-${i}`}>{line}</h4>);
+      return;
+    }
+    if (highlights) {
+      const next = lines[i + 1] || "";
+      const nextPair = labelSplit(next);
+      const closesList = /^(overnight|meals|travel|transport)$/i.test(nextPair?.label || "");
+      const startsFacts = Boolean(labelSplit(line)?.value) || (isCopyHeading(line) && Boolean(nextPair?.value) && !closesList);
+      if (startsFacts) {
+        highlights = false;
+        flushPoints();
+      } else {
+        points.push(line.replace(/^[-–•]\s+/, ""));
+        return;
+      }
+    }
+    const bullet = line.match(/^[-–•]\s+(.*)/);
+    if (bullet) {
+      list.push(bullet[1]);
+      return;
+    }
+    flush();
+    const pair = labelSplit(line);
+    if (pair?.value) {
+      nodes.push(
+        <p className="day-meta" key={`meta-${i}`}>
+          <b>{pair.label}: </b>
+          {pair.value}
+        </p>
+      );
+      return;
+    }
+    if (isCopyHeading(line) || (i === 0 && isStackedTitle(line))) {
+      nodes.push(<h4 key={`h-${i}`}>{line}</h4>);
+      return;
+    }
+    nodes.push(<p key={`p-${i}`}>{line}</p>);
+  });
+  flush();
+  flushPoints();
+  return <div className="day-copy">{nodes}</div>;
+}
+
 function cleanLine(raw) {
   return raw.trim().replace(/^[*#]\s*/, "").replace(/^[-–]\s*/, "").trim();
 }
@@ -374,20 +529,28 @@ export default function Journey() {
         image: journey.image,
         url: `https://driftmates.com/journeys/${journey.slug}`,
         provider: { "@id": "https://driftmates.com/#organization" },
-        itinerary: {
-          "@type": "ItemList",
-          itemListElement: journey.days.map((day, i) => ({
-            "@type": "ListItem",
-            position: i + 1,
-            name: `${day.n}: ${day.t}`,
-          })),
-        },
-        offers: {
-          "@type": "Offer",
-          price: String(journey.price),
-          priceCurrency: "INR",
-          url: `https://driftmates.com/journeys/${journey.slug}`,
-        },
+        ...(journey.days?.length
+          ? {
+              itinerary: {
+                "@type": "ItemList",
+                itemListElement: journey.days.map((day, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  name: `${day.n}: ${day.t}`,
+                })),
+              },
+            }
+          : {}),
+        ...(Number.isFinite(journey.price)
+          ? {
+              offers: {
+                "@type": "Offer",
+                price: String(journey.price),
+                priceCurrency: "INR",
+                url: `https://driftmates.com/journeys/${journey.slug}`,
+              },
+            }
+          : {}),
       },
     ];
     if (journey.faqs?.length) {
@@ -416,6 +579,47 @@ export default function Journey() {
 
   const photos = [journey.image, ...(journey.gallery || [])].filter(Boolean);
   const more = journeys.filter((j) => j.place === journey.place && j.slug !== journey.slug);
+  const closingSection = journey.closing ? (
+    <section key="closing">
+      <div className="wrap">
+        <div className="section-head">
+          <h2>{journey.closing.split("\n").find((line) => line.trim())}</h2>
+        </div>
+        <div className="prose closing-copy">
+          {journey.closing
+            .split("\n")
+            .map((line) => line.trim())
+            .filter(Boolean)
+            .slice(1)
+            .map((line) => (
+              isClosingSignOff(line)
+                ? <p key={line}><strong>{line}</strong></p>
+                : isClosingHeading(line)
+                  ? <h3 key={line}>{line}</h3>
+                  : <p key={line}>{line}</p>
+            ))}
+        </div>
+      </div>
+    </section>
+  ) : null;
+  const regionSection = journey.region?.length > 0 ? (
+    <section key="region">
+      <div className="wrap">
+        <div className="section-head">
+          <p className="kicker">{journey.regionKicker || "Munsyari"}</p>
+          <h2>{journey.regionHeading || "Understanding the region"}</h2>
+        </div>
+        <div className="region-row">
+          {journey.region.map((item) => (
+            <article className="region-notes" key={item.t}>
+              <h3>{item.t}</h3>
+              <Lines text={item.d} />
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  ) : null;
 
   return (
     <>
@@ -443,9 +647,9 @@ export default function Journey() {
         <div className="wrap section-nav-inner">
           <a href="#overview">Overview</a>
           {routeFor(journey.slug).length >= 2 && <a href="#short-itinerary">Short itinerary</a>}
-          <a href="#itinerary">Itinerary</a>
-          <a href="#included">Included</a>
-          <a href="#questions">Questions</a>
+          {journey.days?.length > 0 && <a href="#itinerary">Itinerary</a>}
+          {policyRows(journey).length > 0 && <a href="#included">Included</a>}
+          {journey.faqs?.length > 0 && <a href="#questions">Questions</a>}
           <Link className="btn" to={`/plan?journey=${journey.slug}`}>Request a plan</Link>
         </div>
       </nav>
@@ -463,6 +667,7 @@ export default function Journey() {
 
       <RouteOverview journey={journey} />
 
+      {journey.days?.length > 0 && (
       <section id="itinerary" className="band">
         <div className="wrap">
           <div className="section-head center">
@@ -476,7 +681,7 @@ export default function Journey() {
                 <div>
                   <p className="kicker">{day.n}</p>
                   <h3>{day.t}</h3>
-                  <Lines text={day.d} />
+                  <DayCopy text={day.d} />
                 </div>
                 {photos.length > 0 && (
                   <div className="day-photo">
@@ -488,7 +693,26 @@ export default function Journey() {
           </div>
         </div>
       </section>
+      )}
 
+      {regionSection}
+
+      {journey.reading && (
+        <section>
+          <div className="wrap">
+            <div className="section-head">
+              <h2>{journey.reading.split("\n")[0]}</h2>
+            </div>
+            <div className="prose">
+              <Lines text={journey.reading.split("\n").slice(1).join("\n")} />
+            </div>
+          </div>
+        </section>
+      )}
+
+      <Chapters journey={journey} after="days" />
+
+      {(policyRows(journey).length > 0 || journey.altitude?.length > 0) && (
       <section id="included">
         <div className="wrap">
           <PolicyBoard rows={policyRows(journey)} />
@@ -516,6 +740,9 @@ export default function Journey() {
           )}
         </div>
       </section>
+      )}
+
+      <Chapters journey={journey} after="included" />
 
       {journey.faqs?.length > 0 && (
         <section id="questions" className="band">
@@ -550,6 +777,8 @@ export default function Journey() {
           <EnquiryForm compact journey={journey.slug} />
         </div>
       </section>
+
+      {closingSection}
 
       {more.length > 0 && (
         <section className="band">
