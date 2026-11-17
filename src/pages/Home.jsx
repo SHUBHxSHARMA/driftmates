@@ -127,7 +127,7 @@ export default function Home() {
       <section className="band" id="states">
         <div className="wrap">
           <Reveal className="section-head center">
-            <div className="dots">Ladakh · Uttarakhand · Himachal · Bhutan · Nepal · Africa</div>
+            <div className="dots">Uttarakhand · Himachal · Ladakh · Bhutan · Nepal · Africa</div>
             <h2>Places we actually know</h2>
             <p>
               Discover what sits past the usual trail. Local guides and expedition leads who

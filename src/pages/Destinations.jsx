@@ -7,7 +7,7 @@ export default function Destinations() {
   return (
     <>
       <Seo
-        title="Destinations | Ladakh, Uttarakhand, Himachal, Bhutan, Nepal, Africa | Driftmates"
+        title="Destinations | Uttarakhand, Himachal, Ladakh, Bhutan, Nepal, Africa | Driftmates"
         description="The regions Driftmates actually runs: Ladakh, Kumaon and Garhwal, Himachal and Spiti, Bhutan, the Annapurna region of Nepal, and safaris in Kenya and Tanzania."
         path="/destinations"
         image={photos.leh}

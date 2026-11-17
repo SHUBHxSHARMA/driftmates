@@ -73,24 +73,6 @@ export function stayLabel(value) {
 
 export const destinations = [
   {
-    slug: "ladakh",
-    name: "Ladakh",
-    region: "High Himalaya",
-    ideal: "6–8 days",
-    image: photos.leh,
-    portrait: photos.shey,
-    seoTitle: "Ladakh bike trips | Umling La, Nubra and Turtuk",
-    seoDescription:
-      "Ladakh motorcycle and backpacking trips from Leh airport. Umling La, Nubra, Turtuk, and Pangong Tso with Driftmates.",
-    blurb:
-      "Barren ridgelines, monastery light, and roads that climb past the last village. Ladakh is where most of our riders come to feel how big the map really is.",
-    highlights: [
-      "Leh, Sham Valley, Nubra, and Khardung La",
-      "Turtuk, Pangong Tso, and Chang La",
-      "Hanle, Chumathang, and Umling La",
-    ],
-  },
-  {
     slug: "uttarakhand",
     name: "Uttarakhand",
     region: "Kumaon & Garhwal",
@@ -124,6 +106,24 @@ export const destinations = [
       "Shimla, Sarahan, and Nako",
       "Dhankar, Tabo, Pin Valley, and Kaza",
       "Langza, Komic, Hikkim, Key Monastery, and Kalpa",
+    ],
+  },
+  {
+    slug: "ladakh",
+    name: "Ladakh",
+    region: "High Himalaya",
+    ideal: "6–8 days",
+    image: photos.leh,
+    portrait: photos.shey,
+    seoTitle: "Ladakh bike trips | Umling La, Nubra and Turtuk",
+    seoDescription:
+      "Ladakh motorcycle and backpacking trips from Leh airport. Umling La, Nubra, Turtuk, and Pangong Tso with Driftmates.",
+    blurb:
+      "Barren ridgelines, monastery light, and roads that climb past the last village. Ladakh is where most of our riders come to feel how big the map really is.",
+    highlights: [
+      "Leh, Sham Valley, Nubra, and Khardung La",
+      "Turtuk, Pangong Tso, and Chang La",
+      "Hanle, Chumathang, and Umling La",
     ],
   },
   {
