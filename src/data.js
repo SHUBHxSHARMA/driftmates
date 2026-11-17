@@ -6,6 +6,7 @@ const keptOrder = [
   "adi-kailash",
   "adi-kailash-car",
   "winter-spiti",
+  "summer-spiti",
   "leh-ladakh-umling-la",
   "turtuk-bike",
   "bhutan",
@@ -111,17 +112,18 @@ export const destinations = [
     slug: "himachal",
     name: "Himachal Pradesh",
     region: "Spiti",
-    ideal: "9 days",
+    ideal: "8 days on the winter expedition",
     image: photos.himachal,
     portrait: photos.bir,
-    seoTitle: "Himachal trips | Winter Spiti",
+    seoTitle: "Himachal trips | Winter Spiti and Summer Spiti",
     seoDescription:
-      "A winter road into Spiti from Kashmere Gate. Shimla, Sarahan, Chitkul, Tabo, Kaza, and Kalpa.",
+      "Winter Spiti Expedition 2027 and Summer Spiti Expedition.",
     blurb:
-      "Winter Spiti by road. A long drive from Delhi into a valley that is living through the cold, not performing it.",
+      "Two Spiti expeditions: Winter Spiti Expedition 2027, and Summer Spiti Expedition.",
     highlights: [
-      "Shimla, Sarahan, and Chitkul",
-      "Tabo, Kaza, and Kalpa",
+      "Shimla, Sarahan, and Nako",
+      "Dhankar, Tabo, Pin Valley, and Kaza",
+      "Langza, Komic, Hikkim, Key Monastery, and Kalpa",
     ],
   },
   {

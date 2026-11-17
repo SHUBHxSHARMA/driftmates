@@ -2098,16 +2098,16 @@ export const journeys = [
   {
     "slug": "winter-spiti",
     "source": "winter-spiti-trip-package",
-    "title": "Winter Spiti Trip Package",
+    "title": "Winter Spiti Expedition 2027",
     "destination": "Himachal",
     "place": "himachal",
-    "kind": "Backpacking",
-    "nights": "9 days - 8 nights",
-    "group": "15 to 20 people",
+    "kind": "Winter Road Expedition · Himalayan Landscapes · Culture · Village Exploration",
+    "nights": "8 Days | 7 Nights + Overnight Volvo Transfers",
     "price": 22999,
     "was": 35999,
-    "pickup": "Kashmere Gate",
+    "pickup": "Kashmere Gate, Delhi",
     "season": "",
+    "itineraryHeading": "8 days and 7 nights",
     "terms": [],
     "image": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
     "gallery": [
@@ -2115,157 +2115,607 @@ export const journeys = [
       "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
       "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
     ],
-    "summary": "Winter transforms Spiti Valley into a surreal, snow-covered Himalayan desert, raw, silent, and breathtakingly beautiful. This 9-day road expedition takes you deep into one of India’s most remote high-altitude regions, following the historic Shimla-Kinnaur route, the only accessib…",
-    "overview": "Winter transforms Spiti Valley into a surreal, snow-covered Himalayan desert, raw, silent, and breathtakingly beautiful. This 9-day road expedition takes you deep into one of India’s most remote high-altitude regions, following the historic Shimla-Kinnaur route, the only accessible corridor during peak winter.\nFrom the pine valleys of Sangla and the sacred views of Kinnaur Kailash in Kalpa to the frozen serenity of Nako Lake and the 1000 year old Tabo Monastery, every day reveals a new layer of Himalayan heritage. As you move deeper into Spiti, dramatic cliffside monasteries like Dhankar, the iconic Key Monastery, and remote high-altitude villages such as Hikkim, Komic, and Langza unfold against vast white landscapes.\nThis is not a luxury escape, it’s an authentic winter expedition. Expect sub-zero temperatures, stark mountain beauty, frozen waterfalls, and the kind of silence only high altitudes can offer.\nFor those who seek something beyond ordinary road trips, Winter Spiti is not just a journey, it’s an experience of resilience, culture, and raw Himalayan magic.",
-    "highlights": [
-      "Volvo / AC Semi-Sleeper Bus Tickets for Delhi–Shimla and Shimla–Delhi (as per itinerary).",
-      "All Internal Transfers in Tempo Traveler (Shimla to Shimla) for the entire road journey including sightseeing mention…",
-      "Accommodation for 6 Nights (Sangla/Chitkul → Kalpa → Nako → Kaza → Kalpa as per itinerary) on triple sharing basis."
-    ],
+    "summary": "Winter brings a different character to the mountains of Kinnaur and Spiti.",
+    "overview": "Across Kinnaur and the Frozen Landscapes of Spiti\nWinter brings a different character to the mountains of Kinnaur and Spiti.\nThe familiar mountain roads become quieter, villages settle into the rhythm of the cold season, and snow gradually transforms the landscape. Frozen streams, white mountain slopes, traditional houses and monasteries surrounded by barren mountains make this one of the most distinctive seasons to experience the Himalaya.\nOur journey begins in Delhi with an overnight Volvo transfer to Shimla. From there, we enter Kinnaur, travelling through Sarahan and along the Sutlej valley towards Nako. As the landscape changes, we cross into the high-altitude cold desert of Spiti.\nOver the following days, we explore some of the region's most recognisable places. We visit the historic monasteries of Dhankar, Tabo, Kungri and Key, travel through Pin Valley, and spend time in the high villages of Langza, Komic and Hikkim.\nKaza becomes our base for exploring the surrounding landscape, including Chicham Bridge and Kibber. On the return journey, we travel through Gue and Reckong Peo before reaching Kalpa, where the Kinnaur Kailash range forms the backdrop to our final mountain stay.\nThis is a road expedition designed around the experience of winter in the Himalaya. The route combines mountain drives, cultural landmarks, remote settlements and time to explore the landscape at a slower pace.\nWinter travel also comes with its own realities. Snowfall, icy roads, changing temperatures and occasional road closures can affect access to individual destinations. Our journey is planned with flexibility, keeping safety and actual road conditions ahead of a fixed sightseeing schedule.\nExpedition route: Delhi → Shimla → Sarahan → Nako → Dhankar → Pin Valley → Kaza → Langza → Komic → Hikkim → Key Monastery → Chicham → Kibber → Kalpa → Shimla → Delhi.",
+    "highlights": [],
     "included": [
-      "Volvo / AC Semi-Sleeper Bus Tickets for Delhi–Shimla and Shimla–Delhi (as per itinerary).",
-      "All Internal Transfers in Tempo Traveler (Shimla to Shimla) for the entire road journey including sightseeing mentioned in the itinerary.",
-      "Accommodation for 6 Nights (Sangla/Chitkul → Kalpa → Nako → Kaza → Kalpa as per itinerary) on triple sharing basis.",
-      "Double sharing available at additional cost (subject to availability).",
-      "Meals as per MAP plan: Day 1 – Dinner; Day 2 to Day 6 – Breakfast & Dinner; Day 7 – Breakfast only.",
-      "Experienced Driftmates Trip Leader / Captain throughout the journey.",
-      "All Sightseeing & Transfers mentioned in the day-wise itinerary (subject to weather and road conditions).",
-      "Driver Allowance, Toll Taxes, Parking Charges & State Permits.",
-      "Basic First Aid Kit carried by the trip leader."
+      "Overnight Volvo transfer from Delhi to Shimla.",
+      "Overnight Volvo transfer from Shimla to Delhi.",
+      "Mountain transportation in a Tempo Traveller from Shimla to Shimla.",
+      "Seven nights of accommodation as per the itinerary.",
+      "Seven breakfasts.",
+      "Seven dinners.",
+      "Planned sightseeing and exploration as per the itinerary.",
+      "On-ground coordination and trip management by Driftmates."
     ],
     "notIncluded": [
-      "Any meals not specifically mentioned in the inclusions (Lunches are excluded).",
-      "Personal expenses such as snacks, tea/coffee, bottled water, shopping, laundry, tips, etc.",
-      "Entry tickets to monuments, monasteries, museums, camera/video charges (if applicable).",
-      "Any adventure activities not mentioned in the itinerary.",
-      "Travel insurance (strongly recommended for winter travel).",
-      "Medical expenses, evacuation costs, or hospitalization in case of emergency.",
-      "Costs arising due to natural calamities, landslides, snowfall blockages, road closures, political disturbances, or any unforeseen circumstances beyond control.",
-      "Heater charges at hotels (if applicable and payable directly at the property).",
-      "Any additional accommodation or transport required due to weather delays.",
-      "Anything not explicitly mentioned in the “Inclusions” section."
+      "International or domestic flights.",
+      "Transfers between Delhi airport and Kashmere Gate.",
+      "Lunches, snacks and beverages.",
+      "Personal expenses, shopping and laundry.",
+      "Personal medication and travel essentials.",
+      "Travel and medical insurance.",
+      "Any permit or government fee not specifically confirmed as included.",
+      "Additional accommodation or transportation arising from weather, road closures or unforeseen disruptions.",
+      "Any activity, entry fee or service not specifically mentioned under inclusions.",
+      "Expenses arising from changes requested by travellers outside the planned itinerary."
     ],
-    "payment": [
-      "To confirm your booking, a minimum of 30% of the total trip cost must be paid at the time of booking.",
-      "The remaining 70% of the total amount must be cleared at least 30 days prior to the departure date.",
-      "In case the booking is made within 30 days of departure, 100% payment is required at the time of booking.",
-      "Failure to adhere to the payment schedule may result in automatic cancellation of the booking without prior notice, and applicable cancellation charges will apply."
-    ],
-    "cancellation": [
-      "The booking amount (30%) is non-refundable under all circumstances.",
-      "Cancellations made 30 days or more prior to the departure date will attract a cancellation charge of 20% of the total trip cost.",
-      "Cancellations made within 30 days of departure will attract 100% cancellation charges (no refund).",
-      "If the remaining balance payment is not cleared within the specified timeline, the booking will stand cancelled automatically and the amount paid will be forfeited without refund.",
-      "No refund will be provided for unused services, no-shows, or early exit from the trip."
-    ],
+    "payment": [],
+    "cancellation": [],
     "altitude": [],
+    "regionKicker": "Kinnaur & Spiti",
+    "regionHeading": "The places along the journey",
+    "region": [
+      {
+        "t": "Sarahan and Bhimakali Temple",
+        "d": "Sarahan is a traditional settlement in Himachal Pradesh, located along the route into Kinnaur. Its most recognised landmark is Bhimakali Temple, an important religious site known for its distinctive wooden architecture and cultural significance."
+      },
+      {
+        "t": "Nako",
+        "d": "Nako is a high-altitude village in Kinnaur, known for its traditional houses, mountain setting and lake. It offers an introduction to the cold desert landscapes that become more prominent as the journey continues towards Spiti."
+      },
+      {
+        "t": "Dhankar Monastery",
+        "d": "Dhankar Monastery stands on a rocky ridge overlooking the meeting point of the Spiti and Pin rivers. Its dramatic setting and historic importance make it one of the most memorable cultural landmarks in the region."
+      },
+      {
+        "t": "Dhankar Lake",
+        "d": "Located above Dhankar village, Dhankar Lake is reached by a mountain trail. The walk offers expansive views of the surrounding terrain. Winter access can be difficult due to snow and ice, so the trek depends on safe trail conditions."
+      },
+      {
+        "t": "Tabo Monastery",
+        "d": "Founded in 996 CE, Tabo Monastery is one of the most important Buddhist heritage sites in Spiti. Its historic temples and murals offer insight into the region's long religious and cultural history."
+      },
+      {
+        "t": "Pin Valley",
+        "d": "Pin Valley is known for its rugged terrain, remote settlements and wildlife habitat. The landscape is particularly distinctive in winter, when snow and cold conditions change the appearance of the valley."
+      },
+      {
+        "t": "Mud Village",
+        "d": "Mud is one of the best-known villages in Pin Valley. It is surrounded by dramatic mountain scenery and offers a glimpse into the settlement patterns and daily life of this remote region."
+      },
+      {
+        "t": "Langza",
+        "d": "Langza is recognised for its large Buddha statue, fossil-bearing landscape and open mountain views. It is one of the most photographed villages around Kaza."
+      },
+      {
+        "t": "Komic",
+        "d": "Komic is a remote high-altitude village known for its monastery and traditional settlement. Its position among the mountains makes it a distinctive part of the Spiti landscape."
+      },
+      {
+        "t": "Hikkim",
+        "d": "Hikkim is widely recognised for its high-altitude post office. It is a small village where communication and everyday services reflect the realities of remote Himalayan living."
+      },
+      {
+        "t": "Key Monastery",
+        "d": "Key Monastery is one of Spiti's most important Buddhist institutions. Its hilltop setting above the valley makes it a prominent landmark and an important centre of religious learning."
+      },
+      {
+        "t": "Chicham Bridge",
+        "d": "Chicham Bridge connects the villages of Chicham and Kibber across a deep gorge. It is an impressive example of infrastructure in a challenging mountain landscape."
+      },
+      {
+        "t": "Kibber",
+        "d": "Kibber is known for its high-altitude setting, traditional architecture and surrounding wildlife habitat. It is particularly associated with the conservation landscape of the snow leopard."
+      },
+      {
+        "t": "Gue Monastery",
+        "d": "Gue Monastery is known for housing the naturally preserved remains of a Buddhist monk. The site offers a distinctive cultural experience in the upper Kinnaur region."
+      },
+      {
+        "t": "Kalpa and Kinnaur Kailash",
+        "d": "Kalpa is one of Kinnaur's best-known mountain settlements. It is particularly recognised for views towards the Kinnaur Kailash range, whose peaks form an impressive backdrop to the village."
+      }
+    ],
+    "chapters": [
+      {
+        "title": "Winter travel: what to expect",
+        "after": "days",
+        "parts": [
+          { "p": "Winter Spiti is a demanding mountain journey. Travellers should be prepared for:" },
+          {
+            "list": [
+              "Very cold mornings and nights.",
+              "Sub-zero temperatures, sometimes approaching -20°C.",
+              "Snow and ice on mountain roads.",
+              "Temporary road closures following snowfall.",
+              "Limited mobile network coverage.",
+              "Reduced services and simpler accommodation in some villages.",
+              "Changes to the itinerary when conditions require them."
+            ]
+          },
+          { "p": "The team will plan each day around actual road conditions, available daylight and local guidance." }
+        ]
+      },
+      {
+        "title": "Transportation and ground arrangements",
+        "after": "days",
+        "parts": [
+          { "h": "Delhi – Shimla – Delhi transfers" },
+          { "p": "Both overnight Volvo journeys are included in the package." },
+          { "h": "Outbound transfer" },
+          {
+            "list": [
+              "Delhi to Shimla.",
+              "Pickup: Kashmere Gate, Delhi.",
+              "Overnight journey."
+            ]
+          },
+          { "h": "Return transfer" },
+          {
+            "list": [
+              "Shimla to Delhi.",
+              "Drop: Kashmere Gate, Delhi.",
+              "Overnight journey."
+            ]
+          },
+          { "p": "These are transfer arrangements and are not counted as full expedition days." },
+          { "p": "The exact bus departure times and boarding details will be shared before departure." },
+          { "h": "Mountain transportation" },
+          { "p": "The mountain expedition operates in a Tempo Traveller from Shimla to Shimla." },
+          { "p": "The vehicle is used for the entire mountain route, including Kinnaur and Spiti. Vehicle allocation and seating arrangements will depend on the group size and operating plan." },
+          { "p": "Winter road travel requires experienced mountain drivers familiar with snow, ice and changing road conditions." }
+        ]
+      },
+      {
+        "title": "Accommodation and meals",
+        "after": "days",
+        "parts": [
+          { "h": "Accommodation" },
+          { "p": "The expedition includes seven nights of accommodation." },
+          {
+            "list": [
+              "Sarahan: 1 night",
+              "Nako: 1 night",
+              "Dhankar: 1 night",
+              "Kaza: 3 nights",
+              "Kalpa: 1 night",
+              "Total: 7 nights"
+            ]
+          },
+          { "p": "Winter accommodation is different from the summer season. Properties may have limited facilities, and heating, hot water and room configurations can vary." },
+          { "p": "The selected properties will be confirmed for the departure, based on winter operations and availability." },
+          { "h": "Meals" },
+          { "p": "The package includes:" },
+          {
+            "list": [
+              "7 breakfasts, from Day 02 to Day 08.",
+              "7 dinners, from Day 01 to Day 07."
+            ]
+          },
+          { "p": "Lunches, snacks, beverages and personal food orders are not included." },
+          { "p": "Food options in remote villages can be limited during winter. Travellers with dietary restrictions or allergies should inform Driftmates before booking." }
+        ]
+      },
+      {
+        "title": "Planning your journey",
+        "after": "days",
+        "parts": [
+          { "h": "For Indian travellers" },
+          { "p": "The complete journey begins and ends in Delhi, with overnight Volvo transfers between Kashmere Gate and Shimla included." },
+          { "p": "Travellers should carry a valid government-issued photo ID. Route-specific registration or permit requirements will be checked with the relevant authorities before departure." },
+          { "h": "For international travellers" },
+          { "p": "We welcome enquiries from international travellers interested in experiencing winter in Kinnaur and Spiti." },
+          { "p": "However, certain areas along this route are close to India's international border and may have additional access requirements for foreign nationals." },
+          { "p": "Parts of Kinnaur are subject to Inner Line Permit regulations. The exact requirements depend on nationality, route and current government rules. A valid Indian visa does not automatically guarantee access to every restricted or protected area." },
+          { "p": "Before confirming a booking, international travellers should share their passport nationality and proposed travel dates so that the applicable requirements can be checked." },
+          { "p": "Driftmates can assist with understanding the relevant requirements and coordinating the necessary information, but government permission and entry cannot be guaranteed." },
+          { "h": "International travel arrangements" },
+          {
+            "list": [
+              "Delhi is the starting and ending point of the complete journey.",
+              "International flights are not included.",
+              "Both overnight Volvo transfers between Delhi and Shimla are included.",
+              "Pickup and drop are at Kashmere Gate, Delhi.",
+              "Transfers between Delhi airport and Kashmere Gate are not included unless separately confirmed.",
+              "Travellers should plan international arrivals with sufficient time before the outbound Volvo departure.",
+              "Travel insurance covering winter mountain travel, medical emergencies and evacuation is strongly recommended."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "What to pack",
+        "after": "days",
+        "parts": [
+          { "p": "Winter Spiti requires proper cold-weather clothing. Ordinary winter jackets and city footwear are not sufficient for extended exposure to sub-zero temperatures." },
+          { "h": "Clothing" },
+          {
+            "list": [
+              "Insulated winter jacket.",
+              "Thermal base layers.",
+              "Fleece or insulating mid-layers.",
+              "Waterproof and wind-resistant outer layer.",
+              "Warm gloves and spare gloves.",
+              "Woollen socks.",
+              "Warm cap and neck protection."
+            ]
+          },
+          { "h": "Footwear" },
+          {
+            "list": [
+              "Insulated winter footwear with good grip.",
+              "Extra socks.",
+              "Comfortable shoes for indoor use."
+            ]
+          },
+          { "h": "Personal essentials" },
+          {
+            "list": [
+              "Sunglasses.",
+              "High-SPF sunscreen.",
+              "Moisturiser and lip balm.",
+              "Personal medication.",
+              "Reusable water bottle.",
+              "Power bank and charging cables.",
+              "Personal toiletries."
+            ]
+          },
+          { "p": "Avoid relying on cotton as your primary thermal layer, as it retains moisture and dries slowly." }
+        ]
+      }
+    ],
     "faqs": [
       {
-        "q": "How cold does it get in Spiti during winter?",
-        "a": "Winter temperatures in Spiti can drop to -15°C to -25°C at night, especially in Kaza and higher villages like Komic. Day temperatures may range between -5°C to 5°C, depending on sunlight and snowfall. Strong winds can make it feel even colder."
+        "q": "How many days is the Winter Spiti Expedition?",
+        "a": "The mountain expedition is eight days and seven nights, operating from Shimla to Shimla. Two overnight Volvo transfers connect Delhi and Shimla and are included separately in the package."
       },
       {
-        "q": "Are roads safe during winter?",
-        "a": "Yes, but road conditions can be unpredictable. Snowfall, black ice, or temporary blockages may cause delays. The Border Roads Organisation (BRO) clears roads regularly, but buffer time is always recommended."
+        "q": "Where does the journey start and end?",
+        "a": "The complete journey starts and ends in Delhi. The mountain expedition begins and concludes in Shimla."
       },
       {
-        "q": "Can the itinerary change due to weather?",
-        "a": "Yes. Winter travel in high-altitude regions is weather-dependent. In case of road closures or heavy snowfall, minor route adjustments may be made in the interest of safety."
+        "q": "Where is the Volvo pickup and drop point?",
+        "a": "Both the outbound and return Volvo journeys are arranged through Kashmere Gate, Delhi. The exact boarding details and timings will be shared before departure."
       },
       {
-        "q": "Is the Manali route open in winter?",
-        "a": "No. The Manali-Kunzum Pass route remains closed during winter due to heavy snowfall. Winter access to Spiti is only possible via the Shimla-Kinnaur route, which is the route followed in this itinerary."
+        "q": "What vehicle is used during the expedition?",
+        "a": "A Tempo Traveller is used for the mountain journey from Shimla to Shimla. The Volvo buses are used only for the Delhi–Shimla transfers."
       },
       {
-        "q": "What kind of stays can we expect in winter?",
-        "a": "Stays are in local guesthouses and hotels. Due to extreme cold, some properties may provide common washrooms or limited hot water (usually one bucket per person) during peak winter months. Electric heaters, if available, may be chargeable."
+        "q": "Will we see snowfall?",
+        "a": "Snowfall depends on the weather and cannot be guaranteed. The region may already have snow on the ground, or fresh snowfall may occur during the expedition."
       },
       {
-        "q": "Is electricity and network available?",
-        "a": "Electricity is available but power cuts are common. Carry power banks. Mobile network works intermittently — BSNL and Jio postpaid have better connectivity, but internet access is limited."
+        "q": "How cold does Spiti get during winter?",
+        "a": "Temperatures can fall well below freezing. During the coldest period, they can approach -20°C, particularly at night and in exposed locations."
       },
       {
-        "q": "Do I need to be physically fit for this trip?",
-        "a": "This is not a trek, but it is a high-altitude winter expedition. You should be comfortable sitting for long drives and walking short distances in snow. Basic fitness and good immunity help."
+        "q": "Can we visit Langza, Komic and Hikkim during winter?",
+        "a": "These villages are part of the planned exploration. However, access depends on snowfall, road clearance and local conditions. If a road is unsafe or closed, the team will adjust the day's plan."
       },
       {
-        "q": "Is altitude sickness a concern?",
-        "a": "Yes, since Kaza is at ~3,800M and villages like Komic go above 4,500M. Proper hydration, slow movement, and acclimatization reduce risks. Avoid alcohol during initial days."
+        "q": "Is the Dhankar Lake trek included?",
+        "a": "The Dhankar Lake walk is a planned experience, subject to trail conditions. During winter, snow and ice can make the trail unsafe. The trek will only take place if conditions allow."
       },
       {
-        "q": "What clothing is essential?",
-        "a": "You must carry: • Heavy down jacket (rated for sub-zero temperatures) • 2-3 thermal inner layers (top & bottom) • Fleece or woolen mid-layer • Waterproof windproof outer jacket • Insulated winter gloves (waterproof preferred) • Woolen cap + neck warmer / balaclava • 3-4 pairs of woolen socks • Warm track pants / insulated lower • Comfortable inner wear for layeringLayering is key. Avoid cotton as it retains moisture."
+        "q": "Is this expedition suitable for first-time Himalayan travellers?",
+        "a": "It can suit travellers who are physically prepared, comfortable with long mountain drives and willing to adapt to winter conditions. It is a demanding winter journey rather than a conventional holiday."
       },
       {
-        "q": "What footwear should I bring?",
-        "a": "• Waterproof trekking shoes with strong grip (mandatory) • Extra thick socks • Flip-flops for hotel useSnow and ice can make surfaces slippery, so good grip is essential."
+        "q": "What kind of accommodation can I expect?",
+        "a": "Accommodation is arranged in properties operating during winter. Facilities can be simpler than in larger towns, particularly in remote villages. Heating and hot water arrangements vary by property and will be confirmed for the departure."
       },
       {
-        "q": "What personal essentials should I carry?",
-        "a": "• Sunglasses (UV protected - snow glare is strong) • Sunscreen SPF 50+ • Lip balm & moisturizer (air is extremely dry) • Personal medicines • Small first-aid kit • Reusable water bottle • Energy bars / dry fruits • Power bank (very important) • Torch / headlamp • Wet wipes (water may freeze)"
+        "q": "Are all meals included?",
+        "a": "Seven breakfasts and seven dinners are included. Lunches, snacks, beverages and personal food orders are not included."
       },
       {
-        "q": "Should I carry heaters or sleeping bags?",
-        "a": "Not necessary. Stays provide bedding. However, if you are highly sensitive to cold, you may carry a compact personal sleeping liner for extra warmth."
+        "q": "Can international travellers join?",
+        "a": "International travellers can enquire. Some areas along the route may have Inner Line Permit or other access requirements. Eligibility depends on nationality and current regulations, so the applicable permissions must be checked before booking."
       },
       {
-        "q": "Is travel insurance required?",
-        "a": "Travel insurance covering high-altitude travel and medical emergencies is strongly recommended, especially during winter."
+        "q": "Will mobile network be available?",
+        "a": "Connectivity varies across the route. Some remote areas may have limited or no network coverage. We recommend downloading essential travel information before entering the valley."
       },
       {
-        "q": "What happens in case of heavy snowfall or road closure?",
-        "a": "If roads are blocked due to snowfall, we may need to wait for clearance or alter plans slightly. Any additional stay due to force majeure will be borne by the traveler unless specified otherwise."
+        "q": "What happens if a road is closed?",
+        "a": "Safety comes first. The team may change the route, skip certain village excursions, extend a stay or adjust the return schedule according to road conditions and local guidance."
       },
       {
-        "q": "Are ATMs available in Spiti?",
-        "a": "Limited ATMs are available in Kaza, but they may not always function. Carry sufficient cash from Shimla or Reckong Peo. From Rs 35,999.00 Original price was: Rs 35,999.00. Rs 22,999.00 Current price is: Rs 22,999.00."
+        "q": "Is travel insurance recommended?",
+        "a": "Yes. Travellers should have insurance that covers medical emergencies, evacuation and winter mountain travel. Check the policy carefully for altitude and activity exclusions."
+      }
+    ],
+    "closing": "Experience Winter Spiti with Driftmates\nWinter in Spiti is not about ticking off destinations. It is about experiencing the mountains at a time when everyday life follows a different rhythm.\nFrom the temples of Sarahan and the high villages of Kinnaur to the monasteries and cold desert landscapes around Kaza, this journey brings together the different sides of the western Himalaya.\nCome prepared for the cold, the changing roads and the slower pace of winter in the mountains.\nTravel the Himalayas. Know them beyond the map.\nDriftmates – Himalayan Expeditions & Journeys",
+    "days": [
+      {
+        "n": "Day 00",
+        "t": "Delhi to Shimla",
+        "d": "An overnight journey towards the mountains\nOur journey begins in Delhi, where the group boards an overnight Volvo bus from Kashmere Gate.\nWe travel through the night towards Shimla, leaving the plains behind as the road gradually climbs into the lower Himalaya.\nThe bus journey is an included transfer and is not counted as an expedition day. Our mountain team and Tempo Traveller arrangements will be coordinated for the group's arrival in Shimla.\nPickup point: Kashmere Gate, Delhi\nDrop point: Shimla\nTransport: Overnight Volvo\nOvernight: On the bus"
+      },
+      {
+        "n": "Day 01",
+        "t": "Shimla to Sarahan",
+        "d": "Into the mountains of Himachal Pradesh\nAfter arriving in Shimla, we meet the ground team and begin our mountain expedition in a Tempo Traveller.\nOur route takes us through the forested hills towards Narkanda and Rampur, gradually following the Sutlej valley into Kinnaur.\nToday's destination is Sarahan, a traditional mountain settlement known for the historic Bhimakali Temple. The temple is one of Himachal Pradesh's most important religious landmarks and is recognised for its distinctive architecture, which combines traditional Himalayan wooden craftsmanship with temple design.\nAfter reaching Sarahan, we check in to our accommodation and visit the Bhimakali Temple, subject to local opening arrangements.\nThe evening is kept relaxed as we prepare to travel deeper into Kinnaur the following day.\nRoute: Shimla – Narkanda – Rampur – Sarahan\nExperience: Bhimakali Temple\nOvernight: Sarahan\nMeals: Dinner"
+      },
+      {
+        "n": "Day 02",
+        "t": "Sarahan to Nako",
+        "d": "Following the Sutlej into the high mountains\nAfter breakfast, we leave Sarahan and continue towards the upper reaches of Kinnaur.\nThe route follows the Sutlej River through dramatic mountain terrain, with steep rock faces, narrow valleys and small settlements along the way.\nAs we travel deeper into the region, we reach the Kinnaur Gate, marking an important transition into the upper Kinnaur landscape. We continue towards Khab Bridge, located near the meeting of the Sutlej and Spiti rivers.\nFrom here, the road climbs towards Nako, a high-altitude village known for its traditional houses, mountain surroundings and small lake.\nOn reaching Nako, we check in to our accommodation. If conditions permit, we visit Nako Lake and explore the village surroundings.\nWinter gives Nako a distinctive atmosphere, with cold desert terrain and snow-covered slopes depending on the season.\nRoute: Sarahan – Kinnaur Gate – Khab Bridge – Nako\nExperiences: Kinnaur Gate, Khab Bridge and Nako Lake\nOvernight: Nako\nMeals: Breakfast and dinner"
+      },
+      {
+        "n": "Day 03",
+        "t": "Nako to Dhankar",
+        "d": "Tabo Monastery and the mountain landscape of Spiti\nAfter breakfast, we leave Nako and continue towards Dhankar, travelling further into the Spiti region.\nEn route, we stop at Tabo Monastery, one of the oldest surviving Buddhist monasteries in the western Himalaya. Founded in 996 CE, the monastery is known for its historic temples, ancient murals and centuries-old religious heritage. We spend time exploring this important cultural landmark before continuing our drive to Dhankar.\nOn reaching Dhankar, we check in to our accommodation. The village is dramatically positioned on a rocky hillside overlooking the confluence of the Spiti and Pin rivers. Its monastery, perched above the valley, has long been an important religious centre in the region.\nLater, subject to trail conditions and weather, we undertake the walk towards Dhankar Lake. The trail climbs above the village, opening up views of the surrounding mountains and the Spiti Valley.\nDuring winter, the trail may be covered in snow or ice. The trek will only be attempted if local conditions are considered safe. If access is not suitable, we will spend additional time exploring Dhankar and its surroundings.\nAfter the day's exploration, we return to our accommodation in Dhankar.\nRoute: Nako – Tabo – Dhankar\nExperiences: Tabo Monastery, Dhankar Monastery and Dhankar Lake trek\nStay Plan: Overnight stay in Dhankar\nMeal Plan: Breakfast and dinner"
+      },
+      {
+        "n": "Day 04",
+        "t": "Dhankar to Kaza via Pin Valley",
+        "d": "Exploring the quieter side of Spiti\nAfter breakfast, we leave Dhankar and travel towards Pin Valley before continuing to Kaza.\nOur route takes us towards Kungri Monastery, an important Buddhist monastery in Pin Valley. It is known for its religious traditions and distinctive architecture.\nFrom here, we continue into the valley towards Mud Village, one of the best-known settlements in Pin Valley. The village sits amid rugged mountains and offers a closer look at life in this quieter part of Spiti.\nWe also pass Sagnam Bridge, an important crossing in the valley that connects the surrounding settlements.\nPin Valley is particularly known for its natural landscape and its importance as a habitat for high-altitude wildlife, including the snow leopard. Winter transforms the valley into a striking landscape, although road access can be affected by snow and ice.\nAfter exploring the accessible locations, we continue towards Kaza.\nOn reaching Kaza, we check in to our accommodation. We will stay here for the next three nights.\nRoute: Dhankar – Kungri Monastery – Pin Valley – Mud Village – Sagnam Bridge – Kaza\nExperiences: Kungri Monastery, Pin Valley and Mud Village\nOvernight: Kaza\nMeals: Breakfast and dinner"
+      },
+      {
+        "n": "Day 05",
+        "t": "Kaza to Langza, Komic and Hikkim",
+        "d": "A day among Spiti's high villages\nToday is dedicated to exploring the villages around Kaza.\nAfter breakfast, we begin our journey towards Langza, a village known for its large Buddha statue overlooking the valley and its fossil-rich landscape.\nLangza offers wide views of the surrounding mountains and is one of the most recognisable settlements in the region. The village is also associated with marine fossils from a time when this landscape lay beneath an ancient sea.\nFrom Langza, we continue towards Komic, a remote high-altitude village known for its monastery and traditional mountain settlement.\nOur next planned stop is Hikkim, widely recognised for its high-altitude post office. It is a small but distinctive part of everyday life in this remote region, where communication with the outside world has its own challenges.\nWe spend time exploring the villages and their surroundings before returning to Kaza.\nDuring winter, the order of visits and the number of villages accessible will depend on snowfall and road clearance. If a route is unsafe, the team will adjust the day's plan.\nRoute: Kaza – Langza – Komic – Hikkim – Kaza\nExperiences: Langza Buddha statue, Komic village and Hikkim Post Office\nOvernight: Kaza\nMeals: Breakfast and dinner"
+      },
+      {
+        "n": "Day 06",
+        "t": "Key Monastery, Chicham Bridge and Kibber",
+        "d": "The cultural and high-altitude landscapes around Kaza\nAfter breakfast, we explore some of the most distinctive places around Kaza.\nWe begin with Key Monastery, one of the most important Buddhist monasteries in Spiti. Set on a hill overlooking the Spiti River, it has been a centre of Buddhist learning and religious life for centuries.\nFrom here, we continue towards Chicham Bridge, an impressive bridge connecting the villages of Chicham and Kibber across a deep mountain gorge. Its setting makes it one of the region's most recognisable engineering landmarks.\nWe then explore Kibber, a high-altitude village known for its traditional houses and dramatic mountain surroundings. The wider area is also associated with wildlife conservation and the habitat of the elusive snow leopard.\nAfter exploring the accessible locations, we return to Kaza and spend some time at the local market.\nThe Kaza market is a useful place to experience everyday life in the main settlement of Spiti, with local shops, small cafés and supplies serving the surrounding villages.\nWe return to our accommodation for the final night in Kaza.\nRoute: Kaza – Key Monastery – Chicham Bridge – Kibber – Kaza\nExperiences: Key Monastery, Chicham Bridge, Kibber and Kaza Market\nOvernight: Kaza\nMeals: Breakfast and dinner"
+      },
+      {
+        "n": "Day 07",
+        "t": "Kaza to Kalpa via Gue",
+        "d": "From the cold desert to the mountains of Kinnaur\nAfter breakfast, we leave Kaza and begin our return journey towards Kinnaur.\nThe route follows the Spiti River towards Sumdo and continues through the landscape of upper Kinnaur.\nAlong the way, we plan a visit to Gue Monastery, known for the naturally preserved mummy of a Buddhist monk housed at the monastery. It is a distinctive cultural site in the region, subject to local access and opening arrangements.\nWe continue towards Reckong Peo, the administrative centre of Kinnaur district. Depending on the available time and local conditions, we explore the market area before driving up to Kalpa.\nKalpa is known for its views of the Kinnaur Kailash mountain range. The landscape here offers a striking contrast to the barren terrain of Spiti, with forested slopes and traditional settlements surrounding the village.\nWe check in to our accommodation and spend the evening in Kalpa.\nRoute: Kaza – Gue – Reckong Peo – Kalpa\nExperiences: Gue Monastery, Reckong Peo Market and Kalpa\nOvernight: Kalpa\nMeals: Breakfast and dinner"
+      },
+      {
+        "n": "Day 08",
+        "t": "Kalpa to Shimla",
+        "d": "Completing the mountain expedition\nAfter breakfast, we leave Kalpa and begin our drive back towards Shimla.\nThe route follows the Sutlej valley through Kinnaur, passing mountain settlements and the changing landscape of the lower Himalaya.\nOn reaching Shimla, our mountain expedition concludes. From here, the group boards the overnight Volvo service from Shimla to Delhi.\nThe bus journey is included as a transfer and is not counted as an additional expedition day.\nRoute: Kalpa – Shimla – Delhi\nMountain expedition concludes: Shimla\nVolvo drop point: Kashmere Gate, Delhi\nMeals: Breakfast\nOvernight: On the bus"
+      }
+    ]
+  },
+  {
+    "slug": "summer-spiti",
+    "title": "Summer Spiti Expedition",
+    "destination": "Himachal",
+    "place": "himachal",
+    "kind": "Motorbike · 4x4",
+    "pickup": "Kashmere Gate, Delhi",
+    "season": "",
+    "terms": [],
+    "image": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
+    "gallery": [],
+    "summary": "The eastern part of Himachal Pradesh is home to two distinct Himalayan regions: Kinnaur and Spiti. While Kinnaur is known for its forested valleys, apple orchards and traditional mountain settlements, Spiti is characterised by high-altitude villages, ancient Buddhist monasteries and a landscape shaped by centuries of erosion.",
+    "overview": "The eastern part of Himachal Pradesh is home to two distinct Himalayan regions: Kinnaur and Spiti. While Kinnaur is known for its forested valleys, apple orchards and traditional mountain settlements, Spiti is characterised by high-altitude villages, ancient Buddhist monasteries and a landscape shaped by centuries of erosion.\nThis expedition connects the two regions through a road journey that begins in Manali and enters Kinnaur before reaching the heart of Spiti Valley.\nThe route includes Chitkul, one of the last inhabited villages towards the Indo-Tibet border, Kalpa in the Kinnaur Kailash region, Nako and Gue before reaching Tabo and Kaza. From Kaza, the journey continues through several well-known villages and monasteries, including Key, Kibber, Langza, Hikkim and Komic.\nThe return route crosses Kunzum Pass and continues to Chandratal, a high-altitude lake in the Lahaul region, before reaching Manali.\nWith a combination of mountain roads, cultural landmarks, village visits and high-altitude landscapes, this route offers an opportunity to explore two very different sides of the Indian Himalayas.\nRoute: Delhi → Manali → Jibhi → Chitkul → Kalpa → Nako → Gue → Tabo → Kaza → Chandratal → Manali → Delhi.",
+    "highlights": [],
+    "included": [],
+    "notIncluded": [],
+    "payment": [],
+    "cancellation": [],
+    "altitude": [],
+    "chapters": [
+      {
+        "title": "Accommodation",
+        "after": "days",
+        "parts": [
+          { "p": "Accommodation during the expedition varies according to the destination and availability." },
+          { "p": "In Manali and other established towns, stays are generally in hotels. In smaller settlements such as Chitkul, Kalpa, Nako and Tabo, accommodation is more commonly found in locally operated guesthouses, homestays and small hotels." },
+          { "p": "Kaza offers a wider selection of accommodation, including hotels, guesthouses and homestays. At Chandratal, accommodation is generally in seasonal designated camping facilities." },
+          { "p": "Facilities in remote settlements are simpler than those in larger towns. Room sizes, hot-water availability, heating and internet access can vary between properties." },
+          { "p": "The final accommodation list should be shared with travellers before departure." }
+        ]
+      },
+      {
+        "title": "Food and meals",
+        "after": "days",
+        "parts": [
+          { "p": "Food along the route reflects the changing regions we travel through." },
+          { "p": "In Kinnaur, meals commonly include Indian preparations, local lentils, rice, vegetables and traditional Himachali dishes. As we enter Spiti, Tibetan-influenced food becomes more common, with options such as thukpa, momos and local bread." },
+          { "p": "Kaza has a wider selection of restaurants and cafés, including places serving Indian, Tibetan and basic international-style meals." },
+          { "p": "Food choices become more limited in smaller villages and around Chandratal. Travellers with specific dietary requirements, including vegetarian, vegan or allergy-related needs, should inform the team before departure." },
+          { "p": "The exact meal inclusions will depend on the selected departure and accommodation arrangements." }
+        ]
+      },
+      {
+        "title": "Getting to the starting point",
+        "after": "days",
+        "parts": [
+          { "p": "The expedition begins in Manali, Himachal Pradesh." },
+          { "p": "Travellers joining from Delhi are required to reach Kashmere Gate Inter-State Bus Terminal, from where the overnight bus journey to Manali begins." },
+          { "p": "For international travellers arriving in India, Delhi is the most convenient major international arrival point for this itinerary. We recommend allowing sufficient time between international flight arrivals and the scheduled departure to Manali." },
+          { "p": "Travellers arriving independently can also arrange to reach Manali before the expedition begins, subject to prior coordination." },
+          { "p": "The return journey from Manali to Delhi is also arranged as an overnight bus transfer." }
+        ]
+      },
+      {
+        "title": "Travelling by motorbike or 4x4",
+        "after": "days",
+        "parts": [
+          { "p": "The expedition can be experienced through two travel formats." },
+          { "h": "Motorbike expedition" },
+          { "p": "Travellers joining by motorbike should be comfortable riding on mountain roads, including narrow sections, gravel surfaces, uneven terrain and high-altitude passes." },
+          { "p": "Riders should carry appropriate riding gear, including a certified helmet, gloves, protective jacket, riding trousers and suitable footwear." },
+          { "p": "A valid driving licence and applicable documentation are required. International riders should confirm the validity of their driving documents and International Driving Permit requirements before travelling." },
+          { "h": "4x4 vehicle expedition" },
+          { "p": "The 4x4 option is suitable for travellers who prefer to explore the region by road without riding a motorcycle." },
+          { "p": "The vehicle travels along the same general route, with stops at the villages, monasteries and viewpoints included in the itinerary." },
+          { "p": "The exact vehicle specification, seating arrangement, luggage capacity and group size should be confirmed for each departure." }
+        ]
+      },
+      {
+        "title": "Altitude and acclimatisation",
+        "after": "days",
+        "parts": [
+          { "p": "Spiti is a high-altitude destination, with several overnight stops above 3,000 metres. Kaza sits at approximately 3,800 metres, while Kunzum Pass and Chandratal are higher still." },
+          { "p": "Travelling to these elevations requires time for the body to adjust to reduced oxygen availability." },
+          { "p": "Some travellers may experience headache, tiredness, disturbed sleep or breathlessness. These symptoms should not be ignored or treated as an ordinary part of the journey." },
+          { "p": "We recommend discussing high-altitude travel with a qualified medical professional before departure, particularly for anyone with pre-existing medical conditions." },
+          { "p": "Travellers should stay hydrated, avoid excessive physical exertion during the initial days and report any symptoms to the expedition team. Severe or worsening symptoms require prompt medical assessment and descent where appropriate." }
+        ]
+      },
+      {
+        "title": "Permits and travel documents",
+        "after": "days",
+        "parts": [
+          { "p": "Indian and international travellers may have different documentation requirements depending on nationality and the areas they intend to visit." },
+          { "p": "Carry a valid passport or government-issued identification as applicable, along with your booking confirmation." },
+          { "p": "Certain areas close to the international border may have additional entry requirements or restrictions. Any permits required for the selected route will be checked and communicated before departure." },
+          { "p": "International travellers should also ensure they have the appropriate Indian visa and valid travel insurance." }
+        ]
+      },
+      {
+        "title": "Mobile network and internet",
+        "after": "days",
+        "parts": [
+          { "p": "Mobile connectivity varies considerably across Kinnaur and Spiti." },
+          { "p": "Larger settlements such as Manali and Kaza generally have better connectivity than smaller villages and remote stretches of the route. Network coverage can be intermittent or unavailable around mountain passes and Chandratal." },
+          { "p": "Travellers should not rely on continuous internet access during the expedition. It is advisable to download offline maps, keep important booking information accessible and inform family members about possible communication gaps." }
+        ]
+      },
+      {
+        "title": "What to pack",
+        "after": "days",
+        "parts": [
+          { "p": "Summer does not mean warm weather throughout the Himalayas. Temperatures can drop considerably after sunset, especially at higher elevations." },
+          { "p": "We recommend carrying:" },
+          {
+            "list": [
+              "Warm layers and a thermal base layer",
+              "Insulated jacket",
+              "Waterproof and wind-resistant outer layer",
+              "Comfortable walking shoes",
+              "Sunglasses with UV protection",
+              "Sunscreen and lip balm",
+              "Personal medication and basic toiletries",
+              "Reusable water bottle",
+              "Small daypack",
+              "Power bank and charging accessories",
+              "Personal identification and travel documents"
+            ]
+          },
+          { "p": "Motorbike travellers should additionally carry appropriate protective riding equipment. A detailed equipment checklist will be shared before departure." }
+        ]
+      },
+      {
+        "title": "Responsible travel",
+        "after": "days",
+        "parts": [
+          { "p": "Spiti is home to small communities whose traditions, architecture and daily lives are closely connected to the surrounding landscape." },
+          { "p": "Visitors are requested to respect local customs, seek permission before photographing people, avoid littering and follow the rules at monasteries and religious sites." },
+          { "p": "Chandratal is an ecologically sensitive high-altitude wetland. Camping is restricted to designated areas outside the lake's protected surroundings. Visitors must follow local regulations and avoid disturbing the natural habitat." },
+          { "p": "Supporting locally operated accommodation, restaurants and businesses is one way to contribute to the communities along the route." }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Where is Spiti Valley located?",
+        "a": "Spiti Valley is situated in the eastern part of Himachal Pradesh, in northern India. It lies between Tibet to the east and the Kullu and Kinnaur regions to the west and south. Kaza is its main administrative centre."
+      },
+      {
+        "q": "Is summer a good time to visit Spiti Valley?",
+        "a": "Yes. Summer, generally from June to September, is a popular period for exploring Spiti by road. Snow clearance opens up access to high mountain routes, including Kunzum Pass, subject to conditions. July and August can bring rainfall-related road disruptions on the Kinnaur side."
+      },
+      {
+        "q": "How many days are required to explore Spiti?",
+        "a": "A meaningful road journey through Kinnaur and Spiti generally requires around 9–12 days, depending on the starting point and places included. This expedition includes an overnight journey from Delhi to Manali, destination exploration and the return transfer to Delhi."
+      },
+      {
+        "q": "Do I need previous mountain riding experience to join the motorbike expedition?",
+        "a": "Previous experience riding on mountain roads is strongly recommended. The route includes narrow roads, uneven surfaces, sharp bends and high-altitude passes. Riders should be confident handling their motorcycles in changing road and weather conditions."
+      },
+      {
+        "q": "Can I join the expedition in a 4x4 vehicle instead of riding a motorbike?",
+        "a": "Yes. The expedition is designed to accommodate both motorbike travellers and those who prefer travelling in a 4x4 vehicle. Both formats follow the same general route and visit the destinations included in the itinerary. Vehicle arrangements and group configurations will be confirmed for each departure."
+      },
+      {
+        "q": "Will I experience altitude sickness in Spiti?",
+        "a": "Not everyone experiences altitude sickness, but the risk increases as you travel above 2,500 metres. Several overnight stops on this route are above 3,000 metres. It is important to allow time for acclimatisation, stay alert to symptoms and seek medical assistance if they develop or worsen."
+      },
+      {
+        "q": "What type of accommodation is available during the expedition?",
+        "a": "Accommodation varies by destination. Manali and Kaza have hotels and guesthouses, while smaller villages generally offer homestays and locally operated properties. Around Chandratal, stays are usually in designated seasonal camping facilities. Amenities may be more basic in remote locations."
+      },
+      {
+        "q": "Is vegetarian or vegan food available?",
+        "a": "Vegetarian meals are commonly available in most established settlements along the route. Vegan and other specific dietary requirements may require advance coordination, particularly in smaller villages and remote camping locations. Please communicate dietary requirements before departure."
+      },
+      {
+        "q": "Will there be mobile network and internet connectivity throughout the journey?",
+        "a": "No. Connectivity is available in some towns and villages, but it can be intermittent or unavailable in remote areas, mountain passes and around Chandratal. Travellers should prepare for periods without mobile or internet access."
+      },
+      {
+        "q": "Do international travellers need special permits to visit Spiti?",
+        "a": "Most of the main tourist circuit is accessible without a special inner-line permit for foreign visitors, but restrictions and documentation requirements can apply to certain border areas. Requirements depend on nationality and the exact route. Travellers should carry valid identification and check current official requirements before travelling."
+      },
+      {
+        "q": "What should international travellers know before arriving in India?",
+        "a": "International visitors should arrange an appropriate Indian visa before travelling, check passport validity, arrange suitable travel insurance and allow sufficient time for arrival formalities in Delhi. Those joining the scheduled bus transfer should reach Kashmere Gate at the communicated departure time."
+      },
+      {
+        "q": "Is Chandratal accessible throughout the summer?",
+        "a": "No. Access depends on snow clearance, road conditions and local permissions. The lake is generally accessible during the summer season, but the opening date varies each year. Camping and lake visits are also subject to environmental regulations."
+      },
+      {
+        "q": "Can I travel to Spiti as a solo traveller?",
+        "a": "Yes. Solo travellers can join a scheduled group departure, subject to availability and the booking arrangements. Both motorbike and 4x4 travel options are available for eligible departures."
+      },
+      {
+        "q": "Is travel insurance necessary?",
+        "a": "Travel insurance is strongly recommended. It should cover high-altitude travel, road-based adventure activities and emergency medical evacuation where available. Travellers should check the policy carefully because some standard policies exclude motorbike riding or activities at high elevations."
+      },
+      {
+        "q": "What happens if roads are closed due to weather?",
+        "a": "Road access in the Himalayas can change without much notice. If a road is closed or conditions become unsafe, the itinerary may need to be adjusted, delayed or rerouted. The expedition team will make decisions based on local information, road authorities and safety conditions."
       }
     ],
     "days": [
       {
-        "n": "Day 1",
-        "t": "Delhi to Shimla",
-        "d": "We’ll all gather at Kashmere Gate around 10:00 PM, and that’s where you’ll meet your fellow travellers and your Driftmates trip captain for the very first time.\nYour captain will walk you through everything, the route, the weather, and what to expect on the road ahead. So bring all your questions.\nWe all board the overnight bus to Shimla and say bye-bye to Delhi for the next nine days.\nSleep if you can. Tomorrow morning, you’ll wake up to mountains outside your window, and everything begins."
+        "n": "Day 00",
+        "t": "Delhi to Manali",
+        "d": "Overnight journey\nYour journey begins at Kashmere Gate, Delhi, where you board the overnight bus to Manali. The drive takes you through Chandigarh and into Himachal Pradesh, with the road following the Beas River as it approaches the Kullu Valley.\nArrival in Manali is scheduled for the following morning.\nDeparture: Kashmere Gate, Delhi\nTransport: Overnight bus"
       },
       {
-        "n": "Day 2",
-        "t": "Shimla to Sarahan",
-        "d": "You’ll step out in Shimla early in the morning with cool air blowing on your face to check if your excitement is on point or not!\nEnroute we stop at Naharkanda for a quick break. Step out, stretch, and take in your first real Himalayan view.\nWe arrive in Sarahan and check in, a small quiet town sitting in the Sutlej Valley with mountains watching from every side.\nWe visit the famous Bhimakali Temple, an 800-year-old temple that is as beautiful as it is sacred.\nAfter the temple, explore the local market, grab something warm to eat, relax, and get to know each other a little more.\nDay 2 done and Sarahan already feels like a different world. Rest well tonight because tomorrow the real drive begins."
+        "n": "Day 01",
+        "t": "Arrive in Manali",
+        "d": "Sethan Valley and local exploration\nArrive in Manali in the morning and check in to your accommodation. After freshening up and having some time to rest, the day's excursion begins around noon.\nTravel by Tempo Traveller towards Sethan Valley in the Hamta region. The road is known for its sharp mountain bends, with approximately 36 turns along a 12-kilometre stretch.\nStop for lunch in the valley, surrounded by views of the surrounding mountains, before returning to Manali by approximately 3 PM.\nThe remainder of the afternoon is available to visit Manali Mall Road. This is a good opportunity to purchase any last-minute personal essentials, warm clothing or riding accessories required for the expedition. Shopping and personal purchases are at your own expense.\nReturn to the hotel for the night.\nDay highlights\n- Arrival and hotel check-in in Manali\n- Drive to Sethan Valley in the Hamta region\n- Lunch in the mountains\n- Visit Manali Mall Road for personal shopping\nOvernight: Manali"
       },
       {
-        "n": "Day 3",
-        "t": "Sarahan to Sangla / Chitkul",
-        "d": "After having breakfast, pack your bags. Today’s drive is one for the books, so don’t forget to check if your excitement is still on point.\nWe drive the famous Hindustan-Tibet Highway, one of the most thrilling mountain roads in the world, cut straight into the cliffs with the valley falling away below.\nYou’ll pass through Kinnaur Gate, a dramatic cliffhanger route that makes you realise this is unlike any road you’ve driven before.\nWe drive alongside the roaring Baspa River the whole way, loud, fast, and absolutely wild next to us all through the valley.\nWe reach Chitkul, the last village before the India-Tibet border. Old wooden houses, a frozen river, and a silence you’ve genuinely never heard before.\nIf heavy snow blocks the road, we will be staying in Sangla Valley instead.\nStep outside after dinner and look up at the sky. Stars in the mountains hit differently. Trust us on this one."
+        "n": "Day 02",
+        "t": "Manali to Jibhi",
+        "d": "Exploring the Tirthan Valley\nAfter breakfast, depart Manali and travel towards Jibhi, passing through Kullu and Banjar.\nThe route follows the Beas Valley before turning towards the Tirthan region. As you move away from Manali, the road passes through smaller settlements and increasingly forested mountain slopes.\nJibhi is a small village known for its traditional wooden houses, streams and forest surroundings. After reaching the village, check in to your accommodation and spend the afternoon exploring the nearby area.\nDepending on the available time, you can visit Jibhi Waterfall, walk through the village or explore the surrounding forest trails.\nDay highlights\n- Scenic drive through Kullu and Banjar\n- Explore Jibhi village\n- Visit Jibhi Waterfall, time permitting\n- Walk through the surrounding forest and village trails\nOvernight: Jibhi"
       },
       {
-        "n": "Day 4",
-        "t": "Chitkul to Tabo",
-        "d": "We have breakfast in the valley before we head out. It’s going to be a long and beautiful drive, so start the day well.\nAs we move through Kinnaur, watch the scenery quietly change around you, less green, more rock, and a whole lot more open sky.\nWe stop at Khab Sangam, where the Sutlej and Spiti rivers crash into each other right between massive cliffs.\nWe make a stop at Nako Lake sitting at 3,660M, often half frozen in winter and surrounded by complete stillness.\nWe arrive at Tabo Monastery (996 AD), one of the oldest monasteries in the world still in use today. The paintings on these walls have been there for over a thousand years.\nNight stay in Tabo village, small, peaceful, and genuinely one of the quietest nights of the entire trip.\nDinner, some chai, and a sky full of stars above Tabo. Tomorrow gets even more interesting, so rest up."
+        "n": "Day 03",
+        "t": "Jibhi to Chitkul",
+        "d": "Entering the Baspa Valley\nLeave Jibhi after breakfast and begin the journey towards Chitkul in the Kinnaur region.\nThe route passes through Banjar and the Jalori Pass region before descending towards the Sutlej Valley. Continue towards Rampur and Karcham, where the road turns into the Baspa Valley.\nFollow the Baspa River through Sangla before reaching Chitkul, situated at approximately 3,450 metres above sea level.\nChitkul is the last inhabited village on this road towards the Indo-Tibet border. The settlement is known for its traditional Kinnauri architecture, agricultural fields and mountain surroundings.\nAfter arrival, check in and explore the village. The Baspa River and the traditional houses are among the main points of interest.\nDay highlights\n- Drive through the Jalori Pass region\n- Follow the Sutlej Valley towards Karcham\n- Enter the Baspa Valley\n- Explore Sangla and Chitkul\n- Visit the Baspa River surroundings\nOvernight: Chitkul"
       },
       {
-        "n": "Day 5",
+        "n": "Day 04",
+        "t": "Chitkul to Kalpa",
+        "d": "Kinnaur Kailash and the upper Sutlej Valley\nAfter breakfast, leave Chitkul and retrace the route through Sangla towards Karcham. From here, continue along the Sutlej Valley towards Reckong Peo and Kalpa.\nKalpa is a traditional mountain village situated above the Sutlej Valley at approximately 2,960 metres. It is particularly known for its views of the Kinnaur Kailash mountain range, as well as its apple orchards, temples and traditional houses.\nOn arrival, check in to the accommodation and explore the village. The local temples and traditional architecture offer a closer look at the cultural landscape of Kinnaur.\nIf weather conditions are clear, the Kinnaur Kailash peaks can be seen from different viewpoints around Kalpa.\nDay highlights\n- Drive through Sangla and Karcham\n- Visit Reckong Peo\n- Explore Kalpa village\n- Views of the Kinnaur Kailash mountain range\nOvernight: Kalpa"
+      },
+      {
+        "n": "Day 05",
+        "t": "Kalpa to Tabo",
+        "d": "From Kinnaur into the Buddhist landscape of Spiti\nAfter breakfast, depart Kalpa and continue towards Spiti, following the Sutlej River through Reckong Peo, Pooh and Khab.\nAt Khab, the Sutlej and Spiti rivers meet. Continue towards Nako, a traditional village located at approximately 3,660 metres. The village is known for its small lake, Buddhist monastery and traditional houses. Spend some time exploring the settlement before continuing.\nThe next stop is Gue, a remote village known for its monastery, which houses the naturally preserved remains of a Buddhist monk.\nContinue towards Tabo, one of the most historically significant settlements in Spiti. The village is home to Tabo Monastery, established in 996 AD and known for its ancient murals, sculptures and traditional mud-brick architecture.\nArrive in Tabo by evening and check in to the accommodation.\nDay highlights\n- Drive along the upper Sutlej Valley\n- Visit the Sutlej–Spiti river confluence near Khab\n- Explore Nako village and lake\n- Visit Gue Monastery\n- Arrival in Tabo\nOvernight: Tabo"
+      },
+      {
+        "n": "Day 06",
         "t": "Tabo to Kaza",
-        "d": "After a tummyful breakfast, we leave for our next stop at Dhankar Monastery, perched right on the edge of a cliff above the Spiti River with the ruins of Dhankar Fort beside it. This used to be the capital of Spiti, and one look tells you why.\nWe stop at Lingti Falls, frozen completely solid in winter into a towering wall of ice.\nBy evening we reach Kaza at 3,800M, the main town in Spiti and our home for the next two nights. Check in, get warm, and eat something really good.\nYou’re in the heart of Spiti now. Tomorrow is the day everyone actually comes here for, so get a good night’s rest."
+        "d": "Exploring Tabo Monastery and Dhankar\nBegin the morning with a visit to Tabo Monastery, if it has not been explored on the previous evening.\nEstablished in 996 AD, the monastery is one of the oldest functioning Buddhist monasteries in the Himalayan region. Its ancient murals, sculptures and mud-brick structures provide an important record of the Buddhist art and heritage of Spiti.\nFrom Tabo, continue towards Dhankar, an old settlement situated on a rocky hillside overlooking the confluence of the Spiti and Pin rivers.\nVisit Dhankar Monastery and explore the surrounding village before continuing towards Kaza, the main administrative and commercial centre of Spiti Valley.\nOn arrival, check in to the accommodation. The rest of the evening is available to explore the local market and nearby cafés.\nDay highlights\n- Visit Tabo Monastery\n- Explore Dhankar village and monastery\n- Views of the Spiti and Pin river confluence\n- Drive towards Kaza\n- Explore Kaza local market\nOvernight: Kaza"
       },
       {
-        "n": "Day 6",
-        "t": "Kaza Sightseeing",
-        "d": "Big breakfast, bigger day. Today we head to some of the highest places on Earth.\nWe visit Key Monastery, the biggest in Spiti, sitting on a hill with colourful prayer flags and a view of the whole valley stretching out below.\nWe walk across Chicham Bridge, the highest suspension bridge in Asia. Walk to the middle, look down, and take a slow breath. Yes, it is worth it.\nWe stop at Hikkim Post Office at 4,440M, one of the highest post offices in the world. Write a postcard to someone back home, they will love getting it.\nWe drive up to Komic Village at 4,587M, one of the highest villages on Earth where people actually live. A few homes, some horses, and sky as far as you can see.\nLastly, we visit Langza Village, where real sea fossils sit right in the rocks and a giant Buddha watches quietly over the valley below.\nSome days you just know this is the one you will talk about for years. Tonight let it all sink in over a warm meal in Kaza."
+        "n": "Day 07",
+        "t": "Exploring Kaza and the surrounding villages",
+        "d": "Key Monastery, Kibber, Langza, Hikkim and Komic\nSpend the day exploring some of the most recognised villages and cultural sites around Kaza.\nBegin with Key Monastery, situated on a hill overlooking the Spiti River. It is one of the largest monasteries in the region and an important centre of Buddhist learning.\nContinue towards Kibber, a high-altitude village known for its traditional stone houses and surrounding mountain landscape. Nearby, visit Chicham Bridge, which connects Kibber and Chicham across a deep gorge.\nThe route then continues towards Langza, known for its large Buddha statue overlooking the village. The surrounding landscape is also recognised for its marine fossils, which provide evidence of the region's geological past.\nContinue to Hikkim, home to one of the world's highest post offices, before visiting Komic, a high-altitude settlement known for its monastery and traditional architecture.\nReturn to Kaza by evening.\nDay highlights\n- Visit Key Monastery\n- Explore Kibber village\n- Visit Chicham Bridge\n- Explore Langza and its Buddha statue\n- Visit Hikkim Post Office\n- Explore Komic village and monastery\nOvernight: Kaza"
       },
       {
-        "n": "Day 7",
-        "t": "Kaza to Kalpa",
-        "d": "After breakfast we start the long drive back. Trees slowly return, the air gets a little warmer, and Spiti quietly fades behind us.\nWe visit Gue Monastery, home to a 500-year-old naturally mummified monk, one of the most unique and unexpected sights of the entire trip.\nWe drive back through Kinnaur Valley, the same roads we came on, but you will notice very different things on the way out.\nWe reach Kalpa by evening, and Kinnaur Kailash is right there catching the last light of the day, looking like an old friend now."
+        "n": "Day 08",
+        "t": "Kaza to Chandratal",
+        "d": "Crossing Kunzum Pass\nLeave Kaza in the morning and travel towards Losar, following the upper Spiti Valley.\nLosar is one of the last major villages along this route before Kunzum Pass. From here, the road gradually climbs towards the pass, situated at approximately 4,590 metres.\nKunzum Pass connects the Spiti and Lahaul regions and offers views of the surrounding high mountain ranges. There is also a small temple dedicated to Kunzum Devi near the pass.\nAfter crossing Kunzum Pass, descend towards Chandratal, a high-altitude lake situated at approximately 4,300 metres.\nThe name Chandratal translates to Moon Lake, referring to its crescent-like shape. The lake is known for its clear water and surrounding mountain landscape.\nReach the designated camping area and check in. Depending on weather conditions and lake access, walk to the lake and spend some time exploring the surroundings.\nDay highlights\n- Drive through Losar village\n- Cross Kunzum Pass\n- Visit Kunzum Devi Temple\n- Explore Chandratal Lake, subject to access conditions\n- Overnight stay at the designated camping area\nOvernight: Chandratal"
       },
       {
-        "n": "Day 8",
-        "t": "Kalpa to Shimla",
-        "d": "Pack your bags slowly this morning. Take one last proper look at Kinnaur Kailash, same mountain, but today it hits just a little differently.\nWe stop at Suicide Point, where the valley drops away into what looks like infinite mountains. \u2022 We drive back on the Hindustan-Tibet Highway, and this time you will catch all the things you were too excited to notice on Day 2.\nWe reach Shimla by evening. Hot meal, warm room, and a whole head full of memories from the last seven days.\nWe board the overnight bus back to Delhi. The mountains slowly disappear in the rearview mirror and you realise you are not quite ready to leave.\nEight days of mountains, cold air, and good people."
+        "n": "Day 09",
+        "t": "Chandratal to Manali",
+        "d": "Through Batal, Gramphu and the Chandra Valley\nAfter breakfast, begin the journey towards Manali through Batal and Gramphu.\nThe road follows the Chandra River through the rugged terrain of Lahaul. This section includes rocky stretches, unpaved roads and seasonal water crossings, with conditions depending on weather, snowmelt and road maintenance.\nContinue towards Gramphu and join the road leading to the Atal Tunnel. The tunnel connects the Lahaul region with the Kullu Valley and provides road access towards Manali.\nOn arrival, check in to the accommodation and spend the evening at leisure.\nDay highlights\n- Drive through the Chandra Valley\n- Pass Batal and Gramphu\n- Travel through the Atal Tunnel\n- Arrival in Manali\nOvernight: Manali"
       },
       {
-        "n": "Day 9",
-        "t": "Delhi Arrival",
-        "d": "We reach Delhi in the early morning.\nThe trip ends here but what you saw and felt stays with you."
+        "n": "Day 10",
+        "t": "Manali to Delhi",
+        "d": "Return journey\nAfter breakfast, check out from the hotel and proceed to the departure point for the return journey to Delhi.\nBoard the overnight bus from Manali and travel through the Kullu Valley, Mandi, Bilaspur and Chandigarh.\nThe journey continues overnight, with arrival in Delhi the following morning.\nTrip concludes on arrival in Delhi."
       }
     ]
   },

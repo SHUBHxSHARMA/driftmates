@@ -10,7 +10,8 @@ const shortJourney = {
   "darma-panchachuli": "Darma Valley",
   "annapurna-base-camp": "Annapurna Base Camp",
   "munsiyari-johar": "Munsyari",
-  "winter-spiti": "Winter Spiti",
+  "winter-spiti": "Winter Spiti 2027",
+  "summer-spiti": "Summer Spiti",
 };
 
 export default function Footer() {

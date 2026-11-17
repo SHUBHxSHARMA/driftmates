@@ -165,7 +165,8 @@ function DayCopy({ text }) {
       );
       return;
     }
-    if (isCopyHeading(line) || (i === 0 && isStackedTitle(line))) {
+    const openingTitle = i === 0 && line.length <= 56 && !/[.!?:,]/.test(line);
+    if (isCopyHeading(line) || openingTitle || (i === 0 && isStackedTitle(line))) {
       nodes.push(<h4 key={`h-${i}`}>{line}</h4>);
       return;
     }
@@ -672,7 +673,7 @@ export default function Journey() {
         <div className="wrap">
           <div className="section-head center">
             <p className="kicker">Day by day</p>
-            <h2>{journey.days.length} days on the road</h2>
+            <h2>{journey.itineraryHeading || `${journey.days.length} days on the road`}</h2>
           </div>
           <RouteTrack days={journey.days} />
           <div className="day-list">
