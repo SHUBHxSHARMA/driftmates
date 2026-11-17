@@ -55,7 +55,33 @@ export default function SeasonBox({ journey }) {
         </div>
       )}
       <div className="season-panel">
+      <div className="season-visual">
       {photo && <img key={photo} className="season-photo" src={photo} alt={journey.title} />}
+      <ul className={`facts${photo ? " season-on-photo" : ""}`}>
+        {(active.details || []).map(([label, value]) => (
+          <li key={label}>
+            <b>{label}</b>
+            <span>{value}</span>
+          </li>
+        ))}
+        {journey.nights && (
+          <li>
+            <b>Duration</b>
+            <span>{stayLabel(journey.nights)}</span>
+          </li>
+        )}
+        {journey.group && (
+          <li>
+            <b>Group</b>
+            <span>{journey.group}</span>
+          </li>
+        )}
+        <li>
+          <b>Style</b>
+          <span>{journey.kind}</span>
+        </li>
+      </ul>
+      </div>
       <div className="season-body">
         <div className="season-head">
           {named && <p className="kicker">{active.label}</p>}
@@ -69,30 +95,6 @@ export default function SeasonBox({ journey }) {
             ))}
           </div>
         )}
-        <ul className="facts">
-          {(active.details || []).map(([label, value]) => (
-            <li key={label}>
-              <b>{label}</b>
-              <span>{value}</span>
-            </li>
-          ))}
-          {journey.nights && (
-            <li>
-              <b>Duration</b>
-              <span>{stayLabel(journey.nights)}</span>
-            </li>
-          )}
-          {journey.group && (
-            <li>
-              <b>Group</b>
-              <span>{journey.group}</span>
-            </li>
-          )}
-          <li>
-            <b>Style</b>
-            <span>{journey.kind}</span>
-          </li>
-        </ul>
         {active.open && Number.isFinite(journey.price) ? (
           <div className="season-fare">
             <p className="kicker">From</p>
