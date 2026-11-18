@@ -611,10 +611,15 @@ export default function Journey() {
           <h2>{journey.regionHeading || "Understanding the region"}</h2>
         </div>
         <div className="region-row">
-          {journey.region.map((item) => (
+          {journey.region.map((item, index) => (
             <article className="region-notes" key={item.t}>
-              <h3>{item.t}</h3>
-              <Lines text={item.d} />
+              <div>
+                <p className="kicker">{String(index + 1).padStart(2, "0")}</p>
+                <h3>{item.t}</h3>
+              </div>
+              <div className="region-copy">
+                <Lines text={item.d} />
+              </div>
             </article>
           ))}
         </div>
