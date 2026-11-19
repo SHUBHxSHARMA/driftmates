@@ -38,7 +38,7 @@ const places = [
   "Darma Valley",
   "Adi Kailash",
   "Winter Spiti",
-  "Summer Spiti",
+  "Spiti Valley Bike",
   "Bhutan",
   "Annapurna",
   "Kumaon",

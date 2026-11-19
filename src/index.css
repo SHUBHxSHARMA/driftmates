@@ -936,6 +936,31 @@ section { padding: 96px 0; }
 }
 .companion-grid.is-stack article + article { border-top: 1px solid var(--line); }
 .companion-grid.is-stack h2 { text-align: center; }
+.plan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+.plan-grid article {
+  background: #fbf8f1;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 22px 22px 16px;
+}
+.plan-grid h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+.plan-grid .day-copy p {
+  margin: 0 0 10px;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  line-height: 1.55;
+}
 .cover-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1015,10 +1040,10 @@ section { padding: 96px 0; }
   margin: 0 0 4px;
 }
 @media (max-width: 980px) {
-  .region-cards, .season-board, .companion-grid, .cover-grid { grid-template-columns: 1fr 1fr; }
+  .region-cards, .season-board, .companion-grid, .cover-grid, .plan-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 680px) {
-  .region-cards, .season-board, .companion-grid, .cover-grid { grid-template-columns: 1fr; }
+  .region-cards, .season-board, .companion-grid, .cover-grid, .plan-grid { grid-template-columns: 1fr; }
 }
 .closing-copy h3 {
   font-family: var(--serif);

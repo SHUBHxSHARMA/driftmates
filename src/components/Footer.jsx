@@ -11,7 +11,7 @@ const shortJourney = {
   "annapurna-base-camp": "Annapurna Base Camp",
   "munsiyari-johar": "Munsyari",
   "winter-spiti": "Winter Spiti 2027",
-  "summer-spiti": "Summer Spiti",
+  "summer-spiti": "Spiti Valley Bike",
 };
 
 export default function Footer() {

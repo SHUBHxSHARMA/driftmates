@@ -210,7 +210,7 @@ const seasons = {
       id: "summer",
       label: "Summer",
       when: "June – September",
-      note: "Summer in Spiti\nSummer, generally from June to September, is a popular period for exploring Spiti by road. Snow clearance opens up access to high mountain routes, including Kunzum Pass, subject to conditions. July and August can bring rainfall-related road disruptions on the Kinnaur side.",
+      note: "June to September\nThe Summer Spiti expedition is generally undertaken between June and September, when seasonal road access improves and the high-altitude routes become more accessible.",
       open: true,
     },
   ],

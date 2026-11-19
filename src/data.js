@@ -97,11 +97,11 @@ export const destinations = [
     ideal: "8 days on the winter expedition",
     image: photos.himachal,
     portrait: photos.bir,
-    seoTitle: "Himachal trips | Winter Spiti and Summer Spiti",
+    seoTitle: "Himachal trips | Winter Spiti and Spiti Valley Bike",
     seoDescription:
-      "Winter Spiti Expedition 2027 and Summer Spiti Expedition.",
+      "Winter Spiti Expedition 2027 and Spiti Valley Bike Expedition.",
     blurb:
-      "Two Spiti expeditions: Winter Spiti Expedition 2027, and Summer Spiti Expedition.",
+      "Two Spiti expeditions: Winter Spiti Expedition 2027, and Spiti Valley Bike Expedition.",
     highlights: [
       "Shimla, Sarahan, and Nako",
       "Dhankar, Tabo, Pin Valley, and Kaza",

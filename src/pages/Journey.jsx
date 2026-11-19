@@ -625,6 +625,27 @@ function BestTime({ visit }) {
   );
 }
 
+function Planning({ plan }) {
+  if (!plan?.items?.length) return null;
+  return (
+    <section>
+      <div className="wrap">
+        <div className="section-head center">
+          <h2>{plan.heading}</h2>
+        </div>
+        <div className="plan-grid">
+          {plan.items.map((item) => (
+            <article key={item.t}>
+              <h3>{item.t}</h3>
+              <Lines text={item.d} />
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Companions({ items, layout }) {
   return (
     <section>
@@ -970,6 +991,8 @@ export default function Journey() {
       )}
 
       <Chapters journey={journey} after="included" />
+
+      {journey.planning?.items?.length > 0 && <Planning plan={journey.planning} />}
 
       {journey.companions?.length > 0 && <Companions items={journey.companions} layout={journey.companionLayout} />}
 
