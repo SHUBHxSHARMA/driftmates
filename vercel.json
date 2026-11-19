@@ -1,5 +1,6 @@
 {
   "redirects": [
+    { "source": "/logo.png", "destination": "/favicon.png", "permanent": true },
     { "source": "/tours/leh-ladakh-trip-with-umling-la-tour-package", "destination": "/journeys/leh-ladakh-umling-la", "permanent": true },
     { "source": "/tours/bhutan-tour-package", "destination": "/journeys/bhutan", "permanent": true },
     { "source": "/tours/himachal-backpacking-manali-kasol-jibhi-trip-package", "destination": "/journeys", "permanent": true },
