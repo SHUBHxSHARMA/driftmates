@@ -17,7 +17,7 @@ export const journeys = keptOrder
   .map((slug) => publishedJourneys.find((journey) => journey.slug === slug))
   .filter(Boolean);
 
-const dm = (path) => `https://driftmates.com/wp-content/uploads/${path}`;
+const dm = (path) => `https://driftmates.com/photos/uploads/${path}`;
 
 export const photos = {
   hero: dm("2026/06/IMG_8112.JPG-scaled.jpeg"),

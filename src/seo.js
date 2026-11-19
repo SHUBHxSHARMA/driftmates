@@ -24,7 +24,7 @@ export const organization = {
   url: siteUrl,
   telephone: "+918273722456",
   email: "info@driftmates.com",
-  image: "https://driftmates.com/wp-content/uploads/2026/02/IMG_7060-2048x1152.jpg",
+  image: "https://driftmates.com/photos/uploads/2026/02/IMG_7060-2048x1152.jpg",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Krishna Colony, Dahariya Road, near Government ITI",

@@ -3,14 +3,14 @@ import https from "node:https";
 const ORIGIN = "145.79.213.49";
 
 export default function handler(req, res) {
-  const parts = [].concat(req.query.path || []);
-  if (!parts.length || parts.some((part) => part === ".." || part.includes("\\") || part.includes("/"))) {
+  const file = String(req.query.file || "");
+  if (!file || file.includes("..") || file.startsWith("/") || file.includes("\\")) {
     res.statusCode = 400;
     res.end("Bad path");
     return;
   }
 
-  const filePath = `/wp-content/${parts.map((part) => encodeURIComponent(part)).join("/")}`;
+  const filePath = `/wp-content/${file.split("/").map((part) => encodeURIComponent(part)).join("/")}`;
   const upstream = https.request(
     {
       host: ORIGIN,

@@ -14,11 +14,11 @@ export const journeys = [
     "pickup": "Leh Kushok Bakula Rimpochee Airport",
     "season": "",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2024/08/IMG_8386-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2024/08/IMG_8386-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/02/shey-palace.webp",
-      "https://driftmates.com/wp-content/uploads/2026/02/IMG_7060-2048x1152.jpg",
-      "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/02/shey-palace.webp",
+      "https://driftmates.com/photos/uploads/2026/02/IMG_7060-2048x1152.jpg",
+      "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
     ],
     "summary": "This is 8 days of riding through Ladakh, the real Ladakh. High passes, empty roads, lakes that change colour, villages where most people never go, and one road that sits so high up you will feel it in your lungs.",
     "overview": "This is 8 days of riding through Ladakh, the real Ladakh. High passes, empty roads, lakes that change colour, villages where most people never go, and one road that sits so high up you will feel it in your lungs.\nYou will ride over Khardung La, along the Shyok River to Pangong Tso, through the remote stretch to Hanle, and then up to Umling La, one of the highest motorable roads on Earth. Each day takes you further in and every night feels earned.\nThis trip is built for riders who want to actually ride Ladakh, not just visit it.",
@@ -172,11 +172,11 @@ export const journeys = [
     "pickup": "Bagdogra Airport, Siliguri, West Bengal 734421",
     "season": "The best windows are March to May and September to November.",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2026/03/IMG_4682.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/03/IMG_4682.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/04/IMG_5566.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/d9cbd1d5-0e2a-46d4-82ce-ad740feeb6d1-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/04/IMG_5566.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/d9cbd1d5-0e2a-46d4-82ce-ad740feeb6d1-scaled.jpg"
     ],
     "summary": "Bhutan is not just a destination, it’s a different pace of life. This journey is designed to take you through the country in a smooth and well-paced way, without feeling rushed.",
     "overview": "Bhutan is not just a destination, it’s a different pace of life. This journey is designed to take you through the country in a smooth and well-paced way, without feeling rushed.\nStarting from Bagdogra, the route gradually shifts from the plains into the mountains, easing you into Bhutan’s landscapes. Over the next few days, you travel across Thimphu, Punakha, Phobjikha, and Paro — covering a complete circuit of valleys, passes, monasteries, and cultural landmarks.\nThe experience balances travel and exploration. Key highlights include Dochula Pass, Punakha Dzong, and the iconic Tiger’s Nest Monastery, along with time to simply take in the surroundings.\nAll travel is managed in a comfortable vehicle, supported by a Trip Captain and a local guide.\nThis trip is ideal for those who want to experience Bhutan fully, without the need for biking, while still following the same route and overall journey.",
@@ -384,11 +384,11 @@ export const journeys = [
     "pickup": "Kashmere Gate",
     "season": "These destinations can be visited throughout the year, but the experience changes with seasons.",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
+    "image": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/02/bir-billing.webp",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/d9cbd1d5-0e2a-46d4-82ce-ad740feeb6d1-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/02/bir-billing.webp",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/d9cbd1d5-0e2a-46d4-82ce-ad740feeb6d1-scaled.jpg"
     ],
     "summary": "This is 7 days of Himachal the way it is meant to be done. You start in Manali, explore the town, get your adrenaline fix in Solang Valley, and drive through the Atal Tunnel into Lahaul.",
     "overview": "This is 7 days of Himachal the way it is meant to be done. You start in Manali, explore the town, get your adrenaline fix in Solang Valley, and drive through the Atal Tunnel into Lahaul. Then you slow down in Kasol and the Parvati Valley, walk along the river, visit Manikaran, and find the kind of cafe that makes you want to stay another day.\nFrom Parvati Valley, the trip moves to Jibhi, a quiet little village in the Tirthan Valley that most people drive past without realising what they are missing. The trip ends with a trek to Serolsar Lake from Jalori Pass and a night bus back to Delhi.\nIt is a good mix. Some adventure, some culture, some slow mountain mornings, and a lot of good views. Seven days that feel nothing like a holiday and everything like an experience.",
@@ -536,11 +536,11 @@ export const journeys = [
     "coverPanels": true,
     "reading": "",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2024/08/IMG_0736-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg"
     ],
     "summary": "The Kumaon Himalaya has a different character from one valley to another. Roads follow rivers, climb through mountain settlements and gradually lead towards landscapes where the mountains begin to dominate everything around them.",
     "overview": "A Himalayan Motorcycle Expedition\nThe Kumaon Himalaya has a different character from one valley to another. Roads follow rivers, climb through mountain settlements and gradually lead towards landscapes where the mountains begin to dominate everything around them.\nThis nine-day motorcycle expedition takes you through the eastern Himalayan region of Uttarakhand, connecting three remarkable experiences: the sacred landscape of Adi Kailash, the distinctive snow formation on Om Parvat and the remote surroundings of Darma Valley.\nStarting from Haldwani, we ride towards Pithoragarh before entering the mountain valleys around Dharchula. The journey continues into Vyas Valley, where Gunji becomes our base for visiting Adi Kailash and Parvati Sarovar. We then travel towards Nabhidhang to view Om Parvat, before moving across to Darma Valley.\nThe final part of the journey takes us away from the motorcycle for a trek towards Panchachuli Base Camp, offering a closer experience of the mountain landscape beneath the five prominent peaks of the Panchachuli range.\nThis is a guided expedition for riders who want more than a conventional road trip. It combines mountain riding, remote destinations, high-altitude landscapes and time spent exploring on foot.\nThe route also demands patience and preparation: road conditions change, access to border regions is regulated and some riding days are considerably longer than others.\nThroughout the journey, the Driftmates team manages the group movement and ground arrangements, with a dedicated mechanic and a support vehicle travelling with the expedition.",
@@ -793,32 +793,32 @@ export const journeys = [
     "region": [
   {
     "t": "Adi Kailash",
-    "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+    "img": "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
     "d": "Also known as Chhota Kailash, Adi Kailash is a sacred mountain in the upper reaches of Kumaon. Its distinctive profile has made it an important pilgrimage destination, and its surroundings are closely associated with the religious traditions of the region."
   },
   {
     "t": "Parvati Sarovar",
-    "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
+    "img": "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
     "d": "Located near Jolingkong, Parvati Sarovar is a high-altitude lake associated with Adi Kailash. The lake and the surrounding mountain setting form an important part of the experience at this destination."
   },
   {
     "t": "Om Parvat",
-    "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+    "img": "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
     "d": "Om Parvat is recognised for the natural snow formation on its mountain face that resembles the sacred symbol Om. Nabhidhang is the designated viewpoint for visitors. The formation's visibility varies with snowfall, cloud and weather conditions."
   },
   {
     "t": "Gunji and Vyas Valley",
-    "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
+    "img": "https://driftmates.com/photos/uploads/2024/08/IMG_0736-scaled.jpg",
     "d": "Gunji is a remote settlement in Vyas Valley and an important base for visiting Adi Kailash and Om Parvat. The area is characterised by high mountain terrain, river valleys and traditional settlements."
   },
   {
     "t": "Darma Valley",
-    "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+    "img": "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
     "d": "Darma Valley is a remote Himalayan region in eastern Kumaon, known for its mountain villages, river landscapes and views towards the Panchachuli range. Its landscape and settlements offer a different experience from the Vyas Valley route."
   },
   {
     "t": "Panchachuli Base Camp",
-    "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+    "img": "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
     "d": "The Panchachuli range is one of the defining mountain formations of Kumaon. The trek towards its base camp provides an opportunity to experience the region away from the road, with a closer view of the surrounding peaks and valley."
   }
 ],
@@ -1016,43 +1016,43 @@ export const journeys = [
     "region": [
       {
         "t": "Adi Kailash – The sacred mountain of Kumaon",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "Located in the Vyas Valley of Pithoragarh district, Adi Kailash is one of the most revered mountains in the Kumaon Himalaya. It is also known as Chhota Kailash because of its resemblance to Mount Kailash in Tibet.\nThe mountain is closely associated with Lord Shiva and forms the centrepiece of the pilgrimage to this remote region. Jolingkong, at its base, is where visitors reach the area around Parvati Sarovar.\nFor many travellers, the experience is deeply spiritual. For others, it is an opportunity to witness a remarkable high-altitude landscape that remains far removed from the familiar tourist routes."
       },
       {
         "t": "Parvati Sarovar – A lake beneath Adi Kailash",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
         "d": "Situated at Jolingkong, Parvati Sarovar is closely associated with the religious traditions of Adi Kailash and Goddess Parvati.\nSurrounded by a stark mountain landscape, the lake is one of the significant stops on the expedition. The visit is an opportunity to spend time in this sacred setting and understand why the region holds such importance for pilgrims."
       },
       {
         "t": "Om Parvat – The mountain with the natural Om formation",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
         "d": "Om Parvat is recognised for the naturally formed snow pattern on its face that resembles the sacred symbol Om.\nThe mountain is viewed from Nabhidhang, a high-altitude viewpoint in the Vyas Valley. The formation is a natural feature, and its appearance can vary with snowfall and weather. On a clear day, the sight is one of the defining experiences of this expedition."
       },
       {
         "t": "Vyas Valley – A remote Himalayan frontier",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_0736-scaled.jpg",
         "d": "The Vyas Valley is a high-altitude region in the eastern Kumaon Himalaya, close to the India–Tibet border.\nIts villages, river systems and mountain routes are connected to a long history of movement and trade across the Himalayan frontier. Gunji, Nabi and Kuti are among the settlements associated with this landscape.\nTravelling through the valley offers a glimpse into a part of Uttarakhand where geography, community life and mountain traditions are closely connected."
       },
       {
         "t": "Darma Valley – Life in a remote mountain region",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
         "d": "Darma Valley follows the Darma River in the Pithoragarh district. Its traditional settlements and mountain landscape make it distinct from the Vyas Valley.\nThe region is associated with the Rung/Shauka communities, whose history is connected to the high Himalayan borderlands and traditional trade routes. The villages and surrounding terrain reflect a way of life shaped by altitude, seasons and relative isolation.\nOur time here adds a cultural and geographical dimension to the expedition beyond the sacred destinations."
       },
       {
         "t": "Panchachuli Base Camp – Closer to the five peaks",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "The Panchachuli range is one of the defining mountain groups of the Kumaon Himalaya. Its five prominent summits form a dramatic backdrop to Darma Valley.\nThe hike towards Panchachuli Base Camp takes us beyond the road and into the mountain landscape on foot. It is an opportunity to experience the terrain at a different pace and get closer to the peaks that define this region."
       }
     ],
     "closing": "",
     "closingLast": true,
-    "image": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2024/08/IMG_0736-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg"
     ]
   },
 
@@ -1070,11 +1070,11 @@ export const journeys = [
     "pickup": "Leh Kushok Bakula Rimpochee Airport",
     "season": "",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2026/09/IMG_0659-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/09/IMG_0659-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2024/08/IMG_8386-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/02/shey-palace.webp",
-      "https://driftmates.com/wp-content/uploads/2026/02/IMG_7060-2048x1152.jpg"
+      "https://driftmates.com/photos/uploads/2024/08/IMG_8386-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/02/shey-palace.webp",
+      "https://driftmates.com/photos/uploads/2026/02/IMG_7060-2048x1152.jpg"
     ],
     "summary": "Most Ladakh bike trips cover the same loop. This one goes further. Turtuk is one of India's northernmost villages, opened to tourists only in 2010, sitting right near the Line of Control with a culture and history that feels completely separate from the rest of Ladakh.",
     "overview": "Most Ladakh bike trips cover the same loop. This one goes further. Turtuk is one of India's northernmost villages, opened to tourists only in 2010, sitting right near the Line of Control with a culture and history that feels completely separate from the rest of Ladakh.\nYou will still cross Khardung La and ride into Nubra Valley, but then instead of turning back, you keep going north along the Shyok River toward a village most people have never heard of. The second half takes you along the remote Shyok route to Pangong Tso and back over Chang La to Leh.\nThis trip is for riders who want the classic Ladakh experience and something more. A border village, a Balti culture most people never get to see, and a route that feels genuinely off the usual path.",
@@ -1264,11 +1264,11 @@ export const journeys = [
       "* Shared accommodations in remote areas are part of the authentic Himalayan experience and may vary depending on local conditions.",
       "* Road conditions in the Himalayas can be rough and unpredictable. Delays are normal and should be approached with patience and flexibility."
     ],
-    "image": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2024/08/IMG_0736-scaled.jpg"
     ],
     "summary": "There are parts of the Himalaya where the journey is as important as the destination. Darma Valley, tucked away in the eastern Kumaon region of Uttarakhand, is one of them.",
     "overview": "The Journey\nThere are parts of the Himalayas where the journey is as important as the destination. Darma Valley, tucked away in the eastern Kumaon region of Uttarakhand, is one of them.\nFar from the more familiar hill stations, this remote mountain valley offers a different experience of the Indian Himalaya. Traditional settlements, river valleys, rugged mountain roads and the imposing Panchachuli range shape the landscape here. It is a region where travel is still closely connected to the terrain, the seasons and the communities who call these mountains home.\nOur expedition begins in Delhi, from where we travel overnight to Haldwani. From the foothills, the route takes us through Chaukori and onwards towards Darma Valley, following the mountain roads into one of Kumaon's quieter regions.\nWe spend three nights in Darma Valley, allowing time to explore the surroundings rather than treating it as a brief stop. The journey also includes a walk towards Panchachuli Base Camp, bringing us closer to the five prominent peaks that define this part of the Himalaya.\nThe return route takes us through Pithoragarh and back to Haldwani, followed by an overnight Volvo journey to Delhi.\nThis is a road expedition with time for exploration and walking. It is suited to travellers who enjoy mountain landscapes, less-visited destinations and a journey that goes beyond the usual tourist circuit.",
@@ -1477,22 +1477,22 @@ export const journeys = [
     "region": [
       {
         "t": "Chaukori",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_0736-scaled.jpg",
         "d": "Located in the Kumaon hills, Chaukori is known for its open Himalayan views and peaceful mountain setting. It offers a change of pace from the lower foothills and makes a natural first stop on the journey towards eastern Kumaon."
       },
       {
         "t": "Darma Valley",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
         "d": "Darma Valley is situated in the Pithoragarh district of Uttarakhand, in the eastern Kumaon Himalaya. The valley follows the Nyola River and is surrounded by rugged mountain terrain, traditional villages and views towards the Panchachuli range.\nThe region is associated with the Rung communities, whose history, customs and way of life are part of Kumaon's cultural heritage. Its settlements and seasonal patterns reflect the realities of living in a remote mountain environment.\nFor travellers, Darma Valley offers an opportunity to explore a quieter part of Uttarakhand, away from the more established tourist destinations."
       },
       {
         "t": "Panchachuli Range",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "The Panchachuli range is one of the best-known mountain groups in Kumaon. Its five prominent peaks rise above the surrounding valleys and form a recognisable Himalayan skyline.\nThe range is an important part of the Darma Valley landscape and the central mountain feature of this expedition."
       },
       {
         "t": "Panchachuli Base Camp",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
         "d": "The trek towards Panchachuli Base Camp takes travellers away from the road and into the mountain landscape beneath the peaks.\nThe planned walk is approximately 5 km one way. The trail, access point and final walking distance are subject to local conditions and weather."
       }
     ],
@@ -1513,11 +1513,11 @@ export const journeys = [
     "pickup": "Pokhara Bus Station",
     "season": "Spring (March–May) and autumn (September–November).",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2026/04/IMG_5663-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/04/IMG_5663-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_5970-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/09/IMG_5970-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
     ],
     "summary": "The Annapurna Base Camp trek is a perfect blend of mountain adventure and cultural experience, starting from the scenic town of Pokhara. The journey takes you through forests, rivers, and traditional villages like Ghandruk and Chhomrong, gradually leading you into the high-altitu…",
     "overview": "The Annapurna Base Camp trek is a perfect blend of mountain adventure and cultural experience, starting from the scenic town of Pokhara.\nThe journey takes you through forests, rivers, and traditional villages like Ghandruk and Chhomrong, gradually leading you into the high-altitude Annapurna Sanctuary.\nAs you reach base camp, you’re surrounded by massive Himalayan peaks, making it one of the most rewarding trekking experiences in Nepal.",
@@ -1617,11 +1617,11 @@ export const journeys = [
     "pickup": "Dehradun, Uttarakhand ISBT",
     "season": "March–June, September–November, and December–February for snow.",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2026/02/1747812183272-chopta-tungnath.webp",
+    "image": "https://driftmates.com/photos/uploads/2026/02/1747812183272-chopta-tungnath.webp",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/04/IMG_5763-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/04/IMG_5763-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg"
     ],
     "summary": "This is a 3-day trek that packs in more than most longer ones. You start from the quiet meadows of Chopta at 2,600M, walk up through rhododendron forests to Tungnath Temple at 3,680M, the highest Shiva temple in the world, and then climb a little further to Chandrashila Summit at…",
     "overview": "This is a 3-day trek that packs in more than most longer ones. You start from the quiet meadows of Chopta at 2,600M, walk up through rhododendron forests to Tungnath Temple at 3,680M, the highest Shiva temple in the world, and then climb a little further to Chandrashila Summit at 4,000M where the Himalayas open up in every direction.\nChaukhamba, Nanda Devi, Trishul, Kedarnath Dome all of it right in front of you. On the way back, you stop at Deoriatal, a small alpine lake famous for reflecting the Chaukhamba peaks on clear mornings.\nIt is a beginner-friendly trek, but the views at the top will make even seasoned trekkers stop and stare. Three days, two nights, and a summit that stays with you.",
@@ -1778,11 +1778,11 @@ export const journeys = [
     "pickup": "Delhi",
     "season": "Munsyari can be visited in different seasons, but the experience changes throughout the year.",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/04/IMG_5763-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/04/IMG_5763-scaled.jpg"
     ],
     "summary": "There is a different side to the Kumaon Himalayas, beyond the familiar hill towns and popular mountain routes. In the eastern part of Uttarakhand, the Gori Ganga valley leads towards Munsyari, a mountain town set against the magnificent Panchachuli range.",
     "overview": "An experience-led journey through the Kumaon Himalayas\nThere is a different side to the Kumaon Himalayas, beyond the familiar hill towns and popular mountain routes. In the eastern part of Uttarakhand, the Gori Ganga valley leads towards Munsyari, a mountain town set against the magnificent Panchachuli range.\nFor generations, this region has been home to the Shauka communities of Johar, whose lives were shaped by mountain agriculture, pastoral traditions and trade routes connecting the Himalayas with Tibet. Their history, traditional settlements and craft traditions remain an important part of the region's identity.\nOur journey takes us from Chaukori's quiet mountain ridges to the waterfall landscapes around Birthi and the mountain setting of Munsyari. Spend time understanding the region, visit the Nanda Devi Temple, explore the local settlements and walk through the forests towards Khuliya Top, where the landscape opens into high-altitude meadows overlooking the Himalayan ranges.\nThe return journey follows the Gori Ganga valley through Madkot before reaching Pithoragarh, giving us a different perspective of eastern Kumaon.\nThis is not a journey designed around covering as many places as possible. We have kept three nights in Munsyari so there is time to experience the town, explore its surroundings and spend a full day in the mountains.\nAt Driftmates, we bring together the route, local knowledge and on-ground arrangements to make the journey comfortable and meaningful. Whether you are travelling alone, with a partner or with friends, you are welcome to join our small group and discover this lesser-explored part of the Himalayas.",
@@ -1794,27 +1794,27 @@ export const journeys = [
     "region": [
       {
         "t": "The Panchachuli range",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "The Panchachuli range is the defining feature of the Munsyari landscape. Its five prominent peaks rise above the surrounding valleys and are visible from several parts of the region.\nThe mountains change character throughout the day. Early morning light brings out their snow-covered faces, while the evening often creates warmer colours across the ridgelines. Weather and cloud cover determine how much of the range is visible, but the mountain setting is central to the experience of staying in Munsyari."
       },
       {
         "t": "The Gori Ganga valley",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
         "d": "The Gori Ganga is one of the major rivers of eastern Kumaon. Its valley leads north from Munsyari towards the higher settlements and the glacier regions of the upper Himalayas.\nThe river has shaped the geography, settlements and traditional routes of the region. It is also an important part of the landscape we follow on the return journey through Madkot."
       },
       {
         "t": "The heritage of Johar",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
         "d": "The history of Munsyari is closely connected to Johar and the Shauka community.\nFor generations, traders from this region travelled across high mountain passes to maintain commercial links with Tibet. These journeys involved the exchange of goods and created a distinctive cultural connection between communities on both sides of the Himalayas.\nAlthough the old trading system came to an end, its influence remains in the traditions, craftwork, food and architecture of the region. Understanding this history gives a different perspective on Munsyari beyond its mountain views."
       },
       {
         "t": "Forests and alpine meadows",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_0736-scaled.jpg",
         "d": "The higher slopes around Munsyari contain a variety of Himalayan vegetation. Oak and rhododendron forests cover parts of the lower trekking trails, while open meadows appear at higher elevations.\nThe Khuliya Top walk offers an opportunity to experience these changing landscapes on foot. Spring brings flowering vegetation to parts of the trail, while autumn generally offers a different atmosphere with clearer mountain views."
       },
       {
         "t": "Traditional weaving and village life",
-        "img": "https://driftmates.com/wp-content/uploads/2026/04/IMG_5763-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/04/IMG_5763-scaled.jpg",
         "d": "Wool weaving has long been part of the cultural heritage of the Johar region. Local crafts reflect the materials, climate and traditions of mountain life.\nA properly arranged visit to a local weaving household can help travellers understand the work behind these crafts, the skills involved and how traditional knowledge continues to be passed between generations."
       },
     ],
@@ -2031,11 +2031,11 @@ export const journeys = [
     "reading": "",
     "itineraryHeading": "8 days and 7 nights",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+      "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
     ],
     "summary": "Winter brings a different character to the mountains of Kinnaur and Spiti.",
     "overview": "The Journey\nWinter brings a different character to the mountains of Kinnaur and Spiti.\nThe familiar mountain roads become quieter, villages settle into the rhythm of the cold season, and snow gradually transforms the landscape. Frozen streams, white mountain slopes, traditional houses and monasteries surrounded by barren mountains make this one of the most distinctive seasons to experience the Himalayas.\nOur journey begins in Delhi with an overnight Volvo transfer to Shimla. From there, we enter Kinnaur, travelling through Sarahan and along the Sutlej valley towards Nako. As the landscape changes, we cross into the high-altitude cold desert of Spiti.\nOver the following days, we explore some of the region's most recognisable places. We visit the historic monasteries of Dhankar, Tabo, Kungri and Key, travel through Pin Valley, and spend time in the high villages of Langza, Komic and Hikkim.\nKaza becomes our base for exploring the surrounding landscape, including Chicham Bridge and Kibber. On the return journey, we travel through Gue and Reckong Peo before reaching Kalpa, where the Kinnaur Kailash range forms the backdrop to our final mountain stay.\nThis is a road expedition designed around the experience of winter in the Himalayas. The route combines mountain drives, cultural landmarks, remote settlements and time to explore the landscape at a slower pace.\nWinter travel also comes with its own realities. Snowfall, icy roads, changing temperatures and occasional road closures can affect access to individual destinations. Our journey is planned with flexibility, keeping safety and actual road conditions ahead of a fixed sightseeing schedule.",
@@ -2116,77 +2116,77 @@ export const journeys = [
     "region": [
       {
         "t": "Sarahan and Bhimakali Temple",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg",
         "d": "Sarahan is a traditional settlement in Himachal Pradesh, located along the route into Kinnaur. Its most recognised landmark is Bhimakali Temple, an important religious site known for its distinctive wooden architecture and cultural significance."
       },
       {
         "t": "Nako",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Nako is a high-altitude village in Kinnaur, known for its traditional houses, mountain setting and lake. It offers an introduction to the cold desert landscapes that become more prominent as the journey continues towards Spiti."
       },
       {
         "t": "Dhankar Monastery",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Dhankar Monastery stands on a rocky ridge overlooking the meeting point of the Spiti and Pin rivers. Its dramatic setting and historic importance make it one of the most memorable cultural landmarks in the region."
       },
       {
         "t": "Dhankar Lake",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg",
         "d": "Located above Dhankar village, Dhankar Lake is reached by a mountain trail. The walk offers expansive views of the surrounding terrain. Winter access can be difficult due to snow and ice, so the trek depends on safe trail conditions."
       },
       {
         "t": "Tabo Monastery",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg",
         "d": "Founded in 996 CE, Tabo Monastery is one of the most important Buddhist heritage sites in Spiti. Its historic temples and murals offer insight into the region's long religious and cultural history."
       },
       {
         "t": "Pin Valley",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Pin Valley is known for its rugged terrain, remote settlements and wildlife habitat. The landscape is particularly distinctive in winter, when snow and cold conditions change the appearance of the valley."
       },
       {
         "t": "Mud Village",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Mud is one of the best-known villages in Pin Valley. It is surrounded by dramatic mountain scenery and offers a glimpse into the settlement patterns and daily life of this remote region."
       },
       {
         "t": "Langza",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg",
         "d": "Langza is recognised for its large Buddha statue, fossil-bearing landscape and open mountain views. It is one of the most photographed villages around Kaza."
       },
       {
         "t": "Komic",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg",
         "d": "Komic, the highest motorable village in the world, is known for its monastery and traditional settlement. Its position among the mountains makes it a distinctive part of the Spiti landscape."
       },
       {
         "t": "Hikkim",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Hikkim is widely recognised for its high-altitude post office. It is a small village where communication and everyday services reflect the realities of remote Himalayan living."
       },
       {
         "t": "Key Monastery",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Key Monastery is one of Spiti's most important Buddhist institutions. Its hilltop setting above the valley makes it a prominent landmark and an important centre of religious learning."
       },
       {
         "t": "Chicham Bridge",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg",
         "d": "Chicham Bridge connects the villages of Chicham and Kibber across a deep gorge. It is an impressive example of infrastructure in a challenging mountain landscape."
       },
       {
         "t": "Kibber",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg",
         "d": "Kibber is known for its high-altitude setting, traditional architecture and surrounding wildlife habitat. It is particularly associated with the conservation landscape of the snow leopard."
       },
       {
         "t": "Gue Monastery",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Gue Monastery is known for housing the naturally preserved remains of a Buddhist monk. The site offers a distinctive cultural experience in the upper Kinnaur region."
       },
       {
         "t": "Kalpa and Kinnaur Kailash",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Kalpa is one of Kinnaur's best-known mountain settlements. It is particularly recognised for views towards the Kinnaur Kailash range, whose peaks form an impressive backdrop to the village."
       }
     ],
@@ -2320,12 +2320,12 @@ export const journeys = [
     "regionKicker": "Kinnaur & Spiti",
     "regionHeading": "The Places Along the Journey",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
+    "image": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
-      "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2016/11/9403133.jpg",
+      "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg"
     ],
     "summary": "The eastern part of Himachal Pradesh is home to two distinct Himalayan regions: Kinnaur and Spiti. While Kinnaur is known for its forested valleys, apple orchards and traditional mountain settlements, Spiti is characterised by high-altitude villages, ancient Buddhist monasteries and a landscape shaped by centuries of erosion.",
     "overview": "The eastern part of Himachal Pradesh is home to two distinct Himalayan regions: Kinnaur and Spiti. While Kinnaur is known for its forested valleys, apple orchards and traditional mountain settlements, Spiti is characterised by high-altitude villages, ancient Buddhist monasteries and a landscape shaped by centuries of erosion.\nThis expedition connects the two regions through a road journey that begins in Manali and enters Kinnaur before reaching the heart of Spiti Valley.\nThe route includes Chitkul, one of the last inhabited villages towards the Indo-Tibet border, Kalpa in the Kinnaur Kailash region, Nako and Gue before reaching Tabo and Kaza. From Kaza, the journey continues through several well-known villages and monasteries, including Key, Kibber, Langza, Hikkim and Komic.\nThe return route crosses Kunzum Pass and continues to Chandratal, a high-altitude lake in the Lahaul region, before reaching Manali.\nWith a combination of mountain roads, cultural landmarks, village visits and high-altitude landscapes, this route offers an opportunity to explore two very different sides of the Indian Himalayas.",
@@ -2362,127 +2362,127 @@ export const journeys = [
       {
         "t": "Sethan Valley",
         "d": "Sethan is a small mountain settlement in the Hamta region, located above Manali. Surrounded by open mountain slopes and views of the Dhauladhar range, the valley offers a quieter introduction to the Himalayan landscape. Its winding mountain road and elevated setting make it an interesting excursion from Manali.",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
       },
       {
         "t": "Jibhi",
         "d": "Jibhi is a small village in the Tirthan Valley, known for its traditional wooden houses, forested slopes and clear mountain streams. The surrounding landscape offers a different character from the higher, drier regions encountered later in the expedition.",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
       },
       {
         "t": "Jalori Pass",
         "d": "Jalori Pass connects the Banjar region with the upper mountain settlements towards Shimla and Kullu. Surrounded by dense forests and mountain slopes, the route offers a change in landscape as the journey moves towards the Sutlej Valley and Kinnaur.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg"
       },
       {
         "t": "Sangla Valley",
         "d": "Sangla Valley follows the Baspa River through one of Kinnaur's most scenic mountain landscapes. The valley is known for its traditional settlements, apple orchards, wooden architecture and views of the surrounding Himalayan peaks.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg"
       },
       {
         "t": "Chitkul",
         "d": "Chitkul is one of the last inhabited villages along the road towards the Indo-Tibet border. Situated beside the Baspa River, the village is known for its traditional Kinnauri houses, open agricultural fields and dramatic mountain surroundings.",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
       },
       {
         "t": "Reckong Peo",
         "d": "Reckong Peo is the administrative headquarters of Kinnaur district. Located above the Sutlej Valley, the town serves as an important centre for travellers exploring the surrounding villages and mountain settlements, including Kalpa.",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
       },
       {
         "t": "Kalpa and Kinnaur Kailash",
         "d": "Kalpa is one of Kinnaur's best-known mountain settlements. It is particularly recognised for its apple orchards, traditional temples and views towards the Kinnaur Kailash mountain range. On clear days, the mountain peaks form an impressive backdrop to the village.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg"
       },
       {
         "t": "Nako",
         "d": "Nako is a high-altitude village in the upper Kinnaur region, known for its traditional houses, Buddhist monastery and small lake. Situated at approximately 3,660 metres, the village marks a transition towards the cold desert landscapes of Spiti.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg"
       },
       {
         "t": "Khab",
         "d": "Khab is a small settlement in upper Kinnaur, located near the confluence of the Sutlej and Spiti rivers. The meeting of these two rivers, surrounded by steep mountain terrain, is one of the notable geographical landmarks along the journey into Spiti.",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
       },
       {
         "t": "Gue",
         "d": "Gue is a remote village known for its monastery, which houses the naturally preserved remains of a Buddhist monk. Its location and distinctive cultural heritage make it an interesting stop while travelling from Kinnaur towards Tabo.",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
       },
       {
         "t": "Tabo Monastery",
         "d": "Founded in 996 CE, Tabo Monastery is one of the most important Buddhist heritage sites in Spiti. Its ancient temples, murals and sculptures offer insight into the region's long religious and cultural history. The monastery is also recognised for its traditional mud-brick architecture.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg"
       },
       {
         "t": "Dhankar Monastery",
         "d": "Dhankar Monastery stands on a rocky hillside overlooking the confluence of the Spiti and Pin rivers. Once an important religious and administrative centre of the Spiti region, the monastery is known for its historic structures and dramatic mountain setting.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg"
       },
       {
         "t": "Kaza",
         "d": "Kaza is the main administrative and commercial centre of Spiti Valley. Situated along the Spiti River, it serves as a base for exploring the surrounding high-altitude villages, monasteries and mountain landscapes. The local market and cafés also offer an opportunity to experience everyday life in the valley.",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
       },
       {
         "t": "Key Monastery",
         "d": "Key Monastery is one of Spiti's most important Buddhist institutions. Situated on a hill overlooking the Spiti River, the monastery is known for its traditional architecture, religious murals and role as a centre of Buddhist learning.",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
       },
       {
         "t": "Kibber",
         "d": "Kibber is a high-altitude village known for its traditional stone houses, mountain surroundings and wildlife habitat. The region is particularly associated with snow leopard conservation and the wider wildlife landscape of Spiti.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg"
       },
       {
         "t": "Chicham Bridge",
         "d": "Chicham Bridge connects the villages of Chicham and Kibber across a deep gorge. The bridge is an important road connection in this remote mountain region and offers striking views of the surrounding terrain.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg"
       },
       {
         "t": "Langza",
         "d": "Langza is recognised for its large Buddha statue overlooking the village, fossil-bearing landscape and expansive mountain views. The surrounding area is known for marine fossils, reflecting the geological history of the region.",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
       },
       {
         "t": "Hikkim",
         "d": "Hikkim is widely recognised for its high-altitude post office, which connects this remote Himalayan settlement with the outside world. The village offers a glimpse into everyday life in one of Spiti's higher inhabited areas.",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
       },
       {
         "t": "Komic",
         "d": "Komic is a high-altitude village known for its monastery, traditional houses and open mountain landscape. Its remote setting and elevated position make it one of the distinctive settlements around Kaza.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg"
       },
       {
         "t": "Losar",
         "d": "Losar is one of the last major villages in the upper Spiti Valley before the road climbs towards Kunzum Pass. Surrounded by barren mountain slopes and traditional settlements, it marks the transition from the inhabited parts of Spiti towards the high mountain route into Lahaul.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg"
       },
       {
         "t": "Kunzum Pass",
         "d": "Kunzum Pass connects the Spiti and Lahaul regions at an elevation of approximately 4,590 metres. The pass offers views of the surrounding mountain ranges and is marked by a small temple dedicated to Kunzum Devi. It is an important high-altitude crossing on the journey towards Chandratal.",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
       },
       {
         "t": "Chandratal Lake",
         "d": "Chandratal, also known as Moon Lake, is a high-altitude lake situated at approximately 4,300 metres in the Lahaul region. Surrounded by mountain ranges and open alpine terrain, the lake is known for its clear waters and crescent-like shape. Access to the lake and its surrounding camping areas depends on seasonal road and weather conditions.",
-        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2024/08/IMG_5529-scaled.jpg"
       },
       {
         "t": "Batal and Chandra Valley",
         "d": "Batal is a remote settlement along the route connecting Spiti with Manali. Located beside the Chandra River, it is surrounded by rugged mountain terrain and forms part of the challenging road journey through the Chandra Valley towards Gramphu.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_9844-scaled.jpg"
       },
       {
         "t": "Gramphu",
         "d": "Gramphu is an important road junction in the Lahaul region, connecting routes towards Spiti, Rohtang and the Atal Tunnel. It marks the final stretch of the mountain journey before entering the Kullu Valley.",
-        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg"
+        "img": "https://driftmates.com/photos/uploads/2026/09/IMG_6219-scaled.jpg"
       },
       {
         "t": "Atal Tunnel",
         "d": "The Atal Tunnel passes beneath the Rohtang range, connecting Lahaul with the Kullu Valley. It has significantly improved road connectivity between the two regions and provides the final link on the return journey towards Manali.",
-        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
+        "img": "https://driftmates.com/photos/uploads/2016/11/9403133.jpg"
       },
     ],
     "bestTime": {
@@ -2697,11 +2697,11 @@ export const journeys = [
     "pickup": "Kathgodam Railway Station",
     "season": "",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2026/04/IMG_5763-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/04/IMG_5763-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/02/1747812183272-chopta-tungnath.webp"
+      "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/02/1747812183272-chopta-tungnath.webp"
     ],
     "summary": "This journey is not just about visiting places—it’s about slowing down and truly experiencing the mountains. Starting from the fast-paced life of Delhi, you gradually move into the peaceful Kumaon region, where every stop feels calmer than the last.",
     "overview": "This journey is not just about visiting places—it’s about slowing down and truly experiencing the mountains. Starting from the fast-paced life of Delhi, you gradually move into the peaceful Kumaon region, where every stop feels calmer than the last.\nFrom the spiritual energy of Kainchi Dham and Kasar Devi Temple, to the untouched forests of Binsar Wildlife Sanctuary and the Himalayan views from Mukteshwar—this trip is designed to help you feel connected, not rushed.",
@@ -2846,11 +2846,11 @@ export const journeys = [
     "pickup": "Kathgodam Railway Station",
     "season": "",
     "terms": [],
-    "image": "https://driftmates.com/wp-content/uploads/2026/04/IMG_5763-scaled.jpg",
+    "image": "https://driftmates.com/photos/uploads/2026/04/IMG_5763-scaled.jpg",
     "gallery": [
-      "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
-      "https://driftmates.com/wp-content/uploads/2026/02/1747812183272-chopta-tungnath.webp",
-      "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg"
+      "https://driftmates.com/photos/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+      "https://driftmates.com/photos/uploads/2026/02/1747812183272-chopta-tungnath.webp",
+      "https://driftmates.com/photos/uploads/2026/09/IMG_8840-scaled.jpg"
     ],
     "summary": "This short escape is designed for those who want to pause, breathe, and reconnect. Starting from the fast-paced life of Delhi, the journey slowly takes you into the calm hills of Uttarakhand — where spirituality, nature, and simple moments come together.",
     "overview": "This short escape is designed for those who want to pause, breathe, and reconnect. Starting from the fast-paced life of Delhi, the journey slowly takes you into the calm hills of Uttarakhand — where spirituality, nature, and simple moments come together.\nFrom the peaceful energy of Kainchi Dham to the serene beauty of Bhimtal Lake and Naini Lake, this trip is less about rushing and more about experiencing.",
