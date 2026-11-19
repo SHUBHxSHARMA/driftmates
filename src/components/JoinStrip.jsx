@@ -52,50 +52,62 @@ export default function JoinStrip({ items }) {
     let startX = 0;
     let startScroll = 0;
     let moved = 0;
+    let tracking = false;
     let dragging = false;
+
+    const onClick = (event) => {
+      if (!dragging) return;
+      event.preventDefault();
+      event.stopPropagation();
+    };
 
     const onDown = (e) => {
       if (e.pointerType !== "mouse" || e.button !== 0) return;
-      dragging = true;
+      tracking = true;
+      dragging = false;
       pointerId = e.pointerId;
       startX = e.clientX;
       startScroll = root.scrollLeft;
       moved = 0;
-      root.classList.add("is-dragging");
-      root.setPointerCapture(e.pointerId);
     };
 
     const onMove = (e) => {
-      if (!dragging || e.pointerId !== pointerId) return;
+      if (!tracking || e.pointerId !== pointerId) return;
       const dx = e.clientX - startX;
       moved = Math.max(moved, Math.abs(dx));
+      if (moved <= 8) return;
+      if (!dragging) {
+        dragging = true;
+        root.classList.add("is-dragging");
+        root.setPointerCapture(e.pointerId);
+      }
       root.scrollLeft = startScroll - dx;
     };
 
-    const onUp = (e) => {
-      if (!dragging || e.pointerId !== pointerId) return;
-      dragging = false;
+    const finish = (e) => {
+      if (!tracking || e.pointerId !== pointerId) return;
+      tracking = false;
       pointerId = null;
       root.classList.remove("is-dragging");
-      if (moved <= 8) return;
-      const stop = (ev) => {
-        ev.preventDefault();
-        ev.stopPropagation();
-        root.removeEventListener("click", stop, true);
-      };
-      root.addEventListener("click", stop, true);
+      if (root.hasPointerCapture?.(e.pointerId)) root.releasePointerCapture(e.pointerId);
+      window.setTimeout(() => {
+        dragging = false;
+      }, 0);
+      return wasDrag;
     };
 
     root.addEventListener("pointerdown", onDown);
     root.addEventListener("pointermove", onMove);
-    root.addEventListener("pointerup", onUp);
-    root.addEventListener("pointercancel", onUp);
+    root.addEventListener("pointerup", finish);
+    root.addEventListener("pointercancel", finish);
+    root.addEventListener("click", onClick, true);
 
     return () => {
       root.removeEventListener("pointerdown", onDown);
       root.removeEventListener("pointermove", onMove);
-      root.removeEventListener("pointerup", onUp);
-      root.removeEventListener("pointercancel", onUp);
+      root.removeEventListener("pointerup", finish);
+      root.removeEventListener("pointercancel", finish);
+      root.removeEventListener("click", onClick, true);
     };
   }, []);
 

@@ -114,7 +114,7 @@ function mealMark(day) {
   const line = String(day.d || "")
     .split("\n")
     .map((item) => item.trim())
-    .find((item) => /^meals:/i.test(item));
+    .find((item) => /^(meals|meal plan)\b/i.test(item));
   if (!line) return "";
   const value = line.slice(line.indexOf(":") + 1).trim().toLowerCase();
   if (!value || value.includes("not included")) return "";

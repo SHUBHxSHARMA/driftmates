@@ -520,7 +520,7 @@ export const journeys = [
   {
     "slug": "adi-kailash",
     "source": "adi-kailash-tour-package",
-    "title": "Adi Kailash by bike",
+    "title": "Adi Kailash, Om Parvat & Darma Valley Motorcycle Expedition",
     "destination": "Uttarakhand",
     "place": "uttarakhand",
     "kind": "Guided group motorcycle expedition",
@@ -529,7 +529,12 @@ export const journeys = [
     "price": 29999,
     "was": 45000,
     "pickup": "Haldwani",
-    "season": "The ideal months are May to June and September to October.",
+    "season": "The planned windows are April to June and September to November.",
+    "overviewTitle": "A Himalayan Motorcycle Expedition",
+    "regionStyle": "cards",
+    "mealCodes": true,
+    "coverPanels": true,
+    "reading": "",
     "terms": [],
     "image": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
     "gallery": [
@@ -552,7 +557,7 @@ export const journeys = [
   "Motorcycle allocation as per the selected package.",
   "Certified group leader throughout the expedition.",
   "Dedicated mechanic throughout the expedition.",
-  "Backup support vehicle for luggage and emergency assistance, subject to road access.",
+  "Backup support vehicle for luggage and emergency assistance.",
   "Assistance with the required permits and travel formalities.",
   "Pre-departure briefing and motorcycle allocation.",
   "Pre-arranged arrival and departure transfers between the designated Haldwani meeting point and Pantnagar Airport or Kathgodam Railway Station, where confirmed in the booking arrangements."
@@ -562,12 +567,12 @@ export const journeys = [
   "Motorcycle fuel, unless specifically stated as included in the selected package.",
   "Lunches, snacks, beverages and personal food orders.",
   "Personal riding gear and clothing.",
-  "Travel, medical and motorcycle insurance.",
   "Personal expenses, shopping and laundry.",
   "Optional Lipulekh Pass visit (₹1,500 per person, subject to permission and feasibility).",
   "Costs arising from motorcycle damage beyond normal wear and tear.",
   "Additional accommodation or transport arising from road closures, weather disruptions or delays beyond the planned itinerary.",
-  "Any service or expense not specifically mentioned under inclusions."
+  "Any service or expense not specifically mentioned under inclusions.",
+  "A refundable security deposit of ₹5,000 per motorcycle, collected before the expedition."
     ],
     "payment": [
       "To confirm your booking, a minimum of 30% of the total trip cost must be paid at the time of booking.",
@@ -585,54 +590,82 @@ export const journeys = [
     "altitude": [],
     "faqs": [
       {
-    "q": "Is fuel included?",
-    "a": "Fuel inclusion must be checked against the selected package. Unless specifically stated as included in writing, riders should budget for fuel separately."
-  },
-  {
-    "q": "Is a backup vehicle available?",
-    "a": "Yes. A support vehicle accompanies the group for luggage and emergency assistance, subject to road access. It may not be able to reach every high-altitude location or narrow mountain section."
-  },
-  {
-    "q": "Will a mechanic travel with the group?",
-    "a": "Yes. A dedicated mechanic accompanies the expedition to assist with motorcycle-related issues. Spare parts and repair facilities may be limited in remote areas."
-  },
-  {
-    "q": "Do I need to bring my own riding gear?",
-    "a": "We strongly recommend bringing your own properly fitted protective gear, including a full-face helmet, riding jacket, gloves, protective pants and riding boots. Waterproof protection and thermal layers are also important."
-  },
-  {
-    "q": "What is the motorcycle security deposit?",
-    "a": "A refundable deposit of ₹5,000 per motorcycle is collected before the expedition. The motorcycle is inspected before and after the journey. Any assessed damage beyond normal wear and tear is deducted from the deposit. If repair costs exceed the deposit, the rider must pay the difference."
-  },
-  {
-    "q": "What kind of accommodation can I expect?",
-    "a": "The expedition includes eight nights of accommodation. Haldwani and Pithoragarh offer more developed facilities, while Gunji and Darma Valley offer simpler mountain accommodation. Facilities and room configurations vary by location."
-  },
-  {
-    "q": "Are all meals included?",
-    "a": "The package includes eight breakfasts and eight dinners. Lunches, snacks, beverages and personal food orders are not included."
-  },
-  {
-    "q": "How difficult is the Panchachuli Base Camp trek?",
-    "a": "The planned trek is approximately 5 km one way, or 10 km for the round trip. A reasonable level of walking fitness is recommended. Actual difficulty depends on trail conditions, weather and individual fitness."
-  },
-  {
-    "q": "Is the expedition suitable for someone concerned about altitude?",
-    "a": "High-altitude travel requires preparation and awareness. The itinerary does not include a separate acclimatisation day at Gunji. Anyone with health concerns should seek medical advice before booking."
-  },
-  {
-    "q": "What happens if roads are closed or the weather changes?",
-    "a": "Mountain conditions can change quickly. If a road is closed or access is restricted, the team may adjust the schedule, delay movement or modify the route in the interest of safety. Additional accommodation or transport expenses arising from such disruptions may be payable separately, according to the booking terms."
-  },
-  {
-    "q": "Where does the expedition start and end?",
-    "a": "The expedition starts and ends in Haldwani. Participants should arrange their arrival at Pantnagar Airport or Kathgodam Railway Station according to the confirmed pickup schedule. Departure transfers are organised according to the arrangements confirmed with Driftmates."
-  }
-],
+        "q": "Do I need prior motorcycle riding experience?",
+        "a": "Yes. This expedition is intended for riders who are already comfortable handling a motorcycle. The route includes long mountain rides, steep gradients, narrow roads and changing road surfaces. It is not recommended as a first motorcycle trip."
+      },
+      {
+        "q": "Can beginners join this expedition?",
+        "a": "Complete beginner riders are not recommended. Participants should have prior riding experience and be comfortable handling a motorcycle on mountain roads."
+      },
+      {
+        "q": "Can international travellers join?",
+        "a": "International travellers can enquire, but participation is subject to nationality-specific entry rules and approval for restricted border areas. Eligibility for the Vyas Valley and Om Parvat section must be checked before booking."
+      },
+      {
+        "q": "What permits are required?",
+        "a": "The route passes through regulated border areas where the applicable permits and formalities are required. Requirements can differ for Indian citizens and foreign nationals. Driftmates will assist with the process, subject to current regulations and government approval."
+      },
+      {
+        "q": "Is the visit to Lipulekh Pass included?",
+        "a": "No. It is an optional visit, subject to military permission, access conditions and the day's schedule. The additional cost is ₹1,500 per person."
+      },
+      {
+        "q": "Which months are suitable for the expedition?",
+        "a": "The planned travel windows are April to June and September to November. Actual access depends on snowfall, weather, road conditions and official permissions. July and August are avoided because of monsoon-related travel risks."
+      },
+      {
+        "q": "Which motorcycle will be provided?",
+        "a": "The motorcycle model and rental conditions will be confirmed with the selected package before booking. Riders should check the model, engine capacity and allocation arrangements in writing."
+      },
+      {
+        "q": "Is fuel included?",
+        "a": "Fuel inclusion must be checked against the selected package. Unless specifically stated as included in writing, riders should budget for fuel separately."
+      },
+      {
+        "q": "Is a backup vehicle available?",
+        "a": "Yes. A support vehicle accompanies the group for luggage and emergency assistance, subject to road access. It may not be able to reach every high-altitude location or narrow mountain section."
+      },
+      {
+        "q": "Will a mechanic travel with the group?",
+        "a": "Yes. A dedicated mechanic accompanies the expedition to assist with motorcycle-related issues. Spare parts and repair facilities may be limited in remote areas."
+      },
+      {
+        "q": "Do I need to bring my own riding gear?",
+        "a": "We strongly recommend bringing your own properly fitted protective gear, including a full-face helmet, riding jacket, gloves, protective pants and riding boots. Waterproof protection and thermal layers are also important."
+      },
+      {
+        "q": "What is the motorcycle security deposit?",
+        "a": "A refundable deposit of ₹5,000 per motorcycle is collected before the expedition. The motorcycle is inspected before and after the journey. Any assessed damage beyond normal wear and tear is deducted from the deposit. If repair costs exceed the deposit, the rider must pay the difference."
+      },
+      {
+        "q": "What kind of accommodation can I expect?",
+        "a": "The expedition includes eight nights of accommodation. Haldwani and Pithoragarh offer more developed facilities, while Gunji and Darma Valley have simpler mountain accommodation. Facilities and room configurations vary by location."
+      },
+      {
+        "q": "Are all meals included?",
+        "a": "The package includes eight breakfasts and eight dinners. Lunches, snacks, beverages and personal food orders are not included."
+      },
+      {
+        "q": "How difficult is the Panchachuli Base Camp trek?",
+        "a": "The planned trek is approximately 5 km one way, or 10 km for the round trip. A reasonable level of walking fitness is recommended. Actual difficulty depends on trail conditions, weather and individual fitness."
+      },
+      {
+        "q": "Is the expedition suitable for someone concerned about altitude?",
+        "a": "High-altitude travel requires preparation and awareness. The itinerary does not include a separate acclimatisation day at Gunji. Anyone with health concerns should seek medical advice before booking."
+      },
+      {
+        "q": "What happens if roads are closed or the weather changes?",
+        "a": "Mountain conditions can change quickly. If a road is closed or access is restricted, the team may adjust the schedule, delay movement or modify the route in the interest of safety. Additional accommodation or transport expenses arising from such disruptions may be payable separately, according to the booking terms."
+      },
+      {
+        "q": "Where does the expedition start and end?",
+        "a": "The expedition starts and ends in Haldwani. Participants should arrange their arrival at Pantnagar Airport or Kathgodam Railway Station according to the confirmed pickup schedule. Departure transfers are organised according to the arrangements confirmed with Driftmates."
+      }
+    ],
     "days": [
-  {
+      {
     "n": "Day 01",
-    "t": "Arrival in Haldwani",
+        "t": "Arrival in Haldwani",
     "d": "Meet the team. Get your motorcycle. Prepare for the road ahead.\nYour expedition begins in Haldwani, the gateway to the Kumaon Himalaya.\nArrive at Pantnagar Airport or Kathgodam Railway Station, where a pre-arranged transfer will bring you to the designated meeting point. Once the group has assembled, meet your fellow riders and the Driftmates expedition team.\nThe first day is reserved for preparations rather than riding. We complete motorcycle allocation, check the riding equipment and conduct a detailed expedition briefing.\nThe briefing covers the route, riding formation, communication, road conditions, daily schedules, safety procedures and the support arrangements. It is also an opportunity to understand the responsibilities of riding as part of a group in remote mountain terrain.\nGet familiar with your motorcycle, settle into your accommodation and prepare for the first riding day.\nOvernight: Haldwani\nMeals included: Dinner"
   },
   {
@@ -643,27 +676,27 @@ export const journeys = [
   {
     "n": "Day 03",
     "t": "Pithoragarh to Gunji",
-    "d": "Following the Kali River into Vyas Valley\nToday we ride towards Gunji, travelling through Dharchula and into the upper reaches of Vyas Valley.\nThe route becomes increasingly remote as we leave the larger towns behind. The road follows the Kali River through steep mountain terrain, with changing road surfaces, narrow sections and settlements along the way.\nDharchula is an important point on this journey. It is where the route towards Vyas Valley and the route towards Darma Valley diverge. We complete the required travel and security formalities before continuing towards Gunji.\nFrom Dharchula, the road climbs into the higher valley. The landscape becomes more rugged, and the settlements are smaller and farther apart. This is a demanding mountain ride, so the group will maintain a controlled pace and take breaks as required.\nGunji, situated at approximately 3,200 metres, becomes our base for the next two nights. On arrival, check in and allow time to rest. Avoid unnecessary physical exertion and pay attention to how your body responds to the altitude.\nRoute: Pithoragarh – Dharchula – Gunji\nIndicative road distance: Approximately 170 km from Pithoragarh to Gunji, subject to the actual route used\nOvernight: Gunji\nMeals included: Breakfast and dinner"
+    "d": "Following the Kali River into Vyas Valley\nToday we ride towards Gunji, travelling through Dharchula and into the upper reaches of Vyas Valley.\nThe route becomes increasingly remote as we leave the larger towns behind. The road follows the Kali River through steep mountain terrain, with changing road surfaces, narrow sections and settlements along the way.\nDharchula is an important point on this journey. It is where the route towards Vyas Valley and the route towards Darma Valley diverge. We complete the required travel and security formalities before continuing towards Gunji.\nFrom Dharchula, the road climbs into the higher valley. The landscape becomes more rugged, and the settlements are smaller and farther apart. This is a demanding mountain ride, so the group will maintain a controlled pace and take breaks as required.\nGunji, situated at approximately 3,200 metres, becomes our base for the next two nights. On arrival, check in and allow time to rest. Avoid unnecessary physical exertion and pay attention to how your body responds to the altitude.\nRoute: Pithoragarh – Dharchula – Gunji\nOvernight: Gunji\nMeals included: Dinner and Breakfast"
   },
   {
     "n": "Day 04",
     "t": "Gunji to Adi Kailash and Parvati Sarovar, return to Gunji",
-    "d": "A closer look at the sacred mountain\nWe begin early for the ride towards Jolingkong, the area associated with Adi Kailash and Parvati Sarovar.\nThe route takes us further into the high-altitude landscape of the Kuti Valley. The surroundings open into a dramatic mountain setting, with rugged slopes and wide views of the peaks.\nAdi Kailash, also known as Chhota Kailash, is regarded as an important sacred mountain. Its distinctive profile and the religious traditions associated with it make this one of the principal destinations of the expedition.\nAt Jolingkong, we visit the area around Adi Kailash and Parvati Sarovar. The lake lies beneath the surrounding mountain landscape and holds religious significance in the traditions connected with Adi Kailash.\nWe spend time at the designated accessible areas before returning to Gunji. The amount of time available at the destination will depend on road access, weather, local instructions and the day's operating schedule.\nRoute: Gunji – Jolingkong – Parvati Sarovar – Gunji\nIndicative road distance: Approximately 35 km each way between Gunji and Jolingkong; local access and the actual riding arrangement must be confirmed\nOvernight: Gunji\nMeals included: Breakfast and dinner"
+    "d": "A closer look at the sacred mountain\nWe begin early for the ride towards Jolingkong, the area associated with Adi Kailash and Parvati Sarovar.\nThe route takes us further into the high-altitude landscape of the Kuti Valley. The surroundings open into a dramatic mountain setting, with rugged slopes and wide views of the peaks.\nAdi Kailash, also known as Chhota Kailash, is regarded as an important sacred mountain. Its distinctive profile and the religious traditions associated with it make this one of the principal destinations of the expedition.\nAt Jolingkong, we visit the area around Adi Kailash and Parvati Sarovar. The lake lies beneath the surrounding mountain landscape and holds religious significance in the traditions connected with Adi Kailash.\nWe spend time at the designated accessible areas before returning to Gunji. The amount of time available at the destination will depend on road access, weather, local instructions and the day's operating schedule.\nRoute: Gunji – Jolingkong – Parvati Sarovar – Gunji\nOvernight: Gunji\nMeals included: Breakfast and dinner"
   },
   {
     "n": "Day 05",
     "t": "Gunji to Om Parvat and onward to Darma Valley",
-    "d": "From one Himalayan valley to another\nWe start early and travel towards Nabhidhang, the designated viewpoint for Om Parvat.\nOm Parvat is known for a natural snow formation on its mountain face that resembles the sacred symbol Om. Visibility depends on weather and cloud conditions, so the view cannot be guaranteed. When the mountain is clear, it offers one of the most distinctive sights in this part of Kumaon.\nAfter the visit, we return towards Gunji and continue down the route towards Dharchula. From there, we take the road towards Tawaghat and enter Darma Valley.\nThe change of valley brings a different mountain landscape. Darma is known for its remote settlements, river valleys and views towards the Panchachuli range.\nThis is the most demanding transfer day of the expedition. The combined route includes the journey to Nabhidhang and back, the descent towards Dharchula and the onward ride into Darma Valley. Road conditions, security formalities and local access can affect the schedule considerably.\nThe day's final riding plan must be reconfirmed with the local ground team before each departure. The group will not be pushed to complete the transfer if conditions make it unsafe. Any necessary change to the overnight plan will be communicated by the expedition leader.\nRoute: Gunji – Nabhidhang – Gunji – Dharchula – Tawaghat – Darma Valley\nIndicative combined road distance: Approximately 190 km, subject to the actual overnight village and accessible roadhead\nOvernight: Darma Valley\nMeals included: Breakfast and dinner\nOptional: Lipulekh Pass\nA visit towards Lipulekh Pass may be considered only if the relevant military authorities grant permission and the day's schedule and access conditions allow it.\nAdditional cost: ₹1,500 per person.\nThis visit is not included in the standard package and is not guaranteed. It will only proceed if officially permitted and operationally feasible. It will not be attempted if it compromises the safety or feasibility of the onward journey to Darma Valley."
+    "d": "From one Himalayan valley to another\nWe start early and travel towards Nabhidhang, the designated viewpoint for Om Parvat.\nOm Parvat is known for a natural snow formation on its mountain face that resembles the sacred symbol Om. Visibility depends on weather and cloud conditions, so the view cannot be guaranteed. When the mountain is clear, it offers one of the most distinctive sights in this part of Kumaon.\nAfter the visit, we return towards Gunji and continue down the route towards Dharchula. From there, we take the road towards Tawaghat and enter Darma Valley.\nThe change of valley brings a different mountain landscape. Darma is known for its remote settlements, river valleys and views towards the Panchachuli range.\nRoute: Gunji – Nabhidhang – Gunji – Dharchula – Tawaghat – Darma Valley\nOvernight: Darma Valley\nMeals included: Breakfast and dinner\nOptional: Lipulekh Pass\nA visit towards Lipulekh Pass may be considered only if the relevant military authorities grant permission and the day's schedule and access conditions allow it.\nAdditional cost: ₹1,500 per person.\nThis visit is not included in the standard package and is not guaranteed. It will only proceed if officially permitted and operationally feasible. It will not be attempted if it compromises the safety or feasibility of the onward journey to Darma Valley."
   },
   {
     "n": "Day 06",
     "t": "Panchachuli Base Camp Trek",
-    "d": "Leave the motorcycles behind and explore on foot\nToday we take a break from riding and experience Darma Valley on foot.\nAfter breakfast, we head towards the local trailhead for the Panchachuli Base Camp trek. The trail takes us through the mountain landscape towards the Panchachuli range, whose five prominent peaks form one of the most recognisable mountain groups in Kumaon.\nThe planned trek is approximately 5 km one way, making it around 10 km for the round trip. The walk offers changing views of the valley and surrounding peaks, with a closer perspective of the landscape that we have been travelling through by motorcycle.\nWe spend time at the designated base-camp area before retracing the trail and returning to Darma Valley.\nThe walk requires a reasonable level of fitness. Trail conditions, weather and local access may affect the duration and the final point reached.\nTrek distance: Approximately 5 km one way / 10 km round trip\nOvernight: Darma Valley\nMeals included: Breakfast and dinner"
+    "d": "Leave the motorcycles behind and explore on foot\nToday we take a break from riding and experience Darma Valley on foot.\nAfter breakfast, we head towards the local trailhead for the Panchachuli Base Camp trek. The trail takes us through the mountain landscape towards the Panchachuli range, whose five prominent peaks form one of the most recognisable mountain groups in Kumaon.\nThe planned trek is approximately 5 km one way, making it around 10 km for the round trip. The walk offers changing views of the valley and surrounding peaks, with a closer perspective of the landscape that we have been travelling through by motorcycle.\nWe spend time at the designated base-camp area before retracing the trail and returning to Darma Valley.\nThe walk requires a reasonable level of fitness. Trail conditions, weather and local access may affect the duration and the final point reached.\nTrek distance: Approximately 5 km one way / 10 km round trek\nOvernight: Darma Valley\nMeals included: Breakfast and dinner"
   },
   {
     "n": "Day 07",
     "t": "Darma Valley to Pithoragarh",
-    "d": "Riding back through the valleys of Kumaon\nAfter breakfast, we begin our return ride from Darma Valley towards Pithoragarh.\nWe retrace the route through the Darma region towards Tawaghat and Dharchula before continuing towards Pithoragarh. The journey involves another substantial stretch of mountain riding, with road conditions and the group's pace determining the day's schedule.\nAfter several days in the upper valleys, the gradual descent brings a noticeable change in the landscape and altitude. We make appropriate breaks along the way and reach Pithoragarh for the night.\nRoute: Darma Valley – Tawaghat – Dharchula – Pithoragarh\nIndicative road distance: Approximately 160 km from Dantu to Pithoragarh; the actual distance depends on the accommodation location in Darma Valley\nOvernight: Pithoragarh\nMeals included: Breakfast and dinner"
+    "d": "Riding back through the valleys of Kumaon\nAfter breakfast, we begin our return ride from Darma Valley towards Pithoragarh.\nWe retrace the route through the Darma region towards Tawaghat and Dharchula before continuing towards Pithoragarh. The journey involves another substantial stretch of mountain riding, with road conditions and the group's pace determining the day's schedule.\nAfter several days in the upper valleys, the gradual descent brings a noticeable change in the landscape and altitude. We make appropriate breaks along the way and reach Pithoragarh for the night.\nRoute: Darma Valley – Tawaghat – Dharchula – Pithoragarh\nOvernight: Pithoragarh\nMeals included: Breakfast and dinner"
   },
   {
     "n": "Day 08",
@@ -678,273 +711,118 @@ export const journeys = [
 ],
     "route": "Haldwani → Pithoragarh → Dharchula → Gunji → Adi Kailash → Om Parvat → Darma Valley → Pithoragarh → Haldwani",
     "chapters": [
-  {
-    "title": "Motorcycle and Expedition Support",
-    "after": "days",
-    "parts": [
       {
-        "h": "Motorcycle allocation"
-      },
-      {
-        "p": "A motorcycle is allocated to each rider as per the selected package and availability. The motorcycle model, engine capacity, rental conditions and allocation policy must be confirmed in writing before booking."
-      },
-      {
-        "p": "Riders should inspect their motorcycle at handover and report any existing damage or mechanical concerns before departure."
-      },
-      {
-        "h": "Certified group leader"
-      },
-      {
-        "p": "A certified group leader accompanies the expedition, coordinates the group's movement and manages daily briefings, route communication and on-ground arrangements."
-      },
-      {
-        "h": "Dedicated mechanic"
-      },
-      {
-        "p": "A dedicated mechanic travels with the group to assist with motorcycle-related issues. Repair options and spare-part availability may be limited in remote locations, so not every mechanical problem can necessarily be resolved on the spot."
-      },
-      {
-        "h": "Backup support vehicle"
-      },
-      {
-        "p": "A support vehicle accompanies the expedition for luggage and emergency assistance, subject to road access. It may not be able to reach every high-altitude destination or narrow section of the route."
-      },
-      {
-        "h": "Fuel arrangements"
-      },
-      {
-        "p": "Fuel inclusion must be confirmed in the selected package. Unless specifically stated as included in writing, riders should budget for fuel separately."
-      },
-      {
-        "p": "Refuelling opportunities become limited in remote areas. The group leader will coordinate refuelling and riding arrangements according to the route and local availability."
-      }
-    ]
-  },
-  {
-    "title": "Riding Gear and Personal Preparation",
-    "after": "days",
-    "parts": [
-      {
-        "p": "We strongly recommend bringing your own properly fitted riding gear. Familiar equipment is more comfortable over several consecutive days and helps ensure that the protective gear fits correctly."
-      },
-      {
-        "h": "Recommended riding gear"
-      },
-      {
-        "list": [
-          "Certified full-face helmet.",
-          "Riding jacket with protective armour.",
-          "Riding gloves.",
-          "Riding pants with knee and hip protection.",
-          "Knee and elbow guards, if not integrated into the riding gear.",
-          "Ankle-supporting riding boots.",
-          "Waterproof riding layer or rain protection.",
-          "Thermal inner layers for cold conditions.",
-          "Sunglasses and personal essentials."
+        "title": "Motorcycle and Expedition Support",
+        "after": "included",
+        "box": true,
+        "parts": [
+          { "h": "Motorcycle allocation" },
+          { "p": "A motorcycle is allocated to each rider as per the selected package and availability. The motorcycle model, engine capacity, rental conditions and allocation policy must be confirmed in writing before booking." },
+          { "h": "Certified group leader" },
+          { "p": "A certified group leader accompanies the expedition, coordinates the group's movement and manages daily briefings, route communication and on-ground arrangements." },
+          { "h": "Dedicated mechanic" },
+          { "p": "A dedicated mechanic travels with the group to assist with motorcycle-related issues. Repair options and spare-part availability may be limited in remote locations." },
+          { "h": "Backup support vehicle" },
+          { "p": "A support vehicle accompanies the expedition for luggage and emergency assistance, subject to road access." },
+          { "h": "Riding Gear and Personal Preparation" },
+          { "p": "We strongly recommend bringing your own properly fitted riding gear. Familiar equipment is more comfortable over several consecutive days and helps ensure that the protective gear fits correctly." }
         ]
       },
       {
-        "h": "Personal packing list"
-      },
-      {
-        "list": [
-          "Valid government-issued identification.",
-          "Valid motorcycle driving licence.",
-          "Personal medication and basic toiletries.",
-          "Sunscreen and lip balm.",
-          "Reusable water bottle.",
-          "Small daypack.",
-          "Warm clothing and extra socks.",
-          "Power bank and charging accessories.",
-          "Personal travel and medical insurance details."
+        "title": "Information for International Travellers",
+        "after": "included",
+        "box": true,
+        "parts": [
+          { "p": "We welcome enquiries from international travellers interested in joining this expedition. However, access to restricted border areas is subject to nationality-specific rules and government approval." },
+          { "p": "Foreign nationals may require a Protected Area Permit and may be subject to additional eligibility restrictions. The ordinary Inner Line Permit applicable to certain Indian domestic travellers should not be assumed to be sufficient for foreign visitors." },
+          { "p": "In particular, access to the Om Parvat and Vyas Valley section must be checked for each traveller's nationality before accepting a booking. Some nationalities may not be eligible for entry." },
+          { "h": "Documents to prepare" },
+          {
+            "list": [
+              "Valid passport.",
+              "Valid Indian visa or other applicable entry authorisation.",
+              "Nationality and personal details for permit assessment.",
+              "Valid motorcycle driving licence, where applicable.",
+              "Any additional documents requested by the competent authorities."
+            ]
+          },
+          { "p": "International riders bringing their own motorcycles into India must independently verify temporary import requirements, vehicle registration, insurance and permission to ride in India." },
+          { "p": "Driftmates can provide initial guidance and coordinate the information required for permit assessment. Government approval and entry cannot be guaranteed." },
+          { "p": "We recommend that international travellers check eligibility before purchasing non-refundable flights or making other travel commitments." }
         ]
       }
-    ]
-  },
-  {
-    "title": "Rider Eligibility and Fitness",
-    "after": "days",
-    "parts": [
-      {
-        "p": "This expedition is intended for riders who are comfortable handling a motorcycle and have experience riding on mountain roads."
-      },
-      {
-        "p": "Participants should be prepared for:"
-      },
-      {
-        "list": [
-          "Consecutive days of riding.",
-          "Long mountain transfers.",
-          "Narrow roads and changing road surfaces.",
-          "Cold and unpredictable weather.",
-          "High-altitude conditions.",
-          "A 10 km round-trip trek towards Panchachuli Base Camp."
-        ]
-      },
-      {
-        "p": "A valid motorcycle driving licence is required. Participants must follow the group leader's instructions and ride within their ability."
-      },
-      {
-        "p": "The expedition is not recommended for complete beginner riders."
-      }
-    ]
-  },
-  {
-    "title": "Altitude and Safety",
-    "after": "days",
-    "parts": [
-      {
-        "p": "Parts of this journey take place at elevations above 3,000 metres, with visits to higher locations around Jolingkong and Nabhidhang."
-      },
-      {
-        "p": "Altitude affects people differently, regardless of age or fitness. The itinerary does not include a separate dedicated acclimatisation day at Gunji, so participants should understand the demands of this route before booking."
-      },
-      {
-        "p": "Avoid unnecessary exertion, stay hydrated and report symptoms to the expedition leader promptly."
-      },
-      {
-        "p": "Headache, nausea, unusual breathlessness, confusion or loss of coordination should never be ignored. Suspected altitude illness requires immediate medical assessment and, where indicated, descent."
-      },
-      {
-        "p": "Participants with medical concerns should seek advice from a qualified medical professional before undertaking the expedition."
-      },
-      {
-        "p": "The group leader will coordinate the group's movement and safety procedures, but no expedition can eliminate the risks associated with high-altitude mountain travel."
-      }
-    ]
-  },
-  {
-    "title": "Permits and Restricted-Area Access",
-    "after": "days",
-    "parts": [
-      {
-        "p": "The expedition enters sensitive border regions where access is regulated. The areas around Gunji, Adi Kailash and Om Parvat are subject to the applicable permit, identification and security procedures."
-      },
-      {
-        "p": "Driftmates will assist with the relevant permit process and communicate the documentation requirements before departure."
-      },
-      {
-        "p": "Final access is determined by the competent authorities. Requirements may change according to nationality, security conditions, weather and administrative instructions."
-      },
-      {
-        "p": "A confirmed booking does not independently guarantee entry into every restricted location. If access is denied or restricted, the itinerary may need to be modified in accordance with official instructions."
-      }
-    ]
-  },
-  {
-    "title": "Information for International Travellers",
-    "after": "days",
-    "parts": [
-      {
-        "p": "We welcome enquiries from international travellers interested in joining this expedition. However, access to restricted border areas is subject to nationality-specific rules and government approval."
-      },
-      {
-        "p": "Foreign nationals may require a Protected Area Permit and may be subject to additional eligibility restrictions. The ordinary Inner Line Permit applicable to certain Indian domestic travellers should not be assumed to be sufficient for foreign visitors."
-      },
-      {
-        "p": "In particular, access to the Om Parvat and Vyas Valley section must be checked for each traveller's nationality before accepting a booking. Some nationalities may not be eligible for entry."
-      },
-      {
-        "h": "Documents to prepare"
-      },
-      {
-        "list": [
-          "Valid passport.",
-          "Valid Indian visa or other applicable entry authorisation.",
-          "Nationality and personal details for permit assessment.",
-          "Valid motorcycle driving licence, where applicable.",
-          "Any additional documents requested by the competent authorities."
-        ]
-      },
-      {
-        "p": "International riders bringing their own motorcycles into India must independently verify temporary import requirements, vehicle registration, insurance and permission to ride in India."
-      },
-      {
-        "p": "Driftmates can provide initial guidance and coordinate the information required for permit assessment. Government approval and entry cannot be guaranteed."
-      },
-      {
-        "p": "We recommend that international travellers check eligibility before purchasing non-refundable flights or making other travel commitments."
-      }
-    ]
-  },
-  {
-    "title": "Motorcycle Security Deposit",
-    "after": "included",
-    "parts": [
-      {
-        "p": "A refundable security deposit of ₹5,000 per motorcycle is collected before the expedition."
-      },
-      {
-        "p": "The motorcycle is inspected at the time of handover and again after the expedition. Any damage beyond normal wear and tear will be assessed, and the applicable repair or replacement cost will be deducted from the security deposit."
-      },
-      {
-        "p": "The remaining balance will be refunded after the final inspection."
-      },
-      {
-        "p": "If the assessed damage exceeds ₹5,000, the rider is responsible for paying the additional amount."
-      },
-      {
-        "p": "Normal wear and tear resulting from regular use is not treated as accidental or rider-caused damage."
-      }
-    ]
-  },
-  {
-    "title": "Booking and Travel Information",
-    "after": "included",
-    "parts": [
-      {
-        "p": "Before confirming a departure, travellers should receive written information covering:"
-      },
-      {
-        "list": [
-          "The selected motorcycle model and rental conditions.",
-          "Fuel inclusion or exclusion.",
-          "Package price and applicable taxes.",
-          "Booking amount and payment schedule.",
-          "Cancellation and refund policy.",
-          "Group size and departure confirmation.",
-          "Room-sharing arrangements and any single-room supplement.",
-          "Arrival and departure transfer arrangements.",
-          "Permit eligibility and documentation requirements.",
-          "Security deposit and motorcycle damage policy."
-        ]
-      },
-      {
-        "p": "These terms should be confirmed before the traveller makes the final payment."
-      }
-    ]
-  }
-],
+    ],
+    "bestTime": {
+      "intro": "The expedition is planned around two broad travel windows.",
+      "key": "April to June and September to November are the planned windows. July and August are not planned departure months. All departures are subject to weather, road conditions, official permissions and local administration. The travel windows are planning periods, not a guarantee that every destination will be accessible on every date.",
+      "months": [
+        { "m": "Jan", "tone": "plain" },
+        { "m": "Feb", "tone": "plain" },
+        { "m": "Mar", "tone": "plain" },
+        { "m": "Apr", "tone": "open" },
+        { "m": "May", "tone": "open" },
+        { "m": "Jun", "tone": "open" },
+        { "m": "Jul", "tone": "closed" },
+        { "m": "Aug", "tone": "closed" },
+        { "m": "Sep", "tone": "open" },
+        { "m": "Oct", "tone": "open" },
+        { "m": "Nov", "tone": "open" },
+        { "m": "Dec", "tone": "plain" }
+      ],
+      "seasons": [
+        {
+          "title": "April to June",
+          "tone": "open",
+          "d": "Spring and early summer offer a suitable planning window for the Kumaon region. Lower and middle mountain areas generally become more accessible, while higher-altitude roads may still be affected by snow and seasonal clearance.\nApril departures require particular attention to road access and weather around Gunji, Jolingkong and Nabhidhang."
+        },
+        {
+          "title": "September to November",
+          "tone": "open",
+          "d": "The post-monsoon period can offer clearer mountain views and more settled conditions. September is a popular period for travel, while October and November bring colder temperatures at higher elevations.\nAs winter approaches, snowfall and seasonal closures can affect access to the upper valleys."
+        },
+        {
+          "title": "July and August",
+          "tone": "closed",
+          "d": "July and August are not planned departure months because monsoon conditions can cause landslides, road damage and travel disruptions."
+        }
+      ]
+    },
     "regionKicker": "Adi Kailash",
     "regionHeading": "Places and Experiences Along the Route",
     "regionAfter": "itinerary",
     "region": [
   {
     "t": "Adi Kailash",
+    "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
     "d": "Also known as Chhota Kailash, Adi Kailash is a sacred mountain in the upper reaches of Kumaon. Its distinctive profile has made it an important pilgrimage destination, and its surroundings are closely associated with the religious traditions of the region."
   },
   {
     "t": "Parvati Sarovar",
+    "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
     "d": "Located near Jolingkong, Parvati Sarovar is a high-altitude lake associated with Adi Kailash. The lake and the surrounding mountain setting form an important part of the experience at this destination."
   },
   {
     "t": "Om Parvat",
+    "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
     "d": "Om Parvat is recognised for the natural snow formation on its mountain face that resembles the sacred symbol Om. Nabhidhang is the designated viewpoint for visitors. The formation's visibility varies with snowfall, cloud and weather conditions."
   },
   {
     "t": "Gunji and Vyas Valley",
+    "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
     "d": "Gunji is a remote settlement in Vyas Valley and an important base for visiting Adi Kailash and Om Parvat. The area is characterised by high mountain terrain, river valleys and traditional settlements."
   },
   {
     "t": "Darma Valley",
+    "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
     "d": "Darma Valley is a remote Himalayan region in eastern Kumaon, known for its mountain villages, river landscapes and views towards the Panchachuli range. Its landscape and settlements offer a different experience from the Vyas Valley route."
   },
   {
     "t": "Panchachuli Base Camp",
+    "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
     "d": "The Panchachuli range is one of the defining mountain formations of Kumaon. The trek towards its base camp provides an opportunity to experience the region away from the road, with a closer view of the surrounding peaks and valley."
   }
 ],
-    "closing": "Take the Road Less Travelled\nSome journeys are remembered for the places they take you. Others stay with you because of everything that happens along the way.\nRide through the Kumaon Himalaya, reach the landscapes of Adi Kailash and Om Parvat, and spend time beneath the Panchachuli range.\nTravel the Himalayas. Know them beyond the map.\nDriftmates – Himalayan Expeditions & Journeys",
+    "closing": "",
     "closingLast": true
   },
   {
@@ -958,7 +836,12 @@ export const journeys = [
     "pickup": "Delhi",
     "route": "Delhi → Haldwani → Pithoragarh → Dharchula → Gunji → Adi Kailash → Om Parvat → Darma Valley → Panchachuli Base Camp → Pithoragarh → Haldwani → Delhi",
     "summary": "There are journeys where the road itself becomes a major part of the experience. The route into the eastern Kumaon Himalaya is one of them.",
-    "overview": "An expedition into the eastern Himalaya\nThere are journeys where the road itself becomes a major part of the experience. The route into the eastern Kumaon Himalaya is one of them.\nThis expedition brings together three distinct experiences in one journey: Adi Kailash, Om Parvat and Panchachuli Base Camp.\nIt is not a luxury holiday or a conventional pilgrimage tour. It is an opportunity to experience the eastern Kumaon Himalaya through its landscapes, routes, villages and mountain trails.",
+    "overviewTitle": "An expedition into the eastern Himalaya",
+    "regionStyle": "cards",
+    "mealCodes": true,
+    "coverPanels": true,
+    "reading": "",
+    "overview": "An expedition into the eastern Himalaya\nThere are journeys where the road itself becomes a major part of the experience. The route into the eastern Kumaon Himalaya is one of them.\nAs we leave the foothills behind, the roads begin following deep river valleys, passing through small mountain settlements and climbing towards some of the most remote landscapes in Uttarakhand. This is the region of the Vyas and Darma valleys, where high mountains, traditional villages and sacred destinations come together.\nThis expedition brings together three distinct experiences in one journey: Adi Kailash, Om Parvat and Panchachuli Base Camp.\nOur first destination is the Vyas Valley, where we travel towards Gunji, a remote mountain village that serves as our base for exploring the region. From here, we visit Adi Kailash and Parvati Sarovar at Jolingkong, a landscape deeply associated with the spiritual traditions of Lord Shiva. We also travel to Nabhidhang to view Om Parvat, known for the natural snow formation on its face that resembles the sacred symbol Om.\nThe journey then takes us towards Darma Valley. The change in landscape is striking, with another river valley, traditional mountain settlements and the imposing Panchachuli range defining the surroundings. We spend time in this region and set out on a hike towards Panchachuli Base Camp, bringing us closer to the mountains on foot.\nThis is a backpacking-style expedition designed around the experience of travelling through remote Himalayan regions. Expect long mountain drives, simple local stays, changing weather and days that unfold at the pace of the mountains.\nIt is not a luxury holiday or a conventional pilgrimage tour. It is an opportunity to experience the eastern Kumaon Himalaya through its landscapes, routes, villages and mountain trails.",
     "included": [
       "Mountain transportation in comfortable 4x4 vehicles from Haldwani to Haldwani.",
       "Six nights of accommodation in hotels and homestays.",
@@ -991,11 +874,11 @@ export const journeys = [
       },
       {
         "q": "What is the complete duration of the trip?",
-        "a": "The mountain expedition is seven days from Haldwani to Haldwani. With the Volvo transfers between Delhi and Haldwani, the complete journey is counted in calendar days."
+        "a": "The mountain expedition is seven days from Haldwani to Haldwani. Including the two overnight Volvo transfers between Delhi and Haldwani, the complete journey is eight nights and nine calendar days."
       },
       {
-        "q": "Do I need an Inner Line Permit for Adi Kailash?",
-        "a": "Yes. The Vyas Valley is a restricted border region, and travellers must meet the permit requirements. Driftmates assists with the process, subject to the rules in force at the time of travel."
+        "q": "Do I need an Inner Line Permit for Adi Kailash and Om Parvat?",
+        "a": "Yes. The Vyas Valley is a restricted border region, and travellers must meet the applicable permit requirements. Driftmates assists with the process, subject to government approval and the rules in force at the time of travel."
       },
       {
         "q": "Can I visit both Adi Kailash and Om Parvat on this journey?",
@@ -1015,11 +898,11 @@ export const journeys = [
       },
       {
         "q": "Can solo travellers join the expedition?",
-        "a": "Yes. Solo travellers can join a scheduled group departure. Accommodation and room-sharing arrangements will depend on availability."
+        "a": "Yes. Solo travellers can join a scheduled group departure. Accommodation and room-sharing arrangements will depend on availability and the booking configuration for that departure."
       },
       {
         "q": "What kind of accommodation can I expect?",
-        "a": "The journey uses local hotels and homestays. Facilities in Pithoragarh are more developed, while stays in Gunji and Darma Valley are simpler, with practical mountain accommodation."
+        "a": "The journey uses local hotels and homestays. Facilities in Pithoragarh are generally more developed, while stays in Gunji and Darma Valley are simpler. Travellers should be comfortable with practical mountain accommodation."
       },
       {
         "q": "Are meals included throughout the journey?",
@@ -1039,49 +922,49 @@ export const journeys = [
       },
       {
         "q": "Can international travellers join this expedition?",
-        "a": "International travellers should check the applicable entry requirements for the restricted border region before booking. Eligibility must be confirmed with the relevant authorities before a place is accepted."
+        "a": "International travellers should check the applicable entry, identity and permit requirements for the restricted border region before booking. Eligibility and document requirements must be confirmed with the relevant authorities before a place is accepted."
       }
     ],
     "days": [
       {
         "n": "Day 00",
         "t": "Delhi to Haldwani",
-        "d": "Overnight journey to the Kumaon foothills\nThe journey begins in Delhi, where we board an overnight Volvo bus towards Haldwani. This transfer takes us to the starting point of our mountain expedition.\nWe arrive in Haldwani the following morning, meet the group and prepare to begin the journey into Kumaon.\nOvernight: Volvo bus\nMeals: Not included"
+        "d": "Overnight journey to the Kumaon foothills\nThe journey begins in Delhi, where we board an overnight Volvo bus towards Haldwani. This transfer takes us to the starting point of our mountain expedition.\nWe arrive in Haldwani the following morning, meet the group and prepare to begin the journey into Kumaon.\nOvernight: Volvo bus"
       },
       {
         "n": "Day 01",
         "t": "Haldwani to Pithoragarh",
-        "d": "Entering the Kumaon Himalaya\nWe meet in Haldwani and begin our drive towards Pithoragarh. Leaving the plains behind, the road gradually climbs through the Kumaon foothills, passing forested slopes, hillside settlements and winding mountain roads.\nThe journey offers our first introduction to the landscape of the region. As we move further into the hills, the terrain becomes more rugged and the valleys begin to open up.\nPithoragarh is an important mountain town in eastern Uttarakhand and a gateway to the border regions of the district. We reach here by evening, settle into our accommodation and prepare for the journey towards Dharchula and the Vyas Valley.\nDay highlights\n- Mountain drive from Haldwani to Pithoragarh\n- First experience of the Kumaon landscape\n- Expedition briefing and preparation\nOvernight: Pithoragarh\nTransport: 4x4 vehicle\nMeals: Dinner"
+        "d": "Entering the Kumaon Himalaya\nWe meet in Haldwani and begin our drive towards Pithoragarh. Leaving the plains behind, the road gradually climbs through the Kumaon foothills, passing forested slopes, hillside settlements and winding mountain roads.\nThe journey offers our first introduction to the landscape of the region. As we move further into the hills, the terrain becomes more rugged and the valleys begin to open up.\nPithoragarh is an important mountain town in eastern Uttarakhand and a gateway to the border regions of the district. We reach here by evening, settle into our accommodation and prepare for the journey towards Dharchula and the Vyas Valley.\nOvernight: Pithoragarh\nMeals: Dinner"
       },
       {
         "n": "Day 02",
         "t": "Pithoragarh to Dharchula to Gunji",
-        "d": "Following the Kali River into the Vyas Valley\nToday we travel towards one of the most remote parts of the Kumaon Himalaya.\nFrom Pithoragarh, the route takes us to Dharchula, a border town situated along the Kali River, which forms part of the international boundary between India and Nepal.\nBeyond Dharchula, the road follows the river deeper into the mountains. The valley narrows, the slopes become steeper and small settlements appear along the route. We pass through a landscape that has long connected communities living on both sides of the Himalayan frontier.\nOur destination is Gunji, a mountain village in the Vyas Valley. Located at a much higher altitude than the towns we have travelled through, Gunji is an important base for journeys towards Adi Kailash and Om Parvat.\nWe reach the village and settle into our accommodation. The evening is kept relaxed to allow time to adjust to the altitude.\nDay highlights\n- Drive through Dharchula and the Kali River valley\n- Enter the remote Vyas Valley\n- Mountain villages and changing landscapes\n- Arrival at Gunji\nOvernight: Gunji\nTransport: 4x4 vehicle\nMeals: Breakfast and dinner"
+        "d": "Following the Kali River into the Vyas Valley\nToday we travel towards one of the most remote parts of the Kumaon Himalaya.\nFrom Pithoragarh, the route takes us to Dharchula, a border town situated along the Kali River, which forms part of the international boundary between India and Nepal.\nBeyond Dharchula, the road follows the river deeper into the mountains. The valley narrows, the slopes become steeper and small settlements appear along the route. We pass through a landscape that has long connected communities living on both sides of the Himalayan frontier.\nOur destination is Gunji, a mountain village in the Vyas Valley. Located at a much higher altitude than the towns we have travelled through, Gunji is an important base for journeys towards Adi Kailash and Om Parvat.\nWe reach the village and settle into our accommodation. The evening is kept relaxed to allow time to adjust to the altitude.\nOvernight: Gunji\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 03",
         "t": "Gunji to Adi Kailash and Parvati Sarovar, return to Gunji",
-        "d": "A day in the sacred landscape of Adi Kailash\nToday we travel towards Jolingkong, the high-altitude destination at the foot of Adi Kailash.\nAlso known as Chhota Kailash, Adi Kailash holds deep religious significance and is revered by devotees of Lord Shiva. The mountain's distinctive form and the surrounding landscape have made this one of the most important spiritual destinations in the eastern Kumaon Himalaya.\nAt Jolingkong, we visit the area around Parvati Sarovar, a lake associated with Goddess Parvati. The setting is striking: a high-altitude landscape surrounded by mountain slopes, rocky terrain and the presence of Adi Kailash.\nWe spend time experiencing the surroundings and taking in the views before returning to Gunji.\nThis is primarily a high-altitude road excursion. Walking around the destination depends on access, weather and local instructions. The day is planned with enough flexibility to account for road conditions and the time needed at altitude.\nDay highlights\n- Drive towards Jolingkong\n- Views of Adi Kailash\n- Visit to Parvati Sarovar\n- Experience the high-altitude landscape\nOvernight: Gunji\nTransport: 4x4 vehicle\nMeals: Breakfast and dinner"
+        "d": "A day in the sacred landscape of Adi Kailash\nToday we travel towards Jolingkong, the high-altitude destination at the foot of Adi Kailash.\nAlso known as Chhota Kailash, Adi Kailash holds deep religious significance and is revered by devotees of Lord Shiva. The mountain's distinctive form and the surrounding landscape have made this one of the most important spiritual destinations in the eastern Kumaon Himalaya.\nAt Jolingkong, we visit the area around Parvati Sarovar, a lake associated with Goddess Parvati. The setting is striking: a high-altitude landscape surrounded by mountain slopes, rocky terrain and the presence of Adi Kailash.\nWe spend time experiencing the surroundings and taking in the views before returning to Gunji.\nThis is primarily a high-altitude road excursion. Walking around the destination depends on access, weather and local instructions. The day is planned with enough flexibility to account for road conditions and the time needed at altitude.\nOvernight: Gunji\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 04",
         "t": "Gunji to Om Parvat viewpoint to Darma Valley",
-        "d": "From the Vyas Valley to Darma Valley\nWe begin the day with a drive towards Nabhidhang, the recognised viewpoint for Om Parvat.\nOm Parvat is known for a natural snow formation on its mountain face that resembles the sacred symbol Om. It is a remarkable sight, although visibility depends on snowfall, cloud cover and prevailing weather conditions.\nAfter spending time at the viewpoint, we begin our journey towards Darma Valley. This is a long mountain transfer. We retrace the road from the Nabhidhang side through the Vyas Valley towards the Dharchula and Tawaghat region before continuing into Darma Valley. The journey is planned around road conditions, check-post formalities and the time available at the viewpoint.\nAs we enter Darma Valley, the landscape changes once again. The valley follows the Darma River and is known for its traditional settlements, remote mountain environment and views of the Panchachuli range.\nWe reach our accommodation and settle in for the evening.\nDay highlights\n- Visit to Nabhidhang\n- View of Om Parvat, subject to visibility\n- Long inter-valley mountain drive\n- Arrival in Darma Valley\nOvernight: Darma Valley\nTransport: 4x4 vehicle\nMeals: Breakfast and dinner"
+        "d": "From the Vyas Valley to Darma Valley\nWe begin the day with a drive towards Nabhidhang, the recognised viewpoint for Om Parvat.\nOm Parvat is known for a natural snow formation on its mountain face that resembles the sacred symbol Om. It is a remarkable sight, although visibility depends on snowfall, cloud cover and prevailing weather conditions.\nAfter spending time at the viewpoint, we begin our journey towards Darma Valley. This is a long mountain transfer. We retrace the road from the Nabhidhang side through the Vyas Valley towards the Dharchula and Tawaghat region before continuing into Darma Valley. The journey is planned around road conditions, check-post formalities and the time available at the viewpoint.\nAs we enter Darma Valley, the landscape changes once again. The valley follows the Darma River and is known for its traditional settlements, remote mountain environment and views of the Panchachuli range.\nWe reach our accommodation and settle in for the evening.\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 05",
         "t": "Darma Valley to Panchachuli Base Camp and return",
-        "d": "A day on foot beneath the Panchachuli range\nAfter several days of travelling through mountain roads and valleys, today is dedicated to exploring the landscape on foot.\nWe set out towards Panchachuli Base Camp, walking through the mountain terrain of Darma Valley. The trail takes us closer to the Panchachuli massif, a group of five prominent Himalayan peaks that dominate the surrounding landscape.\nThe experience is different from the road journey. We move at walking pace, with time to observe the changing terrain, mountain vegetation and the scale of the peaks around us.\nAfter spending time in the base camp area, we retrace our route and return to our stay in Darma Valley.\nThe hike requires reasonable fitness and the ability to walk on uneven terrain. The exact trailhead, distance and duration will be confirmed according to local access and current trail conditions.\nDay highlights\n- Hike towards Panchachuli Base Camp\n- Views of the Panchachuli massif\n- Time to experience the mountain landscape on foot\n- Return to Darma Valley\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
+        "d": "A day on foot beneath the Panchachuli range\nAfter several days of travelling through mountain roads and valleys, today is dedicated to exploring the landscape on foot.\nWe set out towards Panchachuli Base Camp, walking through the mountain terrain of Darma Valley. The trail takes us closer to the Panchachuli massif, a group of five prominent Himalayan peaks that dominate the surrounding landscape.\nThe experience is different from the road journey. We move at walking pace, with time to observe the changing terrain, mountain vegetation and the scale of the peaks around us.\nAfter spending time in the base camp area, we retrace our route and return to our stay in Darma Valley.\nThe hike requires reasonable fitness and the ability to walk on uneven terrain. The exact trailhead, distance and duration will be confirmed according to local access and current trail conditions.\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 06",
         "t": "Darma Valley to Dharchula to Pithoragarh",
-        "d": "Returning through the mountain valleys\nWe leave Darma Valley after breakfast and begin our return journey towards Pithoragarh.\nThe road follows the valley downstream, passing through remote settlements and mountain terrain before bringing us back towards Dharchula. From here, we continue towards Pithoragarh.\nAfter spending the previous days in remote Himalayan regions, the journey gradually brings us back to a larger mountain town. We reach Pithoragarh by evening and settle in for our final night on the mountain route.\nDay highlights\n- Drive out of Darma Valley\n- Journey through the Dharchula region\n- Return to Pithoragarh\nOvernight: Pithoragarh\nTransport: 4x4 vehicle\nMeals: Breakfast and dinner"
+        "d": "Returning through the mountain valleys\nWe leave Darma Valley after breakfast and begin our return journey towards Pithoragarh.\nThe road follows the valley downstream, passing through remote settlements and mountain terrain before bringing us back towards Dharchula. From here, we continue towards Pithoragarh.\nAfter spending the previous days in remote Himalayan regions, the journey gradually brings us back to a larger mountain town. We reach Pithoragarh by evening and settle in for our final night on the mountain route.\nOvernight: Pithoragarh\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 07",
         "t": "Pithoragarh to Haldwani",
-        "d": "The mountain expedition comes to an end\nAfter breakfast, we begin our final drive towards Haldwani.\nThe route takes us back through the Kumaon hills, gradually descending towards the foothills. On reaching Haldwani, our 4x4 mountain expedition comes to an end.\nTravellers continuing to Delhi board the overnight Volvo bus.\nDay highlights\n- Final mountain drive from Pithoragarh to Haldwani\n- End of the 4x4 expedition\n- Overnight transfer to Delhi\nTransport: 4x4 vehicle and Volvo bus\nMeals: Breakfast"
+        "d": "The mountain expedition comes to an end\nAfter breakfast, we begin our final drive towards Haldwani.\nThe route takes us back through the Kumaon hills, gradually descending towards the foothills. On reaching Haldwani, our 4x4 mountain expedition comes to an end.\nTravelers continuing to Delhi board the overnight Volvo bus.\nMeals: Breakfast"
       },
       {
         "n": "Day 08",
@@ -1089,131 +972,79 @@ export const journeys = [
         "d": "We arrive in Delhi after the overnight journey from Haldwani.\nThe expedition comes to an end, taking with us the experience of travelling through the Vyas and Darma valleys, visiting sacred mountain destinations and hiking beneath the Panchachuli range."
       }
     ],
-    "chapters": [
-      {
-        "title": "Travel style and accommodation",
-        "after": "days",
-        "parts": [
-          {
-            "h": "A backpacking expedition by 4x4"
-          },
-          {
-            "p": "This journey is organised as a small-group backpacking expedition using comfortable 4x4 vehicles for the mountain section from Haldwani to Haldwani."
-          },
-          {
-            "p": "The focus is on experiencing the region, travelling together and exploring remote destinations rather than luxury facilities. Accommodation is arranged in local hotels and homestays along the route. Facilities in the higher villages are simpler than those in larger towns, and travellers should be prepared for basic mountain accommodation."
-          },
-          {
-            "h": "Accommodation plan"
-          },
-          {
-            "list": [
-              "Pithoragarh: 2 nights",
-              "Gunji: 2 nights",
-              "Darma Valley: 2 nights",
-              "Total accommodation nights: 6"
-            ]
-          },
-          {
-            "p": "The two overnight Volvo journeys between Delhi and Haldwani are not hotel nights."
-          },
-          {
-            "h": "Meals"
-          },
-          {
-            "p": "The expedition includes a simple meal plan suited to the route arrangements."
-          },
-          {
-            "list": [
-              "Breakfast: Day 02 to Day 07 – 6 breakfasts",
-              "Dinner: Day 01 to Day 06 – 6 dinners",
-              "Lunch: Not included"
-            ]
-          },
-          {
-            "p": "Meals in remote villages may be limited to locally available preparations. Special dietary requirements should be shared with the Driftmates team before departure so arrangements can be discussed in advance."
-          }
-        ]
-      },
-      {
-        "title": "Important information before you travel",
-        "after": "days",
-        "parts": [
-          {
-            "h": "Inner Line Permit"
-          },
-          {
-            "p": "The Vyas Valley is a restricted border region. Travellers must meet the prevailing permit and identity-document requirements before entering the permitted area."
-          },
-          {
-            "p": "Driftmates assists with the permit application process. Entry remains subject to government approval, current regulations and local restrictions. Required documents and procedures will be shared before departure."
-          },
-          {
-            "h": "High-altitude travel"
-          },
-          {
-            "p": "This expedition includes destinations at high altitude, including Jolingkong and Nabhidhang. Travellers may experience reduced oxygen levels, cold temperatures and changing weather."
-          },
-          {
-            "p": "A reasonable level of physical fitness is important. The team may adjust the itinerary or restrict access to a destination if conditions make travel unsafe."
-          },
-          {
-            "h": "Road conditions"
-          },
-          {
-            "p": "The route includes remote mountain roads that can be narrow, uneven and vulnerable to landslides or temporary closures. Travel times may vary, and the planned schedule can change according to local conditions."
-          },
-          {
-            "h": "Panchachuli Base Camp hike"
-          },
-          {
-            "p": "The hike involves uneven mountain terrain and requires reasonable fitness. The trailhead, distance and walking duration will be confirmed with the local team before the departure."
-          },
-          {
-            "h": "Accommodation and facilities"
-          },
-          {
-            "p": "Accommodation in Gunji and Darma Valley is simpler than in larger towns. Room configurations, washroom facilities, electricity, hot water and mobile connectivity can vary. Travellers should be prepared for a practical mountain stay."
-          },
-          {
-            "h": "Mobile connectivity"
-          },
-          {
-            "p": "Network availability is limited and inconsistent in remote parts of the route. Travellers should not expect uninterrupted mobile data or reliable connectivity throughout the expedition."
-          }
-        ]
-      }
-    ],
+    "chapters": [],
+    "bestTime": {
+      "heading": "Best time to travel",
+      "intro": "The high-altitude routes of the Vyas and Darma valleys are seasonal. The most suitable travel windows are generally May to June and September to October.",
+      "key": "May to June and September to October are the usual windows. July and August are not our preferred departure window. All departure dates remain subject to government permissions, weather, road conditions and seasonal access to the valleys.",
+      "months": [
+        { "m": "Jan", "tone": "plain" },
+        { "m": "Feb", "tone": "plain" },
+        { "m": "Mar", "tone": "plain" },
+        { "m": "Apr", "tone": "plain" },
+        { "m": "May", "tone": "open" },
+        { "m": "Jun", "tone": "open" },
+        { "m": "Jul", "tone": "closed" },
+        { "m": "Aug", "tone": "closed" },
+        { "m": "Sep", "tone": "open" },
+        { "m": "Oct", "tone": "open" },
+        { "m": "Nov", "tone": "plain" },
+        { "m": "Dec", "tone": "plain" }
+      ],
+      "seasons": [
+        {
+          "title": "May to June",
+          "tone": "open",
+          "d": "A popular period for the Adi Kailash and Om Parvat journey, when the high-altitude routes begin opening for the season. Snow may still be present at higher elevations, and access depends on local conditions."
+        },
+        {
+          "title": "September to October",
+          "tone": "open",
+          "d": "The post-monsoon period can offer clearer mountain views and suitable conditions for travel, depending on road access and official route openings."
+        },
+        {
+          "title": "July and August",
+          "tone": "closed",
+          "d": "The monsoon brings a higher risk of landslides, road damage and temporary closures. This period requires particular caution and is not our preferred departure window."
+        }
+      ]
+    },
     "regionKicker": "Adi Kailash",
     "regionHeading": "The places that make this journey",
     "regionAfter": "itinerary",
     "region": [
       {
-        "t": "Adi Kailash",
+        "t": "Adi Kailash – The sacred mountain of Kumaon",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "Located in the Vyas Valley of Pithoragarh district, Adi Kailash is one of the most revered mountains in the Kumaon Himalaya. It is also known as Chhota Kailash because of its resemblance to Mount Kailash in Tibet.\nThe mountain is closely associated with Lord Shiva and forms the centrepiece of the pilgrimage to this remote region. Jolingkong, at its base, is where visitors reach the area around Parvati Sarovar.\nFor many travellers, the experience is deeply spiritual. For others, it is an opportunity to witness a remarkable high-altitude landscape that remains far removed from the familiar tourist routes."
       },
       {
-        "t": "Parvati Sarovar",
+        "t": "Parvati Sarovar – A lake beneath Adi Kailash",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
         "d": "Situated at Jolingkong, Parvati Sarovar is closely associated with the religious traditions of Adi Kailash and Goddess Parvati.\nSurrounded by a stark mountain landscape, the lake is one of the significant stops on the expedition. The visit is an opportunity to spend time in this sacred setting and understand why the region holds such importance for pilgrims."
       },
       {
-        "t": "Om Parvat",
+        "t": "Om Parvat – The mountain with the natural Om formation",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
         "d": "Om Parvat is recognised for the naturally formed snow pattern on its face that resembles the sacred symbol Om.\nThe mountain is viewed from Nabhidhang, a high-altitude viewpoint in the Vyas Valley. The formation is a natural feature, and its appearance can vary with snowfall and weather. On a clear day, the sight is one of the defining experiences of this expedition."
       },
       {
-        "t": "Vyas Valley",
+        "t": "Vyas Valley – A remote Himalayan frontier",
+        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
         "d": "The Vyas Valley is a high-altitude region in the eastern Kumaon Himalaya, close to the India–Tibet border.\nIts villages, river systems and mountain routes are connected to a long history of movement and trade across the Himalayan frontier. Gunji, Nabi and Kuti are among the settlements associated with this landscape.\nTravelling through the valley offers a glimpse into a part of Uttarakhand where geography, community life and mountain traditions are closely connected."
       },
       {
-        "t": "Darma Valley",
+        "t": "Darma Valley – Life in a remote mountain region",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
         "d": "Darma Valley follows the Darma River in the Pithoragarh district. Its traditional settlements and mountain landscape make it distinct from the Vyas Valley.\nThe region is associated with the Rung/Shauka communities, whose history is connected to the high Himalayan borderlands and traditional trade routes. The villages and surrounding terrain reflect a way of life shaped by altitude, seasons and relative isolation.\nOur time here adds a cultural and geographical dimension to the expedition beyond the sacred destinations."
       },
       {
-        "t": "Panchachuli Base Camp",
+        "t": "Panchachuli Base Camp – Closer to the five peaks",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "The Panchachuli range is one of the defining mountain groups of the Kumaon Himalaya. Its five prominent summits form a dramatic backdrop to Darma Valley.\nThe hike towards Panchachuli Base Camp takes us beyond the road and into the mountain landscape on foot. It is an opportunity to experience the terrain at a different pace and get closer to the peaks that define this region."
       }
     ],
-    "closing": "Travel the Himalayas. Know them beyond the map.\nAn expedition through the Vyas and Darma valleys, bringing together sacred mountain landscapes, remote Himalayan settlements and a closer experience of the Panchachuli range.",
+    "closing": "",
     "closingLast": true,
     "image": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
     "gallery": [
@@ -1402,7 +1233,12 @@ export const journeys = [
     "was": 41999,
     "pickup": "Delhi",
     "route": "Delhi → Haldwani → Chaukori → Darma Valley → Panchachuli Base Camp → Pithoragarh → Haldwani → Delhi",
-    "season": "",
+    "season": "The planned windows are March to June and September to November.",
+    "overviewTitle": "The Journey",
+    "regionStyle": "cards",
+    "mealCodes": true,
+    "coverPanels": true,
+    "reading": "",
     "terms": [
       "* Full payment of the expedition must be completed before the departure date as communicated by the team.",
       "* Travelers must carry a valid government ID proof during the journey.",
@@ -1434,7 +1270,7 @@ export const journeys = [
       "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg"
     ],
     "summary": "There are parts of the Himalaya where the journey is as important as the destination. Darma Valley, tucked away in the eastern Kumaon region of Uttarakhand, is one of them.",
-    "overview": "A Journey into the Remote Kumaon Himalaya\nThere are parts of the Himalaya where the journey is as important as the destination. Darma Valley, tucked away in the eastern Kumaon region of Uttarakhand, is one of them.\nFar from the more familiar hill stations, this remote mountain valley offers a different experience of the Indian Himalaya. Traditional settlements, river valleys, rugged mountain roads and the imposing Panchachuli range shape the landscape here. It is a region where travel is still closely connected to the terrain, the seasons and the communities who call these mountains home.\nOur expedition begins in Delhi, from where we travel overnight to Haldwani. From the foothills, the route takes us through Chaukori and onwards towards Darma Valley, following the mountain roads into one of Kumaon's quieter regions.\nWe spend three nights in Darma Valley, allowing time to explore the surroundings rather than treating it as a brief stop. The journey also includes a walk towards Panchachuli Base Camp, bringing us closer to the five prominent peaks that define this landscape.\nThe return route takes us through Pithoragarh and back to Haldwani for the overnight Volvo journey to Delhi.\nThis is a road expedition with time for exploration and walking through mountain landscapes, less-visited destinations and a journey beyond the usual circuit.",
+    "overview": "The Journey\nThere are parts of the Himalayas where the journey is as important as the destination. Darma Valley, tucked away in the eastern Kumaon region of Uttarakhand, is one of them.\nFar from the more familiar hill stations, this remote mountain valley offers a different experience of the Indian Himalaya. Traditional settlements, river valleys, rugged mountain roads and the imposing Panchachuli range shape the landscape here. It is a region where travel is still closely connected to the terrain, the seasons and the communities who call these mountains home.\nOur expedition begins in Delhi, from where we travel overnight to Haldwani. From the foothills, the route takes us through Chaukori and onwards towards Darma Valley, following the mountain roads into one of Kumaon's quieter regions.\nWe spend three nights in Darma Valley, allowing time to explore the surroundings rather than treating it as a brief stop. The journey also includes a walk towards Panchachuli Base Camp, bringing us closer to the five prominent peaks that define this part of the Himalaya.\nThe return route takes us through Pithoragarh and back to Haldwani, followed by an overnight Volvo journey to Delhi.\nThis is a road expedition with time for exploration and walking. It is suited to travellers who enjoy mountain landscapes, less-visited destinations and a journey that goes beyond the usual tourist circuit.",
     "highlights": [
       "Haldwani to Chaukori",
       "Chaukori to Darma Valley",
@@ -1451,7 +1287,8 @@ export const journeys = [
       "Mountain transportation in comfortable 4x4 vehicles.",
       "Planned Darma Valley exploration.",
       "Panchachuli Base Camp trek as per the itinerary.",
-      "On-ground coordination and trip management by Driftmates."
+      "On-ground coordination and trip management by Driftmates.",
+      "All required permits, government fees, and special authorisations for the itinerary, as specified in your booking confirmation."
     ],
     "notIncluded": [
       "International or domestic flights.",
@@ -1460,7 +1297,6 @@ export const journeys = [
       "Personal expenses, shopping and laundry.",
       "Personal medication and travel essentials.",
       "Travel and medical insurance.",
-      "Any permit, government fee or special authorisation not specifically confirmed as included in the booking.",
       "Additional accommodation or transportation arising from weather, road closures or unforeseen disruptions.",
       "Any activity, entry fee or service not specifically mentioned under inclusions.",
       "Expenses arising from changes requested by travellers outside the planned itinerary."
@@ -1468,18 +1304,15 @@ export const journeys = [
     "payment": [],
     "cancellation": [],
     "altitude": [],
-    "chapters": [
+    "chapters": [],
+    "companionLayout": "stack",
+    "companions": [
       {
-        "title": "For Travellers from India",
-        "after": "days",
-        "parts": [
-          { "p": "The expedition begins in Delhi, with an overnight Volvo journey to Haldwani included in the package." },
-          { "p": "Indian travellers should carry a valid government-issued photo ID. Any route-specific registration, permit or check-post requirements will be checked with the relevant local authorities before departure." }
-        ]
+        "t": "For Travellers from India",
+        "d": "The expedition begins in Delhi, with an overnight Volvo journey to Haldwani included in the package.\nIndian travellers should carry a valid government-issued photo ID. Any route-specific registration, permit or check-post requirements will be checked with the relevant local authorities before departure."
       },
       {
-        "title": "For International Travellers",
-        "after": "days",
+        "t": "For International Travellers",
         "parts": [
           { "p": "We welcome enquiries from travellers visiting India from overseas. However, Darma Valley is located in a sensitive border region, and access rules for foreign nationals are different from those for Indian citizens." },
           { "p": "Foreign nationals may require a Protected Area Permit or other specific government authorisation to enter a notified protected or restricted area. Not every route is necessarily open to foreign tourism, and permission cannot be assumed simply because an Indian traveller can visit the same destination." },
@@ -1488,19 +1321,7 @@ export const journeys = [
             "p": "We will need to review your passport nationality, proposed travel dates and the latest applicable access requirements before confirming whether this expedition can be offered to you."
           },
           { "p": "A valid Indian visa or entry permission, where applicable, does not by itself guarantee permission to enter a protected or restricted area." },
-          { "p": "We cannot guarantee approval or promise access before the competent authorities confirm eligibility and authorisation. If access is not approved, we will discuss the available options before accepting a booking for this itinerary." },
-          { "h": "International travel arrangements" },
-          { "p": "For travellers arriving from outside India:" },
-          {
-            "list": [
-              "Delhi is the starting and ending point of the complete journey.",
-              "International flights to and from India are not included.",
-              "Both overnight Volvo transfers between Delhi and Haldwani are included.",
-              "Transfers between Delhi airport and the Volvo boarding point are not included unless specifically confirmed.",
-              "The exact bus boarding point and departure schedule will be shared before the journey.",
-              "Travellers should plan their international arrival with sufficient time before the overnight departure from Delhi."
-            ]
-          }
+          { "p": "We cannot guarantee approval or promise access before the competent authorities confirm eligibility and authorisation. If access is not approved, we will discuss the available options before accepting a booking for this itinerary." }
         ]
       }
     ],
@@ -1535,15 +1356,15 @@ export const journeys = [
       },
       {
         "q": "What is the main highlight of the expedition?",
-        "a": "The main highlights are exploring Darma Valley, experiencing its remote settlements and trekking towards Panchachuli Base Camp beneath the five peaks."
+        "a": "The main highlights are exploring Darma Valley, experiencing the surrounding mountain settlements and trekking towards Panchachuli Base Camp beneath the five prominent peaks."
       },
       {
         "q": "How long is the Panchachuli Base Camp trek?",
-        "a": "The planned walk is approximately 5 km one way, or around 10 km for the round trip. Local access and trail conditions may affect the route and walking time."
+        "a": "The planned walk is approximately 5 km one way, or around 10 km for the round trip. Actual access and trail conditions may affect the route and walking distance."
       },
       {
         "q": "Is the trek suitable for beginners?",
-        "a": "The trek does not require technical mountaineering skills, but it does require a reasonable level of physical fitness and the ability to walk for several hours on uneven mountain trails."
+        "a": "The trek does not require technical mountaineering skills, but it does require reasonable physical fitness and the ability to work for several hours on uneven mountain trails."
       },
       {
         "q": "What type of vehicle is used?",
@@ -1586,22 +1407,22 @@ export const journeys = [
       {
         "n": "Day 1",
         "t": "Haldwani to Chaukori",
-        "d": "From the foothills into Kumaon\nWe arrive in Haldwani after the overnight journey from Delhi. Our ground team will receive the group, coordinate the arrangements and introduce everyone to the expedition.\nOnce the formalities are complete, we begin our drive towards Chaukori.\nThe route gradually climbs into the Kumaon hills, passing forested slopes, small settlements and stretches of mountain countryside. As we gain altitude, the air becomes cooler.\nChaukori is a peaceful mountain destination known for its open views towards the Himalayan range. On clear days, the snow-covered peaks create a beautiful backdrop to the surrounding hills.\nAfter reaching Chaukori, we check in to our accommodation and spend the evening there, giving everyone time to settle in and prepare for the journey ahead.\nRoute: Haldwani – Chaukori\nOvernight: Chaukori\nMeals: Dinner"
+        "d": "From the foothills into Kumaon\nWe arrive in Haldwani after the overnight journey from Delhi. Our ground team will receive the group, coordinate the arrangements and introduce everyone to the expedition.\nOnce the formalities are complete, we begin our drive towards Chaukori.\nThe route gradually climbs into the Kumaon hills, passing forested slopes, small settlements and stretches of mountain countryside. As we gain altitude, the air becomes cooler.\nChaukori is a peaceful mountain destination known for its open views towards the Himalayan range. On clear days, the snow-covered peaks create a beautiful backdrop to the surrounding hills.\nAfter reaching Chaukori, we check in to our accommodation. The rest of the day is kept relaxed, giving everyone time to settle in and prepare for the journey ahead.\nRoute: Haldwani – Chaukori\nOvernight: Chaukori\nMeals: Dinner"
       },
       {
         "n": "Day 2",
         "t": "Chaukori to Darma Valley",
-        "d": "Following the road into eastern Kumaon\nAfter breakfast, we leave Chaukori and continue towards Darma Valley.\nToday's drive takes us through the eastern Kumaon region towards Dharchula, followed by the mountain road leading into Darma Valley. The landscape gradually becomes more rugged as we move away from the larger towns and closer to the upper reaches of the Himalaya.\nDarma Valley lies in the Pithoragarh district, close to India's international border. The valley is shaped by the Darma River and surrounded by steep mountain terrain, with the Panchachuli range forming a striking presence in the wider landscape.\nThe settlements here are smaller and more remote than those in the familiar hill destinations of Uttarakhand. The journey offers a glimpse of a region where access, weather and everyday life are closely connected to the mountains.\nOn reaching our stay, we check in and spend the evening in the valley.\nRoute: Chaukori – Dharchula – Darma Valley\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
+        "d": "Following the road into eastern Kumaon\nAfter breakfast, we leave Chaukori and continue towards Darma Valley.\nToday's drive takes us through the eastern Kumaon region towards Dharchula, followed by the mountain road leading into Darma Valley. The landscape gradually becomes more rugged as we move away from the larger towns and closer to the upper reaches of the Himalaya.\nDarma Valley lies in the Pithoragarh district, close to India's international border. The valley is shaped by the Nyola yangti River and surrounded by steep mountain terrain, with the Panchachuli range forming a striking presence in the wider landscape.\nThe settlements here are smaller and more remote than those in the familiar hill destinations of Uttarakhand. The journey offers a glimpse of a region where access, weather and everyday life are closely connected to the mountains.\nOn reaching our stay, we check in and spend the evening in the valley.\nRoute: Chaukori – Dharchula – Darma Valley\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 3",
         "t": "Exploring Darma Valley",
-        "d": "A closer look at the valley\nToday is reserved for exploring Darma Valley and its surroundings.\nRather than spending the day travelling between distant destinations, we take time to understand the landscape around us. The valley is known for its traditional settlements, mountain scenery and the cultural heritage of the communities who have lived in this region for generations.\nDepending on local access and road conditions, the day's exploration may include accessible villages and viewpoints around the valley. We can observe the traditional architecture, agricultural surroundings and the way settlements are positioned within this mountain landscape.\nDarma Valley is also associated with the Rung communities of Kumaon, whose history and traditions are closely connected to the borderland region.\nThe day is planned around what is accessible locally and the conditions on the ground. We return to our accommodation in the evening.\nExperience: Darma Valley exploration and local surroundings\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
+        "d": "A closer look at the valley\nToday is reserved for exploring Darma Valley and its surroundings.\nRather than spending the day travelling between distant destinations, we take time to understand the landscape around us. The valley is known for its traditional settlements, mountain scenery and the cultural heritage of the communities who have lived in this region for generations.\nDepending on local access and road conditions, the day's exploration may include accessible villages and viewpoints around the valley. We can observe the traditional architecture, agricultural surroundings and the way settlements are positioned within this mountain landscape.\nDarma Valley is also associated with the Rung Buddhist communities of Kumaon, whose history and traditions are closely connected to the borderland region.\nThe day is planned around what is accessible locally and the conditions on the ground. We return to our accommodation in the evening.\nExperience: Darma Valley exploration and local surroundings\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 4",
         "t": "Panchachuli Base Camp Trek",
-        "d": "Walking beneath the five peaks\nToday we leave the vehicles behind and explore the mountains on foot.\nAfter breakfast, we head towards the local trailhead for the Panchachuli Base Camp trek. The trail takes us through mountain terrain towards the impressive Panchachuli range.\nPanchachuli is named after the five prominent peaks that rise above this part of Kumaon. Their distinctive skyline is one of the defining features of Darma Valley, and the trek offers an opportunity to experience the mountains from a closer perspective.\nThe planned walk is approximately 5 km one way, making it a comfortable full-day walk. We follow the trail towards the designated base-camp area, spend some time taking in the surroundings, and then retrace our route.\nThe trek is non-technical but takes place in a mountain environment where basic fitness is necessary, and the actual walking route may depend on weather and local access.\nWe return to Darma Valley for dinner and an overnight stay.\nTrek distance: Approximately 5 km one way / 10 km round trip\nExperience: Panchachuli Base Camp trek\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
+        "d": "Walking beneath the five peaks\nToday we leave the vehicles behind and explore the mountains on foot.\nAfter breakfast, we head towards the local trailhead for the Panchachuli Base Camp trek. The trail takes us through mountain terrain towards the impressive Panchachuli range.\nPanchachuli is named after the five prominent peaks that rise above this part of Kumaon. Their distinctive skyline is one of the defining features of Darma Valley, and the trek offers an opportunity to experience the mountains from a closer perspective.\nThe planned walk is approximately 5 km one way, making it around 10 km for the round trip. We follow the trail towards the designated base-camp area, spend time taking in the surroundings and then retrace our route.\nThe trek is non-technical but takes place in a mountain environment. A reasonable level of fitness is necessary, and the actual walking route may depend on trail conditions, weather and local access.\nWe return to Darma Valley for dinner and an overnight stay.\nTrek distance: Approximately 5 km one way / 10 km round trip\nExperience: Panchachuli Base Camp trek\nOvernight: Darma Valley\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 5",
@@ -1614,27 +1435,67 @@ export const journeys = [
         "d": "Completing the mountain journey\nAfter breakfast, we leave Pithoragarh and drive towards Haldwani.\nThe road takes us back through the Kumaon hills, gradually descending towards the foothills. We reach Haldwani, where our six-day mountain expedition concludes.\nFrom here, the group boards the included overnight Volvo service to Delhi.\nThe bus journey takes place overnight, with arrival in Delhi scheduled for the following morning.\nRoute: Pithoragarh – Haldwani – Delhi\nMountain expedition concludes: Haldwani\nOvernight transfer: Volvo to Delhi\nMeals: Breakfast"
       }
     ],
+    "bestTime": {
+      "heading": "When to Travel",
+      "intro": "Darma Valley is a seasonal mountain destination. Road access, weather and trail conditions play an important role in deciding when the journey can operate.",
+      "key": "All departures are subject to actual weather, road conditions and local administrative decisions.",
+      "months": [
+        { "m": "Jan", "tone": "plain" },
+        { "m": "Feb", "tone": "plain" },
+        { "m": "Mar", "tone": "open" },
+        { "m": "Apr", "tone": "open" },
+        { "m": "May", "tone": "open" },
+        { "m": "Jun", "tone": "open" },
+        { "m": "Jul", "tone": "closed" },
+        { "m": "Aug", "tone": "closed" },
+        { "m": "Sep", "tone": "open" },
+        { "m": "Oct", "tone": "open" },
+        { "m": "Nov", "tone": "open" },
+        { "m": "Dec", "tone": "plain" }
+      ],
+      "seasons": [
+        {
+          "title": "March to June",
+          "tone": "open",
+          "d": "Spring and early summer bring changing landscapes across Kumaon. Lower mountain regions become warmer, while higher areas can remain cold.\nEarly-season access to the upper valley may be affected by snow or road conditions. June is generally a useful period for mountain exploration, subject to the actual conditions on the route."
+        },
+        {
+          "title": "September to November",
+          "tone": "open",
+          "d": "After the monsoon, the landscape can be fresh and mountain views can become clearer. September and October are generally attractive months for exploring the region.\nNovember brings colder temperatures, particularly at higher elevations. Snowfall and seasonal changes can affect road access as winter approaches."
+        },
+        {
+          "title": "July and August",
+          "tone": "closed",
+          "d": "We do not recommend planning this expedition during the main monsoon period. Heavy rainfall can lead to landslides, road damage and travel disruptions across the mountain region."
+        }
+      ]
+    },
     "regionKicker": "Darma Valley",
     "regionHeading": "Discover the Region",
     "region": [
       {
         "t": "Chaukori",
+        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
         "d": "Located in the Kumaon hills, Chaukori is known for its open Himalayan views and peaceful mountain setting. It offers a change of pace from the lower foothills and makes a natural first stop on the journey towards eastern Kumaon."
       },
       {
         "t": "Darma Valley",
-        "d": "Darma Valley is situated in the Pithoragarh district of Uttarakhand, in the eastern Kumaon Himalaya. The valley follows the Darma River and is surrounded by rugged mountain terrain, traditional villages and views towards the Panchachuli range.\nThe region is associated with the Rung communities, whose history, customs and way of life are part of Kumaon's cultural heritage. Its settlements and seasonal patterns reflect the realities of living in a remote mountain environment.\nFor travellers, Darma Valley offers an opportunity to explore a quieter part of Uttarakhand, away from the more established tourist destinations."
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
+        "d": "Darma Valley is situated in the Pithoragarh district of Uttarakhand, in the eastern Kumaon Himalaya. The valley follows the Nyola River and is surrounded by rugged mountain terrain, traditional villages and views towards the Panchachuli range.\nThe region is associated with the Rung communities, whose history, customs and way of life are part of Kumaon's cultural heritage. Its settlements and seasonal patterns reflect the realities of living in a remote mountain environment.\nFor travellers, Darma Valley offers an opportunity to explore a quieter part of Uttarakhand, away from the more established tourist destinations."
       },
       {
         "t": "Panchachuli Range",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "The Panchachuli range is one of the best-known mountain groups in Kumaon. Its five prominent peaks rise above the surrounding valleys and form a recognisable Himalayan skyline.\nThe range is an important part of the Darma Valley landscape and the central mountain feature of this expedition."
       },
       {
         "t": "Panchachuli Base Camp",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
         "d": "The trek towards Panchachuli Base Camp takes travellers away from the road and into the mountain landscape beneath the peaks.\nThe planned walk is approximately 5 km one way. The trail, access point and final walking distance are subject to local conditions and weather."
       }
     ],
-    "closing": "Explore the Kumaon Himalaya with Driftmates\nDarma Valley is not a destination to rush through. Its appeal lies in the journey into the mountains, the quieter settlements along the way and the opportunity to spend time beneath the Panchachuli range.\nFrom the first mountain drive out of Haldwani to the walk towards Panchachuli Base Camp, this expedition brings together the different experiences that make eastern Kumaon worth exploring.\nAt Driftmates, we believe a good journey begins with understanding the place, planning it carefully and allowing travellers to experience it beyond the usual route.\nTravel the Himalayas. Know them beyond the map.\nDriftmates – Himalayan Expeditions & Journeys",
+    "closing": "",
     "closingLast": true
   },
   {
@@ -2043,7 +1904,7 @@ export const journeys = [
     ],
     "payment": [],
     "cancellation": [],
-        "altitude": [],
+    "altitude": [],
     "faqs": [
       {
         "q": "Is this trip suitable for solo travellers?",
@@ -2160,7 +2021,13 @@ export const journeys = [
     "price": 22999,
     "was": 35999,
     "pickup": "Kashmere Gate, Delhi",
-    "season": "",
+    "season": "The planned window is November to March.",
+    "subtitle": "Across Kinnaur and the Frozen Landscapes of Spiti",
+    "overviewTitle": "The Journey",
+    "regionStyle": "cards",
+    "mealCodes": true,
+    "coverPanels": true,
+    "reading": "",
     "itineraryHeading": "8 days and 7 nights",
     "terms": [],
     "image": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
@@ -2170,12 +2037,12 @@ export const journeys = [
       "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg"
     ],
     "summary": "Winter brings a different character to the mountains of Kinnaur and Spiti.",
-    "overview": "Across Kinnaur and the Frozen Landscapes of Spiti\nWinter brings a different character to the mountains of Kinnaur and Spiti.\nThe familiar mountain roads become quieter, villages settle into the rhythm of the cold season, and snow gradually transforms the landscape. Frozen streams, white mountain slopes, traditional houses and monasteries surrounded by barren mountains make this one of the most distinctive seasons to experience the Himalaya.\nOur journey begins in Delhi with an overnight Volvo transfer to Shimla. From there, we enter Kinnaur, travelling through Sarahan and along the Sutlej valley towards Nako. As the landscape changes, we cross into the high-altitude cold desert of Spiti.\nOver the following days, we explore some of the region's most recognisable places. We visit the historic monasteries of Dhankar, Tabo, Kungri and Key, travel through Pin Valley, and spend time in the high villages of Langza, Komic and Hikkim.\nKaza becomes our base for exploring the surrounding landscape, including Chicham Bridge and Kibber. On the return journey, we travel through Gue and Reckong Peo before reaching Kalpa, where the Kinnaur Kailash range forms the backdrop to our final mountain stay.\nThis is a road expedition designed around the experience of winter in the Himalaya. The route combines mountain drives, cultural landmarks, remote settlements and time to explore the landscape at a slower pace.\nWinter travel also comes with its own realities. Snowfall, icy roads, changing temperatures and occasional road closures can affect access to individual destinations. Our journey is planned with flexibility, keeping safety and actual road conditions ahead of a fixed sightseeing schedule.\nExpedition route: Delhi → Shimla → Sarahan → Nako → Dhankar → Pin Valley → Kaza → Langza → Komic → Hikkim → Key Monastery → Chicham → Kibber → Kalpa → Shimla → Delhi.",
+    "overview": "The Journey\nWinter brings a different character to the mountains of Kinnaur and Spiti.\nThe familiar mountain roads become quieter, villages settle into the rhythm of the cold season, and snow gradually transforms the landscape. Frozen streams, white mountain slopes, traditional houses and monasteries surrounded by barren mountains make this one of the most distinctive seasons to experience the Himalayas.\nOur journey begins in Delhi with an overnight Volvo transfer to Shimla. From there, we enter Kinnaur, travelling through Sarahan and along the Sutlej valley towards Nako. As the landscape changes, we cross into the high-altitude cold desert of Spiti.\nOver the following days, we explore some of the region's most recognisable places. We visit the historic monasteries of Dhankar, Tabo, Kungri and Key, travel through Pin Valley, and spend time in the high villages of Langza, Komic and Hikkim.\nKaza becomes our base for exploring the surrounding landscape, including Chicham Bridge and Kibber. On the return journey, we travel through Gue and Reckong Peo before reaching Kalpa, where the Kinnaur Kailash range forms the backdrop to our final mountain stay.\nThis is a road expedition designed around the experience of winter in the Himalayas. The route combines mountain drives, cultural landmarks, remote settlements and time to explore the landscape at a slower pace.\nWinter travel also comes with its own realities. Snowfall, icy roads, changing temperatures and occasional road closures can affect access to individual destinations. Our journey is planned with flexibility, keeping safety and actual road conditions ahead of a fixed sightseeing schedule.",
     "highlights": [],
     "included": [
       "Overnight Volvo transfer from Delhi to Shimla.",
       "Overnight Volvo transfer from Shimla to Delhi.",
-      "Mountain transportation in a Tempo Traveller from Shimla to Shimla.",
+      "Mountain transportation in a Tempo Traveller for the entire Spiti circuit, from Shimla to Shimla.",
       "Seven nights of accommodation as per the itinerary.",
       "Seven breakfasts.",
       "Seven dinners.",
@@ -2184,7 +2051,7 @@ export const journeys = [
     ],
     "notIncluded": [
       "International or domestic flights.",
-      "Transfers between Delhi airport and Kashmere Gate.",
+      "Transfers between Delhi Airport and Kashmere Gate.",
       "Lunches, snacks and beverages.",
       "Personal expenses, shopping and laundry.",
       "Personal medication and travel essentials.",
@@ -2197,218 +2064,132 @@ export const journeys = [
     "payment": [],
     "cancellation": [],
     "altitude": [],
+    "bestTime": {
+      "heading": "When to Travel",
+      "intro": "Winter Spiti is generally experienced between November and March. The coldest conditions are usually found between December and February.",
+      "key": "Snowfall, snow depth and access to individual destinations are weather-dependent and cannot be guaranteed.",
+      "months": [
+        { "m": "Jan", "tone": "open" },
+        { "m": "Feb", "tone": "open" },
+        { "m": "Mar", "tone": "open" },
+        { "m": "Apr", "tone": "plain" },
+        { "m": "May", "tone": "plain" },
+        { "m": "Jun", "tone": "plain" },
+        { "m": "Jul", "tone": "plain" },
+        { "m": "Aug", "tone": "plain" },
+        { "m": "Sep", "tone": "plain" },
+        { "m": "Oct", "tone": "plain" },
+        { "m": "Nov", "tone": "open" },
+        { "m": "Dec", "tone": "open" }
+      ],
+      "seasons": [
+        {
+          "title": "November – Early winter",
+          "tone": "open",
+          "d": "Temperatures begin to fall, and the first significant snowfall may arrive in higher areas. The landscape can still have exposed mountain terrain, depending on the season."
+        },
+        {
+          "title": "December – Winter settles in",
+          "tone": "open",
+          "d": "Snowfall becomes more likely, and villages begin to take on their winter appearance. Road access and temperatures need close monitoring."
+        },
+        {
+          "title": "January – Deep winter",
+          "tone": "open",
+          "d": "January is one of the coldest periods in Spiti. Sub-zero temperatures are common, and temperatures can approach -20°C in some conditions. Water systems and facilities may freeze, and roads can be affected by snow and ice."
+        },
+        {
+          "title": "February – Winter landscapes",
+          "tone": "open",
+          "d": "Cold conditions continue, and snow may remain across villages and mountain slopes. Access to some high villages can be difficult."
+        },
+        {
+          "title": "March – Transition towards spring",
+          "tone": "open",
+          "d": "March can still bring winter conditions, particularly in the upper valley. Snow and ice can continue to affect village roads and trekking trails.\nSnowfall, snow depth and access to individual destinations are weather-dependent and cannot be guaranteed."
+        }
+      ]
+    },
     "regionKicker": "Kinnaur & Spiti",
-    "regionHeading": "The places along the journey",
+    "regionHeading": "The Places Along the Journey",
     "region": [
       {
         "t": "Sarahan and Bhimakali Temple",
+        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
         "d": "Sarahan is a traditional settlement in Himachal Pradesh, located along the route into Kinnaur. Its most recognised landmark is Bhimakali Temple, an important religious site known for its distinctive wooden architecture and cultural significance."
       },
       {
         "t": "Nako",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Nako is a high-altitude village in Kinnaur, known for its traditional houses, mountain setting and lake. It offers an introduction to the cold desert landscapes that become more prominent as the journey continues towards Spiti."
       },
       {
         "t": "Dhankar Monastery",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Dhankar Monastery stands on a rocky ridge overlooking the meeting point of the Spiti and Pin rivers. Its dramatic setting and historic importance make it one of the most memorable cultural landmarks in the region."
       },
       {
         "t": "Dhankar Lake",
+        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
         "d": "Located above Dhankar village, Dhankar Lake is reached by a mountain trail. The walk offers expansive views of the surrounding terrain. Winter access can be difficult due to snow and ice, so the trek depends on safe trail conditions."
       },
       {
         "t": "Tabo Monastery",
+        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
         "d": "Founded in 996 CE, Tabo Monastery is one of the most important Buddhist heritage sites in Spiti. Its historic temples and murals offer insight into the region's long religious and cultural history."
       },
       {
         "t": "Pin Valley",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Pin Valley is known for its rugged terrain, remote settlements and wildlife habitat. The landscape is particularly distinctive in winter, when snow and cold conditions change the appearance of the valley."
       },
       {
         "t": "Mud Village",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Mud is one of the best-known villages in Pin Valley. It is surrounded by dramatic mountain scenery and offers a glimpse into the settlement patterns and daily life of this remote region."
       },
       {
         "t": "Langza",
+        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
         "d": "Langza is recognised for its large Buddha statue, fossil-bearing landscape and open mountain views. It is one of the most photographed villages around Kaza."
       },
       {
         "t": "Komic",
-        "d": "Komic is a remote high-altitude village known for its monastery and traditional settlement. Its position among the mountains makes it a distinctive part of the Spiti landscape."
+        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
+        "d": "Komic, the highest motorable village in the world, is known for its monastery and traditional settlement. Its position among the mountains makes it a distinctive part of the Spiti landscape."
       },
       {
         "t": "Hikkim",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Hikkim is widely recognised for its high-altitude post office. It is a small village where communication and everyday services reflect the realities of remote Himalayan living."
       },
       {
         "t": "Key Monastery",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Key Monastery is one of Spiti's most important Buddhist institutions. Its hilltop setting above the valley makes it a prominent landmark and an important centre of religious learning."
       },
       {
         "t": "Chicham Bridge",
+        "img": "https://driftmates.com/wp-content/uploads/2016/11/9403133.jpg",
         "d": "Chicham Bridge connects the villages of Chicham and Kibber across a deep gorge. It is an impressive example of infrastructure in a challenging mountain landscape."
       },
       {
         "t": "Kibber",
+        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_5529-scaled.jpg",
         "d": "Kibber is known for its high-altitude setting, traditional architecture and surrounding wildlife habitat. It is particularly associated with the conservation landscape of the snow leopard."
       },
       {
         "t": "Gue Monastery",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_9844-scaled.jpg",
         "d": "Gue Monastery is known for housing the naturally preserved remains of a Buddhist monk. The site offers a distinctive cultural experience in the upper Kinnaur region."
       },
       {
         "t": "Kalpa and Kinnaur Kailash",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_6219-scaled.jpg",
         "d": "Kalpa is one of Kinnaur's best-known mountain settlements. It is particularly recognised for views towards the Kinnaur Kailash range, whose peaks form an impressive backdrop to the village."
       }
     ],
-    "chapters": [
-      {
-        "title": "Winter travel: what to expect",
-        "after": "days",
-        "parts": [
-          { "p": "Winter Spiti is a demanding mountain journey. Travellers should be prepared for:" },
-          {
-            "list": [
-              "Very cold mornings and nights.",
-              "Sub-zero temperatures, sometimes approaching -20°C.",
-              "Snow and ice on mountain roads.",
-              "Temporary road closures following snowfall.",
-              "Limited mobile network coverage.",
-              "Reduced services and simpler accommodation in some villages.",
-              "Changes to the itinerary when conditions require them."
-            ]
-          },
-          { "p": "The team will plan each day around actual road conditions, available daylight and local guidance." }
-        ]
-      },
-      {
-        "title": "Transportation and ground arrangements",
-        "after": "days",
-        "parts": [
-          { "h": "Delhi – Shimla – Delhi transfers" },
-          { "p": "Both overnight Volvo journeys are included in the package." },
-          { "h": "Outbound transfer" },
-          {
-            "list": [
-              "Delhi to Shimla.",
-              "Pickup: Kashmere Gate, Delhi.",
-              "Overnight journey."
-            ]
-          },
-          { "h": "Return transfer" },
-          {
-            "list": [
-              "Shimla to Delhi.",
-              "Drop: Kashmere Gate, Delhi.",
-              "Overnight journey."
-            ]
-          },
-          { "p": "These are transfer arrangements and are not counted as full expedition days." },
-          { "p": "The exact bus departure times and boarding details will be shared before departure." },
-          { "h": "Mountain transportation" },
-          { "p": "The mountain expedition operates in a Tempo Traveller from Shimla to Shimla." },
-          { "p": "The vehicle is used for the entire mountain route, including Kinnaur and Spiti. Vehicle allocation and seating arrangements will depend on the group size and operating plan." },
-          { "p": "Winter road travel requires experienced mountain drivers familiar with snow, ice and changing road conditions." }
-        ]
-      },
-      {
-        "title": "Accommodation and meals",
-        "after": "days",
-        "parts": [
-          { "h": "Accommodation" },
-          { "p": "The expedition includes seven nights of accommodation." },
-          {
-            "list": [
-              "Sarahan: 1 night",
-              "Nako: 1 night",
-              "Dhankar: 1 night",
-              "Kaza: 3 nights",
-              "Kalpa: 1 night",
-              "Total: 7 nights"
-            ]
-          },
-          { "p": "Winter accommodation is different from the summer season. Properties may have limited facilities, and heating, hot water and room configurations can vary." },
-          { "p": "The selected properties will be confirmed for the departure, based on winter operations and availability." },
-          { "h": "Meals" },
-          { "p": "The package includes:" },
-          {
-            "list": [
-              "7 breakfasts, from Day 02 to Day 08.",
-              "7 dinners, from Day 01 to Day 07."
-            ]
-          },
-          { "p": "Lunches, snacks, beverages and personal food orders are not included." },
-          { "p": "Food options in remote villages can be limited during winter. Travellers with dietary restrictions or allergies should inform Driftmates before booking." }
-        ]
-      },
-      {
-        "title": "Planning your journey",
-        "after": "days",
-        "parts": [
-          { "h": "For Indian travellers" },
-          { "p": "The complete journey begins and ends in Delhi, with overnight Volvo transfers between Kashmere Gate and Shimla included." },
-          { "p": "Travellers should carry a valid government-issued photo ID. Route-specific registration or permit requirements will be checked with the relevant authorities before departure." },
-          { "h": "For international travellers" },
-          { "p": "We welcome enquiries from international travellers interested in experiencing winter in Kinnaur and Spiti." },
-          { "p": "However, certain areas along this route are close to India's international border and may have additional access requirements for foreign nationals." },
-          { "p": "Parts of Kinnaur are subject to Inner Line Permit regulations. The exact requirements depend on nationality, route and current government rules. A valid Indian visa does not automatically guarantee access to every restricted or protected area." },
-          { "p": "Before confirming a booking, international travellers should share their passport nationality and proposed travel dates so that the applicable requirements can be checked." },
-          { "p": "Driftmates can assist with understanding the relevant requirements and coordinating the necessary information, but government permission and entry cannot be guaranteed." },
-          { "h": "International travel arrangements" },
-          {
-            "list": [
-              "Delhi is the starting and ending point of the complete journey.",
-              "International flights are not included.",
-              "Both overnight Volvo transfers between Delhi and Shimla are included.",
-              "Pickup and drop are at Kashmere Gate, Delhi.",
-              "Transfers between Delhi airport and Kashmere Gate are not included unless separately confirmed.",
-              "Travellers should plan international arrivals with sufficient time before the outbound Volvo departure.",
-              "Travel insurance covering winter mountain travel, medical emergencies and evacuation is strongly recommended."
-            ]
-          }
-        ]
-      },
-      {
-        "title": "What to pack",
-        "after": "days",
-        "parts": [
-          { "p": "Winter Spiti requires proper cold-weather clothing. Ordinary winter jackets and city footwear are not sufficient for extended exposure to sub-zero temperatures." },
-          { "h": "Clothing" },
-          {
-            "list": [
-              "Insulated winter jacket.",
-              "Thermal base layers.",
-              "Fleece or insulating mid-layers.",
-              "Waterproof and wind-resistant outer layer.",
-              "Warm gloves and spare gloves.",
-              "Woollen socks.",
-              "Warm cap and neck protection."
-            ]
-          },
-          { "h": "Footwear" },
-          {
-            "list": [
-              "Insulated winter footwear with good grip.",
-              "Extra socks.",
-              "Comfortable shoes for indoor use."
-            ]
-          },
-          { "h": "Personal essentials" },
-          {
-            "list": [
-              "Sunglasses.",
-              "High-SPF sunscreen.",
-              "Moisturiser and lip balm.",
-              "Personal medication.",
-              "Reusable water bottle.",
-              "Power bank and charging cables.",
-              "Personal toiletries."
-            ]
-          },
-          { "p": "Avoid relying on cotton as your primary thermal layer, as it retains moisture and dries slowly." }
-        ]
-      }
-    ],
+    "chapters": [],
     "faqs": [
       {
         "q": "How many days is the Winter Spiti Expedition?",
@@ -2471,52 +2252,52 @@ export const journeys = [
         "a": "Yes. Travellers should have insurance that covers medical emergencies, evacuation and winter mountain travel. Check the policy carefully for altitude and activity exclusions."
       }
     ],
-    "closing": "Experience Winter Spiti with Driftmates\nWinter in Spiti is not about ticking off destinations. It is about experiencing the mountains at a time when everyday life follows a different rhythm.\nFrom the temples of Sarahan and the high villages of Kinnaur to the monasteries and cold desert landscapes around Kaza, this journey brings together the different sides of the western Himalaya.\nCome prepared for the cold, the changing roads and the slower pace of winter in the mountains.\nTravel the Himalayas. Know them beyond the map.\nDriftmates – Himalayan Expeditions & Journeys",
+    "closing": "",
     "days": [
       {
         "n": "Day 00",
         "t": "Delhi to Shimla",
-        "d": "An overnight journey towards the mountains\nOur journey begins in Delhi, where the group boards an overnight Volvo bus from Kashmere Gate.\nWe travel through the night towards Shimla, leaving the plains behind as the road gradually climbs into the lower Himalaya.\nThe bus journey is an included transfer and is not counted as an expedition day. Our mountain team and Tempo Traveller arrangements will be coordinated for the group's arrival in Shimla.\nPickup point: Kashmere Gate, Delhi\nDrop point: Shimla\nTransport: Overnight Volvo\nOvernight: On the bus"
+        "d": "An overnight journey towards the mountains\nOur journey begins in Delhi, where the group boards an overnight Volvo bus from Kashmere Gate.\nWe travel through the night towards Shimla, leaving the plains behind as the road gradually climbs into the lower Himalayan Region.\nThe bus journey is an included transfer and is not counted as an expedition day. Our mountain team and Tempo Traveller arrangements will be coordinated for the group's arrival in Shimla.\nPickup point: Kashmere Gate, Delhi\nDrop point: Shimla\nOvernight: On the bus"
       },
       {
         "n": "Day 01",
         "t": "Shimla to Sarahan",
-        "d": "Into the mountains of Himachal Pradesh\nAfter arriving in Shimla, we meet the ground team and begin our mountain expedition in a Tempo Traveller.\nOur route takes us through the forested hills towards Narkanda and Rampur, gradually following the Sutlej valley into Kinnaur.\nToday's destination is Sarahan, a traditional mountain settlement known for the historic Bhimakali Temple. The temple is one of Himachal Pradesh's most important religious landmarks and is recognised for its distinctive architecture, which combines traditional Himalayan wooden craftsmanship with temple design.\nAfter reaching Sarahan, we check in to our accommodation and visit the Bhimakali Temple, subject to local opening arrangements.\nThe evening is kept relaxed as we prepare to travel deeper into Kinnaur the following day.\nRoute: Shimla – Narkanda – Rampur – Sarahan\nExperience: Bhimakali Temple\nOvernight: Sarahan\nMeals: Dinner"
+        "d": "Into the mountains of Himachal Pradesh\nAfter arriving in Shimla, we meet the ground team and begin our mountain expedition in a Tempo Traveller.\nOur route takes us through the forested hills towards Narkanda and Rampur, gradually following the Sutlej valley into Kinnaur.\nToday's destination is Sarahan, a traditional mountain settlement known for the historic Bhimakali Temple. The temple is one of Himachal Pradesh's most important religious landmarks and is recognised for its distinctive architecture, which combines traditional Himalayan wooden craftsmanship with temple design.\nAfter reaching Sarahan, we check in to our accommodation and visit the Bhimakali Temple, subject to local opening arrangements.\nThe evening is kept relaxed as we prepare to travel deeper into Kinnaur the following day.\nRoute: Shimla – Narkanda – Rampur – Sarahan\nOvernight: Sarahan\nMeals: Dinner"
       },
       {
         "n": "Day 02",
         "t": "Sarahan to Nako",
-        "d": "Following the Sutlej into the high mountains\nAfter breakfast, we leave Sarahan and continue towards the upper reaches of Kinnaur.\nThe route follows the Sutlej River through dramatic mountain terrain, with steep rock faces, narrow valleys and small settlements along the way.\nAs we travel deeper into the region, we reach the Kinnaur Gate, marking an important transition into the upper Kinnaur landscape. We continue towards Khab Bridge, located near the meeting of the Sutlej and Spiti rivers.\nFrom here, the road climbs towards Nako, a high-altitude village known for its traditional houses, mountain surroundings and small lake.\nOn reaching Nako, we check in to our accommodation. If conditions permit, we visit Nako Lake and explore the village surroundings.\nWinter gives Nako a distinctive atmosphere, with cold desert terrain and snow-covered slopes depending on the season.\nRoute: Sarahan – Kinnaur Gate – Khab Bridge – Nako\nExperiences: Kinnaur Gate, Khab Bridge and Nako Lake\nOvernight: Nako\nMeals: Breakfast and dinner"
+        "d": "Following the Sutlej into the high mountains\nAfter breakfast, we leave Sarahan and continue towards the upper reaches of Kinnaur.\nThe route follows the Sutlej River through dramatic mountain terrain, with steep rock faces, narrow valleys and small settlements along the way.\nAs we travel deeper into the region, we reach the Kinnaur Gate, marking an important transition into the upper Kinnaur landscape. We continue towards Khab Bridge, located near the meeting of the Sutlej and Spiti rivers.\nFrom here, the road climbs towards Nako, a high-altitude village known for its traditional houses, mountain surroundings and small lake.\nOn reaching Nako, we check in to our accommodation. Later, we visit Nako Lake and explore the village surroundings.\nWinter gives Nako a distinctive atmosphere, with cold desert terrain and snow-covered slopes depending on the season.\nRoute: Sarahan – Kinnaur Gate – Khab Bridge – Nako\nOvernight: Nako\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 03",
         "t": "Nako to Dhankar",
-        "d": "Tabo Monastery and the mountain landscape of Spiti\nAfter breakfast, we leave Nako and continue towards Dhankar, travelling further into the Spiti region.\nEn route, we stop at Tabo Monastery, one of the oldest surviving Buddhist monasteries in the western Himalaya. Founded in 996 CE, the monastery is known for its historic temples, ancient murals and centuries-old religious heritage. We spend time exploring this important cultural landmark before continuing our drive to Dhankar.\nOn reaching Dhankar, we check in to our accommodation. The village is dramatically positioned on a rocky hillside overlooking the confluence of the Spiti and Pin rivers. Its monastery, perched above the valley, has long been an important religious centre in the region.\nLater, subject to trail conditions and weather, we undertake the walk towards Dhankar Lake. The trail climbs above the village, opening up views of the surrounding mountains and the Spiti Valley.\nDuring winter, the trail may be covered in snow or ice. The trek will only be attempted if local conditions are considered safe. If access is not suitable, we will spend additional time exploring Dhankar and its surroundings.\nAfter the day's exploration, we return to our accommodation in Dhankar.\nRoute: Nako – Tabo – Dhankar\nExperiences: Tabo Monastery, Dhankar Monastery and Dhankar Lake trek\nStay Plan: Overnight stay in Dhankar\nMeal Plan: Breakfast and dinner"
+        "d": "Tabo Monastery and the mountain landscape of Spiti\nAfter breakfast, we leave Nako and continue towards Dhankar, travelling further into the Spiti region.\nEn route, we stop at Tabo Monastery, one of the oldest surviving Buddhist monasteries in the western Himalayas. Founded in 996 CE, the monastery is known for its historic temples, ancient murals and centuries-old religious heritage. We spend time exploring this important cultural landmark before continuing our drive to Dhankar.\nOn reaching Dhankar, we check in to our accommodation. The village is dramatically positioned on a rocky hillside overlooking the confluence of the Spiti and Pin rivers. Its monastery, perched above the valley, has long been an important religious centre in the region.\nLater, subject to trail conditions and weather, we undertake the walk towards Dhankar Lake. The trail climbs above the village, opening up views of the surrounding mountains and the Spiti Valley.\nDuring winter, the trail may be covered in snow or ice. The trek will only be attempted if local conditions are considered safe. If access is not suitable, we will spend additional time exploring Dhankar and its surroundings.\nAfter the day's exploration, we return to our accommodation in Dhankar.\nRoute: Nako – Tabo – Dhankar\nStay Plan: Overnight stay in Dhankar\nMeal Plan: Breakfast and dinner"
       },
       {
         "n": "Day 04",
         "t": "Dhankar to Kaza via Pin Valley",
-        "d": "Exploring the quieter side of Spiti\nAfter breakfast, we leave Dhankar and travel towards Pin Valley before continuing to Kaza.\nOur route takes us towards Kungri Monastery, an important Buddhist monastery in Pin Valley. It is known for its religious traditions and distinctive architecture.\nFrom here, we continue into the valley towards Mud Village, one of the best-known settlements in Pin Valley. The village sits amid rugged mountains and offers a closer look at life in this quieter part of Spiti.\nWe also pass Sagnam Bridge, an important crossing in the valley that connects the surrounding settlements.\nPin Valley is particularly known for its natural landscape and its importance as a habitat for high-altitude wildlife, including the snow leopard. Winter transforms the valley into a striking landscape, although road access can be affected by snow and ice.\nAfter exploring the accessible locations, we continue towards Kaza.\nOn reaching Kaza, we check in to our accommodation. We will stay here for the next three nights.\nRoute: Dhankar – Kungri Monastery – Pin Valley – Mud Village – Sagnam Bridge – Kaza\nExperiences: Kungri Monastery, Pin Valley and Mud Village\nOvernight: Kaza\nMeals: Breakfast and dinner"
+        "d": "Exploring the quieter side of Spiti\nAfter breakfast, we leave Dhankar and travel towards Pin Valley before continuing to Kaza.\nOur route takes us towards Kungri Monastery, an important Buddhist monastery in Pin Valley. It is known for its religious traditions and distinctive architecture.\nFrom here, we continue into the valley towards Mud Village, one of the best-known settlements in Pin Valley. The village sits amid rugged mountains and offers a closer look at life in this quieter part of Spiti.\nWe also pass Sagnam Bridge, an important crossing in the valley that connects the surrounding settlements.\nPin Valley is particularly known for its natural landscape and its importance as a habitat for high-altitude wildlife, including the snow leopard. Winter transforms the valley into a striking landscape, although road access can be affected by snow and ice.\nAfter exploring the accessible locations, we continue towards Kaza.\nOn reaching Kaza, we check in to our accommodation. We will stay here for the next three nights.\nRoute: Dhankar – Kungri Monastery – Pin Valley – Mud Village – Sagnam Bridge – Kaza\nOvernight: Kaza\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 05",
         "t": "Kaza to Langza, Komic and Hikkim",
-        "d": "A day among Spiti's high villages\nToday is dedicated to exploring the villages around Kaza.\nAfter breakfast, we begin our journey towards Langza, a village known for its large Buddha statue overlooking the valley and its fossil-rich landscape.\nLangza offers wide views of the surrounding mountains and is one of the most recognisable settlements in the region. The village is also associated with marine fossils from a time when this landscape lay beneath an ancient sea.\nFrom Langza, we continue towards Komic, a remote high-altitude village known for its monastery and traditional mountain settlement.\nOur next planned stop is Hikkim, widely recognised for its high-altitude post office. It is a small but distinctive part of everyday life in this remote region, where communication with the outside world has its own challenges.\nWe spend time exploring the villages and their surroundings before returning to Kaza.\nDuring winter, the order of visits and the number of villages accessible will depend on snowfall and road clearance. If a route is unsafe, the team will adjust the day's plan.\nRoute: Kaza – Langza – Komic – Hikkim – Kaza\nExperiences: Langza Buddha statue, Komic village and Hikkim Post Office\nOvernight: Kaza\nMeals: Breakfast and dinner"
+        "d": "A day among Spiti's high villages\nToday is dedicated to exploring the villages around Kaza.\nAfter breakfast, we begin our journey towards Langza, a village known for its large Buddha statue overlooking the valley and its fossil-rich landscape.\nLangza offers wide views of the surrounding mountains and is one of the most recognisable settlements in the region. The village is also associated with marine fossils from a time when this landscape lay beneath an ancient sea.\nFrom Langza, we continue towards Komic, a remote high-altitude village known for its monastery and traditional mountain settlement.\nOur next planned stop is Hikkim, widely recognised for its high-altitude post office. It is a small but distinctive part of everyday life in this remote region, where communication with the outside world has its own challenges.\nWe spend time exploring the villages and their surroundings before returning to Kaza.\nDuring winter, the order of visits and the number of villages accessible will depend on snowfall and road clearance. If a route is unsafe, the team will adjust the day's plan.\nRoute: Kaza – Langza – Komic – Hikkim – Kaza\nOvernight: Kaza\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 06",
         "t": "Key Monastery, Chicham Bridge and Kibber",
-        "d": "The cultural and high-altitude landscapes around Kaza\nAfter breakfast, we explore some of the most distinctive places around Kaza.\nWe begin with Key Monastery, one of the most important Buddhist monasteries in Spiti. Set on a hill overlooking the Spiti River, it has been a centre of Buddhist learning and religious life for centuries.\nFrom here, we continue towards Chicham Bridge, an impressive bridge connecting the villages of Chicham and Kibber across a deep mountain gorge. Its setting makes it one of the region's most recognisable engineering landmarks.\nWe then explore Kibber, a high-altitude village known for its traditional houses and dramatic mountain surroundings. The wider area is also associated with wildlife conservation and the habitat of the elusive snow leopard.\nAfter exploring the accessible locations, we return to Kaza and spend some time at the local market.\nThe Kaza market is a useful place to experience everyday life in the main settlement of Spiti, with local shops, small cafés and supplies serving the surrounding villages.\nWe return to our accommodation for the final night in Kaza.\nRoute: Kaza – Key Monastery – Chicham Bridge – Kibber – Kaza\nExperiences: Key Monastery, Chicham Bridge, Kibber and Kaza Market\nOvernight: Kaza\nMeals: Breakfast and dinner"
+        "d": "The cultural and high-altitude landscapes around Kaza\nAfter breakfast, we explore some of the most distinctive places around Kaza.\nWe begin with Key Monastery, one of the most important Buddhist monasteries in Spiti. Set on a hill overlooking the Spiti River, it has been a centre of Buddhist learning and religious life for centuries.\nFrom here, we continue towards Chicham Bridge, an impressive bridge connecting the villages of Chicham and Kibber across a deep mountain gorge. Its setting makes it one of the region's most recognisable engineering landmarks.\nWe then explore Kibber, a high-altitude village known for its traditional houses and dramatic mountain surroundings. The wider area is also associated with wildlife conservation and the habitat of the elusive snow leopard.\nAfter exploring the accessible locations, we return to Kaza and spend some time at the local market.\nThe Kaza market is a useful place to experience everyday life in the main settlement of Spiti, with local shops, small cafés and supplies serving the surrounding villages.\nWe return to our accommodation for the final night in Kaza.\nRoute: Kaza – Key Monastery – Chicham Bridge – Kibber – Kaza\nOvernight: Kaza\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 07",
         "t": "Kaza to Kalpa via Gue",
-        "d": "From the cold desert to the mountains of Kinnaur\nAfter breakfast, we leave Kaza and begin our return journey towards Kinnaur.\nThe route follows the Spiti River towards Sumdo and continues through the landscape of upper Kinnaur.\nAlong the way, we plan a visit to Gue Monastery, known for the naturally preserved mummy of a Buddhist monk housed at the monastery. It is a distinctive cultural site in the region, subject to local access and opening arrangements.\nWe continue towards Reckong Peo, the administrative centre of Kinnaur district. Depending on the available time and local conditions, we explore the market area before driving up to Kalpa.\nKalpa is known for its views of the Kinnaur Kailash mountain range. The landscape here offers a striking contrast to the barren terrain of Spiti, with forested slopes and traditional settlements surrounding the village.\nWe check in to our accommodation and spend the evening in Kalpa.\nRoute: Kaza – Gue – Reckong Peo – Kalpa\nExperiences: Gue Monastery, Reckong Peo Market and Kalpa\nOvernight: Kalpa\nMeals: Breakfast and dinner"
+        "d": "From the cold desert to the mountains of Kinnaur\nAfter breakfast, we leave Kaza and begin our return journey towards Kinnaur.\nThe route follows the Spiti River towards Sumdo and continues through the landscape of upper Kinnaur.\nAlong the way, we plan a visit to Gue Monastery, known for the naturally preserved mummy of a Buddhist monk housed at the monastery. It is a distinctive cultural site in the region, subject to local access and opening arrangements.\nWe continue towards Reckong Peo, the administrative centre of Kinnaur district. Depending on the available time and local conditions, we explore the market area before driving up to Kalpa.\nKalpa is known for its views of the Kinnaur Kailash mountain range. The landscape here offers a striking contrast to the barren terrain of Spiti, with forested slopes and traditional settlements surrounding the village.\nWe check in to our accommodation and spend the evening in Kalpa.\nRoute: Kaza – Gue – Reckong Peo – Kalpa\nOvernight: Kalpa\nMeals: Breakfast and dinner"
       },
       {
         "n": "Day 08",
         "t": "Kalpa to Shimla",
-        "d": "Completing the mountain expedition\nAfter breakfast, we leave Kalpa and begin our drive back towards Shimla.\nThe route follows the Sutlej valley through Kinnaur, passing mountain settlements and the changing landscape of the lower Himalaya.\nOn reaching Shimla, our mountain expedition concludes. From here, the group boards the overnight Volvo service from Shimla to Delhi.\nThe bus journey is included as a transfer and is not counted as an additional expedition day.\nRoute: Kalpa – Shimla – Delhi\nMountain expedition concludes: Shimla\nVolvo drop point: Kashmere Gate, Delhi\nMeals: Breakfast\nOvernight: On the bus"
+        "d": "Completing the mountain expedition\nAfter breakfast, we leave Kalpa and begin our drive back towards Shimla.\nThe route follows the Sutlej valley through Kinnaur, passing mountain settlements and the changing landscape of the lower Himalaya.\nOn reaching Shimla, our mountain expedition concludes. From here, the group boards the overnight Volvo service from Shimla to Delhi.\nThe bus journey is included as a transfer and is not counted as an additional expedition day.\nRoute: Kalpa – Shimla – Delhi\nVolvo drop point: Kashmere Gate, Delhi\nMeals: Breakfast\nOvernight: On the bus"
       }
     ]
   },

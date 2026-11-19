@@ -93,10 +93,12 @@ function Chapters({ journey, after }) {
   return items.map((chapter) => (
     <section key={chapter.title}>
       <div className="wrap">
-        <div className="section-head">
-          <h2>{chapter.title}</h2>
+        <div className={chapter.box ? "chapter-box" : undefined}>
+          <div className="section-head">
+            <h2>{chapter.title}</h2>
+          </div>
+          <ChapterBody parts={chapter.parts} />
         </div>
-        <ChapterBody parts={chapter.parts} />
       </div>
     </section>
   ));
@@ -595,7 +597,7 @@ function BestTime({ visit }) {
       <div className="wrap">
         <div className="section-head center">
           <p className="kicker">The year</p>
-          <h2>Best time to visit</h2>
+          <h2>{visit.heading || "Best time to visit"}</h2>
           <p className="visit-intro">{visit.intro}</p>
         </div>
         <div className="visit-months">
@@ -607,11 +609,11 @@ function BestTime({ visit }) {
           </div>
           {visit.key && <p className="visit-key">{visit.key}</p>}
         </div>
-        <div className="season-board">
+        <div className={`season-board${visit.seasons.length === 3 ? " is-three" : visit.seasons.length === 5 ? " is-five" : ""}`}>
           {visit.seasons.map((season) => (
             <article className={`visit-panel is-${season.tone}`} key={season.title}>
               <h3>{season.title}</h3>
-              <p className="season-when">{season.when}</p>
+              {season.when && <p className="season-when">{season.when}</p>}
               {season.tone === "closed" && <p className="season-flag">Not recommended</p>}
               <div className="visit-copy">
                 <Lines text={season.d} />
@@ -624,14 +626,14 @@ function BestTime({ visit }) {
   );
 }
 
-function Companions({ items }) {
+function Companions({ items, layout }) {
   return (
     <section>
-      <div className="wrap companion-grid">
+      <div className={`wrap companion-grid${layout === "stack" ? " is-stack" : ""}`}>
         {items.map((item) => (
           <article key={item.t}>
             <h2>{item.t}</h2>
-            <Lines text={item.d} />
+            {item.parts ? <ChapterBody parts={item.parts} /> : <Lines text={item.d} />}
           </article>
         ))}
       </div>
@@ -800,14 +802,14 @@ export default function Journey() {
     </section>
   ) : null;
   const regionSection = journey.region?.length > 0 ? (
-    <section key="region">
+    <section key="region" className={journey.region.length === 6 ? "region-fit" : undefined}>
       <div className="wrap">
         <div className={`section-head${journey.regionStyle === "cards" ? " center" : ""}`}>
           <p className="kicker">{journey.regionKicker || "Munsyari"}</p>
           <h2>{journey.regionHeading || "Understanding the region"}</h2>
         </div>
         {journey.regionStyle === "cards" ? (
-          <div className="region-cards">
+          <div className={`region-cards${journey.region.length === 6 ? " is-six" : journey.region.length === 4 ? " is-four" : ""}`}>
             {journey.region.map((item) => (
               <article className="region-card" key={item.t}>
                 {item.img
@@ -860,6 +862,7 @@ export default function Journey() {
             <span> · {journey.kind}</span>
           </div>
           <h1>{journey.title}</h1>
+          {journey.subtitle && <p className="hero-line">{journey.subtitle}</p>}
           <Link className="btn" to={`/plan?journey=${journey.slug}`}>Plan this journey</Link>
         </div>
       </header>
@@ -969,7 +972,7 @@ export default function Journey() {
 
       <Chapters journey={journey} after="included" />
 
-      {journey.companions?.length > 0 && <Companions items={journey.companions} />}
+      {journey.companions?.length > 0 && <Companions items={journey.companions} layout={journey.companionLayout} />}
 
       {journey.faqs?.length > 0 && (
         <section id="questions" className="band">

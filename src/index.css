@@ -911,12 +911,31 @@ section { padding: 96px 0; }
   font-weight: 500;
   margin: 0 0 14px;
 }
-.companion-grid .day-copy p {
+.companion-grid .day-copy p,
+.companion-grid .chapter-copy p {
   margin: 0 0 12px;
   color: var(--ink-soft);
   font-size: 16px;
   line-height: 1.6;
+  text-align: left;
 }
+.companion-grid .chapter-copy strong { color: var(--ink); font-weight: 700; }
+.companion-grid.is-stack {
+  grid-template-columns: 1fr;
+  gap: 0;
+  background: #fbf8f1;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.companion-grid.is-stack article {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 32px 36px 28px;
+}
+.companion-grid.is-stack article + article { border-top: 1px solid var(--line); }
+.companion-grid.is-stack h2 { text-align: center; }
 .cover-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -969,6 +988,32 @@ section { padding: 96px 0; }
   letter-spacing: 0.03em;
   text-align: right;
 }
+@media (min-width: 981px) {
+  .region-cards.is-six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .region-cards.is-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .season-board.is-five { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .season-board.is-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.region-fit { padding-top: 12px; padding-bottom: 8px; }
+.region-fit .section-head { margin-bottom: 8px; }
+.region-fit .kicker { margin-bottom: 4px; }
+.region-fit .section-head h2 { font-size: 30px; }
+.region-cards.is-six { gap: 10px; }
+.region-cards.is-six .region-card img,
+.region-cards.is-six .region-card-fallback,
+.region-cards.is-four .region-card img,
+.region-cards.is-four .region-card-fallback { height: 180px; }
+.region-cards.is-six .region-card-body { padding: 8px 10px 8px; }
+.region-cards.is-six .region-card h3 {
+  font-size: 16px;
+  line-height: 1.15;
+  margin: 0 0 4px;
+}
+.region-cards.is-six .region-card .day-copy p {
+  font-size: 12.5px;
+  line-height: 1.32;
+  margin: 0 0 4px;
+}
 @media (max-width: 980px) {
   .region-cards, .season-board, .companion-grid, .cover-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -983,6 +1028,34 @@ section { padding: 96px 0; }
   margin: 28px 0 8px;
 }
 .closing-copy h3:first-child { margin-top: 0; }
+.chapter-box {
+  background: #fffcf8;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 0 28px;
+  overflow: hidden;
+}
+.chapter-box .section-head {
+  margin: 0 0 22px;
+  padding: 22px 44px 18px;
+  background: #f8f3ec;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+.chapter-box .chapter-copy { padding: 4px 44px 0; }
+.chapter-box .chapter-copy h3 { text-align: center; margin: 26px 0 8px; }
+.chapter-box .chapter-copy p {
+  max-width: 760px;
+  margin: 0 auto 0;
+  text-align: center;
+}
+.chapter-box .chapter-col { margin-top: 32px; }
+.chapter-box .chapter-copy ul {
+  width: max-content;
+  max-width: 100%;
+  margin: 10px auto 32px;
+  text-align: left;
+}
 .chapter-copy h3 {
   font-family: var(--serif);
   font-weight: 500;
@@ -1007,6 +1080,9 @@ section { padding: 96px 0; }
 .closing-copy p { margin: 0 0 8px; color: var(--ink-soft); }
 .closing-copy strong { color: var(--ink); font-weight: 700; }
 @media (max-width: 980px) {
+  .chapter-box { padding: 0 0 20px; }
+  .chapter-box .section-head,
+  .chapter-box .chapter-copy { padding-left: 22px; padding-right: 22px; }
   .chapter-split { grid-template-columns: 1fr; gap: 8px; }
   .region-notes {
     grid-template-columns: 1fr;
@@ -1336,6 +1412,15 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
 .journey-hero .wrap { padding: 120px 0 72px; }
 .journey-hero p { margin-left: auto; margin-right: auto; }
 .journey-hero .btn { margin-top: 8px; }
+.journey-hero .hero-line {
+  max-width: 22em;
+  margin: 0 auto 18px;
+  color: white;
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.4vw, 28px);
+  font-weight: 400;
+  line-height: 1.3;
+}
 .welcome-cover {
   min-height: 100vh;
   min-height: 100svh;
@@ -1703,7 +1788,7 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 28px;
-  align-items: start;
+  align-items: center;
   background: white;
   border: 1px solid var(--line);
   padding: 28px;
@@ -1711,8 +1796,8 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
 }
 .day-block:not(:has(.day-photo)) { grid-template-columns: 1fr; }
 .day-block h3 { margin: 0 0 10px; font-size: 32px; font-weight: 500; }
-.day-photo { display: grid; gap: 10px; }
-.day-photo img { width: 100%; height: 320px; object-fit: cover; }
+.day-photo { display: grid; gap: 10px; align-self: center; }
+.day-photo img { width: 100%; height: 320px; object-fit: cover; object-position: center; }
 .day-copy p { margin: 0 0 10px; color: var(--ink-soft); }
 .day-copy h4 {
   font-family: var(--serif);
