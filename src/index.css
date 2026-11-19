@@ -747,6 +747,234 @@ section { padding: 96px 0; }
 .region-copy { max-width: 68ch; }
 .region-copy p { margin: 0 0 12px; color: var(--ink-soft); font-size: 17px; line-height: 1.65; }
 .region-copy p:last-child { margin-bottom: 0; }
+.region-cards {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+.region-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.region-card img,
+.region-card-fallback {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+}
+.region-card-fallback {
+  background: linear-gradient(180deg, #e4eee6 0%, #f6f3ee 100%);
+}
+.region-card-body { padding: 16px 16px 18px; }
+.region-card h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.region-card .day-copy p {
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.visit-intro {
+  max-width: 68ch;
+  margin: 12px auto 0;
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1.6;
+}
+.visit-months {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 22px 22px 18px;
+  margin-bottom: 16px;
+}
+.visit-months h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 14px;
+  text-align: center;
+}
+.month-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.month-pill {
+  min-width: 58px;
+  text-align: center;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 650;
+  background: transparent;
+}
+.month-pill.is-open {
+  color: var(--green-deep);
+  border-color: rgba(26, 71, 49, 0.22);
+  background: rgba(26, 71, 49, 0.08);
+}
+.month-pill.is-closed {
+  color: #8a4038;
+  border-color: rgba(176, 64, 52, 0.24);
+  background: rgba(176, 64, 52, 0.1);
+}
+.month-pill.is-quiet {
+  color: var(--ink);
+  border-color: #cbb98a;
+  background: #fbf8f1;
+}
+.visit-key {
+  margin: 14px auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.season-board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+.visit-panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 20px 18px 16px;
+}
+.visit-panel.is-open {
+  background: rgba(26, 71, 49, 0.08);
+  border-color: rgba(26, 71, 49, 0.22);
+}
+.visit-panel.is-quiet {
+  background: #fbf8f1;
+  border-color: #cbb98a;
+}
+.visit-panel.is-closed {
+  background: rgba(176, 64, 52, 0.1);
+  border-color: rgba(176, 64, 52, 0.24);
+}
+.visit-panel h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.season-when {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+}
+.season-flag {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(176, 64, 52, 0.14);
+  color: #8a4038;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.visit-copy p {
+  margin: 0 0 8px;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.companion-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+.companion-grid article {
+  background: #fbf8f1;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 28px 26px 22px;
+}
+.companion-grid h2 {
+  font-size: clamp(26px, 2.4vw, 32px);
+  font-weight: 500;
+  margin: 0 0 14px;
+}
+.companion-grid .day-copy p {
+  margin: 0 0 12px;
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.cover-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.cover-panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.cover-panel.is-included,
+.cover-panel.is-excluded { background: #f8f3ec; }
+.cover-head { padding: 18px 22px 14px; }
+.cover-head .kicker { margin: 0; }
+.cover-rows { border-top: 1px solid var(--line); background: #fffcf8; }
+.cover-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 0;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 15.5px;
+  line-height: 1.45;
+}
+.cover-row:last-child { border-bottom: 0; }
+.cover-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #f6f1ea;
+  color: var(--gold);
+}
+.cover-panel.is-excluded .cover-icon {
+  background: #f3f1ee;
+  color: #6d675f;
+}
+.route-brief.has-meal-key .route-key {
+  grid-column: 1 / -1;
+  justify-self: end;
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-align: right;
+}
+@media (max-width: 980px) {
+  .region-cards, .season-board, .companion-grid, .cover-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px) {
+  .region-cards, .season-board, .companion-grid, .cover-grid { grid-template-columns: 1fr; }
+}
 .closing-copy h3 {
   font-family: var(--serif);
   font-weight: 500;

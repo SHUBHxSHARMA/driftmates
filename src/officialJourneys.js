@@ -545,7 +545,7 @@ export const journeys = [
   "Gunji and Vyas Valley",
   "Darma Valley",
   "Panchachuli Base Camp trek"
-],
+    ],
     "included": [
   "8 nights of accommodation as per the itinerary.",
   "8 breakfasts and 8 dinners.",
@@ -556,7 +556,7 @@ export const journeys = [
   "Assistance with the required permits and travel formalities.",
   "Pre-departure briefing and motorcycle allocation.",
   "Pre-arranged arrival and departure transfers between the designated Haldwani meeting point and Pantnagar Airport or Kathgodam Railway Station, where confirmed in the booking arrangements."
-],
+    ],
     "notIncluded": [
   "Travel to and from Haldwani.",
   "Motorcycle fuel, unless specifically stated as included in the selected package.",
@@ -568,7 +568,7 @@ export const journeys = [
   "Costs arising from motorcycle damage beyond normal wear and tear.",
   "Additional accommodation or transport arising from road closures, weather disruptions or delays beyond the planned itinerary.",
   "Any service or expense not specifically mentioned under inclusions."
-],
+    ],
     "payment": [
       "To confirm your booking, a minimum of 30% of the total trip cost must be paid at the time of booking.",
       "The remaining 70% of the total amount must be cleared at least 30 days prior to the departure date.",
@@ -584,7 +584,7 @@ export const journeys = [
     ],
     "altitude": [],
     "faqs": [
-  {
+      {
     "q": "Is fuel included?",
     "a": "Fuel inclusion must be checked against the selected package. Unless specifically stated as included in writing, riders should budget for fuel separately."
   },
@@ -1925,30 +1925,93 @@ export const journeys = [
     "summary": "There is a different side to the Kumaon Himalayas, beyond the familiar hill towns and popular mountain routes. In the eastern part of Uttarakhand, the Gori Ganga valley leads towards Munsyari, a mountain town set against the magnificent Panchachuli range.",
     "overview": "An experience-led journey through the Kumaon Himalayas\nThere is a different side to the Kumaon Himalayas, beyond the familiar hill towns and popular mountain routes. In the eastern part of Uttarakhand, the Gori Ganga valley leads towards Munsyari, a mountain town set against the magnificent Panchachuli range.\nFor generations, this region has been home to the Shauka communities of Johar, whose lives were shaped by mountain agriculture, pastoral traditions and trade routes connecting the Himalayas with Tibet. Their history, traditional settlements and craft traditions remain an important part of the region's identity.\nOur journey takes us from Chaukori's quiet mountain ridges to the waterfall landscapes around Birthi and the mountain setting of Munsyari. Spend time understanding the region, visit the Nanda Devi Temple, explore the local settlements and walk through the forests towards Khuliya Top, where the landscape opens into high-altitude meadows overlooking the Himalayan ranges.\nThe return journey follows the Gori Ganga valley through Madkot before reaching Pithoragarh, giving us a different perspective of eastern Kumaon.\nThis is not a journey designed around covering as many places as possible. We have kept three nights in Munsyari so there is time to experience the town, explore its surroundings and spend a full day in the mountains.\nAt Driftmates, we bring together the route, local knowledge and on-ground arrangements to make the journey comfortable and meaningful. Whether you are travelling alone, with a partner or with friends, you are welcome to join our small group and discover this lesser-explored part of the Himalayas.",
     "regionAfter": "itinerary",
+    "regionStyle": "cards",
+    "mealCodes": true,
+    "overviewTitle": "An experience-led journey through the Kumaon Himalayas",
+    "coverPanels": true,
     "region": [
       {
         "t": "The Panchachuli range",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/184f2d02-243b-4188-83a9-c6ec7d8312be-scaled.jpg",
         "d": "The Panchachuli range is the defining feature of the Munsyari landscape. Its five prominent peaks rise above the surrounding valleys and are visible from several parts of the region.\nThe mountains change character throughout the day. Early morning light brings out their snow-covered faces, while the evening often creates warmer colours across the ridgelines. Weather and cloud cover determine how much of the range is visible, but the mountain setting is central to the experience of staying in Munsyari."
       },
       {
         "t": "The Gori Ganga valley",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/IMG_8840-scaled.jpg",
         "d": "The Gori Ganga is one of the major rivers of eastern Kumaon. Its valley leads north from Munsyari towards the higher settlements and the glacier regions of the upper Himalayas.\nThe river has shaped the geography, settlements and traditional routes of the region. It is also an important part of the landscape we follow on the return journey through Madkot."
       },
       {
         "t": "The heritage of Johar",
+        "img": "https://driftmates.com/wp-content/uploads/2026/09/c52fcc8f-35ed-411f-80de-f597473f7af2-scaled.jpg",
         "d": "The history of Munsyari is closely connected to Johar and the Shauka community.\nFor generations, traders from this region travelled across high mountain passes to maintain commercial links with Tibet. These journeys involved the exchange of goods and created a distinctive cultural connection between communities on both sides of the Himalayas.\nAlthough the old trading system came to an end, its influence remains in the traditions, craftwork, food and architecture of the region. Understanding this history gives a different perspective on Munsyari beyond its mountain views."
       },
       {
         "t": "Forests and alpine meadows",
+        "img": "https://driftmates.com/wp-content/uploads/2024/08/IMG_0736-scaled.jpg",
         "d": "The higher slopes around Munsyari contain a variety of Himalayan vegetation. Oak and rhododendron forests cover parts of the lower trekking trails, while open meadows appear at higher elevations.\nThe Khuliya Top walk offers an opportunity to experience these changing landscapes on foot. Spring brings flowering vegetation to parts of the trail, while autumn generally offers a different atmosphere with clearer mountain views."
       },
       {
         "t": "Traditional weaving and village life",
+        "img": "https://driftmates.com/wp-content/uploads/2026/04/IMG_5763-scaled.jpg",
         "d": "Wool weaving has long been part of the cultural heritage of the Johar region. Local crafts reflect the materials, climate and traditions of mountain life.\nA properly arranged visit to a local weaving household can help travellers understand the work behind these crafts, the skills involved and how traditional knowledge continues to be passed between generations."
       },
     ],
-    "reading": "Travel arrangements\nThe journey includes two overnight Volvo transfers between Delhi and Haldwani, with a comfortable Tempo Traveller for the mountain section.\nDelhi to Haldwani: Overnight Volvo bus.\nHaldwani to Haldwani: Comfortable Tempo Traveller for the complete mountain itinerary.\nLocal vehicle arrangements for the Khuliya Top trailhead and planned sightseeing.\nHaldwani to Delhi: Overnight Volvo bus.\nFive hotel nights are included during the mountain journey.",
-    "closing": "Travelling with Driftmates\nSmall groups, better journeys\nWe prefer small groups because the experience of travelling through the mountains changes when there is room to slow down.\nOur Tempo Traveller is the main group vehicle, allowing everyone to share the road journey, enjoy the changing landscape and spend time together. Our team coordinates the travel arrangements and looks after the group throughout the journey.\nTravelling solo\nYou do not need to bring a companion to join this departure. Solo travellers are welcome.\nOur small-group format brings together people who enjoy exploring new places, spending time outdoors and sharing travel experiences. You can join independently and meet the rest of the group along the way.\nRoom arrangements will be communicated before booking. A private room can be requested at an additional cost. We do not automatically assume that every solo traveller wants to share a room.\nFor international travellers\nTravellers joining from outside India are welcome.\nThe journey begins and ends in Delhi, with overnight Volvo transfers connecting Delhi and Haldwani. We recommend allowing sufficient time around international flight arrivals and departures rather than planning a tight connection with the group transfer.\nBefore departure, our team shares the joining instructions, accommodation information, packing guidance and practical details needed for the journey.\nThe itinerary follows the established Munsyari and eastern Kumaon road route. It does not include restricted-area excursions towards the higher border regions.\nA journey worth taking slowly\nMunsyari is a place where the mountains are only one part of the story. Its connection to the old trade routes, the traditions of the Johar communities, the settlements along the Gori Ganga and the high meadows above the town all contribute to what makes this region distinctive.\nWe have designed this journey to give you time to experience those different sides of Kumaon. From the first mountain roads out of Haldwani to the walk towards Khuliya Top, every part of the route brings a different perspective of the region.\nCome for the mountains, take time to understand the place and leave with experiences that go beyond the usual sightseeing circuit.\nDriftmates – Travel the Himalayas. Know them beyond the map.",
+    "bestTime": {
+      "intro": "Munsyari is a year-round mountain destination in terms of its changing landscapes, but the best time for this particular journey depends on road conditions, trekking access and visibility.",
+      "key": "March to June and September to November are the usual windows. Winter is possible, with colder conditions. July and August are not recommended for this departure.",
+      "months": [
+        { "m": "Jan", "tone": "quiet" },
+        { "m": "Feb", "tone": "quiet" },
+        { "m": "Mar", "tone": "open" },
+        { "m": "Apr", "tone": "open" },
+        { "m": "May", "tone": "open" },
+        { "m": "Jun", "tone": "open" },
+        { "m": "Jul", "tone": "closed" },
+        { "m": "Aug", "tone": "closed" },
+        { "m": "Sep", "tone": "open" },
+        { "m": "Oct", "tone": "open" },
+        { "m": "Nov", "tone": "open" },
+        { "m": "Dec", "tone": "quiet" }
+      ],
+      "seasons": [
+        {
+          "title": "Spring and early summer",
+          "when": "March to June",
+          "tone": "open",
+          "d": "Spring brings fresh greenery and flowering vegetation to the forests and surrounding hills.\nDaytime temperatures are generally suitable for exploring the region and undertaking the Khuliya Top trek, although conditions become colder at higher elevations.\nThis is a good season for travellers interested in mountain walks, forest landscapes and the changing colours of the Himalayan foothills."
+        },
+        {
+          "title": "Autumn",
+          "when": "September to November",
+          "tone": "open",
+          "d": "Autumn is one of the most rewarding periods for Himalayan views. Following the monsoon, the landscape is often fresh, and clearer skies can provide excellent visibility of the Panchachuli range.\nIt is a particularly appealing season for photography, village exploration and mountain trekking."
+        },
+        {
+          "title": "Winter",
+          "when": "December to February",
+          "tone": "quiet",
+          "d": "Winter brings cold temperatures and the possibility of snowfall around Munsyari and the higher trekking areas. The region takes on a different character, with snow-covered landscapes and quieter mountain settlements.\nThe Khuliya Top trek may require additional equipment and a revised operational plan depending on snow and trail conditions."
+        },
+        {
+          "title": "Monsoon",
+          "when": "July to August",
+          "tone": "closed",
+          "d": "The monsoon brings heavy rainfall to the Kumaon hills. Landslides, road closures and reduced visibility can affect the journey and trekking conditions.\nWe do not recommend scheduling this fixed-route group departure during the peak monsoon period."
+        }
+      ]
+    },
+    "companions": [
+      {
+        "t": "Travelling solo",
+        "d": "You do not need to bring a companion to join this departure. Solo travellers are welcome.\nOur small-group format brings together people who enjoy exploring new places, spending time outdoors and sharing travel experiences. You can join independently and meet the rest of the group along the way.\nRoom arrangements will be communicated before booking. A private room can be requested at an additional cost."
+      },
+      {
+        "t": "For international travellers",
+        "d": "Travellers joining from outside India are welcome.\nThe journey begins and ends in Delhi, with overnight Volvo transfers connecting Delhi and Haldwani. We recommend allowing sufficient time around international flight arrivals and departures rather than planning a tight connection with the group transfer.\nBefore departure, our team shares the joining instructions, accommodation information, packing guidance and practical details needed for the journey.\nThe itinerary follows the established Munsyari and eastern Kumaon road route. It does not include restricted-area excursions towards the higher border regions."
+      }
+    ],
+    "reading": "",
+    "closing": "",
     "highlights": [
       "Overnight Volvo transfers between Delhi and Haldwani, both ways.",
       "All mountain road transport from Haldwani to Haldwani in a comfortable Tempo Traveller.",
@@ -1959,37 +2022,28 @@ export const journeys = [
       "On-ground coordination by the Driftmates team.",
     ],
     "included": [
-      "Overnight Volvo transfers between Delhi and Haldwani, both ways.",
-      "All mountain road transport from Haldwani to Haldwani in a comfortable Tempo Traveller.",
-      "Five nights of accommodation.",
-      "Five breakfasts and five dinners.",
-      "Local trekking guide for the Khuliya Top trek.",
-      "Sightseeing and visits mentioned in the confirmed itinerary.",
-      "On-ground coordination by the Driftmates team.",
+      "Delhi – Haldwani – Delhi: Overnight Volvo bus transfers in both directions.",
+      "Road transportation: Comfortable Tempo Traveller for all transfers and road journeys from Haldwani to Haldwani, as per the itinerary.",
+      "Accommodation: Five nights of accommodation throughout the journey.",
+      "Meals: Five breakfasts and five dinners, starting with dinner on Day 1 and ending with breakfast on Day 6.",
+      "Khuliya Top trek: Local trekking guide to accompany the group.",
+      "Sightseeing: Visits and sightseeing stops covered in the itinerary.",
+      "Trip management: On-ground coordination and assistance from the Driftmates team throughout the expedition.",
     ],
     "notIncluded": [
-      "Lunches, snacks, beverages and meals not mentioned in the itinerary.",
-      "Personal expenses and shopping.",
-      "Optional activities or services not mentioned under inclusions.",
-      "Additional accommodation or transport arising from early arrivals, late departures or personal itinerary changes.",
-      "Travel insurance.",
-      "Tips and gratuities.",
-      "Anything not specifically mentioned under inclusions.",
+      "Lunch, snacks, beverages and meals other than those mentioned under inclusions.",
+      "Personal expenses, including shopping, laundry and room heaters.",
+      "Travel insurance and personal medical expenses.",
+      "Entry fees, camera charges and optional activities, wherever applicable.",
+      "Porter, pony or additional support services during the trek.",
+      "Tips and gratuities for drivers, guides and local service providers.",
+      "Additional accommodation, meals or transportation arising from personal itinerary changes.",
+      "Additional expenses due to road closures, landslides, extreme weather or other unforeseen circumstances beyond our control.",
+      "Any service or expense not specifically mentioned under inclusions.",
     ],
-    "payment": [
-      "Booking Confirmation: A non-refundable advance of 30% of the total trip package is required to reserve a seat.",
-      "Balance Payment: The remaining 70% must be fully settled at least 30 days prior to the scheduled departure date.",
-      "Last-Minute Bookings: For reservations confirmed within 30 days of the departure date, 100% full payment is required at the time of booking.",
-      "Schedule Adherence: Adherence to the payment schedule ensures logistical readiness. Non-compliance within the set timeline leads to automatic release of reserved spots under applicable cancellation terms."
-    ],
-    "cancellation": [
-      "The initial booking deposit (30%) remains non-refundable across all scenarios to secure permits, vehicles, and mountain inventory in advance.",
-      "Cancellations requested 20 days or more prior to departure incur a cancellation fee of 20% of the total trip cost.",
-      "Cancellations requested within 15 days of departure incur a 100% cancellation charge (non-refundable).",
-      "Non-payment of the final balance within the agreed timeframe results in automatic cancellation and forfeiture of previous deposits.",
-      "No partial or full refunds are applicable for unused accommodations, unavailed meals, missed transfer segments, no-shows, or voluntary early departure from the trip.",
-    ],
-    "altitude": [],
+    "payment": [],
+    "cancellation": [],
+        "altitude": [],
     "faqs": [
       {
         "q": "Is this trip suitable for solo travellers?",
@@ -2041,7 +2095,7 @@ export const journeys = [
       },
       {
         "q": "Are meals included throughout the trip?",
-        "a": "Five breakfasts and five dinners are included during the mountain journey. Lunches, snacks and beverages are not included and can be purchased along the way."
+        "a": "Five breakfasts and five dinners are included during the mountain journey. Snacks and beverages are not included and can be purchased along the way."
       },
       {
         "q": "Does this journey explore the deeper Johar Valley?",
@@ -2056,32 +2110,32 @@ export const journeys = [
       {
         "n": "Day 00",
         "t": "Delhi to Haldwani",
-        "d": "Leaving the city behind\nYour journey begins with an overnight Volvo transfer from Delhi to Haldwani. As the city gives way to the foothills, you will be heading towards the Kumaon region, where the landscape gradually changes into forested hills and mountain valleys.\nMeet the rest of the group and get ready for the days ahead.\nTravel: Overnight Volvo bus\nMeals: Not included"
+        "d": "Leaving the city behind\nYour journey begins with an overnight Volvo transfer from Delhi to Haldwani. As the city gives way to the foothills, you will be heading towards the Kumaon region, where the landscape gradually changes into forested hills and mountain valleys.\nMeet the rest of the group and get ready for the days ahead.\nTravel: Overnight Volvo bus"
       },
       {
         "n": "Day 01",
         "t": "Haldwani to Chaukori",
-        "d": "Into the Kumaon Himalayas\nArrive in Haldwani, where the Driftmates team will receive the group. After meeting your fellow travellers, board the Tempo Traveller and begin the drive towards Chaukori.\nThe journey takes you away from the plains and into the Kumaon hills. The road winds through forested slopes, terraced fields and small settlements, with the landscape changing as you gain altitude.\nChaukori sits on a quiet mountain ridge, surrounded by tea gardens, orchards and views towards the snow-covered Himalayan ranges. Unlike a busy hill station, its appeal lies in its open surroundings and slower pace of life.\nAfter reaching your accommodation, settle in and enjoy the evening. If the skies are clear, the Himalayan skyline provides a beautiful introduction to the region you are about to explore.\nDay highlights\nMountain drive from Haldwani into Kumaon\nLandscapes of forested ridges and terraced settlements\nArrival in Chaukori\nEvening at leisure with views of the surrounding mountains\nOvernight: Chaukori\nMeals: Dinner included"
+        "d": "Into the Kumaon Himalayas\nArrive in Haldwani, where the Driftmates team will receive the group. After meeting your fellow travellers, board the Tempo Traveller and begin the drive towards Chaukori.\nThe journey takes you away from the plains and into the Kumaon hills. The road winds through forested slopes, terraced fields and small settlements, with the landscape changing as you gain altitude.\nChaukori sits on a quiet mountain ridge, surrounded by tea gardens, orchards and views towards the snow-covered Himalayan ranges. Unlike a busy hill station, its appeal lies in its open surroundings and slower pace of life.\nAfter reaching your accommodation, settle in and enjoy the evening. If the skies are clear, the Himalayan skyline provides a beautiful introduction to the region you are about to explore.\nOvernight: Chaukori\nMeals: Dinner included"
       },
       {
         "n": "Day 02",
         "t": "Chaukori to Munsyari via Birthi Falls",
-        "d": "Following the road towards Panchachuli\nAfter breakfast, leave Chaukori and continue towards Munsyari. Today's journey takes you deeper into eastern Kumaon, through winding mountain roads and settlements that become increasingly remote as you approach the Gori Ganga valley.\nEn route, stop at Birthi Falls, one of the region's most recognisable natural landmarks. The waterfall descends dramatically from a forested mountainside, creating a striking contrast against the surrounding green slopes. Take time to enjoy the setting, walk around the designated viewpoint and capture photographs before continuing the journey.\nAs the road climbs towards Munsyari, the landscape begins to open up. The mountains become more prominent, and the first views of the Panchachuli range may appear on clear days.\nMunsyari is situated at around 2,200 metres and serves as the gateway to the upper Johar region. Its location, facing the five peaks of Panchachuli, has made it one of Kumaon's most distinctive mountain destinations.\nOn arrival, check in to your accommodation. The evening is kept relaxed, giving you time to settle in and enjoy your first night in the mountains.\nDay highlights\nScenic drive from Chaukori towards Munsyari\nStop at Birthi Falls\nChanging landscapes of the upper Kumaon region\nFirst views of the Panchachuli range, weather permitting\nArrival in Munsyari\nOvernight: Munsyari\nMeals: Breakfast and dinner included"
+        "d": "Following the road towards Panchachuli\nAfter breakfast, leave Chaukori and continue towards Munsyari. Today's journey takes you deeper into eastern Kumaon, through winding mountain roads and settlements that become increasingly remote as you approach the Gori Ganga valley.\nEn route, stop at Birthi Falls, one of the region's most recognisable natural landmarks. The waterfall descends dramatically from a forested mountainside, creating a striking contrast against the surrounding green slopes. Take time to enjoy the setting, walk around the designated viewpoint and capture photographs before continuing the journey.\nAs the road climbs towards Munsyari, the landscape begins to open up. The mountains become more prominent, and the first views of the Panchachuli range may appear on clear days.\nMunsyari is situated at around 2,200 metres and serves as the gateway to the upper Johar region. Its location, facing the five peaks of Panchachuli, has made it one of Kumaon's most distinctive mountain destinations.\nOn arrival, check in to your accommodation. The evening is kept relaxed, giving you time to settle in and enjoy your first night in the mountains.\nOvernight: Munsyari\nMeals: Breakfast and dinner included"
       },
       {
         "n": "Day 03",
         "t": "Discover Munsyari",
-        "d": "A mountain town shaped by history and tradition\nMunsyari is often remembered for its views of Panchachuli, but its story goes much further back than tourism.\nThe town lies in the historic Johar region, whose communities once maintained important trading connections across the high Himalayan passes towards Tibet. The Shauka community, also known locally as Bhotia, played a significant role in this trade, exchanging goods between the Himalayan region and the Tibetan plateau. The routes were eventually disrupted when cross-border trade came to an end in the 1960s, changing the way of life in the upper valleys.\nToday, the traditions of Johar remain visible in the region's settlements, architecture, food and weaving heritage.\nBegin the day with a visit to Nanda Devi Temple, an important religious site for the local community. From here, explore Munsyari town and its local market, where everyday life continues against the backdrop of the surrounding mountains.\nThe day can also include a visit to Darkot village, known for its traditional woollen weaving and heritage homes. With a local host, travellers can learn about the region's weaving traditions, the materials used and the role these crafts have played in mountain life. This experience will be arranged with a local partner rather than treated as a casual sightseeing stop.\nReturn to your accommodation and enjoy the evening at your own pace. Munsyari is a place worth slowing down in, and we have kept this day open enough to appreciate its surroundings.\nDay highlights\nVisit Nanda Devi Temple\nExplore Munsyari town and its local market\nDiscover the history of the Johar region\nProposed guided village and weaving experience at Darkot, with a local host\nTime to enjoy the Panchachuli mountain setting\nOvernight: Munsyari\nMeals: Breakfast and dinner included"
+        "d": "A mountain town shaped by history and tradition\nMunsyari is often remembered for its views of Panchachuli, but its story goes much further back than tourism.\nThe town lies in the historic Johar region, whose communities once maintained important trading connections across the high Himalayan passes towards Tibet. The Shauka community, also known locally as Bhotia, played a significant role in this trade, exchanging goods between the Himalayan region and the Tibetan plateau. The routes were eventually disrupted when cross-border trade came to an end in the 1960s, changing the way of life in the upper valleys.\nToday, the traditions of Johar remain visible in the region's settlements, architecture, food and weaving heritage.\nBegin the day with a visit to Nanda Devi Temple, an important religious site for the local community. From here, explore Munsyari town and its local market, where everyday life continues against the backdrop of the surrounding mountains.\nThe day can also include a visit to Darkot village, known for its traditional woollen weaving and heritage homes. With a local host, travellers can learn about the region's weaving traditions, the materials used and the role these crafts have played in mountain life. This experience will be arranged with a local partner rather than treated as a casual sightseeing stop.\nReturn to your accommodation and enjoy the evening at your own pace. Munsyari is a place worth slowing down in, and we have kept this day open enough to appreciate its surroundings.\nOvernight: Munsyari\nMeals: Breakfast and dinner included"
       },
       {
         "n": "Day 04",
         "t": "Khuliya Top Trek",
-        "d": "A day in the high Himalayan meadows\nToday, leave the town behind and head towards the mountain trails above Munsyari.\nKhuliya Top is one of the region's best-known trekking destinations, offering an opportunity to experience the forests and high-altitude meadows that surround the Panchachuli range.\nAfter breakfast, drive to the designated trailhead and begin the ascent. The path climbs through forested sections, where oak and rhododendron are among the characteristic trees of the region. As the trail gains height, the forest gradually gives way to more open terrain and alpine meadows.\nThe landscape changes considerably along the way. The lower sections offer a sheltered forest walk, while the higher stretches open towards the surrounding Himalayan peaks. On clear days, the views across Panchachuli and the neighbouring mountain ranges are particularly rewarding.\nSpend time at Khuliya Top enjoying the open meadow and mountain panorama before retracing the trail to the starting point. Return to Munsyari for the evening.\nThis is the main walking day of the journey. The trail involves a sustained uphill climb, so a reasonable level of fitness and suitable footwear are important.\nDay highlights\nGuided mountain walk through forest trails\nOak and rhododendron forest landscapes\nHigh-altitude meadow experience\nPanoramic views of the Himalayan ranges, weather permitting\nReturn to Munsyari\nTrek information\nDestination: Khuliya Top\nAltitude: Around 3,500 metres\nDifficulty: Moderate, with a sustained uphill climb\nDuration: Allow a full day for the return trek, including breaks\nExact distance and walking time: To be confirmed against the operating trailhead and current trail conditions\nA local trekking guide will accompany the group.\nOvernight: Munsyari\nMeals: Breakfast and dinner included"
+        "d": "A day in the high Himalayan meadows\nToday, leave the town behind and head towards the mountain trails above Munsyari.\nKhuliya Top is one of the region's best-known trekking destinations, offering an opportunity to experience the forests and high-altitude meadows that surround the Panchachuli range.\nAfter breakfast, drive to the designated trailhead and begin the ascent. The path climbs through forested sections, where oak and rhododendron are among the characteristic trees of the region. As the trail gains height, the forest gradually gives way to more open terrain and alpine meadows.\nThe landscape changes considerably along the way. The lower sections offer a sheltered forest walk, while the higher stretches open towards the surrounding Himalayan peaks. On clear days, the views across Panchachuli and the neighbouring mountain ranges are particularly rewarding.\nSpend time at Khuliya Top enjoying the open meadow and mountain panorama before retracing the trail to the starting point. Return to Munsyari for the evening.\nThis is the main walking day of the journey. The trail involves a sustained uphill climb, so a reasonable level of fitness and suitable footwear are important.\nOvernight: Munsyari\nMeals: Breakfast and dinner included"
       },
       {
         "n": "Day 05",
         "t": "Munsyari to Pithoragarh via Madkot",
-        "d": "Through the Gori Ganga valley\nAfter breakfast, leave Munsyari and begin the return journey towards Pithoragarh via Madkot.\nInstead of retracing the same road used to reach Munsyari, today's drive follows the Gori Ganga valley. The route passes through mountain settlements and river landscapes, giving us another perspective of this part of Kumaon.\nStop at Madkot, a small settlement located beside the Gori Ganga and known for its natural hot water springs. The springs are a distinctive feature of the area and offer an interesting glimpse into the natural landscape of the valley. Spend some time exploring the surroundings before continuing towards Pithoragarh.\nThe journey gradually takes you away from the upper mountain region and towards the lower hills. Arrive in Pithoragarh by evening and check in to your accommodation.\nDay highlights\nDrive through the Gori Ganga valley\nVisit Madkot and its natural surroundings\nExplore a different mountain route through eastern Kumaon\nArrival in Pithoragarh\nOvernight: Pithoragarh\nMeals: Breakfast and dinner included"
+        "d": "Through the Gori Ganga valley\nAfter breakfast, leave Munsyari and begin the return journey towards Pithoragarh via Madkot.\nInstead of retracing the same road used to reach Munsyari, today's drive follows the Gori Ganga valley. The route passes through mountain settlements and river landscapes, giving us another perspective of this part of Kumaon.\nStop at Madkot, a small settlement located beside the Gori Ganga and known for its natural hot water springs. The springs are a distinctive feature of the area and offer an interesting glimpse into the natural landscape of the valley. Spend some time exploring the surroundings before continuing towards Pithoragarh.\nThe journey gradually takes you away from the upper mountain region and towards the lower hills. Arrive in Pithoragarh by evening and check in to your accommodation.\nOvernight: Pithoragarh\nMeals: Breakfast and dinner included"
       },
       {
         "n": "Day 06",
@@ -2091,7 +2145,7 @@ export const journeys = [
       {
         "n": "Day 07",
         "t": "Arrival in Delhi",
-        "d": "Arrive in Delhi after the overnight Volvo journey.\nThis marks the end of the complete Delhi–Kumaon–Delhi travel arrangement."
+        "d": "Arrive in Delhi after the overnight Volvo journey."
       },
     ]
   },

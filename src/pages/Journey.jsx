@@ -443,6 +443,202 @@ function PolicyBoard({ rows }) {
   );
 }
 
+function CoverGlyph({ name }) {
+  const common = {
+    viewBox: "0 0 24 24",
+    width: 18,
+    height: 18,
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.6,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    "aria-hidden": true,
+  };
+  if (name === "bus" || name === "van") {
+    return (
+      <svg {...common}>
+        <rect x="3" y="6" width="18" height="10" rx="2" />
+        <path d="M3 11h18M7 16v2M17 16v2" />
+      </svg>
+    );
+  }
+  if (name === "bed") {
+    return (
+      <svg {...common}>
+        <path d="M3 18V8M3 14h18v4M7 14v-3h6v3" />
+      </svg>
+    );
+  }
+  if (name === "meal") {
+    return (
+      <svg {...common}>
+        <path d="M6 8h9v6a4 4 0 0 1-4 4h-1a4 4 0 0 1-4-4V8zM15 9h2.2a2 2 0 0 1 0 4H15" />
+      </svg>
+    );
+  }
+  if (name === "guide" || name === "porter") {
+    return (
+      <svg {...common}>
+        <circle cx="12" cy="8" r="3" />
+        <path d="M6 19c1.2-3 3.2-4.5 6-4.5s4.8 1.5 6 4.5" />
+      </svg>
+    );
+  }
+  if (name === "sight") {
+    return (
+      <svg {...common}>
+        <path d="M4 18l6-8 3 4 2-2 5 6" />
+      </svg>
+    );
+  }
+  if (name === "team") {
+    return (
+      <svg {...common}>
+        <path d="M8 7h8v13H8zM10 7V5h4v2M10 11h4M10 14h4" />
+      </svg>
+    );
+  }
+  if (name === "bag") {
+    return (
+      <svg {...common}>
+        <path d="M6 8h12v12H6zM9 8V6a3 3 0 0 1 6 0v2" />
+      </svg>
+    );
+  }
+  if (name === "shield") {
+    return (
+      <svg {...common}>
+        <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" />
+      </svg>
+    );
+  }
+  if (name === "ticket") {
+    return (
+      <svg {...common}>
+        <path d="M4 8h16v8H4zM9 8v8" />
+      </svg>
+    );
+  }
+  if (name === "tip") {
+    return (
+      <svg {...common}>
+        <circle cx="12" cy="12" r="7" />
+        <path d="M12 8v8M9.5 10.2c.4-1 1.2-1.5 2.5-1.5 1.5 0 2.4.8 2.4 1.9 0 2.6-4.8 1.4-4.8 3.6 0 1 .9 1.8 2.4 1.8 1.3 0 2.2-.6 2.6-1.6" />
+      </svg>
+    );
+  }
+  if (name === "extra") {
+    return (
+      <svg {...common}>
+        <path d="M5 6h14v14H5zM5 10h14M8 4v4M16 4v4" />
+      </svg>
+    );
+  }
+  if (name === "weather") {
+    return (
+      <svg {...common}>
+        <path d="M7 17h10a4 4 0 0 0 .4-8 5 5 0 0 0-9.6 1.4A3.5 3.5 0 0 0 7 17z" />
+      </svg>
+    );
+  }
+  return (
+    <svg {...common}>
+      <path d="M6 6h12v12H6zM9 12h6" />
+    </svg>
+  );
+}
+
+function CoverBoard({ included = [], excluded = [] }) {
+  const includedIcons = ["bus", "van", "bed", "meal", "guide", "sight", "team"];
+  const excludedIcons = ["meal", "bag", "shield", "ticket", "porter", "tip", "extra", "weather", "other"];
+  const panels = [
+    {
+      key: "included",
+      kicker: "Included",
+      items: included,
+      icons: includedIcons,
+      tone: "is-included",
+    },
+    {
+      key: "excluded",
+      kicker: "Excluded",
+      items: excluded,
+      icons: excludedIcons,
+      tone: "is-excluded",
+    },
+  ];
+  return (
+    <div className="cover-grid">
+      {panels.map((panel) => (
+        <article className={`cover-panel ${panel.tone}`} key={panel.key}>
+          <div className="cover-head">
+            <p className="kicker">{panel.kicker}</p>
+          </div>
+          <div className="cover-rows">
+            {panel.items.map((item, index) => (
+              <p className="cover-row" key={item}>
+                <span className="cover-icon"><CoverGlyph name={panel.icons[index] || "other"} /></span>
+                <span>{item}</span>
+              </p>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  );
+}
+
+function BestTime({ visit }) {
+  return (
+    <section id="visit">
+      <div className="wrap">
+        <div className="section-head center">
+          <p className="kicker">The year</p>
+          <h2>Best time to visit</h2>
+          <p className="visit-intro">{visit.intro}</p>
+        </div>
+        <div className="visit-months">
+          <h3>When to visit</h3>
+          <div className="month-row">
+            {visit.months.map((month) => (
+              <span className={`month-pill is-${month.tone}`} key={month.m}>{month.m}</span>
+            ))}
+          </div>
+          {visit.key && <p className="visit-key">{visit.key}</p>}
+        </div>
+        <div className="season-board">
+          {visit.seasons.map((season) => (
+            <article className={`visit-panel is-${season.tone}`} key={season.title}>
+              <h3>{season.title}</h3>
+              <p className="season-when">{season.when}</p>
+              {season.tone === "closed" && <p className="season-flag">Not recommended</p>}
+              <div className="visit-copy">
+                <Lines text={season.d} />
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Companions({ items }) {
+  return (
+    <section>
+      <div className="wrap companion-grid">
+        {items.map((item) => (
+          <article key={item.t}>
+            <h2>{item.t}</h2>
+            <Lines text={item.d} />
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function stopName(title) {
   const clean = title.replace(/\(.*?\)/g, "").replace(/\|/g, " – ").trim();
   const parts = clean.split(/\s+(?:to|→)\s+/i);
@@ -606,26 +802,45 @@ export default function Journey() {
   const regionSection = journey.region?.length > 0 ? (
     <section key="region">
       <div className="wrap">
-        <div className="section-head">
+        <div className={`section-head${journey.regionStyle === "cards" ? " center" : ""}`}>
           <p className="kicker">{journey.regionKicker || "Munsyari"}</p>
           <h2>{journey.regionHeading || "Understanding the region"}</h2>
         </div>
-        <div className="region-row">
-          {journey.region.map((item, index) => (
-            <article className="region-notes" key={item.t}>
-              <div>
-                <p className="kicker">{String(index + 1).padStart(2, "0")}</p>
-                <h3>{item.t}</h3>
-              </div>
-              <div className="region-copy">
-                <Lines text={item.d} />
-              </div>
-            </article>
-          ))}
-        </div>
+        {journey.regionStyle === "cards" ? (
+          <div className="region-cards">
+            {journey.region.map((item) => (
+              <article className="region-card" key={item.t}>
+                {item.img
+                  ? <img src={item.img} alt={item.t} />
+                  : <div className="region-card-fallback" aria-hidden="true" />}
+                <div className="region-card-body">
+                  <h3>{item.t}</h3>
+                  <Lines text={item.d} />
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="region-row">
+            {journey.region.map((item, index) => (
+              <article className="region-notes" key={item.t}>
+                <div>
+                  <p className="kicker">{String(index + 1).padStart(2, "0")}</p>
+                  <h3>{item.t}</h3>
+                </div>
+                <div className="region-copy">
+                  <Lines text={item.d} />
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   ) : null;
+  const overviewBody = journey.overviewTitle && journey.overview.startsWith(`${journey.overviewTitle}\n`)
+    ? journey.overview.slice(journey.overviewTitle.length + 1)
+    : journey.overview;
 
   return (
     <>
@@ -664,8 +879,8 @@ export default function Journey() {
         <div className="wrap split overview-split">
           <div className="prose">
             <p className="kicker">Overview</p>
-            <h2>The shape of this journey</h2>
-            <Lines text={journey.overview} />
+            <h2>{journey.overviewTitle || "The shape of this journey"}</h2>
+            <Lines text={overviewBody} />
           </div>
           <SeasonBox journey={journey} />
         </div>
@@ -703,6 +918,8 @@ export default function Journey() {
 
       {regionSection}
 
+      {journey.bestTime && <BestTime visit={journey.bestTime} />}
+
       {journey.reading && (
         <section>
           <div className="wrap">
@@ -721,7 +938,9 @@ export default function Journey() {
       {(policyRows(journey).length > 0 || journey.altitude?.length > 0) && (
       <section id="included">
         <div className="wrap">
-          <PolicyBoard rows={policyRows(journey)} />
+          {journey.coverPanels
+            ? <CoverBoard included={journey.included} excluded={journey.notIncluded} />
+            : <PolicyBoard rows={policyRows(journey)} />}
           {journey.altitude?.length > 0 && (
             <div className="altitude policy-box">
               <h2>Altitude</h2>
@@ -749,6 +968,8 @@ export default function Journey() {
       )}
 
       <Chapters journey={journey} after="included" />
+
+      {journey.companions?.length > 0 && <Companions items={journey.companions} />}
 
       {journey.faqs?.length > 0 && (
         <section id="questions" className="band">
@@ -789,7 +1010,7 @@ export default function Journey() {
       {more.length > 0 && (
         <section className="band">
           <div className="wrap">
-            <div className="section-head">
+            <div className="section-head center">
               <p className="kicker">More in {journey.destination}</p>
               <h2>Other journeys</h2>
             </div>

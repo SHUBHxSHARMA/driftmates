@@ -110,10 +110,26 @@ function RouteMap({ stops }) {
   return <div className="route-map" ref={node} />;
 }
 
-export function RouteBox({ id, title, lede, chain, days, lines, stops }) {
+function mealMark(day) {
+  const line = String(day.d || "")
+    .split("\n")
+    .map((item) => item.trim())
+    .find((item) => /^meals:/i.test(item));
+  if (!line) return "";
+  const value = line.slice(line.indexOf(":") + 1).trim().toLowerCase();
+  if (!value || value.includes("not included")) return "";
+  const marks = [];
+  if (value.includes("breakfast")) marks.push("B");
+  if (/\blunch\b/.test(value)) marks.push("L");
+  if (value.includes("dinner")) marks.push("D");
+  return marks.length ? ` (${marks.join(", ")})` : "";
+}
+
+export function RouteBox({ id, title, lede, chain, days, lines, stops, mealCodes = false }) {
   if (!stops || stops.length < 2) return null;
+  const marked = mealCodes && days?.some((day) => mealMark(day));
   return (
-    <section className="route-brief" id={id}>
+    <section className={`route-brief${marked ? " has-meal-key" : ""}`} id={id}>
       <div className="wrap route-brief-grid">
         <RouteMap stops={stops} />
         <div className="route-panel">
@@ -131,6 +147,7 @@ export function RouteBox({ id, title, lede, chain, days, lines, stops }) {
                 <p key={`${day.n}-${day.t}`}>
                   <b>{day.n}: </b>
                   {day.t}
+                  {mealCodes ? mealMark(day) : ""}
                 </p>
               ))}
             </div>
@@ -141,6 +158,7 @@ export function RouteBox({ id, title, lede, chain, days, lines, stops }) {
             </div>
           )}
         </div>
+        {marked && <p className="route-key">B – Breakfast · L – Lunch · D – Dinner</p>}
       </div>
     </section>
   );
@@ -156,6 +174,7 @@ export default function RouteOverview({ journey }) {
       title={`${journey.destination} route`}
       days={journey.days}
       stops={stops}
+      mealCodes={Boolean(journey.mealCodes)}
     />
   );
 }
