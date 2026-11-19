@@ -18,6 +18,7 @@
     { "source": "/tour-indian-destination/bhutan", "destination": "/destinations/bhutan", "permanent": true }
   ],
   "rewrites": [
+    { "source": "/wp-content/:path*", "destination": "/api/media/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
