@@ -21,7 +21,10 @@ function releaseHero() {
 }
 
 export default function Intro() {
-  const [phase, setPhase] = useState(() => (shouldPlay() ? "in" : "gone"));
+  const [phase, setPhase] = useState(() => {
+    if (typeof window === "undefined") return "gone";
+    return shouldPlay() ? "in" : "gone";
+  });
   const play = useRef(phase === "in");
 
   useLayoutEffect(() => {

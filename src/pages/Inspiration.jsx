@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import { photos } from "../data";
 import { articles, collections, gallery } from "../guides";
+import { breadcrumb, organization } from "../seo";
 
 function Stamp({ id }) {
   const pathId = `stamp-${id}`;
@@ -56,6 +57,16 @@ export default function Inspiration() {
         description="Three Driftmates journeys for 2027 — Munsiyari, Adi Kailash, and Darma Valley — with notes on why they matter and when to go."
         path="/inspiration"
         image={photos.hero}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@graph": [
+            organization,
+            breadcrumb([
+              { name: "Home", path: "/" },
+              { name: "Inspiration & planning", path: "/inspiration" },
+            ]),
+          ],
+        }}
       />
       <header className="page-hero">
         <img src={photos.hero} alt="A Driftmates road in the Himalaya" />

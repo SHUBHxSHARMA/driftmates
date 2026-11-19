@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef } from "react";
-import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { routeFor } from "../routeStops";
 
@@ -9,7 +8,15 @@ function RouteMap({ stops }) {
   useEffect(() => {
     const el = node.current;
     if (!el || stops.length < 2) return undefined;
-    const map = L.map(el, {
+    let map;
+    let frame = 0;
+    let later = 0;
+    let nudge = () => {};
+    let alive = true;
+
+    import("leaflet").then(({ default: L }) => {
+      if (!alive || !node.current) return;
+      map = L.map(el, {
       scrollWheelZoom: false,
       zoomControl: true,
     });
@@ -50,7 +57,7 @@ function RouteMap({ stops }) {
 
     map.fitBounds(line.getBounds(), { padding: [48, 48], maxZoom: 9 });
 
-    const nudge = () => {
+    nudge = () => {
       const placed = [];
       markers.forEach((marker) => {
         const pin = marker.getElement()?.querySelector(".route-pin");
@@ -94,16 +101,21 @@ function RouteMap({ stops }) {
     };
 
     map.on("zoomend moveend", nudge);
-    const frame = requestAnimationFrame(() => {
+    frame = requestAnimationFrame(() => {
       map.invalidateSize();
       nudge();
     });
-    const later = window.setTimeout(nudge, 400);
+    later = window.setTimeout(nudge, 400);
+    });
+
     return () => {
-      cancelAnimationFrame(frame);
-      window.clearTimeout(later);
-      map.off("zoomend moveend", nudge);
-      map.remove();
+      alive = false;
+      if (frame) cancelAnimationFrame(frame);
+      if (later) window.clearTimeout(later);
+      if (map) {
+        map.off("zoomend moveend", nudge);
+        map.remove();
+      }
     };
   }, [stops]);
 

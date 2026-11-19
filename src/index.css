@@ -2042,6 +2042,7 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
 }
 .note-photo, .guide-photo { aspect-ratio: 16 / 10; overflow: hidden; }
 .note-body, .guide-copy { padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+.byline { margin: 10px 0 0; max-width: 42rem; color: var(--muted, #5c5348); font-size: 16px; }
 .note-date {
   display: flex;
   align-items: center;

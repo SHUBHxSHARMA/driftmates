@@ -62,6 +62,10 @@ export default function Home() {
           className="hero-img"
           src={photos.hero}
           alt="Driftmates journey in the Himalaya"
+          width="1920"
+          height="1280"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="hero-shade" />
         <div className="hero-copy">

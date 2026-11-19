@@ -1,5 +1,6 @@
 import Seo from "../components/Seo";
 import { policySections } from "../policies";
+import { breadcrumb, organization } from "../seo";
 
 function Blocks({ paragraphs }) {
   if (!paragraphs?.length) return null;
@@ -34,6 +35,16 @@ export default function Policies() {
         title="Policies | Driftmates Adventure"
         description="Terms, privacy, payment, and cancellation policies for Driftmates journeys."
         path="/policies"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@graph": [
+            organization,
+            breadcrumb([
+              { name: "Home", path: "/" },
+              { name: "Policies", path: "/policies" },
+            ]),
+          ],
+        }}
       />
       <section className="policies">
         <div className="wrap narrow">

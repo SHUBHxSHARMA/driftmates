@@ -1,6 +1,7 @@
 import EnquiryForm from "../components/EnquiryForm";
 import Seo from "../components/Seo";
 import { photos } from "../data";
+import { breadcrumb, organization } from "../seo";
 
 export default function Plan() {
   return (
@@ -10,6 +11,16 @@ export default function Plan() {
         description="Tell Driftmates who is coming. Ladakh, Spiti, Kumaon, Manali, Bhutan, or Annapurna. The desk in Haldwani answers on WhatsApp."
         path="/plan"
         image={photos.route}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@graph": [
+            organization,
+            breadcrumb([
+              { name: "Home", path: "/" },
+              { name: "Plan a journey", path: "/plan" },
+            ]),
+          ],
+        }}
       />
       <header className="page-hero">
         <img

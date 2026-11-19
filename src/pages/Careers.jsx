@@ -2,6 +2,7 @@ import { useState } from "react";
 import Seo from "../components/Seo";
 import { photos } from "../data";
 import { saveEnquiry } from "../saveEnquiry";
+import { breadcrumb, organization } from "../seo";
 
 export default function Careers() {
   const [sent, setSent] = useState(false);
@@ -14,6 +15,16 @@ export default function Careers() {
         description="Apply to Driftmates. Graphic Designer, listed for Noida and Delhi."
         path="/careers"
         image={photos.about}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@graph": [
+            organization,
+            breadcrumb([
+              { name: "Home", path: "/" },
+              { name: "Careers", path: "/careers" },
+            ]),
+          ],
+        }}
       />
       <header className="page-hero">
         <img src={photos.about} alt="Driftmates gathered over a map" />

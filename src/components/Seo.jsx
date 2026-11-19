@@ -23,10 +23,11 @@ function upsertLink(rel, href) {
 }
 
 export default function Seo({ title, description, path = "/", image, jsonLd }) {
+  const desc = clip(description);
+  const url = absolute(path);
   const payload = jsonLd ? JSON.stringify(jsonLd) : "";
+
   useEffect(() => {
-    const desc = clip(description);
-    const url = absolute(path);
     document.title = title;
     upsertMeta("name", "description", desc);
     upsertMeta("property", "og:title", title);
@@ -54,7 +55,25 @@ export default function Seo({ title, description, path = "/", image, jsonLd }) {
     } else if (script) {
       script.remove();
     }
-  }, [title, description, path, image, payload]);
+  }, [title, desc, url, image, payload]);
 
-  return null;
+  return (
+    <>
+      <title>{title}</title>
+      <meta name="description" content={desc} />
+      <link rel="canonical" href={url} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={desc} />
+      <meta property="og:url" content={url} />
+      <meta property="og:type" content="website" />
+      {image ? <meta property="og:image" content={image} /> : null}
+      <meta name="twitter:card" content={image ? "summary_large_image" : "summary"} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={desc} />
+      {image ? <meta name="twitter:image" content={image} /> : null}
+      {payload ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: payload }} />
+      ) : null}
+    </>
+  );
 }

@@ -18,7 +18,7 @@ import {
   whatsapp,
   whatsappNumber,
 } from "../data";
-import { organization } from "../seo";
+import { breadcrumb, organization } from "../seo";
 
 function Face({ n, label, focus }) {
   if (!focus) return <img className="face" src={`/faces/${n}.jpg?v=5`} alt={label} />;
@@ -85,6 +85,10 @@ export default function About() {
           "@context": "https://schema.org",
           "@graph": [
             organization,
+            breadcrumb([
+              { name: "Home", path: "/" },
+              { name: "How we work", path: "/about" },
+            ]),
             {
               "@type": "FAQPage",
               mainEntity: faqs.map((faq) => ({
@@ -288,7 +292,7 @@ export default function About() {
                 <div className="polaroids">
                   <img src="/sunset-thatch.jpg?v=1" alt="Sunset under a thatched roof" />
                   <img src={photos.munsiyari} alt="Munsyari" />
-                  <img src={photos.johar} alt="" />
+                  <img src={photos.johar} alt="The Johar Valley above Munsyari" />
                 </div>
                 <p className="kicker">Next batch</p>
                 <h3>Munsyari</h3>
@@ -346,7 +350,7 @@ export default function About() {
       </section>
 
       <section className="night">
-        <img src={photos.leh} alt="" />
+        <img src={photos.leh} alt="Ladakh after the light drops" />
         <div className="night-shade" />
         <div className="wrap">
           <Reveal className="center">

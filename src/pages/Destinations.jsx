@@ -30,7 +30,7 @@ export default function Destinations() {
           <section key={d.slug} id={d.slug} className={i % 2 ? "band" : ""}>
             <Reveal className={`wrap story dest-row ${reverse ? "reverse" : ""}`}>
               <Link className="story-photo" to={`/destinations/${d.slug}`}>
-                <img src={d.portrait || d.image} alt="" />
+                <img src={d.portrait || d.image} alt={`${d.name}, ${d.region}`} />
                 <span className="enter-tag">Enter {d.name}</span>
               </Link>
               <div className="dest-copy">

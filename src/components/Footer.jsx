@@ -53,6 +53,7 @@ export default function Footer() {
           <ul>
             <li><a href={phoneHref}>{phone}</a></li>
             <li><a href={`mailto:${email}`}>{email}</a></li>
+            <li><Link to="/inspiration">Inspiration & planning</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/careers">Careers</Link></li>
             <li><Link to="/plan">Plan a journey</Link></li>

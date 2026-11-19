@@ -59,6 +59,7 @@ export default function Article() {
           </p>
           <h1>{article.title}</h1>
           <p className="note-date">{article.dateLabel}</p>
+          <p className="byline">Written by the Driftmates desk in Haldwani. The same people who walk the route and answer the phone.</p>
         </header>
         <div className="wrap essay-photo">
           <img src={article.image} alt={article.alt} />

@@ -1,7 +1,7 @@
 import Seo from "../components/Seo";
 import TripCard from "../components/TripCard";
 import { journeys, photos } from "../data";
-import { absolute, organization } from "../seo";
+import { absolute, breadcrumb, organization } from "../seo";
 
 export default function Journeys() {
   return (
@@ -15,6 +15,10 @@ export default function Journeys() {
           "@context": "https://schema.org",
           "@graph": [
             organization,
+            breadcrumb([
+              { name: "Home", path: "/" },
+              { name: "Journeys", path: "/journeys" },
+            ]),
             {
               "@type": "ItemList",
               name: "Driftmates journeys",
