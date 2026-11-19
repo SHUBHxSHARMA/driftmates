@@ -1577,7 +1577,7 @@ html.hero-go .hero-copy .hero-actions { animation: hero-in 0.85s cubic-bezier(0.
   flex-wrap: wrap;
 }
 .season-head .kicker { margin: 0; color: #f4ead2; }
-.season-when {
+.season-body .season-when {
   margin: 0 0 0 auto;
   color: var(--paper);
   font-family: var(--serif);
