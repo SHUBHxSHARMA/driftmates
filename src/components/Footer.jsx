@@ -27,19 +27,6 @@ export default function Footer() {
             Every route is planned and recce’d on the ground.
           </p>
           <p>{address}</p>
-          <a
-            className="ph-badge"
-            href="https://www.producthunt.com/products/driftmates?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-driftmates"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              alt="Driftmates on Product Hunt"
-              width="250"
-              height="54"
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1323580&theme=light"
-            />
-          </a>
         </div>
         <div>
           <h3>Journeys</h3>

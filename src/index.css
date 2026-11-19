@@ -1284,15 +1284,6 @@ select { max-width: 100%; }
 .footer .foot-logo:hover {
   color: white;
 }
-.footer .ph-badge {
-  display: inline-block;
-  margin-top: 18px;
-  line-height: 0;
-}
-.footer .ph-badge img {
-  width: 250px;
-  height: 54px;
-}
 .legal {
   margin-top: 36px;
   padding-top: 16px;
