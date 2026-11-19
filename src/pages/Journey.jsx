@@ -601,7 +601,6 @@ function BestTime({ visit }) {
           <p className="visit-intro">{visit.intro}</p>
         </div>
         <div className="visit-months">
-          <h3>When to visit</h3>
           <div className="month-row">
             {visit.months.map((month) => (
               <span className={`month-pill is-${month.tone}`} key={month.m}>{month.m}</span>
