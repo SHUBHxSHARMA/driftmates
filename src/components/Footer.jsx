@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { address, destinations, email, journeys, phone, phoneHref } from "../data";
+import SocialLinks from "./SocialLinks";
 
 const shortJourney = {
   "leh-ladakh-umling-la": "Umling La",
@@ -27,6 +28,7 @@ export default function Footer() {
             Every route is planned and recce’d on the ground.
           </p>
           <p>{address}</p>
+          <SocialLinks />
         </div>
         <div>
           <h3>Journeys</h3>

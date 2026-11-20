@@ -53,6 +53,13 @@ export const phoneHref = "tel:+918273722456";
 export const whatsappNumber = "+91 86790 33487";
 export const whatsapp = "https://wa.me/918679033487";
 export const email = "info@driftmates.com";
+export const socials = [
+  { name: "Instagram", href: "https://www.instagram.com/thedriftmates" },
+  { name: "Facebook", href: "https://www.facebook.com/thedriftmates" },
+  { name: "Reddit", href: "https://www.reddit.com/user/Big-Building3878" },
+  { name: "X", href: "https://x.com/driftmates" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/driftmates/" },
+];
 export const address =
   "Krishna Colony, Dahariya Road, near Government ITI, Haldwani, Uttarakhand 263139";
 

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import Seo from "../components/Seo";
 import EnquiryForm from "../components/EnquiryForm";
+import SocialLinks from "../components/SocialLinks";
 import OfficeMap from "../components/OfficeMap";
 import GoogleReviews from "../components/GoogleReviews";
 import Credentials from "../components/Credentials";
@@ -22,11 +23,10 @@ import {
   whatsappNumber,
 } from "../data";
 
-const leadSlugs = ["leh-ladakh-umling-la", "munsiyari-johar", "bhutan", "turtuk-bike"];
 const joining = [
-  ...leadSlugs.map((slug) => journeys.find((item) => item.slug === slug)),
-  ...journeys.filter((item) => !leadSlugs.includes(item.slug)),
-].filter(Boolean);
+  ...journeys.filter((item) => item.place === "uttarakhand" || item.place === "himachal"),
+  ...journeys.filter((item) => item.place !== "uttarakhand" && item.place !== "himachal"),
+];
 
 const thoughts = beliefs;
 
@@ -118,7 +118,7 @@ export default function Home() {
       <section className="departures">
         <div className="wrap">
           <div className="join-head">
-            <Reveal>
+            <Reveal className="center">
               <p className="kicker">Departures</p>
               <h2>Trips people are joining</h2>
               <p>The length and the price, as printed on the trip.</p>
@@ -132,7 +132,7 @@ export default function Home() {
         <div className="wrap">
           <Reveal className="section-head center">
             <div className="dots">Uttarakhand · Himachal · Ladakh · Bhutan · Nepal · Africa</div>
-            <h2>Places we actually know</h2>
+            <h2>The regions we keep returning to</h2>
             <p>
               Discover what sits past the usual trail. Local guides and expedition leads who
               know the passes, the villages, and the days worth protecting.
@@ -218,6 +218,7 @@ export default function Home() {
               <p>
                 <a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp {whatsappNumber}</a>
               </p>
+              <SocialLinks />
               <p>{address}</p>
             </div>
             <OfficeMap />

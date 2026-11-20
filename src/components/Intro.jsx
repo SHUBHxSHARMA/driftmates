@@ -31,9 +31,10 @@ export default function Intro() {
     const root = document.documentElement;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!play.current || reduce) {
-      root.classList.remove("hero-hold");
+      root.classList.remove("show-intro", "hero-hold");
       return undefined;
     }
+    root.classList.remove("show-intro");
     root.classList.add("hero-hold");
     return undefined;
   }, []);
@@ -41,9 +42,10 @@ export default function Intro() {
   useEffect(() => {
     if (!play.current) return undefined;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const hold = reduce ? 600 : 2000;
+    const started = window.__dmIntroStart || Date.now();
     const fade = reduce ? 0 : 500;
-    const leaveTimer = window.setTimeout(() => setPhase("out"), hold);
+    const leaveAt = Math.max(0, 2000 - (Date.now() - started));
+    const leaveTimer = window.setTimeout(() => setPhase("out"), leaveAt);
     const doneTimer = window.setTimeout(() => {
       try {
         sessionStorage.setItem(STORAGE_KEY, "1");
@@ -52,7 +54,7 @@ export default function Intro() {
       }
       setPhase("gone");
       releaseHero();
-    }, hold + fade);
+    }, leaveAt + fade);
     return () => {
       window.clearTimeout(leaveTimer);
       window.clearTimeout(doneTimer);
@@ -62,7 +64,7 @@ export default function Intro() {
   if (phase === "gone") return null;
 
   return (
-    <div className={`intro${phase === "out" ? " out" : ""}`} aria-hidden={phase === "out"}>
+    <div className={`intro settled${phase === "out" ? " out" : ""}`} aria-hidden={phase === "out"}>
       <p className="intro-name">Driftmates</p>
     </div>
   );

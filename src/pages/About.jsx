@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import Seo from "../components/Seo";
 import EnquiryForm from "../components/EnquiryForm";
+import SocialLinks from "../components/SocialLinks";
 import OfficeMap from "../components/OfficeMap";
 import GoogleReviews from "../components/GoogleReviews";
 import {
@@ -203,7 +204,7 @@ export default function About() {
 
       <section className="band">
         <div className="wrap">
-          <Reveal className="section-head">
+          <Reveal className="section-head center">
             <p className="kicker">What we hold to</p>
             <h2>Four ideas. The rest follows.</h2>
           </Reveal>
@@ -221,7 +222,7 @@ export default function About() {
 
       <section>
         <div className="wrap">
-          <Reveal className="section-head">
+          <Reveal className="section-head center">
             <p className="kicker">From first call to the last pass</p>
             <h2>How a journey actually starts</h2>
           </Reveal>
@@ -419,6 +420,7 @@ export default function About() {
               <p>
                 <a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp {whatsappNumber}</a>
               </p>
+              <SocialLinks />
               <p>{address}</p>
             </div>
             <OfficeMap />

@@ -2,6 +2,9 @@ export const siteUrl = "https://driftmates.com";
 
 export const sameAs = [
   "https://www.instagram.com/thedriftmates",
+  "https://www.facebook.com/thedriftmates",
+  "https://www.reddit.com/user/Big-Building3878",
+  "https://x.com/driftmates",
   "https://youtube.com/@thedriftmates",
   "https://www.linkedin.com/company/driftmates/",
 ];

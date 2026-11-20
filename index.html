@@ -3,6 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html.show-intro,
+      html.show-intro body { background: #f6f3ee; }
+      html.show-intro body { overflow: hidden; }
+      html.show-intro body > #root { visibility: hidden; }
+      html.show-intro::before {
+        content: "Driftmates";
+        position: fixed;
+        inset: 0;
+        z-index: 200;
+        display: grid;
+        place-items: center;
+        background: #f6f3ee;
+        color: #241e18;
+        font-family: "Playfair Display", Georgia, serif;
+        font-weight: 500;
+        font-size: clamp(64px, 12vw, 112px);
+        letter-spacing: -0.03em;
+        line-height: 1;
+      }
+    </style>
+    <script>
+      (function () {
+        var play = true;
+        try {
+          var force = new URLSearchParams(location.search).get("intro") === "1";
+          if (!force && sessionStorage.getItem("dm-intro-seen") === "1") play = false;
+        } catch (e) {}
+        if (!play) return;
+        document.documentElement.classList.add("show-intro", "hero-hold");
+        window.__dmIntroStart = Date.now();
+      })();
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KRDXDVFE0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
